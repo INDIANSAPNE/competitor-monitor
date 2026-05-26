@@ -1,0 +1,40 @@
+name: 24x7 AI कंटेंट फैक्ट्री
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # हर 30 मिनट
+  workflow_dispatch:         # मैन्युअल ट्रिगर
+
+jobs:
+  content-pipeline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+
+      - name: डिपेंडेंसी इंस्टॉल करें
+        run: go mod download
+
+      - name: मॉनिटर + AI जनरेट + पोस्ट
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_PASS: ${{ secrets.WP_PASS }}
+        run: go run .
+
+      - name: डेटा फ़ाइलें कमिट करें (अगर बदलाव हुए)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add seen_links.json articles.xlsx
+          git diff --staged --quiet || git commit -m "🤖 ऑटो-अपडेट [skip ci]"
+          git push
