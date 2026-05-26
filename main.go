@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"time"
 )
 
 func main() {
@@ -25,5 +26,6 @@ func main() {
 
 	fmt.Println("🔍 जाँच शुरू...")
 	CheckAllCompetitors(config)
+	time.Sleep(30 * time.Second)
 	fmt.Println("✅ एकल जाँच पूरी!")
 }
