@@ -1,0 +1,78 @@
+दिए गए आर्टिकल टाइटल और URL के आधार पर, निम्नलिखित JSON स्कीमा को पूरी तरह से भरें। यह स्कीमा सभी प्रकार की उत्तर कुंजी (Answer Key) से जुड़ी जानकारी को कवर करती है – चाहे वह सरकारी भर्ती परीक्षा की उत्तर कुंजी हो, बोर्ड परीक्षा (10वीं/12वीं), प्रवेश परीक्षा (JEE, NEET, CUET), विश्वविद्यालय परीक्षा, या किसी अन्य प्रतियोगी परीक्षा की उत्तर कुंजी। इसमें प्रोविजनल, फाइनल, सेट/शिफ्ट वार, आपत्ति विंडो, सभी महत्वपूर्ण तिथियाँ और लिंक शामिल हैं। हर फील्ड को ध्यानपूर्वक भरें। जहाँ जानकारी न हो, वहाँ खाली, शून्य या null रखें। केवल मान्य JSON लौटाएँ, कोई अन्य टेक्स्ट नहीं।
+
+{
+  "ANSWER_KEY_IDENTIFICATION": {
+    "EXAM_NAME": "",
+    "RECRUITMENT_NAME": "",
+    "POST_NAME": "",
+    "CONDUCTING_BODY": "",
+    "EXAM_TYPE": "",
+    "CATEGORY": "",
+    "SET_CODE": ""
+  },
+  "ANSWER_KEY_STATUS": {
+    "RELEASED": false,
+    "RELEASE_DATE": "",
+    "ANSWER_KEY_TYPE": "",
+    "DIRECT_DOWNLOAD_LINK": "",
+    "STATUS_CHECK_LINK": ""
+  },
+  "HOW_TO_DOWNLOAD_OR_CHECK": {
+    "STEPS": [],
+    "REQUIRED_DETAILS": [],
+    "ALTERNATE_METHOD": ""
+  },
+  "ANSWER_KEY_DETAILS": {
+    "SUBJECT_WISE_KEYS": [
+      {
+        "SUBJECT": "",
+        "SET_CODE": "",
+        "DOWNLOAD_LINK": ""
+      }
+    ],
+    "QUESTION_WISE_ANSWER": [
+      {
+        "QUESTION_NUMBER": 0,
+        "CORRECT_ANSWER": "",
+        "QUESTION_PAPER_LINK": ""
+      }
+    ],
+    "MASTER_QUESTION_PAPER_LINK": "",
+    "SHIFT_WISE": [
+      {
+        "SHIFT": "",
+        "DATE": "",
+        "KEY_LINK": ""
+      }
+    ]
+  },
+  "OBJECTION_PROCESS": {
+    "OBJECTION_WINDOW_START": "",
+    "OBJECTION_WINDOW_END": "",
+    "OBJECTION_FEE_PER_QUESTION": 0,
+    "HOW_TO_RAISE_OBJECTION": [],
+    "REVISED_KEY_DATE": ""
+  },
+  "IMPORTANT_DATES": {
+    "ANSWER_KEY_AVAILABLE_FROM": "",
+    "ANSWER_KEY_AVAILABLE_UNTIL": "",
+    "OBJECTION_WINDOW": "",
+    "FINAL_KEY_DATE": "",
+    "RESULT_DATE": ""
+  },
+  "IMPORTANT_LINKS": {
+    "OFFICIAL_NOTIFICATION": "",
+    "DIRECT_DOWNLOAD": "",
+    "OFFICIAL_WEBSITE": "",
+    "HELPLINE_NUMBER": ""
+  },
+  "ADDITIONAL_INFO": {
+    "GENERAL_INSTRUCTIONS": [],
+    "DISPUTE_RESOLUTION": "",
+    "REVALUATION_PROCESS": "",
+    "CONTACT_DETAILS": ""
+  }
+}
+
+टाइटल: {TITLE}
+URL: {URL}

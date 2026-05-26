@@ -1,0 +1,95 @@
+दिए गए आर्टिकल टाइटल और URL के आधार पर, निम्नलिखित JSON स्कीमा को पूरी तरह से भरें। यह स्कीमा हर तरह की प्राइवेट (निजी) नौकरी को कवर करती है – चाहे वह IT, BPO, बैंकिंग, फाइनेंस, सेल्स, मार्केटिंग, इंजीनियरिंग, मेडिकल, फ्रीलांस, रिमोट या कोई अन्य क्षेत्र हो। फुल-टाइम, पार्ट-टाइम, कॉन्ट्रैक्ट, इंटर्नशिप, वर्क फ्रॉम होम – सभी प्रकार की नौकरियों के लिए उपयुक्त है। हर फील्ड को ध्यानपूर्वक भरें; जहाँ जानकारी न हो, वहाँ खाली, शून्य या null रखें। केवल मान्य JSON लौटाएँ, कोई अन्य टेक्स्ट नहीं।
+
+{
+  "JOB_IDENTIFICATION": {
+    "JOB_TITLE": "",
+    "COMPANY_NAME": "",
+    "COMPANY_DESCRIPTION": "",
+    "INDUSTRY": "",
+    "JOB_CATEGORY": "",
+    "JOB_TYPE": "",
+    "EMPLOYMENT_TYPE": "",
+    "WORK_MODE": "",
+    "JOB_LOCATION": "",
+    "NO_OF_OPENINGS": 0
+  },
+  "SALARY_AND_BENEFITS": {
+    "MINIMUM_SALARY": 0,
+    "MAXIMUM_SALARY": 0,
+    "SALARY_UNIT": "",
+    "SALARY_DETAILS": "",
+    "BENEFITS": [],
+    "PERKS": [],
+    "CTC_DETAILS": ""
+  },
+  "ELIGIBILITY": {
+    "EDUCATIONAL_QUALIFICATION": "",
+    "MINIMUM_PERCENTAGE": "",
+    "PREFERRED_DEGREE": "",
+    "EXPERIENCE_REQUIRED": {
+      "MINIMUM_YEARS": 0,
+      "MAXIMUM_YEARS": 0,
+      "EXPERIENCE_LEVEL": ""
+    },
+    "AGE_LIMIT": {
+      "MINIMUM_AGE": 0,
+      "MAXIMUM_AGE": 0
+    },
+    "SKILLS_REQUIRED": [],
+    "LANGUAGE_PROFICIENCY": [],
+    "CERTIFICATIONS": [],
+    "OTHER_ELIGIBILITY": []
+  },
+  "JOB_DESCRIPTION": {
+    "KEY_RESPONSIBILITIES": [],
+    "DAILY_TASKS": [],
+    "ROLE_OVERVIEW": ""
+  },
+  "APPLICATION_PROCESS": {
+    "APPLICATION_MODE": "",
+    "APPLICATION_LINK": "",
+    "APPLICATION_EMAIL": "",
+    "APPLICATION_DEADLINE": "",
+    "WALK_IN_INTERVIEW": {
+      "DATE": "",
+      "TIME": "",
+      "VENUE": ""
+    },
+    "HOW_TO_APPLY_STEPS": [],
+    "REQUIRED_DOCUMENTS": []
+  },
+  "SELECTION_PROCESS": {
+    "STAGES": [],
+    "WRITTEN_TEST": false,
+    "TECHNICAL_INTERVIEW": false,
+    "HR_INTERVIEW": false,
+    "GROUP_DISCUSSION": false,
+    "OTHER_DETAILS": ""
+  },
+  "IMPORTANT_DATES": {
+    "JOB_POSTED_DATE": "",
+    "APPLICATION_START_DATE": "",
+    "APPLICATION_LAST_DATE": "",
+    "INTERVIEW_DATE": "",
+    "JOINING_DATE": ""
+  },
+  "IMPORTANT_LINKS": {
+    "OFFICIAL_JOB_LISTING": "",
+    "COMPANY_WEBSITE": "",
+    "APPLY_NOW_LINK": "",
+    "CONTACT_HELPLINE": ""
+  },
+  "ADDITIONAL_INFO": {
+    "PROBATION_PERIOD": "",
+    "WORK_TIMINGS": "",
+    "TRAINING_PROVIDED": "",
+    "CONTRACT_DURATION": "",
+    "NOTICE_PERIOD": "",
+    "COMPANY_CULTURE": "",
+    "GROWTH_OPPORTUNITIES": "",
+    "IMPORTANT_INSTRUCTIONS": []
+  }
+}
+
+टाइटल: {TITLE}
+URL: {URL}

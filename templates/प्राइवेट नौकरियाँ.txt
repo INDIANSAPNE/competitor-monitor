@@ -1,0 +1,199 @@
+<!-- 
+=================================================================
+TEMPLATE NAME: प्राइवेट नौकरियाँ (Private Jobs) Template - JSON Schema Integrated
+VERSION: 1.0
+CATEGORY: प्राइवेट नौकरियाँ
+DESCRIPTION: 
+  यह टेम्पलेट "प्राइवेट नौकरियाँ" कैटेगरी की हमारी JSON स्कीमा के साथ पूरी तरह से एकीकृत है।
+  AI को निर्देश है कि वह नीचे दिए गए सभी की-पाथ को JSON ({EXTRA_DATA}) से भरकर पोस्ट तैयार करे।
+  टोन: 80% फनी + 20% मोटिवेशनल | SEO: Primary, Secondary (बार-बार), LSI keywords.
+  Jobjalebi.com का नाम प्राकृतिक रूप से 3-4 बार डाला गया है.
+=================================================================
+-->
+
+<!-- ========== METADATA (AI AGENT INPUT - JSON से लिया गया) ========== -->
+<!--
+POST_TITLE = {SEO_TITLE}
+CATEGORY = {CATEGORY}
+SUBCATEGORY = {INDUSTRY}
+TAGS = "{JOB_IDENTIFICATION.JOB_TITLE}, Private Jobs, {JOB_IDENTIFICATION.COMPANY_NAME}"
+PRIMARY_KEYWORD = {PRIMARY_KEYWORD}
+SECONDARY_KEYWORDS = {SECONDARY_KEYWORDS}
+LSI_KEYWORDS = {LSI_KEYWORDS}
+COMPANY_NAME = {JOB_IDENTIFICATION.COMPANY_NAME}
+JOB_TITLE = {JOB_IDENTIFICATION.JOB_TITLE}
+INDUSTRY = {JOB_IDENTIFICATION.INDUSTRY}
+JOB_TYPE = {JOB_IDENTIFICATION.JOB_TYPE}
+EMPLOYMENT_TYPE = {JOB_IDENTIFICATION.EMPLOYMENT_TYPE}
+WORK_MODE = {JOB_IDENTIFICATION.WORK_MODE}
+JOB_LOCATION = {JOB_IDENTIFICATION.JOB_LOCATION}
+NO_OF_OPENINGS = {JOB_IDENTIFICATION.NO_OF_OPENINGS}
+MINIMUM_SALARY = {SALARY_AND_BENEFITS.MINIMUM_SALARY}
+MAXIMUM_SALARY = {SALARY_AND_BENEFITS.MAXIMUM_SALARY}
+SALARY_UNIT = {SALARY_AND_BENEFITS.SALARY_UNIT}
+BENEFITS = {SALARY_AND_BENEFITS.BENEFITS}
+EDUCATIONAL_QUALIFICATION = {ELIGIBILITY.EDUCATIONAL_QUALIFICATION}
+EXPERIENCE_REQUIRED = {ELIGIBILITY.EXPERIENCE_REQUIRED.MINIMUM_YEARS}-{ELIGIBILITY.EXPERIENCE_REQUIRED.MAXIMUM_YEARS} वर्ष
+SKILLS_REQUIRED = {ELIGIBILITY.SKILLS_REQUIRED}
+APPLICATION_MODE = {APPLICATION_PROCESS.APPLICATION_MODE}
+APPLICATION_LINK = {IMPORTANT_LINKS.APPLY_NOW_LINK}
+APPLICATION_DEADLINE = {APPLICATION_PROCESS.APPLICATION_DEADLINE}
+SELECTION_STAGES = {SELECTION_PROCESS.STAGES}
+IMPORTANT_DATES = {IMPORTANT_DATES}
+OFFICIAL_WEBSITE = {IMPORTANT_LINKS.COMPANY_WEBSITE}
+CONTACT_HELPLINE = {IMPORTANT_LINKS.CONTACT_HELPLINE}
+-->
+
+<!-- ========== SEO KEYWORD USAGE INSTRUCTIONS FOR AI ==========
+1. PRIMARY_KEYWORD ({PRIMARY_KEYWORD}) → lead, summary table, eligibility, conclusion.
+2. SECONDARY_KEYWORDS (जैसे "apply online", "vacancy details", "eligibility", "last date", "application fee") का 5-6 बार इस्तेमाल करें।
+3. Jobjalebi.com mentioned 3-4 times: lead, important links, conclusion, FAQ.
+-->
+
+<!-- ========== POST CONTENT STARTS ========== -->
+
+<!-- LEAD: PRIMARY KEYWORD + JOJALBEBI MENTION -->
+<p><strong>🚨 प्राइवेट सेक्टर में धमाका – धमाका!</strong> <strong>{COMPANY_NAME} ने {JOB_TITLE} के लिए {PRIMARY_KEYWORD} जारी कर दी है।</strong> अब जो स्किल रखता है, वो आगे बढ़े; जो नहीं रखता, वो पहले सीख ले। <strong>Jobjalebi.com</strong> पर हम तुम्हें हंसी-मजाक के साथ पूरी डिटेल देते हैं – तो चाय पकड़ो, लैपटॉप खोलो, और पढ़ते जाओ। 😂</p>
+
+<p>इस पोस्ट में हम तुम्हें बताएँगे – <strong>कौन सी पोस्ट है (<strong>vacancy details</strong>), किसे अप्लाई करना चाहिए (<strong>eligibility</strong>), सैलरी कितनी है (<strong>salary</strong>), आखिरी तारीख (<strong>last date</strong>) क्या है, अप्लाई कैसे करें (<strong>apply online</strong>), और सिलेक्शन प्रोसेस क्या है – सब कुछ हंसी-मजाक के साथ ताकि बोरियत न हो।</strong> तो चाय बनाओ, मोबाइल पकड़ो, और <strong>Jobjalebi.com</strong> के इस पोस्ट को अंत तक पढ़ो।</p>
+
+<!-- ========== SECTION 1: QUICK SUMMARY TABLE ========== -->
+<h2>📌 एक नज़र में – नौकरी का चटपटा सारांश</h2>
+<table class="responsive-table">
+  <thead>
+    <tr><th>शीर्षक</th><th>विवरण (हंसी के साथ)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>कंपनी का नाम</td><td>{COMPANY_NAME} – "सुनहरा मौका, चूको मत"</td></tr>
+    <tr><td>पद का नाम</td><td>{JOB_TITLE} – <strong>{PRIMARY_KEYWORD}</strong> यहाँ देखें</td></tr>
+    <tr><td>उद्योग (Industry)</td><td>{INDUSTRY} – "इसी सेक्टर में बनानी है धाक"</td></tr>
+    <tr><td>नौकरी का प्रकार</td><td>{JOB_TYPE} ({EMPLOYMENT_TYPE}) – "परमानेंट हो या कॉन्ट्रैक्ट, मौका है"</td></tr>
+    <tr><td>काम करने का तरीका</td><td>{WORK_MODE} – "ऑफिस जाना है या घर से काम – यहाँ देखो"</td></tr>
+    <tr><td>नौकरी का स्थान</td><td>{JOB_LOCATION} – "पहुँचने में आसानी होनी चाहिए"</td></tr>
+    <tr><td>कुल रिक्तियाँ (<strong>vacancy details</strong>)</td><td>{NO_OF_OPENINGS} – "जितनी जल्दी करोगे, उतना अच्छा"</td></tr>
+    <tr><td>सैलरी (<strong>salary</strong>)</td><td>₹{MINIMUM_SALARY} – ₹{MAXIMUM_SALARY} {SALARY_UNIT} – "इतनी कि शान से जी सको"</td></tr>
+    <tr><td><strong>last date</strong> (अंतिम तिथि)</td><td>{APPLICATION_DEADLINE} – "देर मत करना, वरना कोई और ले जाएगा"</td></tr>
+    <tr><td>आधिकारिक लिंक</td><td><a href="{OFFICIAL_WEBSITE}">👉 {OFFICIAL_WEBSITE}</a></td></tr>
+    <tr><td>⚡ फनी चेतावनी</td><td>"पिछली बार 50% लोग आखिरी दिन रोते रहे – अब अक्लमंद बनो और जल्दी करो"</td></tr>
+  </tbody>
+</table>
+
+<!-- ========== SECTION 2: VACANCY DETAILS ========== -->
+<h2>1. पद और रिक्तियाँ – कितनी सीटें, किस पद पर? (<strong>vacancy details</strong>)</h2>
+<p>चलो, सीधे मुद्दे पर आते हैं। <strong>{PRIMARY_KEYWORD}</strong> के अनुसार कितने पद निकले हैं – देखो और गणित मिलाओ। <strong>याद रखना, प्राइवेट सेक्टर में जितनी जल्दी अप्लाई करोगे, उतना अच्छा – क्योंकि पोस्ट पूरी होते देर नहीं लगती।</strong> <strong>vacancy details</strong> देखकर ही तय करो कि इस पद पर फोकस करना है या नहीं।</p>
+<table class="responsive-table">
+  <thead><tr><th>पद का नाम</th><th>रिक्तियाँ</th><th>अनुभव</th><th>सैलरी रेंज</th></tr></thead>
+  <tbody>
+    <tr><td>{JOB_TITLE}</td><td>{NO_OF_OPENINGS}</td><td>{EXPERIENCE_REQUIRED}</td><td>₹{MINIMUM_SALARY} – ₹{MAXIMUM_SALARY}</td></tr>
+  </tbody>
+</table>
+<p><strong>😂 फनी कमेंट:</strong> "अगर तुम्हें लगता है कि तुम इस पोस्ट के लिए बिलकुल फिट हो, तो सोचना मत – अप्लाई करो। अगर नहीं हो, तो पहले स्किल सीखो। <strong>Jobjalebi.com</strong> पर हम स्किल डेवलपमेंट की भी पोस्ट डालते हैं – वो देख लो।"</p>
+
+<!-- ========== SECTION 3: ELIGIBILITY ========== -->
+<h2>2. एलिजिबिलिटी – किसे मिलेगी ये जॉब? (<strong>eligibility</strong>)</h2>
+<p><strong>eligibility</strong> तय करती है कि तुम्हें यह नौकरी मिल सकती है या नहीं। नीचे देखो और सुनिश्चित करो – कहीं कोई छोटी सी शर्त न छूट जाए।</p>
+<ul>
+  <li><strong>शैक्षिक योग्यता:</strong> {EDUCATIONAL_QUALIFICATION} – "डिग्री हो तो बढ़िया, नहीं तो एक्सपीरियंस से काम चल सकता है"</li>
+  <li><strong>अनुभव (Experience):</strong> {EXPERIENCE_REQUIRED} – "फ्रेशर हो तो भी अप्लाई करो, कुछ कंपनियाँ ट्रेनिंग देती हैं"</li>
+  <li><strong>उम्र सीमा (Age Limit):</strong> {ELIGIBILITY.AGE_LIMIT.MINIMUM_AGE}-{ELIGIBILITY.AGE_LIMIT.MAXIMUM_AGE} वर्ष – "प्राइवेट में उम्र से ज्यादा स्किल मायने रखती है"</li>
+  <li><strong>आवश्यक कौशल (Skills Required):</strong> {SKILLS_REQUIRED} – "ये वो चीज़ें हैं जो तुम्हें भीड़ से अलग बनाएँगी"</li>
+  <li><strong>भाषा प्रवीणता:</strong> {ELIGIBILITY.LANGUAGE_PROFICIENCY} – "हिंदी, इंग्लिश, और जो भी कंपनी मांगे"</li>
+</ul>
+<p><strong>😜 फनी लाइन:</strong> "अगर तुम्हारे पास 10 में से 9 स्किल हैं, तो अप्लाई कर दो – वो 1 स्किल कंपनी तुम्हें सिखा देगी। पर 10 में से 1 भी नहीं है तो पहले पढ़ लो।"</p>
+
+<!-- ========== SECTION 4: SELECTION PROCESS ========== -->
+<h2>3. चयन प्रक्रिया – कितने चरणों से गुज़रना होगा?</h2>
+<p>इस नौकरी के लिए चयन प्रक्रिया में नीचे दिए गए चरण होंगे:</p>
+<ul>
+  <!-- AI को {SELECTION_PROCESS.STAGES} ऐरे की हर स्टेज के लिए लिस्ट आइटम बनाने हैं। -->
+  <li><strong>{SELECTION_STAGES[0]}</strong></li>
+  <li><strong>{SELECTION_STAGES[1]}</strong></li>
+  <li><strong>{SELECTION_STAGES[2]}</strong></li>
+</ul>
+<p><strong>😜 फनी लाइन:</strong> "पहला राउंड तो आसान होता है – बस अपनी क्वालिफिकेशन दिखाओ। दूसरे में थोड़ी एक्सपर्टीज दिखानी पड़ेगी। और अगर तीसरे में पहुँच गए, तो समझ लेना कि नौकरी लगभग पक्की।"</p>
+
+<!-- ========== SECTION 5: HOW TO APPLY ========== -->
+<h2>4. <strong>apply online</strong> – आवेदन कैसे करें?</h2>
+<p>अब सबसे जरूरी हिस्सा – <strong>apply online</strong> की प्रक्रिया। नीचे दिए गए स्टेप्स फॉलो करो और गलती मत करना। <strong>Jobjalebi.com</strong> पर हम हर स्टेप को मजाकिया तरीके से समझाते हैं ताकि तुम्हें कुछ भी मुश्किल न लगे।</p>
+<ol>
+  <!-- AI को {APPLICATION_PROCESS.HOW_TO_APPLY_STEPS} ऐरे को इटरेट करने का निर्देश। -->
+  <li><strong>स्टेप 1:</strong> {APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[0]}</li>
+  <li><strong>स्टेप 2:</strong> {APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[1]}</li>
+  <li><strong>स्टेप 3:</strong> {APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[2]}</li>
+  <li><strong>स्टेप 4:</strong> {APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[3]}</li>
+  <li><strong>स्टेप 5:</strong> {APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[4]}</li>
+</ol>
+<p><strong>😂 फनी सलाह:</strong> "<strong>apply online</strong> करते समय अपना रिज़्यूमे ऐसे अपडेट करो जैसे तुम दुल्हा-दुल्हन को पसंद करवा रहे हो। हाँ, और 'ध्यान से भरो' – पिछली बार एक बंदे ने अपना नाम 'अमन' की जगह 'अमन गुप्ता इडली' लिख दिया था।"</p>
+
+<!-- ========== SECTION 6: DOCUMENTS CHECKLIST ========== -->
+<h2>5. ज़रूरी दस्तावेज़ – चेकलिस्ट</h2>
+<ul>
+  <!-- AI को {APPLICATION_PROCESS.REQUIRED_DOCUMENTS} ऐरे को इटरेट करने का निर्देश। -->
+  <li>{APPLICATION_PROCESS.REQUIRED_DOCUMENTS[0]}</li>
+  <li>{APPLICATION_PROCESS.REQUIRED_DOCUMENTS[1]}</li>
+  <li>{APPLICATION_PROCESS.REQUIRED_DOCUMENTS[2]}</li>
+  <li>पासपोर्ट साइज फोटो (स्कैन्ड)</li>
+  <li>सिग्नेचर (स्कैन्ड)</li>
+</ul>
+
+<!-- ========== SECTION 7: IMPORTANT DATES ========== -->
+<h2>6. महत्वपूर्ण तिथियाँ – कब क्या होगा? (<strong>last date</strong> और इंटरव्यू)</h2>
+<p><strong>last date</strong> = {APPLICATION_DEADLINE}. इसे कभी मत भूलना। नीचे पूरी तिथियों की टेबल है:</p>
+<table class="responsive-table">
+  <thead><tr><th>घटना</th><th>तारीख</th></tr></thead>
+  <tbody>
+    <tr><td>नौकरी पोस्ट हुई</td><td>{IMPORTANT_DATES.JOB_POSTED_DATE}</td></tr>
+    <tr><td>आवेदन शुरू</td><td>{IMPORTANT_DATES.APPLICATION_START_DATE}</td></tr>
+    <tr><td><strong>last date</strong> (आवेदन की अंतिम तिथि)</td><td>{APPLICATION_DEADLINE}</td></tr>
+    <tr><td>इंटरव्यू की संभावित तिथि</td><td>{IMPORTANT_DATES.INTERVIEW_DATE}</td></tr>
+    <tr><td>जॉइनिंग की संभावित तिथि</td><td>{IMPORTANT_DATES.JOINING_DATE}</td></tr>
+  </tbody>
+</table>
+<p><strong>😡 फनी डांट:</strong> "अगर तुम <strong>last date</strong> निकल जाने के बाद रोने आए, तो हम कुछ नहीं कर सकते। अभी कैलेंडर में नोट कर लो।"</p>
+
+<!-- ========== SECTION 8: IMPORTANT LINKS ========== -->
+<h2>📌 SOME USEFUL IMPORTANT LINKS – सीधे क्लिक करो</h2>
+<p><strong>Jobjalebi.com</strong> की टीम ने नीचे सभी जरूरी लिंक एक टेबल में दे दिए हैं। बस क्लिक करो और अप्लाई करो।</p>
+<table class="responsive-table">
+  <thead>
+    <tr><th>विवरण</th><th>सीधा लिंक</th><th>फनी रिमार्क</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>🟢 <strong>apply online</strong> (आवेदन लिंक)</strong></td><td><a href="{APPLICATION_LINK}" target="_blank">👉 यहाँ क्लिक करें</a></td><td>"अब मत सोचो, भर डालो"</td></tr>
+    <tr><td><strong>🌐 {COMPANY_NAME} की आधिकारिक वेबसाइट</strong></td><td><a href="{OFFICIAL_WEBSITE}" target="_blank">👉 {OFFICIAL_WEBSITE}</a></td><td>"यहाँ और भी जॉब हो सकती हैं, देखते रहो"</td></tr>
+    <tr><td><strong>📞 हेल्पलाइन</strong></td><td>{CONTACT_HELPLINE}</td><td>"कुछ पूछना है तो बेझिझक कॉल करो"</td></tr>
+  </tbody>
+</table>
+<p><strong>⚠️ चेतावनी:</strong> ऊपर दिए लिंक के अलावा किसी और पर क्लिक मत करना – वो फर्जी हो सकते हैं। प्राइवेट जॉब के लिंक हमेशा कंपनी की ऑफिशियल साइट से ही लें। <strong>Jobjalebi.com</strong> पर दिए गए लिंक 100% सुरक्षित हैं।</p>
+
+<!-- ========== SECTION 9: CONCLUSION ========== -->
+<h2>🏁 आखिरी बात – अब क्या करोगे?</h2>
+<p><strong>{COMPANY_NAME} की {PRIMARY_KEYWORD} आ चुकी है।</strong> {NO_OF_OPENINGS} पदों का यह मौका हाथ से मत जाने दो। फॉर्म खुला है, <strong>last date</strong> आ रही है, <strong>eligibility</strong> तुम्हारी बनती है – बस <strong>apply online</strong> करना बाकी है।</p>
+<p><strong>मोटिवेशनल फनी लाइन:</strong> "प्राइवेट जॉब हो या सरकारी, मेहनत तो करनी पड़ेगी। अगर तुम्हें लगता है कि तुम इस पोस्ट के लिए बने हो, तो देर मत करो – जाओ और अप्लाई करो। <strong>Jobjalebi.com</strong> पर हम तुम्हारी हर संभव मदद करेंगे।"</p>
+<p><strong>सीधा लिंक:</strong> <a href="{APPLICATION_LINK}">👉 यहाँ क्लिक करें – अप्लाई करें</a></p>
+
+<!-- ========== SECTION 10: FAQ ========== -->
+<h2>❓ {COMPANY_NAME} की इस भर्ती से जुड़े सामान्य सवाल (FAQs)</h2>
+<div class="faq-section">
+  <h3>Q1: क्या मैं एक साथ कई पदों के लिए आवेदन कर सकता हूँ?</h3>
+  <p><strong>A1:</strong> अगर नोटिफिकेशन में इजाज़त है, तो हाँ। नहीं तो एक ही पोस्ट के लिए करो। "प्राइवेट कंपनी में एक साथ कई जगह अप्लाई करने का अपना मज़ा है।"</p>
+  
+  <h3>Q2: क्या फ्रेशर आवेदन कर सकते हैं?</h3>
+  <p><strong>A2:</strong> {EXPERIENCE_REQUIRED} में 0 वर्ष लिखा है तो हाँ। "अगर एक्सपीरियंस की डिमांड है, तो थोड़ा इंतज़ार करो – फ्रेशर वाली जॉब भी आएगी।"</p>
+  
+  <h3>Q3: इंटरव्यू में क्या पूछा जाएगा?</h3>
+  <p><strong>A3:</strong> आमतौर पर तकनीकी सवाल और तुम्हारी पिछली नौकरी के बारे में। "थोड़ा झूठ बोलने से बचना – वो पकड़ लेंगे।"</p>
+  
+  <h3>Q4: क्या वर्क फ्रॉम होम का ऑप्शन है?</h3>
+  <p><strong>A4:</strong> {WORK_MODE} में लिखा है – "अगर रिमोट है तो पार्टी, ऑनसाइट है तो सफर की तैयारी।"</p>
+  
+  <h3>Q5: <strong>{PRIMARY_KEYWORD}</strong> के बारे में और जानकारी कहाँ मिलेगी?</h3>
+  <p><strong>A5:</strong> ऊपर Important Links टेबल में कंपनी की वेबसाइट का लिंक है – वहाँ से डिटेल ले सकते हो। और हाँ, <strong>Jobjalebi.com</strong> को बुकमार्क कर लो ताकि हर अपडेट सबसे पहले मिले।</p>
+</div>
+
+<!-- ========== SECTION 11: DISCLAIMER ========== -->
+<p><strong>⚠️ अस्वीकरण:</strong> यह पोस्ट {COMPANY_NAME} की आधिकारिक अधिसूचना और जॉब लिस्टिंग पर आधारित है। सटीक जानकारी के लिए कंपनी की आधिकारिक वेबसाइट अवश्य देखें। दिए गए लिंक आधिकारिक स्रोतों पर रीडायरेक्ट करते हैं – <strong>Jobjalebi.com</strong> किसी तीसरे पक्ष से जुड़ा नहीं है।</p>
+
+<p><strong>😄 आखिरी मोटिवेशन:</strong> "प्राइवेट जॉब में सैलरी अच्छी है, पर मेहनत भी उतनी ही। जाओ, अप्लाई करो और अपनी स्किल दिखाओ। याद रखना, <strong>Jobjalebi.com</strong> हमेशा तुम्हारे साथ है।"</p>
+
+<!-- ========== POST ENDS ========== -->

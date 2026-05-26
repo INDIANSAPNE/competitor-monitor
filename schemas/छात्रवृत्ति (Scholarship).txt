@@ -1,0 +1,82 @@
+दिए गए आर्टिकल टाइटल और URL के आधार पर, निम्नलिखित JSON स्कीमा को पूरी तरह से भरें। यह स्कीमा सभी प्रकार की छात्रवृत्तियों (Scholarships) को कवर करने के लिए डिज़ाइन की गई है – चाहे वह केंद्र सरकार, राज्य सरकार, निजी संस्थान, विदेशी छात्रवृत्ति, मेरिट-कम-मीन्स, स्कूल/कॉलेज/रिसर्च लेवल, अल्पसंख्यक, SC/ST/OBC, या अन्य किसी भी श्रेणी की छात्रवृत्ति हो। हर फील्ड को ध्यानपूर्वक भरें; जहाँ जानकारी न हो, वहाँ खाली, शून्य या null रखें। केवल मान्य JSON लौटाएँ, कोई अन्य टेक्स्ट नहीं।
+
+{
+  "SCHOLARSHIP_IDENTIFICATION": {
+    "SCHOLARSHIP_NAME": "",
+    "PROVIDER": "",
+    "PROVIDER_TYPE": "",
+    "SCHOLARSHIP_TYPE": "",
+    "CATEGORY": "",
+    "LEVEL": "",
+    "ACADEMIC_YEAR": ""
+  },
+  "SCHOLARSHIP_STATUS": {
+    "OPEN": false,
+    "APPLICATION_START_DATE": "",
+    "APPLICATION_LAST_DATE": "",
+    "LAST_DATE_EXTENSION": "",
+    "STATUS_CHECK_LINK": ""
+  },
+  "BENEFITS": {
+    "AMOUNT": 0,
+    "AMOUNT_TYPE": "",
+    "TUITION_FEE_COVERED": "",
+    "OTHER_BENEFITS": [],
+    "DURATION": ""
+  },
+  "ELIGIBILITY": {
+    "NATIONALITY": "",
+    "DOMICILE": "",
+    "EDUCATIONAL_QUALIFICATION": "",
+    "MINIMUM_PERCENTAGE": "",
+    "AGE_LIMIT": {
+      "MINIMUM": 0,
+      "MAXIMUM": 0
+    },
+    "INCOME_LIMIT": {
+      "ANNUAL_FAMILY_INCOME": 0,
+      "INCOME_CATEGORY": ""
+    },
+    "GENDER": "",
+    "CATEGORY_RESERVATION": "",
+    "SPECIAL_CRITERIA": [],
+    "OTHER_ELIGIBILITY": []
+  },
+  "APPLICATION_PROCESS": {
+    "APPLICATION_MODE": "",
+    "ONLINE_APPLICATION_LINK": "",
+    "OFFLINE_DETAILS": "",
+    "HOW_TO_APPLY_STEPS": [],
+    "REQUIRED_DOCUMENTS": [],
+    "APPLICATION_FEE": 0
+  },
+  "SELECTION_PROCESS": {
+    "MERIT_BASED": false,
+    "MEANS_BASED": false,
+    "INTERVIEW": false,
+    "TEST": false,
+    "OTHER_DETAILS": ""
+  },
+  "IMPORTANT_DATES": {
+    "NOTIFICATION_DATE": "",
+    "APPLICATION_START_DATE": "",
+    "APPLICATION_LAST_DATE": "",
+    "RESULT_DATE": "",
+    "DISBURSEMENT_DATE": ""
+  },
+  "IMPORTANT_LINKS": {
+    "OFFICIAL_NOTIFICATION": "",
+    "APPLY_LINK": "",
+    "OFFICIAL_WEBSITE": "",
+    "HELPLINE": ""
+  },
+  "ADDITIONAL_INFO": {
+    "TERMS_AND_CONDITIONS": "",
+    "RENEWAL_PROCESS": "",
+    "CONTACT_DETAILS": "",
+    "IMP_INSTRUCTIONS": []
+  }
+}
+
+टाइटल: {TITLE}
+URL: {URL}

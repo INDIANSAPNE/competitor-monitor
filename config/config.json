@@ -1,0 +1,14 @@
+{
+  "competitors": [
+    {
+      "name": "Sarkari Result",
+      "rss_url": "https://www.sarkariresult.com.cm/feed/"
+    },
+       {
+      "name": "FreeJobAlert",
+      "rss_url": "https://www.freejobalert.com/feed/"
+    }
+      ],
+  "excel_file": "articles.xlsx",
+  "auto_generate": true
+}

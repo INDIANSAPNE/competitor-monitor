@@ -1,0 +1,201 @@
+<!-- 
+=================================================================
+TEMPLATE NAME: करियर गाइडेंस (Career Guidance) Template - JSON Schema Integrated
+VERSION: 1.0
+CATEGORY: करियर गाइडेंस
+DESCRIPTION: 
+  यह टेम्पलेट "करियर गाइडेंस" कैटेगरी की हमारी JSON स्कीमा के साथ पूरी तरह से एकीकृत है।
+  AI को निर्देश है कि वह नीचे दिए गए स्ट्रक्चर और JSON ({EXTRA_DATA}) का उपयोग करके एक
+  मजेदार, SEO-फ्रेंडली, और डीप गाइड पोस्ट लिखे। हर सेक्शन में यह सुनिश्चित करें कि JSON से
+  सही डेटा खींचा जाए (जैसे GUIDE_IDENTIFICATION, CAREER_OVERVIEW, EDUCATIONAL_PATHWAYS आदि)।
+  टोन: 80% फनी + 20% मोटिवेशनल | SEO: Primary, Secondary, LSI keywords.
+  Jobjalebi.com का नाम प्राकृतिक रूप से 3-4 बार डाला गया है.
+=================================================================
+-->
+
+<!-- ========== METADATA (AI AGENT INPUT - JSON से लिया गया) ========== -->
+<!--
+POST_TITLE: JSON के SEO_TITLE फ़ील्ड से लें।
+CATEGORY: JSON के CATEGORY फ़ील्ड से लें।
+PRIMARY_KEYWORD: JSON के PRIMARY_KEYWORD फ़ील्ड से लें।
+SECONDARY_KEYWORDS: JSON के SECONDARY_KEYWORDS फ़ील्ड से लें।
+LSI_KEYWORDS: JSON के LSI_KEYWORDS फ़ील्ड से लें।
+EXTRA_DATA: पूरा JSON ऑब्जेक्ट। AI को इसे पढ़कर सभी सेक्शन भरने हैं।
+-->
+
+<!-- ========== SEO KEYWORD USAGE INSTRUCTIONS FOR AI ==========
+1. PRIMARY_KEYWORD ({PRIMARY_KEYWORD}) → lead, summary table, career overview, conclusion, FAQ.
+2. SECONDARY_KEYWORDS (जैसे "career options", "salary", "eligibility", "top colleges", "skills required") का कम से कम 5-6 बार उपयोग करें।
+3. LSI_KEYWORDS का स्वाभाविक रूप से उपयोग करें।
+4. Jobjalebi.com का उल्लेख 3-4 बार करें: lead, resources/useful links, conclusion, FAQ.
+-->
+
+<!-- ========== POST CONTENT STARTS ========== -->
+
+<!-- LEAD: PRIMARY KEYWORD + JOJALBEBI MENTION -->
+<p><strong>🚨 करियर की टेंशन? अब बस खत्म!</strong> <strong>{GUIDE_IDENTIFICATION.GUIDE_TITLE} का यह पूरा गाइड {PRIMARY_KEYWORD} पढ़ने के बाद तुम्हारा करियर कन्फ्यूजन हमेशा के लिए दूर हो जाएगा।</strong> <strong>Jobjalebi.com</strong> पर हम तुम्हें हंसी-मजाक के साथ करियर का पूरा रोडमैप बता रहे हैं – तो चाय पकड़ो, दिमाग खोलो, और पढ़ते जाओ। 😂</p>
+
+<p>इस पोस्ट में हम तुम्हें बताएँगे – <strong>क्यों चुनें ये फील्ड, पढ़ाई का रास्ता (<strong>top colleges</strong> और कोर्स), कितनी सैलरी मिलेगी (<strong>salary</strong>), कौन-कौन सी स्किल्स चाहिए (<strong>skills required</strong>), और भी बहुत कुछ – सब हंसी-मजाक में।</strong> तो चाय बनाओ, मोबाइल पकड़ो, और <strong>Jobjalebi.com</strong> के इस करियर गाइड को अंत तक पढ़ो।</p>
+
+<!-- ========== SECTION 1: QUICK SUMMARY TABLE ========== -->
+<h2>📌 एक नज़र में – करियर का चटपटा सारांश</h2>
+<p>नीचे दी गई टेबल में <strong>{PRIMARY_KEYWORD}</strong> की सारी ज़रूरी जानकारी एक जगह है। (AI: JSON से डेटा भरें।)</p>
+<table class="responsive-table">
+  <thead>
+    <tr><th>शीर्षक</th><th>विवरण (हंसी के साथ)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>गाइड का प्रकार</td><td>{GUIDE_IDENTIFICATION.GUIDE_TYPE} – "पूरी ज़िंदगी का रोडमैप"</td></tr>
+    <tr><td>किसके लिए है?</td><td>{GUIDE_IDENTIFICATION.TARGET_AUDIENCE} – "जो भी इस फील्ड में जाना चाहता है"</td></tr>
+    <tr><td>शैक्षिक स्तर</td><td>{GUIDE_IDENTIFICATION.EDUCATION_LEVEL} – "इस पड़ाव से शुरू करो"</td></tr>
+    <tr><td>प्राथमिक क्षेत्र</td><td>{GUIDE_IDENTIFICATION.PRIMARY_FIELD}</td></tr>
+    <tr><td>भविष्य का स्कोप</td><td>{CAREER_OVERVIEW.FUTURE_SCOPE} – "आगे बहुत कुछ है"</td></tr>
+    <tr><td>एंट्री लेवल सैलरी (<strong>salary</strong>)</td><td>{SALARY_AND_GROWTH.ENTRY_LEVEL_SALARY} – "शुरुआत इतनी"</td></tr>
+    <tr><td>सीनियर लेवल सैलरी (<strong>salary</strong>)</td><td>{SALARY_AND_GROWTH.SENIOR_LEVEL_SALARY} – "अनुभव के बाद मालामाल"</td></tr>
+    <tr><td>प्रमुख एंट्रेंस एग्जाम</td><td>{ENTRANCE_EXAMS[0].EXAM_NAME} (यदि कोई हों)</td></tr>
+    <tr><td>टॉप इंस्टीट्यूट</td><td>(AI: EDUCATIONAL_PATHWAYS से पहला कोर्स और उसके TOP_INSTITUTES लें)</td></tr>
+    <tr><td>आधिकारिक साइट</td><td><a href="{ADDITIONAL_INFO.IMPORTANT_LINKS.OFFICIAL_WEBSITES[0]}">👉 देखें</a></td></tr>
+    <tr><td>⚡ फनी चेतावनी</td><td>"करियर चुनने में देर मत करो – वरना उम्र निकल जाएगी और तुम सोचते रह जाओगे।"</td></tr>
+  </tbody>
+</table>
+
+<!-- ========== SECTION 2: CAREER OVERVIEW ========== -->
+<h2>1. यह फील्ड क्यों चुनें? – करियर का ओवरव्यू</h2>
+<p><strong>{CAREER_OVERVIEW.DESCRIPTION}</strong></p>
+<p><strong>क्यों चुनें ये करियर:</strong> (AI: WHY_CHOOSE_THIS_FIELD ऐरे को इटरेट करें।)</p>
+<ul>
+  <li>{CAREER_OVERVIEW.WHY_CHOOSE_THIS_FIELD[0]}</li>
+  <li>{CAREER_OVERVIEW.WHY_CHOOSE_THIS_FIELD[1]}</li>
+  <li>{CAREER_OVERVIEW.WHY_CHOOSE_THIS_FIELD[2]}</li>
+</ul>
+<p><strong>इंडस्ट्री ट्रेंड्स:</strong> {CAREER_OVERVIEW.INDUSTRY_TRENDS}</p>
+<p><strong>😂 फनी कमेंट:</strong> "अगर तुम्हें लगता है कि इस फील्ड में पैसा ही पैसा है, तो हाँ, है तो सही – लेकिन मेहनत भी उतनी ही। पसीना बहाओगे तभी तो नोटों की गड्डियाँ गिनोगे।"</p>
+
+<!-- ========== SECTION 3: EDUCATIONAL PATHWAYS ========== -->
+<h2>2. पढ़ाई का रास्ता – कौन सा कोर्स, कहाँ से? (<strong>top colleges</strong>)</h2>
+<p>इस करियर में जाने के लिए कई रास्ते हैं। नीचे हर स्ट्रीम के हिसाब से कोर्स, पात्रता, अवधि और टॉप इंस्टीट्यूट दिए गए हैं।</p>
+<!-- AI: EDUCATIONAL_PATHWAYS ऐरे में हर आइटम के लिए एक सेक्शन बनाएँ। -->
+<div class="career-pathway">
+  <h3>📚 स्ट्रीम: {EDUCATIONAL_PATHWAYS[0].STREAM}</h3>
+  <table class="responsive-table">
+    <thead><tr><th>कोर्स</th><th>अवधि</th><th>पात्रता</th><th>टॉप इंस्टीट्यूट (<strong>top colleges</strong>)</th><th>औसत फीस</th></tr></thead>
+    <tbody>
+      <!-- AI: COURSES ऐरे को इटरेट करें। -->
+      <tr><td>{EDUCATIONAL_PATHWAYS[0].COURSES[0].COURSE_NAME}</td><td>{EDUCATIONAL_PATHWAYS[0].COURSES[0].DURATION}</td><td>{EDUCATIONAL_PATHWAYS[0].COURSES[0].ELIGIBILITY}</td><td>{EDUCATIONAL_PATHWAYS[0].COURSES[0].TOP_INSTITUTES}</td><td>{EDUCATIONAL_PATHWAYS[0].COURSES[0].AVERAGE_FEES}</td></tr>
+      <tr><td>{EDUCATIONAL_PATHWAYS[0].COURSES[1].COURSE_NAME}</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+    </tbody>
+  </table>
+  <p><strong>सर्टिफिकेशन:</strong> {EDUCATIONAL_PATHWAYS[0].CERTIFICATIONS}</p>
+  <p><strong>ऑनलाइन कोर्स:</strong> {EDUCATIONAL_PATHWAYS[0].ONLINE_COURSES}</p>
+</div>
+<!-- अगर एक से ज्यादा स्ट्रीम हैं, तो इसी तरह दोहराएँ। -->
+
+<p><strong>😜 फनी लाइन:</strong> "टॉप कॉलेज का नाम सुनते ही दिल धक-धक करता है न? पर याद रखो, कॉलेज सिर्फ दरवाजा है – असली खेल तो तुम्हारी स्किल है।"</p>
+
+<!-- ========== SECTION 4: SKILLS REQUIRED ========== -->
+<h2>3. आवश्यक कौशल – क्या-क्या आना चाहिए? (<strong>skills required</strong>)</h2>
+<p><strong>skills required</strong> के बिना तो डिग्री भी बेकार है। ये रही लिस्ट:</p>
+<ul>
+  <li><strong>तकनीकी कौशल:</strong> {SKILLS_REQUIRED.TECHNICAL_SKILLS}</li>
+  <li><strong>सॉफ्ट स्किल्स:</strong> {SKILLS_REQUIRED.SOFT_SKILLS}</li>
+  <li><strong>भाषा:</strong> {SKILLS_REQUIRED.LANGUAGE_PROFICIENCY}</li>
+</ul>
+<p><strong>फनी टिप:</strong> "अगर तुम्हें लगता है कि सिर्फ डिग्री से नौकरी मिल जाएगी, तो गलत हो। आजकल इंटरव्यू वाले 'एक्स्ट्रा चीज़' ढूँढते हैं – तो कोई न कोई स्किल ज़रूर सीखो।"</p>
+
+<!-- ========== SECTION 5: ENTRANCE EXAMS ========== -->
+<h2>4. प्रवेश परीक्षाएं – किनको देना होगा?</h2>
+<!-- AI: ENTRANCE_EXAMS ऐरे को इटरेट करें। अगर खाली हो तो यह सेक्शन छोड़ दें या लिखें कि कोई प्रवेश परीक्षा नहीं है। -->
+<ul>
+  <li><strong>{ENTRANCE_EXAMS[0].EXAM_NAME}</strong> – आयोजक: {ENTRANCE_EXAMS[0].CONDUCTING_BODY}, फ्रीक्वेंसी: {ENTRANCE_EXAMS[0].FREQUENCY}, सिलेबस: {ENTRANCE_EXAMS[0].SYLLABUS_LINK}</li>
+  <li>{ENTRANCE_EXAMS[1].EXAM_NAME} – ...</li>
+</ul>
+<p><strong>😂 फनी सलाह:</strong> "एंट्रेंस एग्जाम का नाम सुनकर मत डरो – ये तो बस पहली सीढ़ी है। पार कर लो तो आगे का रास्ता आसान।"</p>
+
+<!-- ========== SECTION 6: CAREER OPPORTUNITIES ========== -->
+<h2>5. करियर के अवसर – कितनी जॉब प्रोफाइल्स, कितनी सैलरी? (<strong>career options</strong>)</h2>
+<p>नीचे कुछ प्रमुख जॉब प्रोफाइल्स और उनकी औसत सैलरी दी गई है।</p>
+<table class="responsive-table">
+  <thead><tr><th>जॉब प्रोफाइल</th><th>काम</th><th>शुरुआती सैलरी</th><th>अनुभवी सैलरी</th></tr></thead>
+  <tbody>
+    <!-- AI: CAREER_OPPORTUNITIES.JOB_PROFILES ऐरे को इटरेट करें। -->
+    <tr><td>{CAREER_OPPORTUNITIES.JOB_PROFILES[0].PROFILE_NAME}</td><td>{CAREER_OPPORTUNITIES.JOB_PROFILES[0].JOB_DESCRIPTION}</td><td>{CAREER_OPPORTUNITIES.JOB_PROFILES[0].AVERAGE_STARTING_SALARY}</td><td>{CAREER_OPPORTUNITIES.JOB_PROFILES[0].EXPERIENCED_SALARY}</td></tr>
+  </tbody>
+</table>
+<p><strong>टॉप रिक्रूटर्स:</strong> {CAREER_OPPORTUNITIES.TOP_RECRUITERS}</p>
+<p><strong>सरकारी नौकरी के विकल्प:</strong> {CAREER_OPPORTUNITIES.GOVERNMENT_JOBS}</p>
+<p><strong>स्वरोजगार के विकल्प:</strong> {CAREER_OPPORTUNITIES.SELF_EMPLOYMENT_OPTIONS}</p>
+
+<!-- ========== SECTION 7: SALARY AND GROWTH ========== -->
+<h2>6. सैलरी और ग्रोथ – कितना कमाओगे? (<strong>salary</strong>)</h2>
+<p>इस फील्ड में <strong>salary</strong> अनुभव और स्किल पर निर्भर करती है। एक सामान्य ग्रोथ इस प्रकार है:</p>
+<ul>
+  <li><strong>एंट्री लेवल:</strong> {SALARY_AND_GROWTH.ENTRY_LEVEL_SALARY}</li>
+  <li><strong>मिड लेवल (3-7 साल):</strong> {SALARY_AND_GROWTH.MID_LEVEL_SALARY}</li>
+  <li><strong>सीनियर लेवल (8+ साल):</strong> {SALARY_AND_GROWTH.SENIOR_LEVEL_SALARY}</li>
+  <li><strong>सैलरी को प्रभावित करने वाले कारक:</strong> {SALARY_AND_GROWTH.FACTORS_AFFECTING_SALARY}</li>
+</ul>
+<p><strong>😜 फनी कमेंट:</strong> "सीनियर लेवल की सैलरी देखकर मुँह में पानी आ गया? तो अभी से मेहनत शुरू करो – ये सैलरी ऐसे ही नहीं मिलती।"</p>
+
+<!-- ========== SECTION 8: PROS AND CONS ========== -->
+<h2>7. फायदे और नुकसान – सच्चाई जान लो</h2>
+<p><strong>फायदे:</strong></p>
+<ul>(AI: PROS_AND_CONS.PROS ऐरे को इटरेट करें।)</ul>
+<p><strong>नुकसान / चुनौतियाँ:</strong></p>
+<ul>(AI: PROS_AND_CONS.CONS और CHALLENGES से लें।)</ul>
+<p><strong>😂 फनी सलाह:</strong> "हर फील्ड के अपने फायदे और नुकसान हैं – जैसे शादी। लेकिन अगर तुम्हें पैशन है, तो नुकसान भी फायदे लगने लगते हैं।"</p>
+
+<!-- ========== SECTION 9: STEP-BY-STEP ROADMAP ========== -->
+<h2>8. स्टेप-बाय-स्टेप रोडमैप – आज से क्या करें?</h2>
+<!-- AI: STEP_BY_STEP_ROADMAP ऐरे को इटरेट करें। -->
+<ol>
+  <li><strong>स्टेप {STEP_BY_STEP_ROADMAP[0].STEP_NUMBER}:</strong> {STEP_BY_STEP_ROADMAP[0].ACTION} (समय: {STEP_BY_STEP_ROADMAP[0].TIME_FRAME}) – संसाधन: {STEP_BY_STEP_ROADMAP[0].RESOURCES}</li>
+  <li>स्टेप 2: ...</li>
+</ol>
+<p><strong>मोटिवेशनल फनी लाइन:</strong> "रोडमैप देख लिया, अब बस इस पर चलना शुरू करो। अगर सिर्फ देखते रहे तो कुछ नहीं होगा – एक्शन लो।"</p>
+
+<!-- ========== SECTION 10: SUCCESS STORIES ========== -->
+<h2>9. सफलता की कहानियाँ – तुम भी कर सकते हो</h2>
+<!-- AI: SUCCESS_STORIES ऐरे को इटरेट करें। -->
+<div class="success-story">
+  <p><strong>{SUCCESS_STORIES[0].NAME}</strong> – {SUCCESS_STORIES[0].ACHIEVEMENT}</p>
+  <p><em>सीख: {SUCCESS_STORIES[0].KEY_LEARNING}</em></p>
+</div>
+<p>ऐसी और भी कहानियाँ हैं, जो बताती हैं कि मेहनत से सब मुमकिन है।</p>
+
+<!-- ========== SECTION 11: RESOURCES ========== -->
+<h2>10. संसाधन – क्या पढ़ें, कहाँ देखें?</h2>
+<p><strong>किताबें:</strong> {RESOURCES.BOOKS}</p>
+<p><strong>वेबसाइट्स:</strong> {RESOURCES.WEBSITES} (और हाँ, <strong>Jobjalebi.com</strong> को तो बुकमार्क कर ही लो)</p>
+<p><strong>यूट्यूब चैनल:</strong> {RESOURCES.YOUTUBE_CHANNELS}</p>
+<p><strong>फोरम:</strong> {RESOURCES.FORUMS}</p>
+
+<!-- ========== SECTION 12: FREQUENTLY ASKED QUESTIONS ========== -->
+<h2>❓ अक्सर पूछे जाने वाले सवाल (FAQs)</h2>
+<div class="faq-section">
+  <!-- AI: FREQUENTLY_ASKED_QUESTIONS ऐरे को इटरेट करें। -->
+  <h3>Q1: {FREQUENTLY_ASKED_QUESTIONS[0].QUESTION}</h3>
+  <p><strong>A1:</strong> {FREQUENTLY_ASKED_QUESTIONS[0].ANSWER}</p>
+  <h3>Q2: {FREQUENTLY_ASKED_QUESTIONS[1].QUESTION}</h3>
+  <p><strong>A2:</strong> {FREQUENTLY_ASKED_QUESTIONS[1].ANSWER}</p>
+</div>
+
+<!-- ========== SECTION 13: EXPERT TIPS ========== -->
+<h2>💡 एक्सपर्ट टिप्स</h2>
+<ul>(AI: EXPERT_TIPS ऐरे से लें।)</ul>
+
+<!-- ========== SECTION 14: ADDITIONAL INFO ========== -->
+<h2>📌 अतिरिक्त जानकारी – मिथक और सरकारी योजनाएं</h2>
+<p><strong>मिथक और तथ्य:</strong> {ADDITIONAL_INFO.MYTHS_AND_FACTS}</p>
+<p><strong>सरकारी योजनाएं / लिंक:</strong> {ADDITIONAL_INFO.IMPORTANT_LINKS.GOVT_SCHEMES}</p>
+
+<!-- ========== SECTION 15: CONCLUSION ========== -->
+<h2>🏁 आखिरी बात – अब क्या करोगे?</h2>
+<p><strong>{PRIMARY_KEYWORD} पूरी हो चुकी है।</strong> अब तुम्हारे पास पूरी जानकारी है – पढ़ाई का रास्ता, ज़रूरी स्किल्स, सैलरी, और भविष्य की संभावनाएं। बस अब एक्शन लेना बाकी है। <strong>Jobjalebi.com</strong> पर हम तुम्हारे करियर के हर कदम पर साथ हैं।</p>
+<p><strong>मोटिवेशनल फनी लाइन:</strong> "करियर बनाना कोई मैगी नहीं जो 2 मिनट में तैयार हो जाए – इसमें समय लगता है, पर मज़ा तब आता है जब तुम अपनी मेहनत का फल देखते हो। तो शुरू हो जाओ!"</p>
+
+<!-- ========== SECTION 16: DISCLAIMER ========== -->
+<p><strong>⚠️ अस्वीकरण:</strong> यह गाइड विभिन्न शैक्षिक स्रोतों और उद्योग विशेषज्ञों की सलाह पर आधारित है। जानकारी समय-समय पर बदल सकती है, इसलिए निर्णय लेने से पहले ऑफिशियल वेबसाइट्स ज़रूर देखें। <strong>Jobjalebi.com</strong> शुभकामनाएं देता है!</p>
+
+<p><strong>😄 आखिरी मोटिवेशन:</strong> "सपने बड़े देखो, मेहनत करो, और हँसते रहो – सफलता तुम्हारे कदम चूमेगी।"</p>
+
+<!-- ========== POST ENDS ========== -->

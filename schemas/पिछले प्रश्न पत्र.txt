@@ -1,0 +1,79 @@
+दिए गए आर्टिकल टाइटल और URL के आधार पर, निम्नलिखित JSON स्कीमा को पूरी तरह से भरें। यह स्कीमा सभी प्रकार के पिछले वर्ष के प्रश्न पत्रों (Previous Year Question Papers) को कवर करने के लिए बनाई गई है – चाहे वह सरकारी भर्ती परीक्षा (UPSC, SSC, बैंकिंग, रेलवे, राज्य PSC, शिक्षक पात्रता), बोर्ड परीक्षा (10वीं/12वीं), प्रवेश परीक्षा (JEE, NEET, CUET, CAT), विश्वविद्यालय परीक्षा, या कोई अन्य प्रतियोगी/शैक्षणिक परीक्षा हो। इसमें आधिकारिक और मेमोरी-आधारित दोनों प्रकार के प्रश्न पत्र, उत्तर कुंजी, हल/अनसुलझे प्रश्न पत्र, विषयवार/शिफ्टवार विवरण सब शामिल हैं। हर फील्ड को ध्यानपूर्वक भरें; जहाँ जानकारी न हो, वहाँ खाली, शून्य या null रखें। केवल मान्य JSON लौटाएँ, कोई अन्य टेक्स्ट नहीं।
+
+{
+  "PAPER_IDENTIFICATION": {
+    "EXAM_NAME": "",
+    "RECRUITMENT_NAME": "",
+    "POST_NAME": "",
+    "CONDUCTING_BODY": "",
+    "EXAM_TYPE": "",
+    "CATEGORY": "",
+    "PAPER_YEAR": "",
+    "PAPER_SHIFT": "",
+    "PAPER_SET": "",
+    "PAPER_LANGUAGE": "",
+    "PAPER_SUBJECT": "",
+    "PAPER_CODE": "",
+    "PAPER_TYPE": ""
+  },
+  "PAPER_STATUS": {
+    "RELEASED": false,
+    "RELEASE_DATE": "",
+    "AVAILABILITY": "",
+    "DIRECT_DOWNLOAD_LINK": "",
+    "STATUS_CHECK_LINK": ""
+  },
+  "PAPER_DETAILS": {
+    "TOTAL_MARKS": 0,
+    "TOTAL_QUESTIONS": 0,
+    "DURATION": "",
+    "MODE": "",
+    "NEGATIVE_MARKING": "",
+    "DIFFICULTY_LEVEL": "",
+    "SOLVED": false,
+    "ANSWER_KEY_AVAILABLE": false,
+    "ANSWER_KEY_LINK": "",
+    "SOLUTION_LINK": "",
+    "OFFICIAL_OR_MEMORY_BASED": ""
+  },
+  "SUBJECT_WISE_DETAILS": [
+    {
+      "SUBJECT_NAME": "",
+      "NUMBER_OF_QUESTIONS": 0,
+      "MARKS": 0,
+      "DIFFICULTY": "",
+      "TOPICS_COVERED": [],
+      "GOOD_ATTEMPTS": ""
+    }
+  ],
+  "HOW_TO_DOWNLOAD": {
+    "STEPS": [],
+    "REQUIRED_DETAILS": [],
+    "ALTERNATE_METHOD": ""
+  },
+  "FILE_INFORMATION": {
+    "FILE_FORMAT": "",
+    "FILE_SIZE": "",
+    "NUMBER_OF_PAGES": 0
+  },
+  "IMPORTANT_DATES": {
+    "EXAM_DATE": "",
+    "PAPER_RELEASE_DATE": "",
+    "ANSWER_KEY_RELEASE_DATE": ""
+  },
+  "IMPORTANT_LINKS": {
+    "OFFICIAL_NOTIFICATION": "",
+    "DIRECT_DOWNLOAD": "",
+    "OFFICIAL_WEBSITE": "",
+    "HELPLINE_NUMBER": ""
+  },
+  "ADDITIONAL_INFO": {
+    "PREPARATION_TIPS": "",
+    "IMPORTANT_TOPICS": [],
+    "COMMON_MISTAKES": "",
+    "CONTACT_DETAILS": ""
+  }
+}
+
+टाइटल: {TITLE}
+URL: {URL}

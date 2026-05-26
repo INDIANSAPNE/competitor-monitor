@@ -1,0 +1,178 @@
+<!-- 
+=================================================================
+TEMPLATE NAME: परिणाम (Results) Template - JSON Schema Integrated
+VERSION: 2.0
+CATEGORY: परिणाम (Results)
+DESCRIPTION: 
+  यह टेम्पलेट "परिणाम (Results)" कैटेगरी की हमारी JSON स्कीमा के साथ पूरी तरह से एकीकृत है।
+  AI को निर्देश है कि वह नीचे दिए गए सभी की-पाथ को JSON ({EXTRA_DATA}) से भरकर पोस्ट तैयार करे।
+  टोन: 80% फनी + 20% मोटिवेशनल | SEO: Primary, Secondary (बार-बार), LSI keywords.
+  Jobjalebi.com का नाम प्राकृतिक रूप से 4-5 बार डाला गया है.
+=================================================================
+-->
+
+<!-- ========== METADATA (AI AGENT INPUT - JSON से लिया गया) ========== -->
+<!--
+POST_TITLE = {SEO_TITLE}
+CATEGORY = {CATEGORY}
+SUBCATEGORY = {RESULT_IDENTIFICATION.EXAM_TYPE}
+TAGS = "{RESULT_IDENTIFICATION.EXAM_NAME}, Result, Cut Off, Merit List, Scorecard"
+PRIMARY_KEYWORD = {PRIMARY_KEYWORD}
+SECONDARY_KEYWORDS = {SECONDARY_KEYWORDS}
+LSI_KEYWORDS = {LSI_KEYWORDS}
+EXAM_NAME = {RESULT_IDENTIFICATION.EXAM_NAME}
+RESULT_DATE = {RESULT_STATUS.DECLARATION_DATE}
+TOTAL_QUALIFIED = {RESULT_DETAILS.TOTAL_CANDIDATES_QUALIFIED}
+CUT_OFF_GEN = {RESULT_DETAILS.CUTOFF_MARKS.GENERAL}
+CUT_OFF_OBC = {RESULT_DETAILS.CUTOFF_MARKS.OBC}
+CUT_OFF_SC = {RESULT_DETAILS.CUTOFF_MARKS.SC}
+CUT_OFF_ST = {RESULT_DETAILS.CUTOFF_MARKS.ST}
+CUT_OFF_EWS = {RESULT_DETAILS.CUTOFF_MARKS.EWS}
+NEXT_STAGE = {NEXT_STEPS.DOCUMENT_VERIFICATION_DATE} (या इंटरव्यू/अगली परीक्षा)
+NEXT_STAGE_DATE = {NEXT_STEPS.INTERVIEW_DATE}
+OFFICIAL_LINK = {IMPORTANT_LINKS.OFFICIAL_WEBSITE}
+RESULT_LINK = {IMPORTANT_LINKS.DIRECT_RESULT}
+CUTOFF_PDF_LINK = {IMPORTANT_LINKS.DIRECT_RESULT} (या अलग से अगर स्कीमा में हो)
+MERIT_LIST_LINK = {RESULT_DETAILS.SELECTION_STATUS.MERIT_LIST_PDF}
+SCORECARD_LINK = {RESULT_DETAILS.SCORECARD.DOWNLOAD_LINK}
+BOARD_NAME = {RESULT_IDENTIFICATION.CONDUCTING_BODY}
+-->
+
+<!-- ========== SEO KEYWORD USAGE INSTRUCTIONS FOR AI ==========
+1. PRIMARY_KEYWORD ({PRIMARY_KEYWORD}) → lead, summary table, cut-off, merit list, conclusion.
+2. SECONDARY_KEYWORDS (जैसे "cut off", "merit list", "scorecard download") का 5-6 बार इस्तेमाल करें।
+3. Jobjalebi.com mentioned 4-5 times: lead, result check steps, important links, conclusion, FAQ.
+-->
+
+<!-- ========== POST CONTENT STARTS ========== -->
+
+<!-- LEAD: PRIMARY KEYWORD + JOJALBEBI MENTION -->
+<p><strong>🚨 बजी घंटी – बजी घंटी!</strong> <strong>{PRIMARY_KEYWORD} आ गया है।</strong> अब जो पास हुआ, वो आगे बढ़े; जो नहीं हुआ, वो रोए नहीं – क्योंकि अगली बार और तैयारी करेंगे। <strong>Jobjalebi.com</strong> पर हम तुम्हें सबसे पहले और मजेदार तरीके से रिजल्ट, कटऑफ और मेरिट लिस्ट बताते हैं। तो चाय बनाओ, मोबाइल पकड़ो, और पढ़ते जाओ। 😂</p>
+
+<p>इस पोस्ट में हम तुम्हें बताएँगे – <strong>रिजल्ट कैसे देखना है (result date क्या है), <strong>cut off</strong> category wise कितना गया, <strong>merit list</strong> में कितने candidates qualified हुए, <strong>scorecard download</strong> कहाँ से करना है, और आगे की प्रक्रिया क्या है – सब कुछ हंसी-मजाक के साथ।</strong> <strong>Jobjalebi.com</strong> के इस पोस्ट को अंत तक जरूर पढ़ना।</p>
+
+<!-- ========== SECTION 1: QUICK RESULT SUMMARY TABLE ========== -->
+<h2>📌 एक नज़र में – रिजल्ट का चटपटा सारांश</h2>
+<table class="responsive-table">
+  <thead>
+    <tr><th>शीर्षक</th><th>विवरण (हंसी के साथ)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>परीक्षा का नाम</td><td>{RESULT_IDENTIFICATION.EXAM_NAME} – <strong>{PRIMARY_KEYWORD}</strong> यहाँ देखें</td></tr>
+    <tr><td>रिजल्ट जारी होने की तिथि (Result Date)</td><td>{RESULT_STATUS.DECLARATION_DATE} – "जिस दिन हजारों के चेहरे खिले और हजारों के मुरझाए"</td></tr>
+    <tr><td>कुल उत्तीर्ण उम्मीदवार (Qualified Candidates)</td><td>{RESULT_DETAILS.TOTAL_CANDIDATES_QUALIFIED} – "इतने लोग आगे बढ़े, बाकी अगली बार"</td></tr>
+    <tr><td>सामान्य वर्ग (General) <strong>cut off</strong></td><td>{RESULT_DETAILS.CUTOFF_MARKS.GENERAL} अंक – "पसीने छूट गए न? बस इतने चाहिए थे"</td></tr>
+    <tr><td>ओबीसी <strong>cut off</strong></td><td>{RESULT_DETAILS.CUTOFF_MARKS.OBC} अंक</td></tr>
+    <tr><td>एससी <strong>cut off</strong></td><td>{RESULT_DETAILS.CUTOFF_MARKS.SC} अंक</td></tr>
+    <tr><td>एसटी <strong>cut off</strong></td><td>{RESULT_DETAILS.CUTOFF_MARKS.ST} अंक</td></tr>
+    <tr><td>ईडब्ल्यूएस <strong>cut off</strong></td><td>{RESULT_DETAILS.CUTOFF_MARKS.EWS} अंक</td></tr>
+    <tr><td>अगला चरण (Next Stage)</td><td>{NEXT_STEPS.DOCUMENT_VERIFICATION_DATE} / {NEXT_STEPS.INTERVIEW_DATE} – अगली परीक्षा या DV</td></tr>
+    <tr><td>आधिकारिक लिंक</td><td><a href="{IMPORTANT_LINKS.OFFICIAL_WEBSITE}">👉 {IMPORTANT_LINKS.OFFICIAL_WEBSITE}</a></td></tr>
+    <tr><td>⚡ फनी चेतावनी</td><td>"जो लोग पास हुए, उनके लिए बधाई – अब और ज्यादा पढ़ाई। जो नहीं हुए, उनके लिए – चाय पी लो, कल नई शुरुआत।"</td></tr>
+  </tbody>
+</table>
+
+<!-- ========== SECTION 2: CUT-OFF MARKS (CATEGORY WISE) ========== -->
+<h2>1. कटऑफ मार्क्स – कितने अंक पर बनी सरकारी नौकरी की उम्मीद? (<strong>cut off</strong>)</h2>
+<p>तो भाई, <strong>{PRIMARY_KEYWORD}</strong> के साथ <strong>cut off</strong> भी आ गया है। नीचे देखो कि किस श्रेणी में कितने अंक चाहिए थे – <strong>याद रखना, ये cut off सिर्फ इसी चरण के लिए है, आगे और भी सख्त मेहनत करनी होगी। <strong>cut off</strong> हर साल बदलता है, इसलिए अपने अंक इससे मिलाओ।</strong></p>
+<table class="responsive-table">
+  <thead><tr><th>श्रेणी (Category)</th><th><strong>cut off</strong> अंक</th><th>फनी टिप्पणी</th></tr></thead>
+  <tbody>
+    <tr><td>सामान्य (General)</td><td><strong>{RESULT_DETAILS.CUTOFF_MARKS.GENERAL}</strong></td><td>"थोड़े ऊँचे हैं, पर impossible नहीं"</td></tr>
+    <tr><td>ओबीसी (OBC)</td><td><strong>{RESULT_DETAILS.CUTOFF_MARKS.OBC}</strong></td><td>"रिलैक्सेशन का फायदा मिला"</td></tr>
+    <tr><td>एससी (SC)</td><td><strong>{RESULT_DETAILS.CUTOFF_MARKS.SC}</strong></td><td>"सीटें कम, मौका बराबर"</td></tr>
+    <tr><td>एसटी (ST)</td><td><strong>{RESULT_DETAILS.CUTOFF_MARKS.ST}</strong></td><td>"बस एक कदम और, आगे बढ़ो"</td></tr>
+    <tr><td>ईडब्ल्यूएस (EWS)</td><td><strong>{RESULT_DETAILS.CUTOFF_MARKS.EWS}</strong></td><td>"आर्थिक रूप से कमजोर, पर हौसला बुलंद"</td></tr>
+  </tbody>
+</table>
+<p><strong>😂 फनी कमेंट:</strong> <strong>cut off</strong> देखकर अगर तुम पास हो गए, तो झूम लो। अगर नहीं हुए, तो यहाँ रोने से कुछ नहीं होगा – अगली बार और मेहनत करो। <strong>Jobjalebi.com</strong> पर हम पिछले साल के cut off भी अपडेट रखते हैं, तुलना कर सकते हो।</p>
+
+<!-- ========== SECTION 3: MERIT LIST & QUALIFIED CANDIDATES ========== -->
+<h2>2. मेरिट लिस्ट और योग्य उम्मीदवार – कितने लोग आगे बढ़े? (<strong>merit list</strong>)</h2>
+<p><strong>{PRIMARY_KEYWORD}</strong> के साथ <strong>merit list</strong> भी जारी कर दी गई है। <strong>कुल {RESULT_DETAILS.TOTAL_CANDIDATES_QUALIFIED} उम्मीदवार अगले चरण के लिए चुन लिए गए हैं। <strong>merit list</strong> में अपना नाम ढूंढो – अगर है तो बधाई, अगर नहीं तो अगली बार।</strong></p>
+<ul>
+  <li><strong><strong>merit list</strong> कहाँ देखें?</strong> नीचे Important Links में लिंक दिया है।</li>
+  <li><strong>अगर नाम आ गया है?</strong> – अब अगले चरण की तैयारी शुरू करो।</li>
+  <li><strong>अगर नाम नहीं आया?</strong> – कोई बात नहीं, <strong>merit list</strong> में नाम न आने का मतलब अंत नहीं है – और भी परीक्षाएँ हैं।</li>
+</ul>
+<p><strong>😜 फनी लाइन:</strong> "<strong>merit list</strong> में नाम देखते ही अगर तुम्हारे होश उड़ जाएँ, तो समझ जाना कि आगे की पढ़ाई अब और सख्त होगी। बधाई हो, अब मेहनत दोगुनी करो।"</p>
+
+<!-- ========== SECTION 4: HOW TO CHECK RESULT (STEP BY STEP) ========== -->
+<h2>3. <strong>{PRIMARY_KEYWORD}</strong> कैसे चेक करें? – आओ सीखो हंसते-हंसते</h2>
+<p><strong>Jobjalebi.com</strong> पर हम स्टेप-बाय-स्टेप बता रहे हैं – बस फॉलो करो।</p>
+<ol>
+  <!-- AI को {HOW_TO_CHECK.STEPS} ऐरे को इटरेट करके लिस्ट आइटम बनाने हैं। -->
+  <li><strong>स्टेप 1:</strong> {HOW_TO_CHECK.STEPS[0]}</li>
+  <li><strong>स्टेप 2:</strong> {HOW_TO_CHECK.STEPS[1]}</li>
+  <li><strong>स्टेप 3:</strong> {HOW_TO_CHECK.STEPS[2]}</li>
+  <li><strong>स्टेप 4:</strong> {HOW_TO_CHECK.STEPS[3]}</li>
+  <li><strong>स्टेप 5:</strong> {HOW_TO_CHECK.STEPS[4]}</li>
+</ol>
+
+<!-- ========== SECTION 5: SCORECARD / MARKSHEET DOWNLOAD ========== -->
+<h2>4. स्कोरकार्ड – अपने अंक देखो और दोस्तों को जलाओ (<strong>scorecard download</strong>)</h2>
+<p>रिजल्ट के साथ ही <strong>scorecard download</strong> की लिंक भी एक्टिव हो गई है। <strong>scorecard download</strong> करके तुम हर सेक्शन के अंक देख सकते हो – पता चलेगा कि कहाँ कमी रह गई।</p>
+<ul>
+  <li><strong><strong>scorecard download</strong> के लिए</strong> नीचे Important Links टेबल देखो।</li>
+  <li>अगर स्कोरकार्ड में नंबर कम आए हैं, तो रोओ मत – अगली बार पक्का सुधारोगे।</li>
+  <li><strong>फनी टिप:</strong> "<strong>scorecard download</strong> करके अपने अंक दोस्तों को मत दिखाना अगर कम हैं – वरना वो हँसेंगे। बल्कि चुपके से पढ़ाई करो और अगली बार उनसे ज्यादा लाओ।"</li>
+</ul>
+
+<!-- ========== SECTION 6: NEXT STAGE (INTERVIEW / DV / MEDICAL) ========== -->
+<h2>5. अब आगे क्या? – अगली परीक्षा, इंटरव्यू और दस्तावेज़ सत्यापन</h2>
+<p>जो उम्मीदवार <strong>{PRIMARY_KEYWORD}</strong> में पास हुए हैं, उनके लिए अगला चरण है – <strong>{NEXT_STEPS.INTERVIEW_DATE या DOCUMENT_VERIFICATION_DATE}</strong>. <strong>cut off</strong> पार करने वालों के लिए यह अगली चुनौती है। इसके अलावा कुछ पदों के लिए <strong>document verification (DV)</strong> और <strong>medical test</strong> भी होगा। <strong>merit list</strong> में जिनका नाम है, उन्हें ये सब करना होगा।</p>
+<ul>
+  <li><strong>अगली परीक्षा की तैयारी:</strong> अब और ज्यादा मेहनत करनी होगी – syllabus और exam pattern देख लो।</li>
+  <li><strong>दस्तावेज़ सत्यापन के लिए:</strong> सभी मूल प्रमाणपत्र तैयार रखो – 10वीं, 12वीं, ग्रेजुएशन, जाति प्रमाण पत्र, आधार आदि।</li>
+  <li><strong>फनी चेतावनी:</strong> "DV के दिन अपने सिग्नेचर से मिलान करवाना – पिछली बार लोगों की सिग्नेचर मिसमैच हो गई और पसीने छूट गए। <strong>Jobjalebi.com</strong> पर हमने DV से जुड़े फनी टिप्स भी डाले हैं, एक बार पढ़ लेना।"</li>
+</ul>
+
+<!-- ========== SECTION 7: IMPORTANT LINKS (RESULT, CUTOFF, MERIT LIST, SCORECARD) with Jobjalebi mention ========== -->
+<h2>📌 SOME USEFUL IMPORTANT LINKS – सीधे क्लिक करो, भटकना मत</h2>
+<p><strong>Jobjalebi.com</strong> की टीम ने नीचे सभी लिंक एक टेबल में दे दिए हैं – बस क्लिक करो और अपना <strong>scorecard download</strong> या <strong>merit list</strong> देखो।</p>
+<table class="responsive-table">
+  <thead><tr><th>विवरण</th><th>सीधा लिंक</th><th>फनी रिमार्क</th></tr></thead>
+  <tbody>
+    <tr><td><strong>🟢 <strong>{PRIMARY_KEYWORD}</strong> – सीधा रिजल्ट लिंक</strong></td><td><a href="{IMPORTANT_LINKS.DIRECT_RESULT}" target="_blank">👉 रिजल्ट देखें</a></td><td>"एक क्लिक और पता चल जाएगा कि तुम्हारी किस्मत में नौकरी है या नहीं"</td></tr>
+    <tr><td><strong>📄 <strong>cut off</strong> PDF (Category wise)</strong></td><td><a href="{IMPORTANT_LINKS.DIRECT_RESULT}" target="_blank">👉 कटऑफ डाउनलोड करें</a></td><td>"इसमें लिखा है कि कितने अंक पर दरवाजा खुला"</td></tr>
+    <tr><td><strong>📋 <strong>merit list</strong> (Qualified Candidates)</strong></td><td><a href="{RESULT_DETAILS.SELECTION_STATUS.MERIT_LIST_PDF}" target="_blank">👉 मेरिट लिस्ट देखें</a></td><td>"यहाँ उन लोगों के नाम हैं जिन्होंने असली खेल दिखा दिया"</td></tr>
+    <tr><td><strong>📊 <strong>scorecard download</strong> (मार्कशीट)</strong></td><td><a href="{RESULT_DETAILS.SCORECARD.DOWNLOAD_LINK}" target="_blank">👉 स्कोरकार्ड डाउनलोड करें</a></td><td>"अपने अंक देखो और कमजोरी पहचानो"</td></tr>
+    <tr><td><strong>🌐 {RESULT_IDENTIFICATION.CONDUCTING_BODY} की आधिकारिक वेबसाइट</strong></td><td><a href="{IMPORTANT_LINKS.OFFICIAL_WEBSITE}" target="_blank">👉 {IMPORTANT_LINKS.OFFICIAL_WEBSITE}</a></td><td>"मूल घर – यहाँ सबसे पहले अपडेट आता है"</td></tr>
+  </tbody>
+</table>
+<p><strong>⚠️ चेतावनी:</strong> सिर्फ ऊपर दिए लिंक पर क्लिक करें। कोई कहे "मैं तुम्हारा रिजल्ट बताऊंगा ₹99 में" – तो उसे पैसे मत देना। सरकारी रिजल्ट हमेशा मुफ्त होता है। <strong>Jobjalebi.com</strong> पर दिए गए लिंक 100% सुरक्षित हैं।</p>
+
+<!-- ========== SECTION 8: CONCLUSION (includes primary keyword + Jobjalebi) ========== -->
+<h2>🏁 आखिरी बात – अब क्या करोगे?</h2>
+<p><strong>{PRIMARY_KEYWORD} देख लिया, <strong>cut off</strong> समझ लिया, <strong>merit list</strong> और <strong>scorecard download</strong> भी कर लिया – अब आगे की तैयारी करो।</strong> जो पास हुए, उनके लिए अगले चरण की तैयारी शुरू करो – किताबें खोलो, मॉक टेस्ट दो। जो नहीं हुए, उनके लिए – एक दिन रो लो, फिर कल से नई शुरुआत।</p>
+<p><strong>मोटिवेशनल फनी लाइन:</strong> "जीत और हार तो खेल का हिस्सा है। जो आज हारा, वो कल जीत सकता है – बशर्ते वो पढ़ना बंद न करे। और जो जीता, उसके लिए – अब असली खेल शुरू होता है। <strong>Jobjalebi.com</strong> हमेशा तुम्हारे साथ है – हँसाते हुए, जगाते हुए।"</p>
+<p><strong>सीधा लिंक:</strong> <a href="{IMPORTANT_LINKS.DIRECT_RESULT}">👉 यहाँ क्लिक करें – अपना रिजल्ट देखें</a></p>
+
+<!-- ========== SECTION 9: FAQ with secondary keywords ========== -->
+<h2>❓ {RESULT_IDENTIFICATION.CONDUCTING_BODY} परीक्षा परिणाम से जुड़े सामान्य सवाल (FAQs)</h2>
+<div class="faq-section">
+  <h3>Q1: रिजल्ट चेक करने के लिए क्या चाहिए?</h3>
+  <p><strong>A1:</strong> रोल नंबर और जन्मतिथि / पासवर्ड। "रोल नंबर भूल गए तो एडमिट कार्ड में देख लो। <strong>cut off</strong> से मिलान करने से पहले रिजल्ट तो देख लो।"</p>
+  
+  <h3>Q2: क्या मोबाइल से <strong>merit list</strong> देख सकते हैं?</h3>
+  <p><strong>A2:</strong> हाँ, मोबाइल से भी देख सकते हो – बस इंटरनेट अच्छा होना चाहिए। "क्रोम या एज ब्राउज़र खोलो, लिंक क्लिक करो।"</p>
+  
+  <h3>Q3: अगर रिजल्ट लिंक काम नहीं कर रहा?</h3>
+  <p><strong>A3:</strong> थोड़ा धैर्य रखो। रिजल्ट के दिन सर्वर पर लोड हो जाता है – 10-15 मिनट बाद दोबारा ट्राई करो। "एक बार चाय पी लो, फिर देखना।"</p>
+  
+  <h3>Q4: क्या <strong>cut off</strong> से कम अंक होने पर भी चयन हो सकता है?</h3>
+  <p><strong>A4:</strong> नहीं। <strong>cut off</strong> एक न्यूनतम सीमा है – उससे नीचे वाले रिजेक्ट हो जाते हैं। "कोई चोर रास्ता नहीं है, मेहनत करो।"</p>
+  
+  <h3>Q5: <strong>scorecard download</strong> में गलत अंक दिख रहे हैं, क्या करें?</h3>
+  <p><strong>A5:</strong> तुरंत {RESULT_IDENTIFICATION.CONDUCTING_BODY} के हेल्पडेस्क पर ईमेल या फोन करें। "चुप मत बैठो, आवाज उठाओ। <strong>Jobjalebi.com</strong> पर हेल्पलाइन नंबर भी दिए हैं।"</p>
+  
+  <h3>Q6: <strong>{PRIMARY_KEYWORD}</strong> कहाँ से डाउनलोड करूँ?</h3>
+  <p><strong>A6:</strong> ऊपर Important Links टेबल में "<strong>scorecard download</strong>" या "रिजल्ट लिंक" दिया है – वहाँ से डाउनलोड करो। <strong>Jobjalebi.com</strong> को बुकमार्क कर लो ताकि हर अपडेट सबसे पहले मिले।</p>
+</div>
+
+<!-- ========== SECTION 10: DISCLAIMER ========== -->
+<p><strong>⚠️ अस्वीकरण:</strong> यह पोस्ट {RESULT_IDENTIFICATION.CONDUCTING_BODY} द्वारा जारी आधिकारिक परिणाम, <strong>cut off</strong>, <strong>merit list</strong> और <strong>scorecard download</strong> पर आधारित है। सटीक जानकारी के लिए आधिकारिक वेबसाइट अवश्य देखें। दिए गए लिंक आधिकारिक स्रोतों पर रीडायरेक्ट करते हैं – <strong>Jobjalebi.com</strong> किसी तीसरे पक्ष से जुड़ा नहीं है।</p>
+
+<p><strong>😄 आखिरी मोटिवेशन:</strong> "रिजल्ट चाहे जो भी हो, जिंदगी यहीं खत्म नहीं होती। जीतो तो जश्न मनाओ, हारो तो सीखो और आगे बढ़ो। और हाँ – हंसते रहो, ये दवा है हर दर्द के लिए। <strong>Jobjalebi.com</strong> पर फिर मिलेंगे, अगली अपडेट के साथ।"</p>
+
+<!-- ========== POST ENDS ========== -->

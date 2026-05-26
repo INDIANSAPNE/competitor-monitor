@@ -1,0 +1,187 @@
+<!-- 
+=================================================================
+TEMPLATE NAME: प्रवेश पत्र (Admit Card) Template
+CATEGORY: प्रवेश पत्र (Admit Card)
+DESCRIPTION: 
+  यह टेम्पलेट "प्रवेश पत्र (Admit Card)" कैटेगरी की हमारी JSON स्कीमा के साथ पूरी तरह से एकीकृत है।
+  AI को निर्देश है कि वह नीचे दिए गए सभी की-पाथ को JSON ({EXTRA_DATA}) से भरकर पोस्ट तैयार करे।
+  टोन: 80% फनी + 20% मोटिवेशनल | SEO: Primary, Secondary (बार-बार), LSI keywords.
+  Jobjalebi.com का नाम प्राकृतिक रूप से 4-5 बार डाला गया है.
+=================================================================
+-->
+
+<!-- ========== METADATA (AI AGENT INPUT - JSON से लिया गया) ========== -->
+<!--
+POST_TITLE = {SEO_TITLE}
+CATEGORY = {CATEGORY}
+SUBCATEGORY = {ADMIT_CARD_IDENTIFICATION.EXAM_TYPE}
+TAGS = "{ADMIT_CARD_IDENTIFICATION.EXAM_NAME}, Admit Card, Hall Ticket"
+PRIMARY_KEYWORD = {PRIMARY_KEYWORD}
+SECONDARY_KEYWORDS = {SECONDARY_KEYWORDS}
+LSI_KEYWORDS = {LSI_KEYWORDS}
+EXAM_NAME = {ADMIT_CARD_IDENTIFICATION.EXAM_NAME}
+EXAM_DATE = {EXAM_DETAILS.EXAM_DATE}
+EXAM_SHIFT = {EXAM_DETAILS.EXAM_SHIFT} {EXAM_DETAILS.EXAM_TIME}
+ADMIT_CARD_DATE = {ADMIT_CARD_STATUS.RELEASE_DATE}
+ADMIT_CARD_LINK = {IMPORTANT_LINKS.DIRECT_DOWNLOAD}
+OFFICIAL_LINK = {IMPORTANT_LINKS.OFFICIAL_WEBSITE}
+BOARD_NAME = {ADMIT_CARD_IDENTIFICATION.CONDUCTING_BODY}
+-->
+
+<!-- ========== SEO KEYWORD USAGE INSTRUCTIONS FOR AI ==========
+1. PRIMARY_KEYWORD ({PRIMARY_KEYWORD}) → lead, summary table, exam date, admit card download, conclusion.
+2. SECONDARY_KEYWORDS (जैसे "admit card download", "exam date", "hall ticket", "exam center") का 5-6 बार इस्तेमाल करें।
+3. Jobjalebi.com mentioned 4-5 times: lead, download steps, important links, conclusion, FAQ.
+-->
+
+<!-- ========== POST CONTENT STARTS ========== -->
+
+<!-- LEAD: PRIMARY KEYWORD + JOJALBEBI MENTION -->
+<p><strong>🚨 परीक्षा की घंटी बज चुकी है – अब एडमिट कार्ड ले लो!</strong> <strong>{PRIMARY_KEYWORD} जारी हो गया है!</strong> अब वो समय आ गया है जब आपकी पढ़ाई का असली परीक्षण होगा। <strong>Jobjalebi.com</strong> पर हम आपको बिना किसी टेंशन के, हंसी-मजाक के साथ सारी जानकारी दे रहे हैं – परीक्षा की सही तारीख, एडमिट कार्ड डाउनलोड करने का तरीका, और हाँ, परीक्षा केंद्र पर क्या ले जाना है, क्या नहीं। 😂</p>
+
+<p>इस पोस्ट में हम बताएँगे – <strong>परीक्षा कब है (<strong>exam date</strong>), कितनी शिफ्ट हैं, एडमिट कार्ड कैसे डाउनलोड करें (<strong>admit card download</strong>), हॉल टिकट में क्या-क्या चेक करें (<strong>hall ticket</strong>), परीक्षा केंद्र (<strong>exam center</strong>) कैसे पहुँचें – सब कुछ मजेदार अंदाज में।</strong></p>
+
+<!-- ========== SECTION 1: QUICK SUMMARY TABLE ========== -->
+<h2>📌 एग्जाम डेट और एडमिट कार्ड – एक नज़र में सब कुछ</h2>
+<table class="responsive-table">
+  <thead>
+    <tr><th>विवरण</th><th>जानकारी (फनी टिप्स के साथ)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>{ADMIT_CARD_IDENTIFICATION.EXAM_NAME}</strong></td><td><strong>{PRIMARY_KEYWORD}</strong> – यहाँ चेक करें</td></tr>
+    <tr><td><strong>परीक्षा की तारीख (exam date)</strong></td>
+        <td>{EXAM_DETAILS.EXAM_DATE} – "अब कैलेंडर में लाल निशान लगा दो, किसी की शादी या पार्टी उस दिन मत रखना।"</td></tr>
+    <tr><td><strong>परीक्षा की शिफ्ट और समय</strong></td>
+        <td>{EXAM_DETAILS.EXAM_SHIFT} ({EXAM_DETAILS.EXAM_TIME}) – "सुबह के चिड़िया वाले shift में तो आँखें खुली रखने का टोटका अपना लेना।"</td></tr>
+    <tr><td><strong>एडमिट कार्ड जारी होने की तारीख (admit card date)</strong></td>
+        <td>{ADMIT_CARD_STATUS.RELEASE_DATE} – "सरकारी सर्वर पर 'कृपया प्रतीक्षा करें' का रिकॉर्ड टूटेगा।"</td></tr>
+    <tr><td><strong>admit card download लिंक</strong></td>
+        <td><a href="{IMPORTANT_LINKS.DIRECT_DOWNLOAD}">👉 यहाँ क्लिक करें</a> – "अपनी आँखों से देख लो कि परीक्षा केंद्र दिल्ली है या दरभंगा।"</td></tr>
+    <tr><td><strong>आधिकारिक वेबसाइट</strong></td>
+        <td><a href="{IMPORTANT_LINKS.OFFICIAL_WEBSITE}">👉 {IMPORTANT_LINKS.OFFICIAL_WEBSITE}</a></td></tr>
+    <tr><td><strong>⚡ फनी चेतावनी</strong></td>
+        <td>"एडमिट कार्ड को सहेज कर रखना, मत भेजो इसे व्हाट्सएप्प के ग्रुप में यूं ही। परीक्षा केंद्र पर इसके बिना सिक्योरिटी गार्ड आपको रोक लेंगे!"</td></tr>
+  </tbody>
+</table>
+
+<!-- ========== SECTION 2: EXAM DATE DETAILS ========== -->
+<h2>1. कब है परीक्षा? – अपनी रणनीति बना लो (<strong>exam date</strong> और शिफ्ट)</h2>
+<p><strong>{ADMIT_CARD_IDENTIFICATION.EXAM_NAME}</strong> की <strong>exam date</strong> तय हो चुकी है – <strong>{EXAM_DETAILS.EXAM_DATE}</strong>. नीचे शिफ्ट और समय की पूरी जानकारी दी गई है। इसे ध्यान से पढ़ो और अपनी दिनचर्या उसी हिसाब से सेट करो।</p>
+<ul>
+  <!-- AI को {EXAM_DETAILS.FULL_SCHEDULE} ऐरे से हर शिफ्ट के लिए लिस्ट आइटम बनाने हैं। -->
+  <li><strong>तिथि (Date):</strong> {EXAM_DETAILS.FULL_SCHEDULE[0].DATE} – {EXAM_DETAILS.FULL_SCHEDULE[0].TIME} ({EXAM_DETAILS.FULL_SCHEDULE[0].SUBJECT})</li>
+  <li><strong>तिथि (Date):</strong> {EXAM_DETAILS.FULL_SCHEDULE[1].DATE} – {EXAM_DETAILS.FULL_SCHEDULE[1].TIME} ({EXAM_DETAILS.FULL_SCHEDULE[1].SUBJECT})</li>
+</ul>
+<p><strong>😂 फनी टिप:</strong> "exam date कैलेंडर में नोट कर लो, और उससे एक दिन पहले कुछ नया मत पढ़ना – बस रिवीजन करना और जल्दी सो जाना।"</p>
+
+<!-- ========== SECTION 3: ADMIT CARD DOWNLOAD STEPS ========== -->
+<h2>2. एडमिट कार्ड कैसे डाउनलोड करें? – <strong>admit card download</strong> के आसान स्टेप्स</h2>
+<p><strong>Jobjalebi.com</strong> पर हम स्टेप-बाय-स्टेप बता रहे हैं – बस फॉलो करो और अपना <strong>hall ticket</strong> निकाल लो।</p>
+<ol>
+  <!-- AI को {HOW_TO_DOWNLOAD.STEPS} ऐरे को इटरेट करके लिस्ट आइटम बनाने हैं। -->
+  <li><strong>स्टेप 1:</strong> {HOW_TO_DOWNLOAD.STEPS[0]}</li>
+  <li><strong>स्टेप 2:</strong> {HOW_TO_DOWNLOAD.STEPS[1]}</li>
+  <li><strong>स्टेप 3:</strong> {HOW_TO_DOWNLOAD.STEPS[2]}</li>
+  <li><strong>स्टेप 4:</strong> {HOW_TO_DOWNLOAD.STEPS[3]}</li>
+  <li><strong>स्टेप 5:</strong> {HOW_TO_DOWNLOAD.STEPS[4]}</li>
+</ol>
+<p><strong>😜 फनी लाइन:</strong> "<strong>admit card download</strong> करने में सर्वर क्रैश हुआ तो घबराना नहीं – एक बार चाय पी लो, 10 मिनट बाद ट्राई करो। यह सरकारी सर्वर का नियम है – धैर्य रखो।"</p>
+
+<!-- ========== SECTION 4: IMPORTANT DETAILS ON ADMIT CARD (CHECKLIST) ========== -->
+<h2>3. एडमिट कार्ड पर क्या-क्या चेक करें? (<strong>hall ticket</strong> में जरूर देखें)</h2>
+<p>एडमिट कार्ड एक पवित्र दस्तावेज है। इसे पाकर सबसे पहले नीचे दी गई बातों का मिलान जरूर करें:</p>
+<table class="responsive-table">
+  <thead><tr><th>क्या चेक करें?</th><th>क्यों जरूरी है?</th><th>फनी टिप</th></tr></thead>
+  <tbody>
+    <tr><td><strong>आपका नाम और फोटो</strong></td><td>पहचान के लिए</td><td>"फोटो में अगर आप नहीं बल्कि आपके दादा जी हैं, तो तुरंत हेल्पलाइन से संपर्क करो।"</td></tr>
+    <tr><td><strong>परीक्षा की तिथि और समय</strong></td><td>गलत दिन आने से बचने के लिए</td><td>"तीन बार पढ़ें। यह वही दिन है जब दोस्तों की शादी छोड़नी पड़ सकती है।"</td></tr>
+    <tr><td><strong>परीक्षा केंद्र का पूरा पता (<strong>exam center</strong>)</strong></td><td>रास्ता भूलने से बचाएगा</td><td>"गूगल मैप पर एक बार डमी रूट तैयार कर लें। 'केंद्र यहाँ है' बोलकर मत चल देना।"</td></tr>
+    <tr><td><strong>रोल नंबर और बारकोड</strong></td><td>OMR शीट पर लिखने के लिए</td><td>"बारकोड साफ होना चाहिए – उस पर चाय मत गिरा देना।"</td></tr>
+  </tbody>
+</table>
+
+<!-- ========== SECTION 5: WHAT TO CARRY / NOT CARRY ON EXAM DAY ========== -->
+<h2>4. बैग पैकिंग का फनी सबक – क्या रखें और क्या नहीं?</h2>
+<ul>
+  <li><strong>✅ ज़रूरी चीज़ें:</strong> 
+      <ul>
+          <!-- AI को {CANDIDATE_INSTRUCTIONS.DOCUMENTS_TO_CARRY} ऐरे को इटरेट करके लिस्ट आइटम बनाने हैं। -->
+          <li>{CANDIDATE_INSTRUCTIONS.DOCUMENTS_TO_CARRY[0]}</li>
+          <li>{CANDIDATE_INSTRUCTIONS.DOCUMENTS_TO_CARRY[1]}</li>
+          <li>{CANDIDATE_INSTRUCTIONS.DOCUMENTS_TO_CARRY[2]}</li>
+      </ul>
+  </li>
+  <li><strong>❌ मना चीज़ें:</strong> 
+      <ul>
+          <!-- AI को {CANDIDATE_INSTRUCTIONS.PROHIBITED_ITEMS} ऐरे को इटरेट करके लिस्ट आइटम बनाने हैं। -->
+          <li>{CANDIDATE_INSTRUCTIONS.PROHIBITED_ITEMS[0]}</li>
+          <li>{CANDIDATE_INSTRUCTIONS.PROHIBITED_ITEMS[1]}</li>
+          <li>{CANDIDATE_INSTRUCTIONS.PROHIBITED_ITEMS[2]}</li>
+      </ul>
+  </li>
+</ul>
+<p><strong>😂 फनी चेतावनी:</strong> "अगर तुम मोबाइल लेकर गए तो सेंटर के बाहर अलमारी में रखना पड़ेगा – पर वहाँ अलमारी नहीं होती। तो घर पर ही छोड़ो।"</p>
+
+<!-- ========== SECTION 6: WHAT TO CHECK ON OFFICIAL WEBSITE ========== -->
+<h2>5. ऑफिशियल वेबसाइट पर और क्या-क्या चेक करें?</h2>
+<p>सरकारी वेबसाइट पर सिर्फ <strong>admit card download</strong> ही नहीं, बल्कि और भी जरूरी चीजें आती हैं। एक बार जरूर देख लेना:</p>
+<ul>
+  <li><strong>परीक्षा केंद्र (<strong>exam center</strong>) का नक्शा और सटीक एड्रेस</strong> – "गूगल मैप पर 'exam center near me' सर्च करने से पहले यहाँ देख लो।"</li>
+  <li><strong>परीक्षा केंद्र पर छात्रों के लिए दिशा-निर्देश (Instructions)</strong> – "पानी ले जाना है या नहीं, बेल्ट पहनना है या नहीं – सब लिखा होगा।"</li>
+  <li><strong>परीक्षा के दिन क्या ले जा सकते हैं और क्या नहीं, इसकी सूची</strong> – "हर बार कोई न कोई गलती करता है – इस बार तुम मत करना।"</li>
+  <li><strong>शिफ्ट के अनुसार रिपोर्टिंग टाइम</strong> – "आमतौर पर एग्जाम से 1-2 घंटे पहले रिपोर्ट करना होता है। देर से मत पहुँचना।"</li>
+</ul>
+
+<!-- ========== SECTION 7: IMPORTANT LINKS ========== -->
+<h2>📌 SOME USEFUL IMPORTANT LINKS – सीधे क्लिक करो, भटकना मत</h2>
+<p><strong>Jobjalebi.com</strong> पर हमने सभी जरूरी लिंक एक टेबल में दे दिए हैं – एडमिट कार्ड डाउनलोड करने से लेकर आधिकारिक वेबसाइट तक।</p>
+<table class="responsive-table">
+  <thead><tr><th>विवरण</th><th>सीधा लिंक</th><th>फनी रिमार्क</th></tr></thead>
+  <tbody>
+    <tr><td><strong>🟢 <strong>admit card download</strong> (एडमिट कार्ड)</strong></td>
+        <td><a href="{IMPORTANT_LINKS.DIRECT_DOWNLOAD}" target="_blank">👉 यहाँ क्लिक करें</a></td>
+        <td>"एक क्लिक और पता चल जाएगा कि तुम्हारा परीक्षा केंद्र कहाँ है।"</td></tr>
+    <tr><td><strong>📄 <strong>hall ticket</strong> – हॉल टिकट डायरेक्ट PDF</strong></td>
+        <td><a href="{IMPORTANT_LINKS.DIRECT_DOWNLOAD}" target="_blank">👉 डाउनलोड करें</a></td>
+        <td>"अगर लिंक धीमा है तो थोड़ा धैर्य रखो – सरकारी सर्वर का स्वभाव है।"</td></tr>
+    <tr><td><strong>🌐 {ADMIT_CARD_IDENTIFICATION.CONDUCTING_BODY} की आधिकारिक वेबसाइट</strong></td>
+        <td><a href="{IMPORTANT_LINKS.OFFICIAL_WEBSITE}" target="_blank">👉 {IMPORTANT_LINKS.OFFICIAL_WEBSITE}</a></td>
+        <td>"मूल घर – यहाँ सबसे पहले अपडेट आता है।"</td></tr>
+  </tbody>
+</table>
+<p><strong>⚠️ चेतावनी:</strong> सिर्फ ऊपर दिए लिंक पर क्लिक करें। कोई कहे "एडमिट कार्ड के लिए ₹50 लेंगे" – तो उसे पैसे मत देना। सरकारी एडमिट कार्ड हमेशा मुफ्त होता है। <strong>Jobjalebi.com</strong> पर दिए गए लिंक 100% सुरक्षित हैं।</p>
+
+<!-- ========== SECTION 8: CONCLUSION ========== -->
+<h2>🏁 आखिरी बात – अब क्या करोगे?</h2>
+<p><strong>{PRIMARY_KEYWORD} देख लिया, <strong>admit card download</strong> कर लिया, <strong>hall ticket</strong> में सब चेक कर लिया – अब बस एक काम बाकी है: परीक्षा में जाकर अपना 100% देना।</strong> अगर एडमिट कार्ड में कोई गलती हो, तो तुरंत {ADMIT_CARD_IDENTIFICATION.CONDUCTING_BODY} से संपर्क करो। अगर सब सही है, तो अब डर को बैग में बंद करो और आत्मविश्वास को बाहर निकालो।</p>
+<p><strong>मोटिवेशनल फनी लाइन:</strong> "यह सिर्फ एक परीक्षा है, जिंदगी नहीं। हाँ, यह जरूर है कि यह परीक्षा आपकी सरकारी नौकरी का दरवाजा खोल सकती है – तो जाओ, हंसते हुए पेपर दो। <strong>Jobjalebi.com</strong> हर कदम पर तुम्हारे साथ है।"</p>
+<p><strong>सीधा लिंक:</strong> <a href="{IMPORTANT_LINKS.DIRECT_DOWNLOAD}">👉 यहाँ क्लिक करें – एडमिट कार्ड डाउनलोड करें</a></p>
+
+<!-- ========== SECTION 9: FAQ (secondary keywords in answers) ========== -->
+<h2>❓ {ADMIT_CARD_IDENTIFICATION.CONDUCTING_BODY} एडमिट कार्ड और परीक्षा तिथि से जुड़े सामान्य सवाल (FAQs)</h2>
+<div class="faq-section">
+  <h3>Q1: <strong>admit card download</strong> लिंक काम नहीं कर रहा। क्या करें?</h3>
+  <p><strong>A1:</strong> सर्वर पर लोड हो सकता है – 10-15 मिनट बाद दोबारा ट्राई करें। सुनिश्चित करें कि आप सही <strong>exam date</strong> वाले लिंक पर क्लिक कर रहे हैं। "एक बार चाय पी लो, फिर देखना।"</p>
+  
+  <h3>Q2: क्या मोबाइल से <strong>hall ticket</strong> डाउनलोड कर सकते हैं?</h3>
+  <p><strong>A2:</strong> हाँ, लेकिन परीक्षा केंद्र पर मोबाइल में दिखाने से काम नहीं चलेगा – प्रिंट निकालना अनिवार्य है। "मोबाइल से डाउनलोड करो, पर प्रिंट साइबर कैफे से निकलवा लो।"</p>
+  
+  <h3>Q3: एडमिट कार्ड में फोटो धुंधली या गलत हो तो क्या करें?</h3>
+  <p><strong>A3:</strong> तुरंत {ADMIT_CARD_IDENTIFICATION.CONDUCTING_BODY} के हेल्पडेस्क पर ईमेल या फोन करें। परीक्षा के दिन अतिरिक्त पासपोर्ट साइज फोटो ले जाएं। "पुलिस वालों से लड़ने से अच्छा है पहले ही सुधार करा लो।"</p>
+  
+  <h3>Q4: <strong>exam center</strong> बहुत दूर है, क्या कोई रास्ता है?</h3>
+  <p><strong>A4:</strong> आमतौर पर केंद्र बदलने की सुविधा नहीं होती। एक दिन पहले डमी रूट पर जाकर देख आओ। "गूगल मैप में 'avoid toll' लगा लेना, पैसे बचेंगे।"</p>
+  
+  <h3>Q5: परीक्षा के दिन क्या ले जाना अनिवार्य है?</h3>
+  <p><strong>A5:</strong> एडमिट कार्ड (प्रिंट), फोटो आईडी (आधार/पैन), ब्लैक पेन, और मास्क (यदि लागू)। "सैंडविच और चायपत्ती मत ले जाना – वहाँ कैंटीन नहीं होती।"</p>
+  
+  <h3>Q6: <strong>{PRIMARY_KEYWORD}</strong> की प्रिंट कितने कॉपी निकालनी चाहिए?</h3>
+  <p><strong>A6:</strong> कम से कम 2 कॉपी – एक जेब में, दूसरा बैग में। तीसरा मम्मी के पास रख दो – "अगर दोनों गुम हो जाएं तो घबराना मत, मम्मी स्कैन भेज देंगी।"</p>
+</div>
+
+<!-- ========== SECTION 10: DISCLAIMER ========== -->
+<p><strong>⚠️ अस्वीकरण:</strong> यह पोस्ट {ADMIT_CARD_IDENTIFICATION.CONDUCTING_BODY} द्वारा जारी आधिकारिक परीक्षा तिथि और एडमिट कार्ड नोटिस पर आधारित है। सटीक जानकारी के लिए आधिकारिक वेबसाइट अवश्य देखें। दिए गए लिंक आधिकारिक स्रोतों पर रीडायरेक्ट करते हैं – <strong>Jobjalebi.com</strong> किसी तीसरे पक्ष से जुड़ा नहीं है।</p>
+
+<p><strong>😄 आखिरी मोटिवेशन:</strong> "एडमिट कार्ड हाथ में आ गया, अब बस एक अच्छी नींद लो और तैयारी के साथ परीक्षा केंद्र पहुँचो। डरना नहीं है – तुम मेहनत कर चुके हो। बस उसे परीक्षा हॉल में उतार दो। और हाँ, <strong>Jobjalebi.com</strong> पर फिर मिलेंगे, परिणाम के साथ!"</p>
+
+<!-- ========== POST ENDS ========== -->

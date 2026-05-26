@@ -1,0 +1,169 @@
+<!-- 
+=================================================================
+TEMPLATE NAME: उत्तर कुंजी (Answer Key) Template - JSON Schema Integrated
+VERSION: 2.0
+CATEGORY: उत्तर कुंजी (Answer Key)
+DESCRIPTION: 
+  यह टेम्पलेट "उत्तर कुंजी (Answer Key)" कैटेगरी की हमारी JSON स्कीमा के साथ पूरी तरह से एकीकृत है।
+  AI को निर्देश है कि वह नीचे दिए गए सभी की-पाथ को JSON ({EXTRA_DATA}) से भरकर पोस्ट तैयार करे।
+  टोन: 80% फनी + 20% मोटिवेशनल | SEO: Primary, Secondary (बार-बार), LSI keywords.
+  Jobjalebi.com का नाम प्राकृतिक रूप से 4-5 बार डाला गया है.
+=================================================================
+-->
+
+<!-- ========== METADATA (AI AGENT INPUT - JSON से लिया गया) ========== -->
+<!--
+POST_TITLE = {SEO_TITLE}
+CATEGORY = {CATEGORY}
+SUBCATEGORY = {ANSWER_KEY_IDENTIFICATION.EXAM_TYPE}
+TAGS = "{ANSWER_KEY_IDENTIFICATION.EXAM_NAME}, Answer Key, Objection Window, Provisional Cut Off"
+PRIMARY_KEYWORD = {PRIMARY_KEYWORD}
+SECONDARY_KEYWORDS = {SECONDARY_KEYWORDS}
+LSI_KEYWORDS = {LSI_KEYWORDS}
+EXAM_NAME = {ANSWER_KEY_IDENTIFICATION.EXAM_NAME}
+ANSWER_KEY_DATE = {ANSWER_KEY_STATUS.RELEASE_DATE}
+OBJECTION_START_DATE = {OBJECTION_PROCESS.OBJECTION_WINDOW_START}
+OBJECTION_END_DATE = {OBJECTION_PROCESS.OBJECTION_WINDOW_END}
+CHALLENGE_FEE = "₹{OBJECTION_PROCESS.OBJECTION_FEE_PER_QUESTION} प्रति प्रश्न"
+EXPECTED_CUT_OFF_GEN = {RESULT_DETAILS.CUTOFF_MARKS.GENERAL} (यदि उपलब्ध)
+EXPECTED_CUT_OFF_OBC = {RESULT_DETAILS.CUTOFF_MARKS.OBC}
+EXPECTED_CUT_OFF_SC = {RESULT_DETAILS.CUTOFF_MARKS.SC}
+EXPECTED_CUT_OFF_ST = {RESULT_DETAILS.CUTOFF_MARKS.ST}
+OFFICIAL_LINK = {IMPORTANT_LINKS.OFFICIAL_WEBSITE}
+ANSWER_KEY_LINK = {IMPORTANT_LINKS.DIRECT_DOWNLOAD}
+OBJECTION_LINK = {IMPORTANT_LINKS.DIRECT_DOWNLOAD} (वही या अलग)
+RESPONSE_SHEET_LINK = {ANSWER_KEY_DETAILS.MASTER_QUESTION_PAPER_LINK}
+BOARD_NAME = {ANSWER_KEY_IDENTIFICATION.CONDUCTING_BODY}
+-->
+
+<!-- ========== SEO KEYWORD USAGE INSTRUCTIONS FOR AI ==========
+1. PRIMARY_KEYWORD ({PRIMARY_KEYWORD}) → lead, summary table, conclusion.
+2. SECONDARY_KEYWORDS (जैसे "answer key download", "objection window", "provisional cut off", "raise objection", "challenge fee") का 5-6 बार इस्तेमाल करें।
+3. Jobjalebi.com mentioned 3-4 times: lead, download steps, important links, conclusion.
+-->
+
+<!-- ========== POST CONTENT STARTS ========== -->
+
+<!-- LEAD: PRIMARY KEYWORD + JOJALBEBI MENTION -->
+<p><strong>🚨 शोर मचाओ – शोर मचाओ!</strong> <strong>{PRIMARY_KEYWORD} जारी हो गई है!</strong> अब जो पेपर दिया था, वो अपने उत्तर मिलाए – कितने सही, कितने गलत। <strong>Jobjalebi.com</strong> पर तुम्हें सबसे पहले और मजेदार तरीके से सारी जानकारी मिलेगी। तो चाय पकड़ो, और पढ़ते जाओ। 😂</p>
+
+<p>इस पोस्ट में हम बताएँगे – <strong>उत्तर कुंजी कैसे डाउनलोड करें (<strong>answer key download</strong>), आपत्ति विंडो (<strong>objection window</strong>) कब और कैसे खुलती है, प्रति प्रश्न चैलेंज फीस (<strong>challenge fee</strong>) कितनी है, प्रोविजनल कटऑफ (<strong>provisional cut off</strong>) क्या बन रहा है, और ऑब्जेक्शन कैसे उठाएँ (<strong>raise objection</strong>) – सब कुछ हंसी-मजाक के साथ।</strong></p>
+
+<!-- ========== SECTION 1: QUICK ANSWER KEY SUMMARY TABLE ========== -->
+<h2>📌 एक नज़र में – उत्तर कुंजी का चटपटा सारांश</h2>
+<table class="responsive-table">
+  <thead>
+    <tr><th>शीर्षक</th><th>विवरण (हंसी के साथ)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>परीक्षा का नाम</td><td>{ANSWER_KEY_IDENTIFICATION.EXAM_NAME} – <strong>{PRIMARY_KEYWORD}</strong> यहाँ देखें</td></tr>
+    <tr><td>उत्तर कुंजी जारी होने की तिथि (Answer Key Date)</td><td>{ANSWER_KEY_STATUS.RELEASE_DATE} – "जिस दिन हजारों को पता चला कि वो कितने नंबर ला रहे हैं"</td></tr>
+    <tr><td>ऑब्जेक्शन विंडो प्रारंभ (Objection Start Date)</td><td>{OBJECTION_PROCESS.OBJECTION_WINDOW_START}</td></tr>
+    <tr><td>ऑब्जेक्शन विंडो समाप्त (Objection End Date)</td><td>{OBJECTION_PROCESS.OBJECTION_WINDOW_END} – "देर मत करना, वरना बाद में रोओगे"</td></tr>
+    <tr><td>चैलेंज फीस प्रति प्रश्न (Challenge Fee)</td><td>₹{OBJECTION_PROCESS.OBJECTION_FEE_PER_QUESTION} – "सही साबित किया तो पैसे वापस, गलत साबित किया तो पैसे गए"</td></tr>
+    <tr><td>प्रोविजनल कटऑफ (सामान्य)</td><td>{RESULT_DETAILS.CUTOFF_MARKS.GENERAL} अंक – "लगभग यही रहेगा, फाइनल में मामूली बदलाव"</td></tr>
+    <tr><td>प्रोविजनल कटऑफ (ओबीसी)</td><td>{RESULT_DETAILS.CUTOFF_MARKS.OBC} अंक</td></tr>
+    <tr><td>प्रोविजनल कटऑफ (एससी)</td><td>{RESULT_DETAILS.CUTOFF_MARKS.SC} अंक</td></tr>
+    <tr><td>प्रोविजनल कटऑफ (एसटी)</td><td>{RESULT_DETAILS.CUTOFF_MARKS.ST} अंक</td></tr>
+    <tr><td>आधिकारिक लिंक</td><td><a href="{IMPORTANT_LINKS.OFFICIAL_WEBSITE}">👉 {IMPORTANT_LINKS.OFFICIAL_WEBSITE}</a></td></tr>
+    <tr><td>⚡ फनी चेतावनी</td><td>"अगर तुम्हें लगता है कि तुम्हारा सही उत्तर गलत बताया गया है, तो चुप मत बैठो – ऑब्जेक्शन दागो।"</td></tr>
+  </tbody>
+</table>
+
+<!-- ========== SECTION 2: ANSWER KEY DOWNLOAD & STEPS ========== -->
+<h2>1. उत्तर कुंजी डाउनलोड करें – अपने अंक खुद जोड़ो (<strong>answer key download</strong>)</h2>
+<p>{PRIMARY_KEYWORD} को PDF के रूप में जारी कर दिया गया है। <strong>Jobjalebi.com</strong> पर हमने नीचे सीधा लिंक दे दिया है। बस क्लिक करो और सेट देखो।</p>
+<ol>
+  <!-- AI को {HOW_TO_DOWNLOAD_OR_CHECK.STEPS} ऐरे को इटरेट करने का निर्देश। -->
+  <li><strong>स्टेप 1:</strong> {HOW_TO_DOWNLOAD_OR_CHECK.STEPS[0]}</li>
+  <li><strong>स्टेप 2:</strong> {HOW_TO_DOWNLOAD_OR_CHECK.STEPS[1]}</li>
+  <li><strong>स्टेप 3:</strong> {HOW_TO_DOWNLOAD_OR_CHECK.STEPS[2]}</li>
+  <li><strong>स्टेप 4:</strong> {HOW_TO_DOWNLOAD_OR_CHECK.STEPS[3]}</li>
+</ol>
+<p><strong>😜 फनी लाइन:</strong> "पीडीएफ खोलते ही अगर तुम्हारे होश उड़ जाएँ, तो समझ जाना कि बहुत सारे उत्तर गलत हो गए। लेकिन रोना मत – ऑब्जेक्शन विंडो अभी खुली है।"</p>
+
+<!-- ========== SECTION 3: OBJECTION WINDOW & FEE DETAILS ========== -->
+<h2>2. ऑब्जेक्शन विंडो – गलत उत्तर पर विरोध दर्ज करो (<strong>objection window</strong>, <strong>challenge fee</strong>)</h2>
+<p><strong>objection window {OBJECTION_PROCESS.OBJECTION_WINDOW_START} से {OBJECTION_PROCESS.OBJECTION_WINDOW_END} तक खुली है।</strong> अगर तुम्हें लगता है कि किसी प्रश्न का सही उत्तर उत्तर कुंजी से मेल नहीं खाता, तो तुम <strong>raise objection</strong> कर सकते हो। लेकिन ये मुफ्त नहीं है – <strong>₹{OBJECTION_PROCESS.OBJECTION_FEE_PER_QUESTION} प्रति प्रश्न</strong> देने होते हैं। अगर तुम्हारी आपत्ति सही पाई जाती है, तो पैसे वापस मिल जाते हैं।</p>
+<p><strong>answer key download</strong> करने के बाद सबसे पहले अपने सबसे मुश्किल प्रश्नों के उत्तर चेक करो। <strong>Jobjalebi.com</strong> पर हमारे फनी टिप्स तुम्हें बताएँगे कि कब ऑब्जेक्शन देना फायदेमंद है और कब नहीं।</p>
+<ul>
+  <li><strong>कब ऑब्जेक्शन दें?</strong> जब तुम 100% सुनिश्चित हो कि उत्तर कुंजी गलत है – किताब या आधिकारिक स्रोत से प्रमाण लगाकर।</li>
+  <li><strong>कब न दें?</strong> जब तुम अनुमान लगा रहे हो – "लगता है तो गलत है" – ऐसे में पैसे बेकार।</li>
+  <li><strong>अधिकतम कितने ऑब्जेक्शन दे सकते हो?</strong> कोई सीमा नहीं, लेकिन हर प्रश्न के लिए फीस देनी होगी। "अगर 50 प्रश्नों पर ऑब्जेक्शन दोगे तो पॉकेट खाली हो जाएगा – समझदारी से चुनो।"</li>
+</ul>
+<p><strong>फनी टिप:</strong> "objection window में कई बार ऐसा होता है कि लोग अपनी मर्जी से गलत ऑब्जेक्शन देकर पैसे बहा देते हैं। तो जबरदस्ती मत करो – सोच-समझकर काम करो।"</p>
+
+<!-- ========== SECTION 4: EXPECTED CUT-OFF BASED ON ANSWER KEY ========== -->
+<h2>3. प्रोविजनल कटऑफ – कितने अंक पर बनेगी नौकरी? (<strong>provisional cut off</strong>)</h2>
+<p>उत्तर कुंजी और विभिन्न कोचिंग के एनालिसिस के आधार पर <strong>provisional cut off</strong> का अनुमान लगाया गया है। याद रखो, ये फाइनल नहीं है – फाइनल कटऑफ ऑब्जेक्शन खत्म होने और रिजल्ट आने पर बदल सकता है।</p>
+<table class="responsive-table">
+  <thead><tr><th>श्रेणी (Category)</th><th>प्रोविजनल कटऑफ (अनुमानित)</th><th>फनी टिप्पणी</th></tr></thead>
+  <tbody>
+    <tr><td>सामान्य (General)</td><td><strong>{RESULT_DETAILS.CUTOFF_MARKS.GENERAL}</strong></td><td>"थोड़ा ऊँचा है, पिछली बार से 1-2 अंक ज्यादा"</td></tr>
+    <tr><td>ओबीसी (OBC)</td><td><strong>{RESULT_DETAILS.CUTOFF_MARKS.OBC}</strong></td><td>"रिलैक्सेशन का फायदा, पर फिर भी मेहनत लाजमी"</td></tr>
+    <tr><td>एससी (SC)</td><td><strong>{RESULT_DETAILS.CUTOFF_MARKS.SC}</strong></td><td>"सीटें कम, पर दिल बड़ा"</td></tr>
+    <tr><td>एसटी (ST)</td><td><strong>{RESULT_DETAILS.CUTOFF_MARKS.ST}</strong></td><td>"कटऑफ तो कम है, पर पकड़ मजबूत रखो"</td></tr>
+  </tbody>
+</table>
+<p><strong>⚠️ नोट:</strong> यह केवल अनुमान है। <strong>Jobjalebi.com</strong> पर हम रिजल्ट के बाद फाइनल कटऑफ भी अपडेट करेंगे। तब तक उत्तर कुंजी से अपने अंक जोड़कर देख लो कि तुम इस रेंज में हो या नहीं।</p>
+
+<!-- ========== SECTION 5: HOW TO RAISE OBJECTION (STEP BY STEP) ========== -->
+<h2>4. ऑब्जेक्शन कैसे उठाएँ? – सरकार को दिखाओ अपना ज्ञान (<strong>raise objection</strong>)</h2>
+<ol>
+  <!-- AI को {OBJECTION_PROCESS.HOW_TO_RAISE_OBJECTION} ऐरे से स्टेप्स लेने हैं। -->
+  <li><strong>स्टेप 1:</strong> {OBJECTION_PROCESS.HOW_TO_RAISE_OBJECTION[0]}</li>
+  <li><strong>स्टेप 2:</strong> {OBJECTION_PROCESS.HOW_TO_RAISE_OBJECTION[1]}</li>
+  <li><strong>स्टेप 3:</strong> {OBJECTION_PROCESS.HOW_TO_RAISE_OBJECTION[2]}</li>
+  <li><strong>स्टेप 4:</strong> {OBJECTION_PROCESS.HOW_TO_RAISE_OBJECTION[3]}</li>
+  <li><strong>स्टेप 5:</strong> {OBJECTION_PROCESS.HOW_TO_RAISE_OBJECTION[4]}</li>
+  <li><strong>स्टेप 6:</strong> सबमिट करो और ट्रैकिंग आईडी नोट कर लो – "याद रखना, सबूत और ट्रैकिंग आईडी तुम्हारे पास होनी चाहिए।"</li>
+</ol>
+<p><strong>😂 फनी सलाह:</strong> "ऑब्जेक्शन देने से पहले एक बार गहरी साँस लो, पानी पी लो, और फिर सोचो – क्या सच में मैं सही हूँ? अगर हाँ, तो दाग दो। अगर नहीं, तो चुप बैठो और आगे पढ़ो।"</p>
+
+<!-- ========== SECTION 6: IMPORTANT LINKS ========== -->
+<h2>📌 SOME USEFUL IMPORTANT LINKS – सीधे क्लिक करो, समय बचाओ</h2>
+<table class="responsive-table">
+  <thead><tr><th>विवरण</th><th>सीधा लिंक</th><th>फनी रिमार्क</th></tr></thead>
+  <tbody>
+    <tr><td><strong>🟢 उत्तर कुंजी PDF (Answer Key)</strong></td><td><a href="{IMPORTANT_LINKS.DIRECT_DOWNLOAD}" target="_blank">👉 उत्तर कुंजी डाउनलोड करें</a></td><td>"यहाँ देखो कि तुमने कितने सवाल सही किए"</td></tr>
+    <tr><td><strong>📝 ऑब्जेक्शन पोर्टल (Objection Portal)</strong></td><td><a href="{IMPORTANT_LINKS.DIRECT_DOWNLOAD}" target="_blank">👉 ऑब्जेक्शन दर्ज करें</a></td><td>"अपनी आपत्ति यहाँ दागो, पर पैसे लगेंगे"</td></tr>
+    <tr><td><strong>📄 रिस्पांस शीट (Response Sheet)</strong></td><td><a href="{ANSWER_KEY_DETAILS.MASTER_QUESTION_PAPER_LINK}" target="_blank">👉 रिस्पांस शीट देखें</a></td><td>"यहाँ देखो कि तुमने परीक्षा में क्या भरा था"</td></tr>
+    <tr><td><strong>🌐 {ANSWER_KEY_IDENTIFICATION.CONDUCTING_BODY} की आधिकारिक वेबसाइट</strong></td><td><a href="{IMPORTANT_LINKS.OFFICIAL_WEBSITE}" target="_blank">👉 {IMPORTANT_LINKS.OFFICIAL_WEBSITE}</a></td><td>"मूल घर – यहाँ सबसे पहले अपडेट"</td></tr>
+  </tbody>
+</table>
+<p><strong>⚠️ चेतावनी:</strong> <strong>Jobjalebi.com</strong> के अलावा किसी भी अन्य वेबसाइट से लिंक पर क्लिक मत करना – खासकर अगर कोई कहे "तुम्हारी तरफ से ऑब्जेक्शन हम कर देंगे, ₹500 लेंगे"। वो स्कैम है। सरकारी लिंक हमेशा ".gov.in" पर होता है और ऑब्जेक्शन खुद ही करो।</p>
+
+<!-- ========== SECTION 7: CONCLUSION ========== -->
+<h2>🏁 आखिरी बात – अब क्या करोगे?</h2>
+<p><strong>{PRIMARY_KEYWORD} देख ली, प्रोविजनल कटऑफ समझ लिया, ऑब्जेक्शन विंडो खुली है।</strong> अब अगर तुम्हें लगता है कि तुम्हारे नंबर कटऑफ से ऊपर बन रहे हैं, तो अगली परीक्षा की तैयारी शुरू करो। अगर कटऑफ से कम हैं, तो ऑब्जेक्शन दागो या अगली बार की तैयारी करो। <strong>Jobjalebi.com</strong> पर हम हमेशा तुम्हारे साथ हैं – हँसाते हुए, जगाते हुए।</p>
+<p><strong>मोटिवेशनल फनी लाइन:</strong> "उत्तर कुंजी सिर्फ एक पेपर है – तुम्हारी किस्मत का फैसला नहीं। यदि नंबर कम भी आए, तो मायूस मत हो – कल नया दिन है, नई परीक्षा है। और हाँ, ऑब्जेक्शन देने से पहले एक बार सोच लेना – पैसे फेंकने लायक है या नहीं।"</p>
+<p><strong>सीधा लिंक:</strong> <a href="{IMPORTANT_LINKS.DIRECT_DOWNLOAD}">👉 यहाँ क्लिक करें – उत्तर कुंजी डाउनलोड करें</a></p>
+
+<!-- ========== SECTION 8: FAQ ========== -->
+<h2>❓ {ANSWER_KEY_IDENTIFICATION.CONDUCTING_BODY} उत्तर कुंजी से जुड़े सामान्य सवाल (FAQs)</h2>
+<div class="faq-section">
+  <h3>Q1: उत्तर कुंजी डाउनलोड करने के लिए क्या चाहिए?</h3>
+  <p><strong>A1:</strong> कुछ नहीं – बस इंटरनेट कनेक्शन और PDF रीडर। "बिना लॉगिन के सीधा डाउनलोड होगी, मत डरो।"</p>
+  
+  <h3>Q2: क्या मैं ऑब्जेक्शन विंडो बंद होने के बाद आपत्ति दे सकता हूँ?</h3>
+  <p><strong>A2:</strong> नहीं। बंद होने के बाद कोई आपत्ति नहीं मानी जाती। "तो तारीख याद रखो – Jobjalebi.com पर हम हमेशा रिमाइंडर डालते हैं।"</p>
+  
+  <h3>Q3: अगर चैलेंज फीस भरने के बाद मेरी आपत्ति सही पाई जाए, तो पैसे वापस कैसे मिलेंगे?</h3>
+  <p><strong>A3:</strong> जिस तरह से भरे थे, उसी तरह वापस आ जाएंगे – आमतौर पर 7-10 दिन में। "बैंक अकाउंट चेक करते रहना।"</p>
+  
+  <h3>Q4: क्या मैं एक ही प्रश्न पर बार-बार ऑब्जेक्शन दे सकता हूँ?</h3>
+  <p><strong>A4:</strong> नहीं, एक प्रश्न पर एक बार ही ऑब्जेक्शन दे सकते हो। "जबरदस्ती मत करो।"</p>
+  
+  <h3>Q5: क्या ऑब्जेक्शन देने के बाद कटऑफ बदल सकता है?</h3>
+  <p><strong>A5:</strong> हाँ, अगर बहुत सारे ऑब्जेक्शन सही पाए जाते हैं तो उत्तर कुंजी बदलती है, जिससे नंबर और कटऑफ बदल सकते हैं। "इसलिए झूठे ऑब्जेक्शन मत दो – समय बर्बाद है।"</p>
+  
+  <h3>Q6: {PRIMARY_KEYWORD} कहाँ से डाउनलोड करूँ?</h3>
+  <p><strong>A6:</strong> ऊपर Important Links टेबल में "उत्तर कुंजी PDF" का लिंक दिया है – वहाँ से डाउनलोड करो। <strong>Jobjalebi.com</strong> पर भी सीधा लिंक है।</p>
+</div>
+
+<!-- ========== SECTION 9: DISCLAIMER ========== -->
+<p><strong>⚠️ अस्वीकरण:</strong> यह पोस्ट {ANSWER_KEY_IDENTIFICATION.CONDUCTING_BODY} द्वारा जारी आधिकारिक उत्तर कुंजी, ऑब्जेक्शन विंडो और विभिन्न स्रोतों पर आधारित है। प्रोविजनल कटऑफ केवल अनुमान है – फाइनल कटऑफ रिजल्ट के साथ आएगा। दिए गए लिंक आधिकारिक स्रोतों पर रीडायरेक्ट करते हैं। <strong>Jobjalebi.com</strong> किसी तीसरे पक्ष से जुड़ा नहीं है।</p>
+
+<p><strong>😄 आखिरी मोटिवेशन:</strong> "उत्तर कुंजी तुम्हारे नंबर बताएगी, लेकिन तुम्हारी मेहनत नहीं। अगर कम नंबर आए तो हिम्मत मत हारो – अगली बार और जोर लगाओ। और हाँ – हँसते रहो, क्योंकि सरकारी नौकरी की रेस में जो हँसता है, वही जीतता है।"</p>
+
+<!-- ========== POST ENDS ========== -->

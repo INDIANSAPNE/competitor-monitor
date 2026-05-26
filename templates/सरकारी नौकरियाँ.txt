@@ -1,0 +1,222 @@
+<!-- 
+=================================================================
+TEMPLATE NAME: सरकारी नौकरियाँ Template 
+CATEGORY: सरकारी नौकरियाँ
+DESCRIPTION: 
+  यह टेम्पलेट "सरकारी नौकरियाँ" कैटेगरी की हमारी JSON स्कीमा के साथ पूरी तरह से एकीकृत है।
+  AI को निर्देश है कि वह नीचे दिए गए सभी की-पाथ को JSON ({EXTRA_DATA}) से भरकर पोस्ट तैयार करे।
+  टोन: 80% फनी + 20% मोटिवेशनल | SEO: Primary, Secondary, LSI keywords.
+  Jobjalebi.com का नाम प्राकृतिक रूप से 3 बार डाला गया है।
+=================================================================
+-->
+
+<!-- ========== METADATA (AI AGENT INPUT - JSON से लिया गया) ========== -->
+<!--
+POST_TITLE = {SEO_TITLE}
+CATEGORY = {JOB_CATEGORY}
+SUBCATEGORY = {DEPARTMENT}
+PRIMARY_KEYWORD = {PRIMARY_KEYWORD}
+SECONDARY_KEYWORDS = {SECONDARY_KEYWORDS}
+LSI_KEYWORDS = {LSI_KEYWORDS}
+BOARD_NAME = {RECRUITING_AGENCY}
+POST_NAME = {POST_NAME}
+TOTAL_VACANCY = {TOTAL_VACANCIES}
+START_DATE = {APPLICATION_PROCESS.APPLICATION_START_DATE}
+LAST_DATE = {APPLICATION_PROCESS.APPLICATION_LAST_DATE}
+FEE_GEN = {APPLICATION_PROCESS.APPLICATION_FEE.GENERAL_OBC_EWS}
+AGE_LIMIT = "{ELIGIBILITY.AGE_LIMIT.MINIMUM_AGE}-{ELIGIBILITY.AGE_LIMIT.MAXIMUM_AGE} वर्ष"
+OFFICIAL_LINK = {IMPORTANT_LINKS.OFFICIAL_WEBSITE}
+APPLY_ONLINE_LINK = {IMPORTANT_LINKS.APPLY_ONLINE_LINK}
+REGISTRATION_LINK = {IMPORTANT_LINKS.APPLY_ONLINE_LINK} (वही)
+NOTIFICATION_PDF_LINK = {IMPORTANT_LINKS.OFFICIAL_NOTIFICATION_PDF}
+SYLLABUS_LINK = {IMPORTANT_LINKS.SYLLABUS_LINK}
+NOTIFICATION_NO = {ADVT_NO}
+-->
+
+<!-- ========== SEO KEYWORD USAGE INSTRUCTIONS FOR AI ==========
+1. PRIMARY_KEYWORD ({PRIMARY_KEYWORD}) → lead, summary table, vacancy section, eligibility, conclusion, last FAQ.
+2. SECONDARY_KEYWORDS ({SECONDARY_KEYWORDS} से हर एक को 5-6 बार इस्तेमाल करें):
+   - "apply online" → How to Apply, Important Links, Conclusion, FAQ.
+   - "vacancy details" → Vacancy section, summary table.
+   - "eligibility" → Eligibility section, FAQ.
+   - "last date" → Dates section, summary table, precautions.
+   - "application fee" → Fee row, how to apply.
+3. Jobjalebi.com mentioned 3 times: lead, important links section, conclusion.
+-->
+
+<!-- ========== POST CONTENT STARTS ========== -->
+
+<!-- LEAD: PRIMARY KEYWORD + JOJALBEBI MENTION -->
+<p><strong>🚨 अलर्ट – अलर्ट – अलर्ट!</strong> <strong>{RECRUITING_AGENCY} ने {TOTAL_VACANCIES} पदों पर {PRIMARY_KEYWORD} जारी कर दी है।</strong> अब जो पढ़ाई कर चुका है, वो आगे बढ़े; जो नहीं कर पाया, वो अब भी फॉर्म भर ले – भगवान भरोसे। लेकिन जल्दी करो, क्योंकि सर्वर क्रैश होने में देर नहीं लगती। <strong>Jobjalebi.com</strong> पर हम तुम्हें हंसी-मजाक के साथ पूरी डिटेल देते हैं – तो चाय पकड़ो और पढ़ते जाओ। 😂</p>
+
+<p>इस पोस्ट में हम तुम्हें बताएँगे – <strong>कितने पद हैं (vacancy details), किसे अप्लाई करना चाहिए (eligibility), फीस कितनी है (application fee), आखिरी तारीख (last date) क्या है, परीक्षा तिथि (exam date), सैलरी, एडमिट कार्ड और सब कुछ – हंसी-मजाक के साथ ताकि बोरियत न हो।</strong> तो चाय बनाओ, मोबाइल पकड़ो, और <strong>Jobjalebi.com</strong> के इस पोस्ट को अंत तक पढ़ो।</p>
+
+<!-- ========== SECTION 1: QUICK SUMMARY TABLE (includes primary keyword and secondary) ========== -->
+<h2>📌 एक नज़र में – भर्ती का चटपटा सारांश</h2>
+<table class="responsive-table">
+  <thead>
+    <tr><th>शीर्षक</th><th>विवरण (हंसी के साथ)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>बोर्ड / संस्था का नाम</td><td>{RECRUITING_AGENCY} – <strong>{PRIMARY_KEYWORD}</strong> यहाँ देखें</td></tr>
+    <tr><td>अधिसूचना संख्या</td><td>{ADVT_NO} – "इसे याद मत करो"</td></tr>
+    <tr><td>पद का नाम</td><td>{JOB_TITLE}</td></tr>
+    <tr><td>कुल रिक्तियाँ (<strong>vacancy details</strong>)</td><td>{TOTAL_VACANCIES} – "इतने पद कि अगर एक भी छूटा तो पछताओगे"</td></tr>
+    <tr><td>आवेदन शुरू</td><td>{APPLICATION_PROCESS.APPLICATION_START_DATE}</td></tr>
+    <tr><td><strong>last date</strong> (अंतिम तिथि)</td><td>{APPLICATION_PROCESS.APPLICATION_LAST_DATE} – "देर मत करना, वरना सर्वर क्रैश हो जाएगा"</td></tr>
+    <tr><td><strong>application fee</strong> (आवेदन शुल्क)</td><td>{APPLICATION_PROCESS.APPLICATION_FEE.GENERAL_OBC_EWS} – "SC/ST/महिलाएं/दिव्यांग: ₹0"</td></tr>
+    <tr><td>आयु सीमा (Age Limit)</td><td>{ELIGIBILITY.AGE_LIMIT.MINIMUM_AGE}-{ELIGIBILITY.AGE_LIMIT.MAXIMUM_AGE} वर्ष – "SC/ST/OBC को एक्स्ट्रा साल"</td></tr>
+    <tr><td>परीक्षा तिथि (Exam Date)</td><td>[{IMPORTANT_DATES.EXAM_DATE}] – "तैयारी शुरू करो"</td></tr>
+    <tr><td>आधिकारिक लिंक</td><td><a href="{IMPORTANT_LINKS.OFFICIAL_WEBSITE}">👉 {IMPORTANT_LINKS.OFFICIAL_WEBSITE}</a></td></tr>
+    <tr><td>⚡ फनी चेतावनी</td><td>"पिछली बार 50% लोग आखिरी दिन रोते रहे – अब अक्लमंद बनो"</td></tr>
+  </tbody>
+</table>
+
+<!-- ========== SECTION 2: VACANCY DETAILS (secondary keywords: vacancy details, apply online) ========== -->
+<h2>1. पद और वेकेंसी – कितनी सीटें, किस-किस पद पर? (<strong>vacancy details</strong>)</h2>
+<p>चलो, सीधे मुद्दे पर आते हैं। <strong>{PRIMARY_KEYWORD}</strong> के अनुसार कितने पद निकले हैं – देखो और गणित मिलाओ। <strong>याद रखना, ज्यादा सीटों वाले पद पर competition ज्यादा होगा, लेकिन cut off भी उसी हिसाब से बनता है।</strong> <strong>vacancy details</strong> देखकर ही तय करो कि किस पद पर फोकस करना है।</p>
+<table class="responsive-table">
+  <thead><tr><th>पद का नाम</th><th>Gen</th><th>OBC</th><th>SC</th><th>ST</th><th>EWS</th><th>कुल</th></tr></thead>
+  <tbody>
+    <!-- AI को निर्देश: {POST_WISE_VACANCIES} ऐरे को इटरेट करके हर पद के लिए एक रो बनाएँ। -->
+    <tr><td>{POST_WISE_VACANCIES[0].POST_NAME}</td><td>[Gen]</td><td>[OBC]</td><td>[SC]</td><td>[ST]</td><td>[EWS]</td><td>[कुल]</td></tr>
+    <tr><td>{POST_WISE_VACANCIES[1].POST_NAME}</td><td>[Gen]</td><td>[OBC]</td><td>[SC]</td><td>[ST]</td><td>[EWS]</td><td>[कुल]</td></tr>
+  </tbody>
+</table>
+<p><strong>😂 फनी कमेंट:</strong> OBC वालों को थोड़ी ज्यादा मिली, SC/ST वालों को थोड़ी कम – पर अब रोना नहीं, फॉर्म भरो। <strong>इन पदों पर salary भी अच्छी है – ₹{SALARY.MINIMUM_SALARY} से ₹{SALARY.MAXIMUM_SALARY} प्रति माह।</strong> और हाँ, <strong>apply online</strong> करने से पहले ये vacancy details जरूर देख लेना।</p>
+
+<!-- ========== SECTION 3: ELIGIBILITY (secondary keyword: eligibility) ========== -->
+<h2>2. एलिजिबिलिटी – किसे दाखिला है? (<strong>eligibility</strong>)</h2>
+<p><strong>eligibility</strong> तय करती है कि तुम फॉर्म भर सकते हो या नहीं। नीचे देखो और सुनिश्चित करो – कहीं उम्र या डिग्री के चक्कर में फॉर्म रिजेक्ट न हो जाए।</p>
+<ul>
+  <li><strong>शैक्षिक योग्यता:</strong> {ELIGIBILITY.EDUCATIONAL_QUALIFICATION} – "बस डिग्री होनी चाहिए, चाहे B.A. हो या B.Sc."</li>
+  <li><strong>उम्र सीमा (Age Limit):</strong> {ELIGIBILITY.AGE_LIMIT.MINIMUM_AGE}-{ELIGIBILITY.AGE_LIMIT.MAXIMUM_AGE} वर्ष – "eligibility में ये सबसे कड़ा नियम है।"</li>
+  <li><strong>उम्र छूट:</strong> SC/ST: {ELIGIBILITY.AGE_LIMIT.AGE_RELAXATION.SC_ST}, OBC: {ELIGIBILITY.AGE_LIMIT.AGE_RELAXATION.OBC}, PwD: {ELIGIBILITY.AGE_LIMIT.AGE_RELAXATION.PWD}</li>
+  <li><strong>राष्ट्रीयता:</strong> {ELIGIBILITY.NATIONALITY}</li>
+  <li><strong>अन्य पात्रता:</strong> {ELIGIBILITY.OTHER_ELIGIBILITY} (यदि कोई हो)</li>
+</ul>
+
+<!-- ========== SECTION 4: SELECTION PROCESS ========== -->
+<h2>3. चयन प्रक्रिया – कितने चरण?</h2>
+<p>इस भर्ती में आपको नीचे दिए गए चरणों से गुज़रना होगा:</p>
+<ul>
+  <!-- AI को {SELECTION_PROCESS.STAGES} ऐरे की हर स्टेज के लिए लिस्ट आइटम बनाने हैं। -->
+  <li><strong>{SELECTION_PROCESS.STAGES[0]}</strong></li>
+  <li><strong>{SELECTION_PROCESS.STAGES[1]}</strong></li>
+  <li><strong>{SELECTION_PROCESS.STAGES[2]}</strong></li>
+</ul>
+<p><strong>परीक्षा पैटर्न:</strong> {SELECTION_PROCESS.EXAM_PATTERN.PRELIMS.TOTAL_MARKS} अंक, {SELECTION_PROCESS.EXAM_PATTERN.PRELIMS.DURATION} का पेपर। नेगेटिव मार्किंग: {SELECTION_PROCESS.EXAM_PATTERN.PRELIMS.NEGATIVE_MARKING}</p>
+<p><strong>😜 फनी लाइन:</strong> "Tier 1 क्वालीफाई करोगे तो बस एक स्टेप आगे। Tier 2 में आओगे तो थोड़ा रुको। फिर डॉक्यूमेंट वेरिफिकेशन – असली टेंशन तब होती है जब signature mismatch हो जाता है।"</p>
+
+<!-- ========== SECTION 5: HOW TO APPLY (secondary keyword: apply online - multiple times) ========== -->
+<h2>4. <strong>apply online</strong> – आवेदन कैसे करें?</h2>
+<p>अब सबसे जरूरी हिस्सा – <strong>apply online</strong> की प्रक्रिया। नीचे दिए गए स्टेप्स फॉलो करो और गलती मत करना। <strong>Jobjalebi.com</strong> पर हम हर स्टेप को मजाकिया तरीके से समझाते हैं ताकि तुम्हें कुछ भी मुश्किल न लगे।</p>
+<ol>
+  <li><strong>स्टेप 1:</strong> <a href="{IMPORTANT_LINKS.OFFICIAL_WEBSITE}">{IMPORTANT_LINKS.OFFICIAL_WEBSITE}</a> पर जाओ – "फर्जी साइटों से बचना, सिर्फ आधिकारिक पर जाओ।"</li>
+  <li><strong>स्टेप 2:</strong> One Time Registration करो – "पहले से रजिस्टर हो तो सीधा लॉगिन करो।"</li>
+  <li><strong>स्टेप 3:</strong> फॉर्म भरो – नाम, पता, पिता का नाम – सब सही डालो। "<strong>apply online</strong> में गलती सबसे बड़ा दुश्मन है।"</li>
+  <li><strong>स्टेप 4:</strong> फोटो और सिग्नेचर अपलोड करो – "2 इंच की फोटो, 2 फीट की नहीं। पिछली बार लोगों ने पूरा बॉडी शॉट डाल दिया था।"</li>
+  <li><strong>स्टेप 5:</strong> <strong>application fee</strong> भरो – Online (Card/Net Banking) – "General/OBC वाले ₹{APPLICATION_PROCESS.APPLICATION_FEE.GENERAL_OBC_EWS} भरो, बाकी मुफ्त।"</li>
+  <li><strong>स्टेप 6:</strong> सबमिट करो और कन्फर्मेशन पेज प्रिंट करो – "हार्ड कॉपी निकालकर फाइल में रखो, मत कहना कि मैंने नहीं बताया।"</li>
+</ol>
+<p><strong>😂 फनी सलाह:</strong> "<strong>apply online</strong> के आखिरी दिन मत रुको – सर्वर क्रैश होगा, फिर रोते रहना। पहले तीन दिन में फॉर्म भर दो और चैन से सोओ।"</p>
+
+<!-- ========== SECTION 6: DOCUMENTS CHECKLIST ========== -->
+<h2>5. ज़रूरी दस्तावेज़ – चेकलिस्ट</h2>
+<ul>
+  <!-- AI को {APPLICATION_PROCESS.REQUIRED_DOCUMENTS} ऐरे को इटरेट करके लिस्ट आइटम बनाने हैं। -->
+  <li>{APPLICATION_PROCESS.REQUIRED_DOCUMENTS[0]}</li>
+  <li>{APPLICATION_PROCESS.REQUIRED_DOCUMENTS[1]}</li>
+  <li>{APPLICATION_PROCESS.REQUIRED_DOCUMENTS[2]}</li>
+  <li>पासपोर्ट साइज फोटो (स्कैन्ड)</li>
+  <li>सिग्नेचर (स्कैन्ड)</li>
+</ul>
+
+<!-- ========== SECTION 7: IMPORTANT DATES (includes last date repeatedly) ========== -->
+<h2>6. महत्वपूर्ण तिथियाँ – कब क्या होगा? (<strong>last date</strong> और exam date)</h2>
+<p><strong>last date</strong> = {APPLICATION_PROCESS.APPLICATION_LAST_DATE}. इसे कभी मत भूलना। नीचे पूरी तिथियों की टेबल है:</p>
+<table class="responsive-table">
+  <thead><tr><th>घटना</th><th>तारीख</th></tr></thead>
+  <tbody>
+    <tr><td>आवेदन शुरू</td><td>{APPLICATION_PROCESS.APPLICATION_START_DATE}</td></tr>
+    <tr><td><strong>last date</strong> (आवेदन की अंतिम तिथि)</td><td>{APPLICATION_PROCESS.APPLICATION_LAST_DATE}</td></tr>
+    <tr><td>फीस जमा करने की अंतिम तिथि</td><td>{APPLICATION_PROCESS.LAST_DATE_FOR_FEE}</td></tr>
+    <tr><td>एडमिट कार्ड जारी</td><td>{IMPORTANT_DATES.ADMIT_CARD_DATE}</td></tr>
+    <tr><td><strong>परीक्षा तिथि (Exam Date)</strong></td><td>{IMPORTANT_DATES.EXAM_DATE}</td></tr>
+  </tbody>
+</table>
+<p><strong>😡 फनी डांट:</strong> "अगर तुम <strong>last date</strong> निकल जाने के बाद रोने आए, तो हम कुछ नहीं कर सकते। अभी कैलेंडर में नोट कर लो।"</p>
+
+<!-- ========== SECTION 8: FUNNY SUMMARY OF OFFICIAL JARGON ========== -->
+<h2>7. अधिसूचना का फनी सार</h2>
+<ul>
+  <li><strong>"प्रोबेशनरी पीरियड"</strong> ({ADDITIONAL_INFO.PROBATION_PERIOD}) = बिना सुरक्षा कवच की नौकरी।</li>
+  <li><strong>"बॉन्ड"</strong> ({ADDITIONAL_INFO.SERVICE_BOND}) = कागज जिस पर दस्तखत करोगे, और अगर नौकरी छोड़ी तो पैसे देने पड़ेंगे।</li>
+  <li><strong>"इन-हैंड सैलरी"</strong> = असली पैसा जो महीने के अंत में आता है।</li>
+</ul>
+
+<!-- ========== SECTION 9: PRECAUTIONS & MISTAKES (with secondary keywords) ========== -->
+<h2>8. सावधानियाँ – ये गलतियाँ मत करना</h2>
+<ul>
+  <li>⚠️ नकली वेबसाइट से बचें – सिर्फ आधिकारिक लिंक पर जाएँ। <strong>apply online</strong> के लिए हमेशा .gov.in देखो।</li>
+  <li>⏰ <strong>last date</strong> के आखिरी दिन इंतज़ार मत करो – सर्वर क्रैश होगा।</li>
+  <li>📸 फोटो साइज़ चेक करो ({APPLICATION_PROCESS.PHOTO_SPECIFICATIONS})।</li>
+  <li>💳 पेमेंट रसीद बचाएँ – "भविष्य में काम आएगी।"</li>
+  <li>🔁 फॉर्म सबमिट करने से पहले <strong>eligibility</strong> दोबारा जाँच लो।</li>
+</ul>
+
+<!-- ========== SECTION 10: WHAT IF YOU MISS THE FORM? ========== -->
+<h2>9. अगर फॉर्म भूल गए तो क्या होगा?</h2>
+<p>कुछ नहीं। बस अगली अधिसूचना का इंतज़ार करो। लेकिन – तुम यहाँ इसलिए हो कि मौका न छूटे। तो अभी जाओ और <strong>apply online</strong> करो। <strong>Jobjalebi.com</strong> पर हम हर बार चेतावनी देते हैं – फिर भी कुछ लोग देर कर देते हैं।</p>
+
+<!-- ========== SECTION 11: SOME USEFUL IMPORTANT LINKS (with Jobjalebi mention) ========== -->
+<h2>📌 SOME USEFUL IMPORTANT LINKS – सीधे क्लिक करो</h2>
+<p><strong>Jobjalebi.com</strong> की टीम ने नीचे सभी जरूरी लिंक एक टेबल में दे दिए हैं। बस क्लिक करो और फॉर्म भरो।</p>
+<table class="responsive-table">
+  <thead>
+    <tr><th>विवरण</th><th>सीधा लिंक</th><th>फनी रिमार्क</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>🟢 <strong>apply online</strong> (आवेदन लिंक)</strong></td><td><a href="{IMPORTANT_LINKS.APPLY_ONLINE_LINK}" target="_blank">👉 यहाँ क्लिक करें</a></td><td>"अब मत सोचो, भर डालो"</td></tr>
+    <tr><td><strong>🆕 पंजीकरण / लॉगिन</strong></td><td><a href="{IMPORTANT_LINKS.APPLY_ONLINE_LINK}" target="_blank">👉 रजिस्टर करें</a></td><td>"नए हो तो रजिस्टर करो"</td></tr>
+    <tr><td><strong>📄 आधिकारिक अधिसूचना (Notification PDF)</strong></td><td><a href="{IMPORTANT_LINKS.OFFICIAL_NOTIFICATION_PDF}" target="_blank">👉 डाउनलोड करें</a></td><td>"वकीलों वाली भाषा है, पर पढ़ लेना"</td></tr>
+    <tr><td><strong>📚 सिलेबस और परीक्षा पैटर्न (Syllabus)</strong></td><td><a href="{IMPORTANT_LINKS.SYLLABUS_LINK}" target="_blank">👉 सिलेबस देखें</a></td><td>"यहाँ देखो कि क्या पढ़ना है"</td></tr>
+    <tr><td><strong>🌐 {RECRUITING_AGENCY} की आधिकारिक वेबसाइट</strong></td><td><a href="{IMPORTANT_LINKS.OFFICIAL_WEBSITE}" target="_blank">👉 {IMPORTANT_LINKS.OFFICIAL_WEBSITE}</a></td><td>"मूल घर – यहाँ से सब शुरू"</td></tr>
+  </tbody>
+</table>
+<p><strong>⚠️ चेतावनी:</strong> ऊपर दिए लिंक के अलावा किसी और पर क्लिक मत करना – वो स्कैम है। सरकारी लिंक हमेशा ".gov.in" पर खत्म होता है। <strong>Jobjalebi.com</strong> पर दिए गए लिंक 100% सुरक्षित हैं।</p>
+
+<!-- ========== SECTION 12: CONCLUSION (primary keyword + Jobjalebi + secondary) ========== -->
+<h2>🏁 आखिरी बात – अब क्या करोगे?</h2>
+<p><strong>{RECRUITING_AGENCY} की {PRIMARY_KEYWORD} आ चुकी है।</strong> {TOTAL_VACANCIES} पदों का यह मौका हाथ से मत जाने दो। फॉर्म खुला है, <strong>last date</strong> आ रही है, <strong>eligibility</strong> तुम्हारी बनती है – बस <strong>apply online</strong> करना बाकी है।</p>
+<p><strong>मोटिवेशनल फनी लाइन:</strong> "तैयारी करनी है तो करो, नहीं करनी है तो मत करो। मुझसे बहाने मत सुनाओ – <strong>apply online</strong> करो और पढ़ना शुरू करो। नौकरी तुम्हें खुद लानी है। <strong>Jobjalebi.com</strong> पर हम तुम्हारी हर संभव मदद करेंगे।"</p>
+<p><strong>सीधा लिंक:</strong> <a href="{IMPORTANT_LINKS.APPLY_ONLINE_LINK}">👉 यहाँ क्लिक करें – फॉर्म भरें</a></p>
+
+<!-- ========== SECTION 13: FAQ (primary keyword in last question, secondary keywords scattered) ========== -->
+<h2>❓ {RECRUITING_AGENCY} भर्ती अधिसूचना से जुड़े सामान्य सवाल (FAQs)</h2>
+<div class="faq-section">
+  <h3>Q1: क्या मैं फॉर्म भरने के बाद उसमें सुधार कर सकता हूँ?</h3>
+  <p><strong>A1:</strong> हाँ, सुधार विंडो में (आमतौर पर फॉर्म बंद होने के बाद)। "तो पहले ही सही भरो। <strong>apply online</strong> करते समय एक बार सब चेक कर लो।"</p>
+  
+  <h3>Q2: अगर ऑनलाइन पेमेंट फेल हो जाए?</h3>
+  <p><strong>A2:</strong> पैसे कटे हैं और ट्रांजैक्शन फेल है, तो 3-4 दिन में वापस आ जाएंगे। दोबारा पेमेंट करो। <strong>application fee</strong> का रिकॉर्ड जरूर रखो।</p>
+  
+  <h3>Q3: क्या एक साथ कई पदों के लिए आवेदन कर सकते हैं?</h3>
+  <p><strong>A3:</strong> एक ही फॉर्म में पद प्राथमिकता देनी होती है – "सबके लिए अलग फॉर्म नहीं भरना है। <strong>vacancy details</strong> देखकर प्राथमिकता तय करो।"</p>
+  
+  <h3>Q4: क्या मैं एग्जाम सेंटर बदल सकता हूँ?</h3>
+  <p><strong>A4:</strong> आमतौर पर नहीं – सोच-समझकर सेंटर चुनो। <strong>last date</strong> के बाद तो बिल्कुल नहीं।</p>
+  
+  <h3>Q5: यदि आयु सीमा थोड़ी बढ़ गई है (3 महीने), तो फॉर्म चल जाएगा?</h3>
+  <p><strong>A5:</strong> नहीं। <strong>eligibility</strong> में आयु सख्ती से लागू होती है। "पहले जाँच लो, फिर फॉर्म भरो।"</p>
+  
+  <h3>Q6: {PRIMARY_KEYWORD} कहाँ से डाउनलोड करूँ?</h3>
+  <p><strong>A6:</strong> ऊपर Important Links टेबल में "आधिकारिक अधिसूचना" का लिंक दिया है – वहाँ से डाउनलोड करो। और हाँ, <strong>Jobjalebi.com</strong> को बुकमार्क कर लो ताकि हर अपडेट सबसे पहले मिले।</p>
+</div>
+
+<!-- ========== SECTION 14: DISCLAIMER ========== -->
+<p><strong>⚠️ अस्वीकरण:</strong> यह पोस्ट {RECRUITING_AGENCY} की आधिकारिक अधिसूचना पर आधारित है। सटीक जानकारी के लिए आधिकारिक वेबसाइट अवश्य देखें। दिए गए लिंक आधिकारिक स्रोतों पर रीडायरेक्ट करते हैं – <strong>Jobjalebi.com</strong> किसी तीसरे पक्ष से जुड़ा नहीं है।</p>
+
+<p><strong>😄 आखिरी मोटिवेशन:</strong> "आज नहीं कल – ये सोचकर मत बैठो। जाओ, अभी <strong>apply online</strong> करो और हंसते रहो। याद रखना, <strong>Jobjalebi.com</strong> हमेशा तुम्हारे साथ है।"</p>
+
+<!-- ========== POST ENDS ========== -->

@@ -1,0 +1,66 @@
+दिए गए आर्टिकल टाइटल और URL के आधार पर, निम्नलिखित JSON स्कीमा को पूरी तरह से भरें। यह स्कीमा सभी प्रकार के प्रवेश पत्र / एडमिट कार्ड से जुड़ी जानकारी को कवर करती है – चाहे वह सरकारी भर्ती परीक्षा हो, बोर्ड परीक्षा (10वीं/12वीं), विश्वविद्यालय परीक्षा, प्रवेश परीक्षा (JEE, NEET, CUET), या कोई अन्य प्रतियोगी परीक्षा। हर फील्ड को ध्यानपूर्वक भरें। जहाँ जानकारी न हो, वहाँ खाली, शून्य या null रखें। केवल मान्य JSON लौटाएँ, कोई अन्य टेक्स्ट नहीं।
+
+{
+  "ADMIT_CARD_IDENTIFICATION": {
+    "EXAM_NAME": "",
+    "RECRUITMENT_NAME": "",
+    "POST_NAME": "",
+    "CONDUCTING_BODY": "",
+    "EXAM_TYPE": "",
+    "CATEGORY": ""
+  },
+  "ADMIT_CARD_STATUS": {
+    "RELEASED": false,
+    "RELEASE_DATE": "",
+    "DIRECT_DOWNLOAD_LINK": "",
+    "STATUS_CHECK_LINK": ""
+  },
+  "EXAM_DETAILS": {
+    "EXAM_DATE": "",
+    "EXAM_TIME": "",
+    "EXAM_SHIFT": "",
+    "EXAM_DURATION": "",
+    "EXAM_MODE": "",
+    "EXAM_CENTER_CITY": "",
+    "EXAM_CENTER_NAME": "",
+    "FULL_SCHEDULE": [
+      {
+        "DATE": "",
+        "SUBJECT": "",
+        "TIME": ""
+      }
+    ]
+  },
+  "HOW_TO_DOWNLOAD": {
+    "STEPS": [],
+    "REQUIRED_DETAILS": [],
+    "ALTERNATE_METHOD": ""
+  },
+  "CANDIDATE_INSTRUCTIONS": {
+    "GENERAL_INSTRUCTIONS": [],
+    "EXAM_DAY_GUIDELINES": [],
+    "DOCUMENTS_TO_CARRY": [],
+    "PROHIBITED_ITEMS": [],
+    "COVID_SPECIFIC": ""
+  },
+  "IMPORTANT_DATES": {
+    "ADMIT_CARD_AVAILABLE_FROM": "",
+    "ADMIT_CARD_AVAILABLE_UNTIL": "",
+    "EXAM_DATE_LIST": [],
+    "RESULT_DATE": ""
+  },
+  "IMPORTANT_LINKS": {
+    "OFFICIAL_NOTIFICATION": "",
+    "DIRECT_DOWNLOAD": "",
+    "OFFICIAL_WEBSITE": "",
+    "HELPLINE_NUMBER": ""
+  },
+  "ADDITIONAL_INFO": {
+    "RESOLUTION_OF_ISSUES": "",
+    "REPRINT_OPTION": "",
+    "CONTACT_DETAILS": ""
+  }
+}
+
+टाइटल: {TITLE}
+URL: {URL}

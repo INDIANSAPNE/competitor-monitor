@@ -2,8 +2,8 @@ name: 24x7 AI कंटेंट फैक्ट्री
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # हर 30 मिनट
-  workflow_dispatch:         # मैन्युअल ट्रिगर
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
 
 jobs:
   content-pipeline:
@@ -31,10 +31,10 @@ jobs:
           WP_PASS: ${{ secrets.WP_PASS }}
         run: go run .
 
-      - name: डेटा फ़ाइलें कमिट करें (अगर बदलाव हुए)
+      - name: डेटा फ़ाइलें कमिट करें
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add seen_links.json articles.xlsx
+          git add data/seen_links.json data/articles.xlsx data/covered_topics.json
           git diff --staged --quiet || git commit -m "🤖 ऑटो-अपडेट [skip ci]"
           git push

@@ -1,0 +1,193 @@
+<!-- 
+=================================================================
+TEMPLATE NAME: स्किल डेवलपमेंट & स्वरोजगार (Skill Development & Self-Employment) Template - JSON Schema Integrated
+VERSION: 1.0
+CATEGORY: स्किल डेवलपमेंट & स्वरोजगार
+DESCRIPTION: 
+  यह टेम्पलेट "स्किल डेवलपमेंट & स्वरोजगार" कैटेगरी की हमारी JSON स्कीमा के साथ पूरी तरह से एकीकृत है।
+  AI को निर्देश है कि वह नीचे दिए गए स्ट्रक्चर और JSON ({EXTRA_DATA}) का उपयोग करके एक
+  मजेदार, SEO-फ्रेंडली और प्रैक्टिकल पोस्ट लिखे। हर सेक्शन में JSON से सही डेटा खींचा जाए
+  (जैसे SKILL_IDENTIFICATION, PROGRAM_STATUS, COURSE_OR_SCHEME_DETAILS आदि)।
+  टोन: 80% फनी + 20% मोटिवेशनल | SEO: Primary, Secondary, LSI keywords.
+  Jobjalebi.com का नाम प्राकृतिक रूप से 3-4 बार डाला गया है.
+=================================================================
+-->
+
+<!-- ========== METADATA (AI AGENT INPUT - JSON से लिया गया) ========== -->
+<!--
+POST_TITLE: JSON के SEO_TITLE फ़ील्ड से लें।
+CATEGORY: JSON के CATEGORY फ़ील्ड से लें।
+PRIMARY_KEYWORD: JSON के PRIMARY_KEYWORD फ़ील्ड से लें।
+SECONDARY_KEYWORDS: JSON के SECONDARY_KEYWORDS फ़ील्ड से लें (कम से कम 5-6 बार उपयोग करें)।
+LSI_KEYWORDS: JSON के LSI_KEYWORDS फ़ील्ड से लें।
+EXTRA_DATA: पूरा JSON ऑब्जेक्ट। AI को इसे पढ़कर सभी सेक्शन भरने हैं।
+-->
+
+<!-- ========== SEO KEYWORD USAGE INSTRUCTIONS FOR AI ==========
+1. PRIMARY_KEYWORD ({PRIMARY_KEYWORD}) → lead, summary table, course/scheme details, conclusion.
+2. SECONDARY_KEYWORDS (जैसे "skill development", "self-employment", "apply online", "eligibility", "free course", "government scheme", "loan", "training") का कम से कम 5-6 बार उपयोग करें।
+3. Jobjalebi.com का उल्लेख 3-4 बार करें: lead, important links, conclusion, FAQ.
+-->
+
+<!-- ========== POST CONTENT STARTS ========== -->
+
+<!-- LEAD: PRIMARY KEYWORD + JOJALBEBI MENTION -->
+<p><strong>🚨 कमाई का रास्ता खुल गया!</strong> <strong>{SKILL_IDENTIFICATION.PROGRAM_NAME} के तहत {PRIMARY_KEYWORD} – अब सीखो और कमाओ!</strong> अब वो दिन गए जब सिर्फ डिग्री के भरोसे बैठे रहते थे। <strong>Jobjalebi.com</strong> पर हम तुम्हें हंसी-मजाक के साथ बताएँगे कि कैसे यह स्किल या योजना तुम्हारी ज़िंदगी बदल सकती है – तो चाय पकड़ो, हाथ में औज़ार लो, और पढ़ते जाओ। 😂</p>
+
+<p>इस पोस्ट में हम तुम्हें बताएँगे – <strong>कौन सी स्किल सिखाएँगे (<strong>skill development</strong>), कितनी फीस है या फ्री है (<strong>free course</strong>), कौन अप्लाई कर सकता है (<strong>eligibility</strong>), अप्लाई कैसे करें (<strong>apply online</strong>), और अगर खुद का बिज़नेस करना चाहो तो कितना लोन मिलेगा (<strong>loan</strong>) और सरकारी योजना (<strong>government scheme</strong>) का फायदा – सब कुछ हंसी-मजाक के साथ।</strong> तो चाय बनाओ, मोबाइल पकड़ो, और <strong>Jobjalebi.com</strong> के इस पोस्ट को अंत तक पढ़ो।</p>
+
+<!-- ========== SECTION 1: QUICK SUMMARY TABLE ========== -->
+<h2>📌 एक नज़र में – प्रोग्राम का चटपटा सारांश</h2>
+<p>नीचे दी गई टेबल में <strong>{PRIMARY_KEYWORD}</strong> की सारी ज़रूरी जानकारी एक जगह है। (AI: JSON से डेटा भरें।)</p>
+<table class="responsive-table">
+  <thead>
+    <tr><th>शीर्षक</th><th>विवरण (हंसी के साथ)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>प्रोग्राम का नाम</td><td>{SKILL_IDENTIFICATION.PROGRAM_NAME} – "नाम सुनते ही दिल खुश"</td></tr>
+    <tr><td>प्रदाता / संस्था</td><td>{SKILL_IDENTIFICATION.PROVIDER_NAME} ({SKILL_IDENTIFICATION.PROVIDER_TYPE})</td></tr>
+    <tr><td>प्रोग्राम का प्रकार</td><td>{SKILL_IDENTIFICATION.PROGRAM_TYPE} – "कोर्स, ट्रेनिंग, या लोन स्कीम?"</td></tr>
+    <tr><td>कौशल श्रेणी</td><td>{SKILL_IDENTIFICATION.SKILL_CATEGORY} – "हाथ का काम या दिमाग का?"</td></tr>
+    <tr><td>स्तर / अवधि</td><td>{SKILL_IDENTIFICATION.LEVEL} | {COURSE_OR_SCHEME_DETAILS.DURATION} {COURSE_OR_SCHEME_DETAILS.DURATION_UNIT}</td></tr>
+    <tr><td>फीस (<strong>free course</strong>)</td><td>{COURSE_OR_SCHEME_DETAILS.FEE.TOTAL_FEE} ({COURSE_OR_SCHEME_DETAILS.FEE.FEE_TYPE}) – {COURSE_OR_SCHEME_DETAILS.FEE.IS_FREE} तो मज़ा!</td></tr>
+    <tr><td>प्रशिक्षण का तरीका</td><td>{SKILL_IDENTIFICATION.MODE} – "घर बैठे या सेंटर पर?"</td></tr>
+    <tr><td>पात्रता (<strong>eligibility</strong>)</td><td>{ELIGIBILITY.MINIMUM_EDUCATION} + उम्र: {ELIGIBILITY.AGE_LIMIT.MINIMUM_AGE}-{ELIGIBILITY.AGE_LIMIT.MAXIMUM_AGE} वर्ष</td></tr>
+    <tr><td>लोन / सब्सिडी (<strong>loan</strong>)</td><td>{BENEFITS_AND_OUTCOMES.LOAN_FACILITY} (₹{BENEFITS_AND_OUTCOMES.LOAN_DETAILS}) / {BENEFITS_AND_OUTCOMES.SUBSIDY_DETAILS}</td></tr>
+    <tr><td>रोज़गार सहायता</td><td>{BENEFITS_AND_OUTCOMES.JOB_PLACEMENT_ASSISTANCE} – "नौकरी भी दिलवाएँगे!"</td></tr>
+    <tr><td>आवेदन तिथियाँ</td><td>शुरू: {IMPORTANT_DATES.APPLICATION_START_DATE} | अंतिम: {IMPORTANT_DATES.APPLICATION_LAST_DATE}</td></tr>
+    <tr><td>आवेदन लिंक</td><td><a href="{IMPORTANT_LINKS.APPLY_LINK}">👉 यहाँ क्लिक करें</a></td></tr>
+    <tr><td>⚡ फनी चेतावनी</td><td>"सीखने की कोई उम्र नहीं, पर स्कीम की लास्ट डेट ज़रूर होती है – चूको मत।"</td></tr>
+  </tbody>
+</table>
+
+<!-- ========== SECTION 2: COURSE/SCHEME DETAILS ========== -->
+<h2>1. कोर्स/योजना की पूरी जानकारी – क्या सिखाएँगे और कैसे? (<strong>skill development</strong>)</h2>
+<p><strong>{SKILL_IDENTIFICATION.PROGRAM_NAME}</strong> एक <strong>{SKILL_IDENTIFICATION.PROGRAM_TYPE}</strong> है जो {SKILL_IDENTIFICATION.PROVIDER_NAME} द्वारा चलाया जा रहा है। इसका उद्देश्य लोगों को <strong>{SKILL_IDENTIFICATION.SKILL_CATEGORY}</strong> में माहिर बनाना है।</p>
+<ul>
+  <li><strong>कोर्स/योजना का नाम:</strong> {COURSE_OR_SCHEME_DETAILS.COURSE_NAME}</li>
+  <li><strong>कुल अवधि:</strong> {COURSE_OR_SCHEME_DETAILS.DURATION} {COURSE_OR_SCHEME_DETAILS.DURATION_UNIT} ({COURSE_OR_SCHEME_DETAILS.TOTAL_HOURS} घंटे)</li>
+  <li><strong>माध्यम:</strong> {COURSE_OR_SCHEME_DETAILS.MEDIUM_OF_INSTRUCTION}</li>
+  <li><strong>बैच साइज़:</strong> {COURSE_OR_SCHEME_DETAILS.BATCH_SIZE}</li>
+  <li><strong>प्रमाणन:</strong> {COURSE_OR_SCHEME_DETAILS.CERTIFICATION} – "सर्टिफिकेट मिलेगा, फ्रेम करवा के दीवार पर टाँगना।"</li>
+</ul>
+<p><strong>😂 फनी कमेंट:</strong> "इतना सब सीखने के बाद अगर नौकरी न भी मिली तो कम से कम घर में चीज़ें ठीक करने के पैसे तो बच ही जाओगे।"</p>
+
+<!-- ========== SECTION 3: FEE DETAILS ========== -->
+<h2>2. फीस और खर्च – कितना लगेगा, कितना बचेगा? (<strong>free course</strong> / <strong>loan</strong>)</h2>
+<table class="responsive-table">
+  <thead><tr><th>मद</th><th>राशि</th><th>फनी बात</th></tr></thead>
+  <tbody>
+    <tr><td>कुल फीस</td><td>₹{COURSE_OR_SCHEME_DETAILS.FEE.TOTAL_FEE}</td><td>{COURSE_OR_SCHEME_DETAILS.FEE.IS_FREE} तो "फ्री में ज्ञान, इससे अच्छा क्या!"</td></tr>
+    <tr><td>छूट / सब्सिडी</td><td>{COURSE_OR_SCHEME_DETAILS.FEE.DISCOUNT_DETAILS} / {BENEFITS_AND_OUTCOMES.SUBSIDY_DETAILS}</td><td>"सरकार पैसे दे रही है, इनकार मत करना।"</td></tr>
+    <tr><td>लोन सुविधा</td><td>{BENEFITS_AND_OUTCOMES.LOAN_DETAILS}</td><td>"बाद में आराम से चुकाना, अभी बस सीखो।"</td></tr>
+    <tr><td>भुगतान का तरीका</td><td>{COURSE_OR_SCHEME_DETAILS.FEE.FEE_PAYMENT_MODE}</td><td>"UPI करो और भूल जाओ।"</td></tr>
+  </tbody>
+</table>
+<p><strong>😜 फनी लाइन:</strong> "अगर ये कोर्स फ्री है, तो समझो सरकार तुम्हारी जेब में पैसे डाल रही है। अगर फीस है भी, तो उसे निवेश समझो – एक बार सीख लिया तो ज़िंदगी भर कमाओगे।"</p>
+
+<!-- ========== SECTION 4: ELIGIBILITY ========== -->
+<h2>3. पात्रता – कौन-कौन ले सकता है लाभ? (<strong>eligibility</strong>)</h2>
+<ul>
+  <li><strong>न्यूनतम शिक्षा:</strong> {ELIGIBILITY.MINIMUM_EDUCATION}</li>
+  <li><strong>उम्र:</strong> {ELIGIBILITY.AGE_LIMIT.MINIMUM_AGE} – {ELIGIBILITY.AGE_LIMIT.MAXIMUM_AGE} वर्ष</li>
+  <li><strong>लिंग:</strong> {ELIGIBILITY.GENDER}</li>
+  <li><strong>आरक्षण:</strong> {ELIGIBILITY.RESERVATION_CATEGORY}</li>
+  <li><strong>अधिवास / अन्य:</strong> {ELIGIBILITY.DOMICILE} / {ELIGIBILITY.OTHER_REQUIREMENTS}</li>
+</ul>
+<p><strong>फनी टिप:</strong> "पात्रता का मतलब यह नहीं कि तुम होशियार हो – इसका मतलब है कि तुम फॉर्म भरने लायक हो। तो घबराओ मत, चेक करो और आगे बढ़ो।"</p>
+
+<!-- ========== SECTION 5: SELF-EMPLOYMENT OPPORTUNITIES ========== -->
+<h2>4. स्वरोजगार के अवसर – नौकरी नहीं, खुद का काम! (<strong>self-employment</strong>)</h2>
+<p>अगर तुम नौकरी की बजाय खुद का बिजनेस करना चाहते हो, तो इस योजना के तहत बहुत मौके हैं। (AI: SELF_EMPLOYMENT_OPPORTUNITIES से डेटा भरें, अगर उपलब्ध हो। अगर यह सेक्शन खाली है तो छोड़ भी सकते हैं या सामान्य बातें लिख सकते हैं।)</p>
+<ul>
+  <li><strong>बिजनेस आइडिया:</strong> {SELF_EMPLOYMENT_OPPORTUNITIES.BUSINESS_IDEA}</li>
+  <li><strong>सेक्टर:</strong> {SELF_EMPLOYMENT_OPPORTUNITIES.SECTOR}</li>
+  <li><strong>शुरुआती निवेश:</strong> ₹{SELF_EMPLOYMENT_OPPORTUNITIES.INITIAL_INVESTMENT.MINIMUM} – ₹{SELF_EMPLOYMENT_OPPORTUNITIES.INITIAL_INVESTMENT.MAXIMUM}</li>
+  <li><strong>मुनाफा:</strong> {SELF_EMPLOYMENT_OPPORTUNITIES.PROFIT_MARGIN}</li>
+  <li><strong>जुड़ी सरकारी योजनाएं:</strong> {SELF_EMPLOYMENT_OPPORTUNITIES.GOVERNMENT_SCHEMES_LINKED}</li>
+</ul>
+<p><strong>😂 फनी सलाह:</strong> "खुद का बॉस बनना है तो मेहनत तो करनी पड़ेगी – लेकिन जब पैसा आएगा तो सब दुख भूल जाओगे।"</p>
+
+<!-- ========== SECTION 6: HOW TO APPLY ========== -->
+<h2>5. <strong>apply online</strong> – आवेदन कैसे करें?</h2>
+<p><strong>Jobjalebi.com</strong> की टीम ने नीचे स्टेप-बाय-स्टेप गाइड तैयार की है। (AI: APPLICATION_PROCESS.STEPS_TO_APPLY ऐरे से स्टेप्स लें।)</p>
+<ol>
+  <li>{APPLICATION_PROCESS.STEPS_TO_APPLY[0]}</li>
+  <li>{APPLICATION_PROCESS.STEPS_TO_APPLY[1]}</li>
+  <li>{APPLICATION_PROCESS.STEPS_TO_APPLY[2]}</li>
+  <li>{APPLICATION_PROCESS.STEPS_TO_APPLY[3]}</li>
+  <li>{APPLICATION_PROCESS.STEPS_TO_APPLY[4]}</li>
+</ol>
+<p><strong>ज़रूरी दस्तावेज़:</strong> (AI: APPLICATION_PROCESS.REQUIRED_DOCUMENTS ऐरे से लें।)</p>
+<p><strong>🤣 फनी सलाह:</strong> "फॉर्म भरते वक्त इतना मत सोचो कि 'कहीं गलत न हो जाए' – बस भरो और सबमिट करो। गलती हुई तो सुधार हो जाएगा, पर लास्ट डेट निकल गई तो सब गया।"</p>
+
+<!-- ========== SECTION 7: SELECTION PROCESS ========== -->
+<h2>6. चयन प्रक्रिया – कैसे चुनेंगे तुम्हें?</h2>
+<p><strong>चयन विधि:</strong> {SELECTION_PROCESS.SELECTION_METHOD}</p>
+<p><strong>इंटरव्यू:</strong> {SELECTION_PROCESS.INTERVIEW} | <strong>मेरिट आधारित:</strong> {SELECTION_PROCESS.MERIT_BASED}</p>
+<p><strong>अन्य:</strong> {SELECTION_PROCESS.OTHER_DETAILS}</p>
+<p><strong>फनी लाइन:</strong> "अगर इंटरव्यू है तो घबराना मत – बस अपनी स्किल और जुनून दिखाना। वो तुम्हारा कॉन्फिडेंस देखकर ही मान जाएँगे।"</p>
+
+<!-- ========== SECTION 8: SUCCESS STORIES ========== -->
+<h2>7. सफलता की कहानियाँ – इन्होंने कर दिखाया!</h2>
+<!-- AI: SUCCESS_STORIES ऐरे को इटरेट करें। -->
+<div class="success-story">
+  <p><strong>{SUCCESS_STORIES[0].NAME}</strong> – {SUCCESS_STORIES[0].STORY}</p>
+  <p><em>परिणाम: {SUCCESS_STORIES[0].OUTCOME}</em></p>
+</div>
+<p>ये कहानियाँ सिर्फ प्रेरणा नहीं, सबूत हैं कि मेहनत करने वालों के लिए रास्ते खुद बन जाते हैं।</p>
+
+<!-- ========== SECTION 9: IMPORTANT DATES ========== -->
+<h2>8. महत्वपूर्ण तिथियाँ – कब क्या होगा? (<strong>last date</strong> याद रखना)</h2>
+<table class="responsive-table">
+  <thead><tr><th>घटना</th><th>तारीख</th></tr></thead>
+  <tbody>
+    <tr><td>अधिसूचना जारी</td><td>{IMPORTANT_DATES.NOTIFICATION_DATE}</td></tr>
+    <tr><td>आवेदन शुरू</td><td>{IMPORTANT_DATES.APPLICATION_START_DATE}</td></tr>
+    <tr><td><strong>आवेदन की अंतिम तिथि</strong></td><td>{IMPORTANT_DATES.APPLICATION_LAST_DATE} – "इसके बाद रोना मना है।"</td></tr>
+    <tr><td>प्रशिक्षण शुरू</td><td>{IMPORTANT_DATES.TRAINING_START_DATE}</td></tr>
+    <tr><td>प्रमाणन तिथि</td><td>{IMPORTANT_DATES.CERTIFICATION_DATE}</td></tr>
+  </tbody>
+</table>
+
+<!-- ========== SECTION 10: IMPORTANT LINKS ========== -->
+<h2>📌 SOME USEFUL IMPORTANT LINKS – यहाँ से करो सीधा काम</h2>
+<p><strong>Jobjalebi.com</strong> की टीम ने नीचे सभी ज़रूरी लिंक एक टेबल में दे दिए हैं।</p>
+<table class="responsive-table">
+  <thead><tr><th>विवरण</th><th>सीधा लिंक</th><th>फनी रिमार्क</th></tr></thead>
+  <tbody>
+    <tr><td><strong>🟢 <strong>apply online</strong> (आवेदन करें)</strong></td><td><a href="{IMPORTANT_LINKS.APPLY_LINK}">👉 यहाँ क्लिक करें</a></td><td>"फॉर्म भरो और स्किल पाओ"</td></tr>
+    <tr><td><strong>📄 आधिकारिक अधिसूचना</strong></td><td><a href="{IMPORTANT_LINKS.OFFICIAL_NOTIFICATION}">👉 नोटिफिकेशन पीडीएफ</a></td><td>"इसमें सब लिखा है, पर हमने आसान कर दिया"</td></tr>
+    <tr><td><strong>🌐 आधिकारिक वेबसाइट</strong></td><td><a href="{IMPORTANT_LINKS.OFFICIAL_WEBSITE}">👉 ऑफिशियल साइट</a></td><td>"यहाँ से सीधी जानकारी"</td></tr>
+    <tr><td><strong>📞 हेल्पलाइन</strong></td><td>{IMPORTANT_LINKS.HELPLINE}</td><td>"कुछ पूछना हो तो कॉल करो"</td></tr>
+  </tbody>
+</table>
+<p><strong>⚠️ चेतावनी:</strong> <strong>Jobjalebi.com</strong> पर दिए गए लिंक 100% सुरक्षित हैं। किसी एजेंट को पैसे मत देना – ये स्किल स्कीम सीधे सरकार या संस्था से जुड़ी हैं।</p>
+
+<!-- ========== SECTION 11: CONCLUSION ========== -->
+<h2>🏁 आखिरी बात – अब क्या करोगे?</h2>
+<p><strong>{PRIMARY_KEYWORD} तुम्हारे हाथ में है।</strong> अब वक्त है एक्शन लेने का। <strong>apply online</strong> करो, <strong>skill development</strong> का फायदा उठाओ, और अपनी कमाई शुरू करो। <strong>Jobjalebi.com</strong> पर हम हर नई योजना की जानकारी लाते रहेंगे – बस तुम मेहनत करते रहो।</p>
+<p><strong>मोटिवेशनल फनी लाइन:</strong> "सीखने के लिए पैसे नहीं, इरादे चाहिए। और जब सरकार खुद पैसे दे रही है सिखाने के लिए, तो मना करना बेवकूफी है। जाओ, आज ही अप्लाई करो और अपना भविष्य बनाओ।"</p>
+<p><strong>सीधा लिंक:</strong> <a href="{IMPORTANT_LINKS.APPLY_LINK}">👉 यहाँ क्लिक करें – अभी अप्लाई करें</a></p>
+
+<!-- ========== SECTION 12: FAQ ========== -->
+<h2>❓ इस योजना/कोर्स से जुड़े सामान्य सवाल (FAQs)</h2>
+<div class="faq-section">
+  <h3>Q1: क्या यह कोर्स बिल्कुल फ्री है?</h3>
+  <p><strong>A1:</strong> {COURSE_OR_SCHEME_DETAILS.FEE.IS_FREE} – अगर हाँ, तो "हाँ, एकदम मुफ्त।" अगर नहीं, तो फीस बताएँ।</p>
+  <h3>Q2: क्या सीखने के बाद नौकरी ज़रूर मिलेगी?</h3>
+  <p><strong>A2:</strong> {BENEFITS_AND_OUTCOMES.JOB_PLACEMENT_ASSISTANCE} – "सहायता मिलेगी, लेकिन 100% गारंटी नहीं। हाँ, स्किल आ गई तो नौकरी ढूँढना आसान होगा।"</p>
+  <h3>Q3: क्या मैं ऑनलाइन आवेदन कर सकता हूँ?</h3>
+  <p><strong>A3:</strong> {APPLICATION_PROCESS.APPLICATION_MODE} – "हाँ, ऊपर लिंक दिया है।"</p>
+  <h3>Q4: लोन लेने पर कितना ब्याज देना होगा?</h3>
+  <p><strong>A4:</strong> {BENEFITS_AND_OUTCOMES.LOAN_DETAILS} – "सरकारी योजना है तो ब्याज कम या शून्य हो सकता है।"</p>
+  <h3>Q5: <strong>{PRIMARY_KEYWORD}</strong> की और जानकारी कहाँ से लूँ?</h3>
+  <p><strong>A5:</strong> ऊपर दिए लिंक पर क्लिक करो या <strong>Jobjalebi.com</strong> पर आते रहो – हम हर अपडेट देते हैं।</p>
+</div>
+
+<!-- ========== SECTION 13: DISCLAIMER ========== -->
+<p><strong>⚠️ अस्वीकरण:</strong> यह पोस्ट {SKILL_IDENTIFICATION.PROVIDER_NAME} और संबंधित सरकारी/निजी योजनाओं की आधिकारिक सूचनाओं पर आधारित है। सटीकता के लिए ऑफिशियल वेबसाइट देखें। <strong>Jobjalebi.com</strong> सूचना प्रदाता है, भागीदार नहीं।</p>
+
+<p><strong>😄 आखिरी मोटिवेशन:</strong> "हाथ का हुनर या दिमाग की स्किल – यही तुम्हारी असली पूँजी है। इसे बढ़ाओ, और ज़िंदगी को अपने तरीके से जियो।"</p>
+
+<!-- ========== POST ENDS ========== -->

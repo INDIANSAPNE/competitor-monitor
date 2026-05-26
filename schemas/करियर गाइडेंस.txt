@@ -1,0 +1,111 @@
+दिए गए आर्टिकल टाइटल और URL के आधार पर, निम्नलिखित JSON स्कीमा को पूरी तरह से भरें। यह स्कीमा सभी प्रकार के करियर गाइडेंस (Career Guidance) कंटेंट को कवर करने के लिए डिज़ाइन की गई है – चाहे वह किसी विशेष क्षेत्र (मेडिकल, इंजीनियरिंग, आर्ट्स, कॉमर्स, आईटी, फाइनेंस, लॉ, डिफेंस, सिविल सेवा, शिक्षण, रिसर्च, स्पोर्ट्स, मीडिया, फ्रीलांसिंग आदि) में करियर बनाने की गाइड हो, या 10वीं/12वीं के बाद करियर विकल्प, या स्किल डेवलपमेंट/स्वरोजगार की गाइड हो। यह हर आयु वर्ग और शैक्षिक स्तर के लिए उपयुक्त है। हर फील्ड को ध्यानपूर्वक भरें; जहाँ जानकारी उपलब्ध न हो, वहाँ खाली, शून्य या null रखें। केवल मान्य JSON लौटाएँ, कोई अन्य टेक्स्ट नहीं।
+
+{
+  "GUIDE_IDENTIFICATION": {
+    "GUIDE_TITLE": "",
+    "GUIDE_TYPE": "",
+    "PRIMARY_FIELD": "",
+    "TARGET_AUDIENCE": [],
+    "EDUCATION_LEVEL": "",
+    "AGE_GROUP": ""
+  },
+  "CAREER_OVERVIEW": {
+    "DESCRIPTION": "",
+    "WHY_CHOOSE_THIS_FIELD": [],
+    "FUTURE_SCOPE": "",
+    "INDUSTRY_TRENDS": ""
+  },
+  "EDUCATIONAL_PATHWAYS": [
+    {
+      "STREAM": "",
+      "COURSES": [
+        {
+          "COURSE_NAME": "",
+          "DURATION": "",
+          "ELIGIBILITY": "",
+          "TOP_INSTITUTES": [],
+          "AVERAGE_FEES": ""
+        }
+      ],
+      "CERTIFICATIONS": [],
+      "ONLINE_COURSES": []
+    }
+  ],
+  "SKILLS_REQUIRED": {
+    "TECHNICAL_SKILLS": [],
+    "SOFT_SKILLS": [],
+    "LANGUAGE_PROFICIENCY": []
+  },
+  "ENTRANCE_EXAMS": [
+    {
+      "EXAM_NAME": "",
+      "CONDUCTING_BODY": "",
+      "FREQUENCY": "",
+      "SYLLABUS_LINK": ""
+    }
+  ],
+  "CAREER_OPPORTUNITIES": {
+    "JOB_PROFILES": [
+      {
+        "PROFILE_NAME": "",
+        "JOB_DESCRIPTION": "",
+        "AVERAGE_STARTING_SALARY": "",
+        "EXPERIENCED_SALARY": ""
+      }
+    ],
+    "TOP_RECRUITERS": [],
+    "GOVERNMENT_JOBS": [],
+    "PRIVATE_JOBS": [],
+    "SELF_EMPLOYMENT_OPTIONS": []
+  },
+  "SALARY_AND_GROWTH": {
+    "ENTRY_LEVEL_SALARY": "",
+    "MID_LEVEL_SALARY": "",
+    "SENIOR_LEVEL_SALARY": "",
+    "FACTORS_AFFECTING_SALARY": []
+  },
+  "PROS_AND_CONS": {
+    "PROS": [],
+    "CONS": [],
+    "CHALLENGES": []
+  },
+  "STEP_BY_STEP_ROADMAP": [
+    {
+      "STEP_NUMBER": 0,
+      "ACTION": "",
+      "TIME_FRAME": "",
+      "RESOURCES": []
+    }
+  ],
+  "SUCCESS_STORIES": [
+    {
+      "NAME": "",
+      "ACHIEVEMENT": "",
+      "KEY_LEARNING": ""
+    }
+  ],
+  "RESOURCES": {
+    "BOOKS": [],
+    "WEBSITES": [],
+    "YOUTUBE_CHANNELS": [],
+    "FORUMS": []
+  },
+  "FREQUENTLY_ASKED_QUESTIONS": [
+    {
+      "QUESTION": "",
+      "ANSWER": ""
+    }
+  ],
+  "EXPERT_TIPS": [],
+  "ADDITIONAL_INFO": {
+    "MYTHS_AND_FACTS": [],
+    "IMPORTANT_LINKS": {
+      "OFFICIAL_WEBSITES": [],
+      "GOVT_SCHEMES": []
+    },
+    "NOTES": ""
+  }
+}
+
+टाइटल: {TITLE}
+URL: {URL}

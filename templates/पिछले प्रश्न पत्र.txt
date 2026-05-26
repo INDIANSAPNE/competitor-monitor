@@ -1,0 +1,160 @@
+<!-- 
+=================================================================
+TEMPLATE NAME: पिछले प्रश्न पत्र (Previous Papers) Template - JSON Schema Integrated
+VERSION: 1.0
+CATEGORY: पिछले प्रश्न पत्र
+DESCRIPTION: 
+  यह टेम्पलेट "पिछले प्रश्न पत्र" कैटेगरी की हमारी JSON स्कीमा के साथ पूरी तरह से एकीकृत है।
+  AI को निर्देश है कि वह नीचे दिए गए स्ट्रक्चर और JSON ({EXTRA_DATA}) का उपयोग करके एक
+  मजेदार, SEO-फ्रेंडली पोस्ट लिखे। हर सेक्शन में यह सुनिश्चित करें कि JSON से सही डेटा
+  खींचा जाए (जैसे PAPER_IDENTIFICATION, PAPER_DETAILS, SUBJECT_WISE_DETAILS आदि)।
+  टोन: 80% फनी + 20% मोटिवेशनल | SEO: Primary, Secondary (बार-बार), LSI keywords.
+  Jobjalebi.com का नाम प्राकृतिक रूप से 3-4 बार डाला गया है.
+=================================================================
+-->
+
+<!-- ========== METADATA (AI AGENT INPUT - JSON से लिया गया) ========== -->
+<!--
+POST_TITLE: JSON के SEO_TITLE फ़ील्ड से लें।
+CATEGORY: JSON के CATEGORY फ़ील्ड से लें।
+PRIMARY_KEYWORD: JSON के PRIMARY_KEYWORD फ़ील्ड से लें।
+SECONDARY_KEYWORDS: JSON के SECONDARY_KEYWORDS फ़ील्ड से लें।
+LSI_KEYWORDS: JSON के LSI_KEYWORDS फ़ील्ड से लें।
+EXTRA_DATA: पूरा JSON ऑब्जेक्ट। AI को इसे पढ़कर सभी सेक्शन भरने हैं।
+-->
+
+<!-- ========== SEO KEYWORD USAGE INSTRUCTIONS FOR AI ==========
+1. PRIMARY_KEYWORD ({PRIMARY_KEYWORD}) → lead, summary table, details, conclusion.
+2. SECONDARY_KEYWORDS (जैसे "previous year paper download", "exam pattern", "subject wise questions", "solved paper") का कम से कम 5-6 बार उपयोग करें।
+3. Jobjalebi.com का उल्लेख 3-4 बार करें: lead, useful links, conclusion, FAQ.
+-->
+
+<!-- ========== POST CONTENT STARTS ========== -->
+
+<!-- LEAD: PRIMARY KEYWORD + JOJALBEBI MENTION -->
+<p><strong>🚨 तैयारी का रामबाण इलाज आ गया!</strong> <strong>{PAPER_IDENTIFICATION.EXAM_NAME} के {PRIMARY_KEYWORD} जारी हो चुके हैं।</strong> अब आप सीधे देख सकते हैं कि परीक्षा में कैसे सवाल आते हैं, कितनी कठिनाई होती है, और किन टॉपिक्स पर ज़ोर देना है। <strong>Jobjalebi.com</strong> पर हम आपको हंसी-मज़ाक के साथ प्रश्न पत्रों का पूरा विश्लेषण दे रहे हैं – तो चाय पकड़ो और पढ़ते जाओ। 😂</p>
+
+<p>इस पोस्ट में हम आपको बताएँगे – <strong>प्रश्न पत्र कहाँ से डाउनलोड करें (<strong>previous year paper download</strong>), एग्जाम पैटर्न कैसा है (<strong>exam pattern</strong>), विषयवार कितने प्रश्न आते हैं (<strong>subject wise questions</strong>), और हल/अनसुलझे प्रश्न पत्र (<strong>solved paper</strong>) की सुविधा – सब कुछ हंसी-मजाक के साथ।</strong> तो चाय बनाओ, मोबाइल पकड़ो, और <strong>Jobjalebi.com</strong> के इस पोस्ट को अंत तक पढ़ो।</p>
+
+<!-- ========== SECTION 1: QUICK SUMMARY TABLE ========== -->
+<h2>📌 एक नज़र में – प्रश्न पत्र का चटपटा सारांश</h2>
+<p>नीचे दी गई टेबल में <strong>{PRIMARY_KEYWORD}</strong> की सारी ज़रूरी जानकारी एक जगह है। (AI: JSON से डेटा भरें।)</p>
+<table class="responsive-table">
+  <thead>
+    <tr><th>शीर्षक</th><th>विवरण (हंसी के साथ)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>परीक्षा का नाम</td><td>{PAPER_IDENTIFICATION.EXAM_NAME} – <strong>{PRIMARY_KEYWORD}</strong> यहाँ देखें</td></tr>
+    <tr><td>आयोजक संस्था</td><td>{PAPER_IDENTIFICATION.CONDUCTING_BODY} – "जिनके पेपर ने लाखों की नींद उड़ाई"</td></tr>
+    <tr><td>वर्ष</td><td>{PAPER_IDENTIFICATION.PAPER_YEAR} – "पुराना है, पर सोना है"</td></tr>
+    <tr><td>पेपर का प्रकार</td><td>{PAPER_IDENTIFICATION.PAPER_TYPE} ({PAPER_IDENTIFICATION.PAPER_SUBJECT})</td></tr>
+    <tr><td>शिफ्ट / सेट</td><td>{PAPER_IDENTIFICATION.PAPER_SHIFT} / {PAPER_IDENTIFICATION.PAPER_SET} – "जिस सेट पर सबसे ज्यादा चर्चा हुई"</td></tr>
+    <tr><td>कुल अंक</td><td>{PAPER_DETAILS.TOTAL_MARKS}</td></tr>
+    <tr><td>कुल प्रश्न</td><td>{PAPER_DETAILS.TOTAL_QUESTIONS}</td></tr>
+    <tr><td>समयावधि</td><td>{PAPER_DETAILS.DURATION}</td></tr>
+    <tr><td>हल/अनसुलझा (<strong>solved paper</strong>)</td><td>{PAPER_DETAILS.SOLVED} – "हल है तो सोना, नहीं तो भी कम नहीं"</td></tr>
+    <tr><td>उत्तर कुंजी उपलब्ध</td><td>{PAPER_DETAILS.ANSWER_KEY_AVAILABLE} – "मिलान करने का मज़ा ही अलग है"</td></tr>
+    <tr><td>फ़ाइल फ़ॉर्मेट</td><td>{FILE_INFORMATION.FILE_FORMAT} ({FILE_INFORMATION.FILE_SIZE}, {FILE_INFORMATION.NUMBER_OF_PAGES} पेज)</td></tr>
+    <tr><td>डायरेक्ट डाउनलोड लिंक</td><td><a href="{IMPORTANT_LINKS.DIRECT_DOWNLOAD}">👉 यहाँ क्लिक करें</a></td></tr>
+    <tr><td>⚡ फनी चेतावनी</td><td>"पेपर डाउनलोड करके सिर्फ देखो मत – हल करो, वरना कुछ नहीं होगा।"</td></tr>
+  </tbody>
+</table>
+
+<!-- ========== SECTION 2: PAPER DETAILS ========== -->
+<h2>1. प्रश्न पत्र का विस्तृत विवरण – क्या है इस पेपर में खास? (<strong>exam pattern</strong>)</h2>
+<p><strong>{PAPER_IDENTIFICATION.EXAM_NAME}</strong> का यह प्रश्न पत्र <strong>{PAPER_IDENTIFICATION.PAPER_YEAR}</strong> में आयोजित परीक्षा का है। इसका <strong>exam pattern</strong> समझना बहुत ज़रूरी है ताकि आपको असली परीक्षा का अंदाज़ा हो जाए।</p>
+<ul>
+  <li><strong>कुल अंक:</strong> {PAPER_DETAILS.TOTAL_MARKS} – "हर अंक के लिए मारामारी"</li>
+  <li><strong>कुल प्रश्न:</strong> {PAPER_DETAILS.TOTAL_QUESTIONS} – "इतने सवाल हल करने में उँगलियाँ दुख सकती हैं"</li>
+  <li><strong>समय:</strong> {PAPER_DETAILS.DURATION} – "इतने मिनट में पसीना छूटना तय"</li>
+  <li><strong>मोड:</strong> {PAPER_DETAILS.MODE} – "ऑनलाइन हो या ऑफलाइन, तैयारी एक जैसी"</li>
+  <li><strong>नेगेटिव मार्किंग:</strong> {PAPER_DETAILS.NEGATIVE_MARKING} – "गलत जवाब की सजा"</li>
+  <li><strong>कठिनाई स्तर:</strong> {PAPER_DETAILS.DIFFICULTY_LEVEL} – "आसान, मध्यम या 'भगवान बचाए'?"</li>
+  <li><strong>प्रामाणिकता:</strong> {PAPER_DETAILS.OFFICIAL_OR_MEMORY_BASED} – "ऑफिशियल है या मेमोरी बेस्ड"</li>
+</ul>
+<p><strong>😂 फनी कमेंट:</strong> "अगर यह पेपर आपने पहले हल कर लिया, तो असली परीक्षा में आपको लगेगा – 'यार, ये तो पहले देखा हुआ है!' लेकिन सावधान – SSC वाले हर बार नया ट्विस्ट डालते हैं।"</p>
+
+<!-- ========== SECTION 3: SUBJECT-WISE ANALYSIS ========== -->
+<h2>2. विषयवार विश्लेषण – किस विषय से कितने सवाल? (<strong>subject wise questions</strong>)</h2>
+<p>नीचे दी गई तालिका में हर विषय से पूछे गए प्रश्नों की संख्या, अंक और कठिनाई दी गई है। (AI: SUBJECT_WISE_DETAILS ऐरे को इटरेट करके तालिका भरें।)</p>
+<table class="responsive-table">
+  <thead><tr><th>विषय</th><th>प्रश्नों की संख्या</th><th>अंक</th><th>कठिनाई</th><th>अच्छे प्रयास</th></tr></thead>
+  <tbody>
+    <tr><td>{SUBJECT_WISE_DETAILS[0].SUBJECT_NAME}</td><td>{SUBJECT_WISE_DETAILS[0].NUMBER_OF_QUESTIONS}</td><td>{SUBJECT_WISE_DETAILS[0].MARKS}</td><td>{SUBJECT_WISE_DETAILS[0].DIFFICULTY}</td><td>{SUBJECT_WISE_DETAILS[0].GOOD_ATTEMPTS}</td></tr>
+    <tr><td>{SUBJECT_WISE_DETAILS[1].SUBJECT_NAME}</td><td>{SUBJECT_WISE_DETAILS[1].NUMBER_OF_QUESTIONS}</td><td>{SUBJECT_WISE_DETAILS[1].MARKS}</td><td>{SUBJECT_WISE_DETAILS[1].DIFFICULTY}</td><td>{SUBJECT_WISE_DETAILS[1].GOOD_ATTEMPTS}</td></tr>
+  </tbody>
+</table>
+<p><strong>फनी टिप:</strong> "जो विषय आपको सबसे कठिन लगता है, उसे सबसे पहले हल करो – क्योंकि तब दिमाग ताज़ा रहता है। और हाँ, जो विषय आसान है, उसे अंत में मत छोड़ना – कहीं समय ही न बचे।"</p>
+
+<!-- ========== SECTION 4: HOW TO DOWNLOAD ========== -->
+<h2>3. प्रश्न पत्र कैसे डाउनलोड करें? (<strong>previous year paper download</strong>)</h2>
+<p><strong>Jobjalebi.com</strong> पर हमने नीचे स्टेप-बाय-स्टेप गाइड तैयार की है। (AI: HOW_TO_DOWNLOAD.STEPS ऐरे से स्टेप्स लें और नीचे भरें।)</p>
+<ol>
+  <li>{HOW_TO_DOWNLOAD.STEPS[0]}</li>
+  <li>{HOW_TO_DOWNLOAD.STEPS[1]}</li>
+  <li>{HOW_TO_DOWNLOAD.STEPS[2]}</li>
+  <li>{HOW_TO_DOWNLOAD.STEPS[3]}</li>
+  <li>{HOW_TO_DOWNLOAD.STEPS[4]}</li>
+</ol>
+<p><strong>😜 फनी लाइन:</strong> "पीडीएफ डाउनलोड करने के बाद उसे प्रिंट करवा लो – फिर उस पर लाल पेन से निशान लगाओ। ऐसा करने से तैयारी में मज़ा आएगा और पेपर देखने का अहसास होगा।"</p>
+
+<!-- ========== SECTION 5: SOLVED VS UNSOLVED ========== -->
+<h2>4. हल या अनसुलझा? – आपकी पसंद (<strong>solved paper</strong>)</h2>
+<p>यह प्रश्न पत्र <strong>{PAPER_DETAILS.SOLVED}</strong> है। (AI: अगर SOLVED true है तो हल की तारीफ करें, नहीं तो खुद हल करने की सलाह दें।)</p>
+<p>अगर यह <strong>solved paper</strong> है, तो आप सीधे उत्तर देखकर अपनी गलतियाँ समझ सकते हैं। और अगर अनसुलझा है, तो यह आपके लिए प्रैक्टिस का सुनहरा मौका है। <strong>Jobjalebi.com</strong> पर हम दोनों तरह के पेपर देते हैं – कभी हल, कभी बिना हल, ताकि आपकी तैयारी पूरी हो।</p>
+<ul>
+  <li><strong>उत्तर कुंजी:</strong> {PAPER_DETAILS.ANSWER_KEY_AVAILABLE} (लिंक: {PAPER_DETAILS.ANSWER_KEY_LINK})</li>
+  <li><strong>हल पीडीएफ:</strong> {PAPER_DETAILS.SOLUTION_LINK}</li>
+</ul>
+<p><strong>😂 फनी सलाह:</strong> "हल देखने से पहले खुद से पेपर हल करो – वरना 'खुद को चिटिंग करते हुए' पकड़े जाने का कोई फायदा नहीं।"</p>
+
+<!-- ========== SECTION 6: PREPARATION TIPS ========== -->
+<h2>5. तैयारी के सुझाव – इन पेपरों का सही उपयोग कैसे करें?</h2>
+<p>(AI: ADDITIONAL_INFO से PREPARATION_TIPS, IMPORTANT_TOPICS, COMMON_MISTAKES लेकर यहाँ भरें।)</p>
+<ul>
+  <li><strong>रणनीति:</strong> {ADDITIONAL_INFO.PREPARATION_TIPS}</li>
+  <li><strong>महत्वपूर्ण टॉपिक:</strong> {ADDITIONAL_INFO.IMPORTANT_TOPICS}</li>
+  <li><strong>सामान्य गलतियाँ:</strong> {ADDITIONAL_INFO.COMMON_MISTAKES}</li>
+</ul>
+<p><strong>फनी टिप:</strong> "पुराने पेपर हल करने का सबसे अच्छा तरीका – टाइमर लगाकर बैठो। ऐसे लगेगा जैसे असली परीक्षा दे रहे हो। और हाँ, बीच-बीच में चाय मत पीना – वरना असली एग्जाम में भी चाय की तलब लगेगी।"</p>
+
+<!-- ========== SECTION 7: IMPORTANT LINKS ========== -->
+<h2>📌 SOME USEFUL IMPORTANT LINKS – यहाँ से करो सीधा डाउनलोड</h2>
+<p><strong>Jobjalebi.com</strong> की टीम ने नीचे सभी जरूरी लिंक एक टेबल में दे दिए हैं – प्रश्न पत्र, उत्तर कुंजी, और आधिकारिक वेबसाइट।</p>
+<table class="responsive-table">
+  <thead><tr><th>विवरण</th><th>सीधा लिंक</th><th>फनी रिमार्क</th></tr></thead>
+  <tbody>
+    <tr><td><strong>📥 प्रश्न पत्र डाउनलोड करें</strong></td><td><a href="{IMPORTANT_LINKS.DIRECT_DOWNLOAD}">👉 यहाँ क्लिक करें</a></td><td>"इस पेपर ने पिछली बार कइयों के छक्के छुड़ाए थे"</td></tr>
+    <tr><td><strong>📄 उत्तर कुंजी (यदि उपलब्ध)</strong></td><td><a href="{PAPER_DETAILS.ANSWER_KEY_LINK}">👉 उत्तर कुंजी देखें</a></td><td>"मिलान करो और असली स्कोर जानो"</td></tr>
+    <tr><td><strong>🌐 {PAPER_IDENTIFICATION.CONDUCTING_BODY} की आधिकारिक वेबसाइट</strong></td><td><a href="{IMPORTANT_LINKS.OFFICIAL_WEBSITE}">👉 ऑफिशियल साइट</a></td><td>"यहाँ सबसे पहले अपडेट आता है"</td></tr>
+  </tbody>
+</table>
+<p><strong>⚠️ चेतावनी:</strong> <strong>Jobjalebi.com</strong> पर दिए गए लिंक हमेशा आधिकारिक स्रोतों पर ले जाते हैं। किसी और के दिए लिंक पर क्लिक करके अपना डेटा खतरे में मत डालना।</p>
+
+<!-- ========== SECTION 8: CONCLUSION ========== -->
+<h2>🏁 आखिरी बात – अब क्या करोगे?</h2>
+<p><strong>{PRIMARY_KEYWORD} आपके हाथ में है।</strong> अब इसे हल करो, गलतियों से सीखो, और असली परीक्षा में धमाल मचाओ। <strong>Jobjalebi.com</strong> पर हम हर साल के पेपर लाते रहेंगे – बस आप मेहनत करते रहो।</p>
+<p><strong>मोटिवेशनल फनी लाइन:</strong> "पुराने पेपर वो आइना हैं जो आपको दिखाते हैं कि आप कहाँ खड़े हैं। तो आइना देखो, मुँह बनाओ, और फिर पढ़ाई पर लग जाओ।"</p>
+<p><strong>सीधा लिंक:</strong> <a href="{IMPORTANT_LINKS.DIRECT_DOWNLOAD}">👉 यहाँ क्लिक करें – प्रश्न पत्र डाउनलोड करें</a></p>
+
+<!-- ========== SECTION 9: FAQ ========== -->
+<h2>❓ पिछले प्रश्न पत्रों से जुड़े सामान्य सवाल (FAQs)</h2>
+<div class="faq-section">
+  <h3>Q1: क्या यह प्रश्न पत्र ऑफिशियल है?</h3>
+  <p><strong>A1:</strong> {PAPER_DETAILS.OFFICIAL_OR_MEMORY_BASED} – "अगर ऑफिशियल है तो 100% सही, मेमोरी बेस्ड है तो भी 95% तक सटीक होता है।"</p>
+  <h3>Q2: क्या इस पेपर में वो सब टॉपिक्स कवर हैं जो अभी के सिलेबस में हैं?</h3>
+  <p><strong>A2:</strong> हर साल सिलेबस में थोड़ा बदलाव होता है – इसलिए इस पेपर को वर्तमान सिलेबस से मिला कर देखो। "पुराना है, पर बेकार नहीं।"</p>
+  <h3>Q3: क्या मुझे सभी पुराने पेपर हल करने चाहिए?</h3>
+  <p><strong>A3:</strong> हाँ, कम से कम पिछले 5 साल के पेपर ज़रूर करो। "जितने ज्यादा पेपर, उतनी ज्यादा प्रैक्टिस – और उतना ही ज्यादा कॉन्फिडेंस।"</p>
+  <h3>Q4: क्या मोबाइल से पेपर डाउनलोड कर सकते हैं?</h3>
+  <p><strong>A4:</strong> बिल्कुल। पीडीएफ डाउनलोड करो और पढ़ो – "लेकिन प्रैक्टिस करते समय प्रिंट निकालकर ही करो, फोन पर मत करो।"</p>
+  <h3>Q5: <strong>{PRIMARY_KEYWORD}</strong> और कहाँ मिलेंगे?</h3>
+  <p><strong>A5:</strong> ऊपर दिए गए लिंक्स पर क्लिक करो। और हाँ, <strong>Jobjalebi.com</strong> पर हम और भी पेपर डालते रहते हैं – बुकमार्क कर लो।</p>
+</div>
+
+<!-- ========== SECTION 10: DISCLAIMER ========== -->
+<p><strong>⚠️ अस्वीकरण:</strong> यह पोस्ट {PAPER_IDENTIFICATION.CONDUCTING_BODY} द्वारा आयोजित परीक्षाओं के पिछले प्रश्न पत्रों पर आधारित है। प्रश्न पत्र शैक्षिक उद्देश्यों के लिए हैं। सटीक जानकारी के लिए आधिकारिक वेबसाइट देखें। <strong>Jobjalebi.com</strong> केवल सूचना प्रदान करता है।</p>
+
+<p><strong>😄 आखिरी मोटिवेशन:</strong> "पुराने पेपर सिर्फ कागज नहीं, आपकी सफलता की सीढ़ी हैं। हर पेपर हल करो, हर गलती से सीखो, और देखो कैसे आपकी तैयारी चमकती है। मेहनत करते रहो, मुस्कुराते रहो।"</p>
+
+<!-- ========== POST ENDS ========== -->

@@ -1,0 +1,104 @@
+दिए गए आर्टिकल टाइटल और URL के आधार पर, निम्नलिखित JSON स्कीमा को पूरी तरह से भरें। यह स्कीमा JobJalebi.com की "विशेष (Special)" श्रेणी के सभी प्रकार के कंटेंट को कवर करने के लिए डिज़ाइन की गई है। इसमें शामिल हैं: दिव्यांगजनों (PWD) के लिए विशेष नौकरी/योजना गाइड, महिलाओं के करियर ब्रेक और वापसी की गाइड, ट्रांसजेंडर समुदाय के लिए अवसर, पूर्व सैनिकों (Ex-Servicemen) के लिए पुनर्नियोजन, वरिष्ठ नागरिकों के लिए रोजगार, खिलाड़ियों के लिए सरकारी नौकरी (Sports Quota), विशेष श्रेणी की छात्रवृत्तियाँ, और अन्य कोई भी विशेष वर्ग/विषय से संबंधित जानकारी। हर फील्ड को ध्यानपूर्वक भरें; जहाँ जानकारी उपलब्ध न हो, वहाँ खाली, शून्य, false या null रखें। केवल मान्य JSON लौटाएँ, कोई अन्य टेक्स्ट नहीं।
+
+{
+  "CONTENT_IDENTIFICATION": {
+    "TITLE": "",
+    "SPECIAL_CATEGORY": "",
+    "TARGET_GROUP": [],
+    "CONTENT_TYPE": "",
+    "TONE": "80% Funny Standup Comedy + 20% Motivational",
+    "WEBSITE_NAME": "JobJalebi",
+    "WEBSITE_URL": "jobjalebi.com",
+    "SEO_TITLE": "",
+    "SLUG": "",
+    "PRIMARY_KEYWORD": ""
+  },
+  "TARGET_AUDIENCE_ANALYSIS": {
+    "WHO_IS_THIS_FOR": [],
+    "PAIN_POINTS": [],
+    "ASPIRATIONS": [],
+    "COMMON_MISCONCEPTIONS": []
+  },
+  "GOVERNMENT_SCHEMES_AND_RESERVATIONS": {
+    "SCHEME_NAME": "",
+    "MINISTRY_DEPARTMENT": "",
+    "RESERVATION_PERCENTAGE": "",
+    "SPECIAL_PROVISIONS": [],
+    "SCHEME_BENEFITS": [],
+    "ELIGIBLE_CATEGORIES": []
+  },
+  "JOB_OR_OPPORTUNITY_DETAILS": {
+    "JOB_TYPES_AVAILABLE": [],
+    "SECTORS": [],
+    "NOTABLE_RECRUITERS": [],
+    "POST_NAMES": [],
+    "SALARY_RANGE": "",
+    "JOB_LOCATIONS": []
+  },
+  "ELIGIBILITY_AND_REQUIREMENTS": {
+    "EDUCATIONAL_QUALIFICATION": "",
+    "AGE_LIMIT": {
+      "MINIMUM_AGE": 0,
+      "MAXIMUM_AGE": 0,
+      "AGE_RELAXATION": ""
+    },
+    "DISABILITY_CRITERIA": "",
+    "CERTIFICATE_REQUIREMENTS": [],
+    "MEDICAL_STANDARDS": "",
+    "OTHER_CRITERIA": []
+  },
+  "APPLICATION_PROCESS": {
+    "APPLICATION_MODE": "",
+    "APPLICATION_LINK": "",
+    "HOW_TO_APPLY_STEPS": [],
+    "DOCUMENTS_REQUIRED": [],
+    "APPLICATION_FEE": "",
+    "FEE_EXEMPTION": "",
+    "IMPORTANT_DATES": {
+      "APPLICATION_START": "",
+      "APPLICATION_LAST_DATE": "",
+      "EXAM_DATE": "",
+      "RESULT_DATE": ""
+    }
+  },
+  "EXAM_AND_SELECTION": {
+    "SELECTION_STAGES": [],
+    "EXAM_PATTERN": "",
+    "SYLLABUS_TOPICS": [],
+    "PHYSICAL_STANDARDS_RELAXATION": ""
+  },
+  "SUCCESS_STORIES_AND_EXAMPLES": [
+    {
+      "NAME": "",
+      "ACHIEVEMENT": "",
+      "INSPIRATION": ""
+    }
+  ],
+  "CHALLENGES_AND_SOLUTIONS": {
+    "COMMON_CHALLENGES": [],
+    "HOW_TO_OVERCOME": [],
+    "SUPPORT_SYSTEMS": []
+  },
+  "RESOURCES_AND_LINKS": {
+    "OFFICIAL_WEBSITES": [],
+    "HELPLINE_NUMBERS": [],
+    "NGO_CONTACTS": [],
+    "PDF_LINKS": [],
+    "VIDEO_LINKS": []
+  },
+  "FREQUENTLY_ASKED_QUESTIONS": [
+    {
+      "QUESTION": "",
+      "ANSWER": ""
+    }
+  ],
+  "ADDITIONAL_INFO": {
+    "EXPERT_TIPS": [],
+    "MYTHS_VS_FACTS": [],
+    "LATEST_UPDATES": "",
+    "CONTACT_DETAILS": ""
+  }
+}
+
+टाइटल: {TITLE}
+URL: {URL}

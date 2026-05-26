@@ -1,0 +1,75 @@
+दिए गए आर्टिकल टाइटल और URL के आधार पर, निम्नलिखित JSON स्कीमा को पूरी तरह से भरें। यह स्कीमा सभी प्रकार के परिणामों (Results) को कवर करती है – चाहे वह सरकारी भर्ती का रिजल्ट हो, बोर्ड परीक्षा (10वीं/12वीं) का रिजल्ट, प्रवेश परीक्षा का रिजल्ट (JEE, NEET, CUET), विश्वविद्यालय परीक्षा, इंटरव्यू रिजल्ट, मेरिट लिस्ट, कटऑफ सूची या अन्य कोई भी परीक्षा/भर्ती का रिजल्ट। हर फील्ड को ध्यानपूर्वक भरें। जहाँ जानकारी न हो, वहाँ खाली, शून्य या null रखें। केवल मान्य JSON लौटाएँ, कोई अन्य टेक्स्ट नहीं।
+
+{
+  "RESULT_IDENTIFICATION": {
+    "EXAM_NAME": "",
+    "RECRUITMENT_NAME": "",
+    "POST_NAME": "",
+    "CONDUCTING_BODY": "",
+    "EXAM_TYPE": "",
+    "CATEGORY": ""
+  },
+  "RESULT_STATUS": {
+    "DECLARED": false,
+    "DECLARATION_DATE": "",
+    "RESULT_TYPE": "",
+    "DIRECT_RESULT_LINK": "",
+    "STATUS_CHECK_LINK": ""
+  },
+  "HOW_TO_CHECK": {
+    "STEPS": [],
+    "REQUIRED_DETAILS": [],
+    "ALTERNATE_METHOD": ""
+  },
+  "RESULT_DETAILS": {
+    "TOTAL_CANDIDATES_APPEARED": 0,
+    "TOTAL_CANDIDATES_QUALIFIED": 0,
+    "SELECTION_STATUS": {
+      "SELECTED": false,
+      "WAITING_LIST": false,
+      "MERIT_LIST_PDF": "",
+      "CUTOFF_MARKS": {
+        "GENERAL": 0,
+        "OBC": 0,
+        "SC": 0,
+        "ST": 0,
+        "EWS": 0,
+        "PWD": 0,
+        "OTHER": []
+      },
+      "FINAL_ANSWER_KEY_LINK": ""
+    },
+    "SCORECARD": {
+      "AVAILABLE": false,
+      "DOWNLOAD_LINK": "",
+      "VALIDITY_PERIOD": ""
+    }
+  },
+  "NEXT_STEPS": {
+    "DOCUMENT_VERIFICATION_DATE": "",
+    "INTERVIEW_DATE": "",
+    "FINAL_RESULT_DATE": "",
+    "JOINING_DATE": "",
+    "COUNSELING_DATE": ""
+  },
+  "IMPORTANT_DATES": {
+    "RESULT_ANNOUNCED_ON": "",
+    "LAST_DATE_TO_CHECK": "",
+    "REVALUATION_DATE": ""
+  },
+  "IMPORTANT_LINKS": {
+    "OFFICIAL_NOTIFICATION": "",
+    "DIRECT_RESULT": "",
+    "OFFICIAL_WEBSITE": "",
+    "HELPLINE_NUMBER": ""
+  },
+  "ADDITIONAL_INFO": {
+    "TIE_BREAKING_RULE": "",
+    "REVALUATION_PROCESS": "",
+    "CONTACT_DETAILS": "",
+    "IMP_INSTRUCTIONS": []
+  }
+}
+
+टाइटल: {TITLE}
+URL: {URL}

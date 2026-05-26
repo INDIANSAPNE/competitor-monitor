@@ -3,27 +3,49 @@ package main
 import (
 	"fmt"
 	"log"
-	"net/http"
-	"strings"
-
-	"github.com/PuerkitoBio/goquery"
 )
 
 func CheckAllCompetitors(config Config) {
 	for _, comp := range config.Competitors {
 		fmt.Println("👉 जाँच रहा हूँ:", comp.Name)
-		articles, err := FetchNewArticles(comp)
+		articles, err := FetchArticlesFromRSS(comp)
 		if err != nil {
 			log.Printf("❌ %s के लिए त्रुटि: %v", comp.Name, err)
 			continue
 		}
-		for _, art := range articles {
-			AddToExcel(config.ExcelFile, art)
-			fmt.Printf("  ✅ नया: %s - %s\n", art.Title, art.URL)
 
+		for _, art := range articles {
+			// कैटेगरी पहचानें
+			category, err := ClassifyCategory(art.Title, art.URL)
+			if err != nil {
+				log.Printf("  ⚠️ कैटेगरी नहीं पहचानी: %v, डिफॉल्ट 'सामान्य'", err)
+				category = "सामान्य"
+			}
+			art.Category = category
+
+			// स्कीमा भरें
+			primaryKW, extraJSON, err := EnrichMetadata(art.Title, art.URL, category)
+			if err != nil {
+				log.Printf("  ❌ मेटाडेटा एनरिचमेंट त्रुटि: %v", err)
+				continue
+			}
+			art.PrimaryKeyword = primaryKW
+			art.ExtraDataJSON = extraJSON
+
+			// डीडुप्लीकेशन चेक
+			shouldProceed, existingID := IsTopicNewOrUpdatable(primaryKW)
+			if !shouldProceed {
+				fmt.Printf("  ⏭️ पहले से कवर टॉपिक – छोड़ दिया\n")
+				continue
+			}
+
+			// एक्सेल में जोड़ें
+			AddToExcel(config.ExcelFile, art)
+			fmt.Printf("  ✅ नया: %s [%s]\n", art.Title, art.Category)
+
+			// AI जनरेशन और पोस्टिंग
 			if config.AutoGenerate {
-				// AI जनरेशन और पोस्टिंग शुरू (goroutine में, ताकि तेज़ी से हो)
-				go TriggerAIContent(art)
+				go TriggerAIContent(art, existingID)
 			}
 		}
 		if len(articles) == 0 {
@@ -31,63 +53,5 @@ func CheckAllCompetitors(config Config) {
 		}
 	}
 	SaveSeenLinks()
-}
-
-func FetchNewArticles(comp Competitor) ([]Article, error) {
-	resp, err := http.Get(comp.URL)
-	if err != nil {
-		return nil, err
-	}
-	defer resp.Body.Close()
-
-	if resp.StatusCode != 200 {
-		return nil, fmt.Errorf("status code %d", resp.StatusCode)
-	}
-
-	doc, err := goquery.NewDocumentFromReader(resp.Body)
-	if err != nil {
-		return nil, err
-	}
-
-	var newArticles []Article
-	if seenLinks[comp.Name] == nil {
-		seenLinks[comp.Name] = make(map[string]bool)
-	}
-
-	doc.Find(comp.ArticleSelector).Each(func(i int, s *goquery.Selection) {
-		href, exists := s.Attr("href")
-		if !exists {
-			return
-		}
-		fullURL := ToAbsoluteURL(comp.URL, href)
-		title := strings.TrimSpace(s.Text())
-
-		if seenLinks[comp.Name][fullURL] {
-			return
-		}
-		seenLinks[comp.Name][fullURL] = true
-
-		dateStr := ""
-		if comp.DateSelector != "" {
-			dateEl := s.Parent().Find(comp.DateSelector).First()
-			if dateEl.Length() == 0 {
-				dateEl = s.Closest("article").Find(comp.DateSelector).First()
-			}
-			if comp.DateAttr != "" {
-				dateStr, _ = dateEl.Attr(comp.DateAttr)
-			} else {
-				dateStr = strings.TrimSpace(dateEl.Text())
-			}
-		}
-
-		art := Article{
-			Competitor: comp.Name,
-			Title:      title,
-			URL:        fullURL,
-			Date:       dateStr,
-		}
-		newArticles = append(newArticles, art)
-	})
-
-	return newArticles, nil
+	SaveCoveredTopics()
 }

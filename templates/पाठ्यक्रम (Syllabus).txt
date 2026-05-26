@@ -1,0 +1,173 @@
+<!-- 
+=================================================================
+TEMPLATE NAME: पाठ्यक्रम (Syllabus) Template - JSON Schema Integrated
+VERSION: 2.0
+CATEGORY: पाठ्यक्रम (Syllabus)
+DESCRIPTION: 
+  यह टेम्पलेट "पाठ्यक्रम (Syllabus)" कैटेगरी की हमारी JSON स्कीमा के साथ पूरी तरह से एकीकृत है।
+  AI को निर्देश है कि वह नीचे दिए गए सभी की-पाथ को JSON ({EXTRA_DATA}) से भरकर पोस्ट तैयार करे।
+  टोन: 80% फनी + 20% मोटिवेशनल | SEO: Primary, Secondary (बार-बार), LSI keywords.
+  Jobjalebi.com का नाम प्राकृतिक रूप से 3-4 बार डाला गया है.
+=================================================================
+-->
+
+<!-- ========== METADATA (AI AGENT INPUT - JSON से लिया गया) ========== -->
+<!--
+POST_TITLE = {SEO_TITLE}
+CATEGORY = {CATEGORY}
+SUBCATEGORY = {SYLLABUS_IDENTIFICATION.EXAM_TYPE}
+TAGS = "{SYLLABUS_IDENTIFICATION.EXAM_NAME}, Syllabus, Exam Pattern, पाठ्यक्रम"
+PRIMARY_KEYWORD = {PRIMARY_KEYWORD}
+SECONDARY_KEYWORDS = {SECONDARY_KEYWORDS}
+LSI_KEYWORDS = {LSI_KEYWORDS}
+EXAM_NAME = {SYLLABUS_IDENTIFICATION.EXAM_NAME}
+CONDUCTING_BODY = {SYLLABUS_IDENTIFICATION.CONDUCTING_BODY}
+SYLLABUS_RELEASE_DATE = {SYLLABUS_STATUS.RELEASE_DATE}
+OFFICIAL_SYLLABUS_LINK = {IMPORTANT_LINKS.SYLLABUS_PDF}
+OFFICIAL_WEBSITE = {IMPORTANT_LINKS.OFFICIAL_WEBSITE}
+TOTAL_MARKS = {EXAM_PATTERN_OVERVIEW.TOTAL_MARKS}
+TOTAL_QUESTIONS = {EXAM_PATTERN_OVERVIEW.TOTAL_QUESTIONS}
+DURATION = {EXAM_PATTERN_OVERVIEW.DURATION}
+MEDIUM = {EXAM_PATTERN_OVERVIEW.MEDIUM}
+MODE = {EXAM_PATTERN_OVERVIEW.MODE}
+NEGATIVE_MARKING = {EXAM_PATTERN_OVERVIEW.NEGATIVE_MARKING}
+-->
+
+<!-- ========== SEO KEYWORD USAGE INSTRUCTIONS FOR AI ==========
+1. PRIMARY_KEYWORD ({PRIMARY_KEYWORD}) → lead, summary table, syllabus details, conclusion.
+2. SECONDARY_KEYWORDS (जैसे "syllabus download", "exam pattern", "subject wise syllabus", "important books") का 5-6 बार इस्तेमाल करें।
+3. Jobjalebi.com mentioned 3-4 times: lead, useful links, conclusion, FAQ.
+-->
+
+<!-- ========== POST CONTENT STARTS ========== -->
+
+<!-- LEAD: PRIMARY KEYWORD + JOJALBEBI MENTION -->
+<p><strong>🚨 पढ़ाई की रूपरेखा आ गई!</strong> <strong>{CONDUCTING_BODY} ने {EXAM_NAME} का <strong>{PRIMARY_KEYWORD}</strong> जारी कर दिया है।</strong> अब तैयारी का रास्ता साफ है – क्या पढ़ना है, कितना पढ़ना है, सब यहाँ लिखा है। <strong>Jobjalebi.com</strong> पर हम तुम्हें हंसी-मजाक के साथ पूरा सिलेबस और एग्जाम पैटर्न समझा रहे हैं – तो चाय पकड़ो और पढ़ते जाओ। 😂</p>
+
+<p>इस पोस्ट में हम तुम्हें बताएँगे – <strong>सिलेबस डाउनलोड लिंक (<strong>syllabus download</strong>), एग्जाम पैटर्न (<strong>exam pattern</strong>), विषयवार पाठ्यक्रम (<strong>subject wise syllabus</strong>), अनुशंसित पुस्तकें (<strong>important books</strong>), और तैयारी की टिप्स – सब कुछ हंसी-मजाक के साथ।</strong> तो चाय बनाओ, मोबाइल पकड़ो, और <strong>Jobjalebi.com</strong> के इस पोस्ट को अंत तक पढ़ो।</p>
+
+<!-- ========== SECTION 1: QUICK SUMMARY TABLE ========== -->
+<h2>📌 एक नज़र में – सिलेबस का चटपटा सारांश</h2>
+<table class="responsive-table">
+  <thead>
+    <tr><th>शीर्षक</th><th>विवरण (हंसी के साथ)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>परीक्षा का नाम</td><td>{EXAM_NAME} – <strong>{PRIMARY_KEYWORD}</strong> यहाँ देखें</td></tr>
+    <tr><td>आयोजक संस्था</td><td>{CONDUCTING_BODY} – "इन्होंने ही हमारी किस्मत का फैसला करना है"</td></tr>
+    <tr><td>सिलेबस जारी होने की तिथि</td><td>{SYLLABUS_RELEASE_DATE} – "जिस दिन सबको पता चला कि कितना पढ़ना है"</td></tr>
+    <tr><td>कुल अंक</td><td>{TOTAL_MARKS} – "इतने अंकों का खेल है"</td></tr>
+    <tr><td>कुल प्रश्न</td><td>{TOTAL_QUESTIONS} – "गिन-गिनकर हल करने हैं"</td></tr>
+    <tr><td>समयावधि</td><td>{DURATION} – "इतने मिनटों में पसीना छूटना तय"</td></tr>
+    <tr><td>माध्यम</td><td>{MEDIUM} – "हिंदी, इंग्लिश या दोनों?"</td></tr>
+    <tr><td>परीक्षा का तरीका</td><td>{MODE} – "ऑनलाइन हो या ऑफलाइन, तैयारी तो करनी पड़ेगी"</td></tr>
+    <tr><td>नेगेटिव मार्किंग</td><td>{NEGATIVE_MARKING} – "गलत उत्तर की सजा"</td></tr>
+    <tr><td>आधिकारिक लिंक</td><td><a href="{OFFICIAL_WEBSITE}">👉 {OFFICIAL_WEBSITE}</a></td></tr>
+    <tr><td>⚡ फनी चेतावनी</td><td>"सिलेबस देखकर घबराना मत – एक बार में एक विषय लो, धीरे-धीरे सब हो जाएगा।"</td></tr>
+  </tbody>
+</table>
+
+<!-- ========== SECTION 2: EXAM PATTERN OVERVIEW ========== -->
+<h2>1. एग्जाम पैटर्न – परीक्षा की रूपरेखा (<strong>exam pattern</strong>)</h2>
+<p><strong>{EXAM_NAME}</strong> का <strong>exam pattern</strong> समझना बहुत ज़रूरी है – क्योंकि यही तय करता है कि परीक्षा हॉल में तुम्हारे कितने पसीने छूटेंगे। नीचे पूरा पैटर्न दिया गया है:</p>
+<ul>
+  <li><strong>कुल अंक:</strong> {TOTAL_MARKS} – "हर अंक कीमती है, कोई भी सवाल हल्के में मत लेना।"</li>
+  <li><strong>कुल प्रश्न:</strong> {TOTAL_QUESTIONS} – "इतने सवाल करने में उँगलियाँ दुख सकती हैं।"</li>
+  <li><strong>समयावधि:</strong> {DURATION} – "टाइम मैनेजमेंट सीखो, वरना आखिरी 10 मिनट में पेन चलेगा हाथ नहीं।"</li>
+  <li><strong>माध्यम:</strong> {MEDIUM} – "अपनी भाषा चुनो, दोनों में से कोई भी हो, पढ़ाई तो करनी है।"</li>
+  <li><strong>मोड:</strong> {MODE} – "ऑनलाइन है तो कंप्यूटर की प्रैक्टिस करो, ऑफलाइन है तो OMR भरने की।"</li>
+  <li><strong>नेगेटिव मार्किंग:</strong> {NEGATIVE_MARKING} – "गलत जवाब की सजा – ध्यान से उत्तर दो।"</li>
+</ul>
+<p><strong>😂 फनी कमेंट:</strong> "एग्जाम पैटर्न वो चीज़ है जो तुम्हें बताता है कि परीक्षा में कितना रोना है। अगर नेगेटिव मार्किंग है तो तुक्का मारने से बचना – वरना अंक कट-कट के हालत खराब हो जाएगी।"</p>
+
+<!-- ========== SECTION 3: SUBJECT-WISE SYLLABUS ========== -->
+<h2>2. विषयवार पाठ्यक्रम – कौन सा विषय कितना भारी? (<strong>subject wise syllabus</strong>)</h2>
+<p>अब बारी आती है असली खेल की – <strong>subject wise syllabus</strong>। यहाँ हर विषय का टॉपिक, भारांक और अनुशंसित पुस्तकें दी गई हैं। <strong>Jobjalebi.com</strong> पर हमने इसे ऐसे समझाया है कि तुम्हें हर विषय की अहमियत पता चल जाएगी।</p>
+<table class="responsive-table">
+  <thead>
+    <tr><th>विषय</th><th>प्रमुख टॉपिक</th><th>अंक</th><th>अनुशंसित पुस्तकें</th></tr>
+  </thead>
+  <tbody>
+    <!-- AI को {SUBJECTS} ऐरे को इटरेट करना है। हर विषय के लिए एक रो बनाएँ। -->
+    <tr>
+      <td>{SUBJECTS[0].SUBJECT_NAME}</td>
+      <td>{SUBJECTS[0].TOPICS[0].TOPIC_NAME}, {SUBJECTS[0].TOPICS[1].TOPIC_NAME}, ...</td>
+      <td>{SUBJECTS[0].TOTAL_MARKS}</td>
+      <td>{SUBJECTS[0].IMPORTANT_BOOKS[0]}, {SUBJECTS[0].IMPORTANT_BOOKS[1]}</td>
+    </tr>
+    <tr>
+      <td>{SUBJECTS[1].SUBJECT_NAME}</td>
+      <td>{SUBJECTS[1].TOPICS[0].TOPIC_NAME}, ...</td>
+      <td>{SUBJECTS[1].TOTAL_MARKS}</td>
+      <td>{SUBJECTS[1].IMPORTANT_BOOKS[0]}</td>
+    </tr>
+  </tbody>
+</table>
+<p><strong>फनी टिप:</strong> "हर विषय को उसके भारांक के अनुसार समय दो – जो विषय ज्यादा अंक का है, उसे ज्यादा प्यार दो। पर छोटे विषय को भी मत भूलना – वो भी कटऑफ में काम आएगा।"</p>
+
+<!-- ========== SECTION 4: RECOMMENDED BOOKS & RESOURCES ========== -->
+<h2>3. अनुशंसित पुस्तकें और संसाधन – क्या पढ़ें? (<strong>important books</strong>)</h2>
+<p><strong>important books</strong> और संसाधनों की लिस्ट नीचे दी गई है – ये तुम्हारी तैयारी को मजबूत बनाएँगे। <strong>syllabus download</strong> के साथ इन किताबों को ज़रूर शामिल करो।</p>
+<ul>
+  <!-- AI को {RECOMMENDED_RESOURCES.BOOKS} ऐरे और {ONLINE_RESOURCES} से लिस्ट बनानी है। -->
+  <li>{RECOMMENDED_RESOURCES.BOOKS[0]}</li>
+  <li>{RECOMMENDED_RESOURCES.BOOKS[1]}</li>
+  <li>{RECOMMENDED_RESOURCES.ONLINE_RESOURCES[0]}</li>
+  <li>पिछले वर्ष के प्रश्न पत्र: <a href="{RECOMMENDED_RESOURCES.PREVIOUS_YEAR_PAPERS_LINK}">यहाँ से डाउनलोड करें</a></li>
+</ul>
+<p><strong>😜 फनी लाइन:</strong> "किताबें खरीदना और पढ़ना दो अलग-अलग बातें हैं। किताबें खरीदकर तकिये के नीचे रखने से ज्ञान नहीं आता – उन्हें खोलना पड़ता है।"</p>
+
+<!-- ========== SECTION 5: PREPARATION TIPS ========== -->
+<h2>4. तैयारी की टिप्स – सफलता का रहस्य</h2>
+<p>सिलेबस और किताबों के अलावा, सही रणनीति भी ज़रूरी है। यहाँ कुछ मोटिवेशनल और प्रैक्टिकल टिप्स दिए गए हैं:</p>
+<ul>
+  <li><strong>रणनीति:</strong> {PREPARATION_TIPS.STRATEGY}</li>
+  <li><strong>महत्वपूर्ण टॉपिक:</strong> {PREPARATION_TIPS.IMPORTANT_TOPICS}</li>
+  <li><strong>समय प्रबंधन:</strong> {PREPARATION_TIPS.TIME_MANAGEMENT_TIPS}</li>
+</ul>
+<p><strong>😂 फनी सलाह:</strong> "रोज 10 घंटे पढ़ने वालों से ज्यादा स्मार्ट पढ़ने वाले सफल होते हैं। बस एक टाइम टेबल बनाओ और उस पर टिके रहो – और हाँ, रविवार को थोड़ा आराम भी कर लेना।"</p>
+
+<!-- ========== SECTION 6: IMPORTANT LINKS ========== -->
+<h2>📌 SOME USEFUL IMPORTANT LINKS – सीधे क्लिक करो</h2>
+<p><strong>Jobjalebi.com</strong> की टीम ने नीचे सभी जरूरी लिंक एक टेबल में दे दिए हैं – सिलेबस पीडीएफ से लेकर आधिकारिक वेबसाइट तक।</p>
+<table class="responsive-table">
+  <thead><tr><th>विवरण</th><th>सीधा लिंक</th><th>फनी रिमार्क</th></tr></thead>
+  <tbody>
+    <tr><td><strong>📥 <strong>syllabus download</strong> (सिलेबस पीडीएफ)</strong></td><td><a href="{IMPORTANT_LINKS.SYLLABUS_PDF}" target="_blank">👉 सिलेबस डाउनलोड करें</a></td><td>"पढ़ाई का खाका, प्रिंट निकालकर दीवार पर लगा लो"</td></tr>
+    <tr><td><strong>📄 आधिकारिक अधिसूचना</strong></td><td><a href="{IMPORTANT_LINKS.OFFICIAL_NOTIFICATION}" target="_blank">👉 नोटिफिकेशन देखें</a></td><td>"इसमें सब कुछ है – सिलेबस, डेट, पैटर्न"</td></tr>
+    <tr><td><strong>🌐 {CONDUCTING_BODY} की आधिकारिक वेबसाइट</strong></td><td><a href="{OFFICIAL_WEBSITE}" target="_blank">👉 {OFFICIAL_WEBSITE}</a></td><td>"मूल घर – यहाँ सबसे पहले अपडेट"</td></tr>
+  </tbody>
+</table>
+<p><strong>⚠️ चेतावनी:</strong> <strong>Jobjalebi.com</strong> पर दिए गए लिंक हमेशा आधिकारिक स्रोतों पर ले जाते हैं। किसी और के दिए लिंक पर क्लिक करके अपना डेटा खतरे में मत डालना।</p>
+
+<!-- ========== SECTION 7: CONCLUSION ========== -->
+<h2>🏁 आखिरी बात – अब क्या करोगे?</h2>
+<p><strong>{PRIMARY_KEYWORD} हाथ में आ गया, <strong>exam pattern</strong> समझ में आ गया, <strong>subject wise syllabus</strong> देख लिया – अब बस एक काम बाकी है: पढ़ाई शुरू करो।</strong> जल्दी करो, समय कम है और सिलेबस बड़ा। लेकिन घबराना नहीं – एक टॉपिक से शुरुआत करो और धीरे-धीरे सब कवर करो।</p>
+<p><strong>मोटिवेशनल फनी लाइन:</strong> "सिलेबस तो बस एक रास्ता है – मंज़िल तक पहुँचना तुम्हारी मेहनत पर निर्भर करता है। आज से ही शुरू करो, और हाँ – हँसते रहो। <strong>Jobjalebi.com</strong> हमेशा तुम्हारे साथ है।"</p>
+<p><strong>सीधा लिंक:</strong> <a href="{IMPORTANT_LINKS.SYLLABUS_PDF}">👉 यहाँ क्लिक करें – सिलेबस डाउनलोड करें</a></p>
+
+<!-- ========== SECTION 8: FAQ ========== -->
+<h2>❓ {CONDUCTING_BODY} के सिलेबस से जुड़े सामान्य सवाल (FAQs)</h2>
+<div class="faq-section">
+  <h3>Q1: सिलेबस में बदलाव हुआ है या नहीं?</h3>
+  <p><strong>A1:</strong> {ADDITIONAL_INFO.LATEST_CHANGES} (अगर अपडेट है तो यहाँ लिखा होगा)। "पिछली बार से ज्यादा बदलाव नहीं है – आराम से पढ़ो।"</p>
+  
+  <h3>Q2: क्या यह सिलेबस फाइनल है?</h3>
+  <p><strong>A2:</strong> हाँ, {CONDUCTING_BODY} ने इसे आधिकारिक रूप से जारी किया है – "अब इंतज़ार मत करो, पढ़ना शुरू करो।"</p>
+  
+  <h3>Q3: सिलेबस डाउनलोड करने के लिए लॉगिन करना ज़रूरी है?</h3>
+  <p><strong>A3:</strong> नहीं, सिलेबस पीडीएफ सीधा डाउनलोड हो जाएगी – "बिना किसी पासवर्ड के, फ्री में।"</p>
+  
+  <h3>Q4: कौन सी बुक से पढ़ना सबसे अच्छा रहेगा?</h3>
+  <p><strong>A4:</strong> ऊपर "अनुशंसित पुस्तकें" सेक्शन में हमने बताया है – "उनमें से कोई भी लो, पर एक बार पूरी ज़रूर पढ़ो।"</p>
+  
+  <h3>Q5: <strong>{PRIMARY_KEYWORD}</strong> के अनुसार तैयारी कैसे करें?</h3>
+  <p><strong>A5:</strong> रोजाना एक विषय का टारगेट बनाओ, नोट्स बनाओ, और मॉक टेस्ट दो। "यही फॉर्मूला है – और कुछ नहीं। <strong>Jobjalebi.com</strong> पर आते रहो, हम और टिप्स देते रहेंगे।"</p>
+</div>
+
+<!-- ========== SECTION 9: DISCLAIMER ========== -->
+<p><strong>⚠️ अस्वीकरण:</strong> यह पोस्ट {CONDUCTING_BODY} द्वारा जारी आधिकारिक अधिसूचना और सिलेबस पर आधारित है। सटीक जानकारी के लिए आधिकारिक वेबसाइट अवश्य देखें। दिए गए लिंक आधिकारिक स्रोतों पर रीडायरेक्ट करते हैं – <strong>Jobjalebi.com</strong> किसी तीसरे पक्ष से जुड़ा नहीं है।</p>
+
+<p><strong>😄 आखिरी मोटिवेशन:</strong> "सिलेबस तो आ गया, अब बहाने नहीं चलेंगे। किताब खोलो, पेन उठाओ, और शुरू हो जाओ। याद रखना – सपने वो नहीं जो नींद में आएँ, बल्कि वो जो नींद न आने दें।"</p>
+
+<!-- ========== POST ENDS ========== -->

@@ -1,0 +1,138 @@
+दिए गए आर्टिकल टाइटल और URL के आधार पर, निम्नलिखित JSON स्कीमा को पूरी तरह से भरें। यह स्कीमा सभी प्रकार की अंतर्राष्ट्रीय / विदेशी नौकरियों (International Jobs) को कवर करने के लिए डिज़ाइन की गई है – चाहे वह खाड़ी देश (UAE, सऊदी अरब, कतर, ओमान, कुवैत, बहरीन) की नौकरी हो, यूरोप, अमेरिका, कनाडा, ऑस्ट्रेलिया, जापान, कोरिया, मलेशिया, सिंगापुर या किसी अन्य देश की नौकरी। इसमें सरकारी क्षेत्र, प्राइवेट क्षेत्र, बहुराष्ट्रीय कंपनियाँ (MNCs), ठेकेदारी नौकरियाँ, सभी शामिल हैं। स्किल्ड, सेमी-स्किल्ड, और अनस्किल्ड सभी प्रकार के श्रमिकों के लिए उपयुक्त। हर फील्ड को ध्यानपूर्वक भरें। जहाँ जानकारी उपलब्ध न हो, वहाँ खाली, शून्य या null रखें। केवल मान्य JSON लौटाएँ, कोई अन्य टेक्स्ट नहीं।
+
+{
+  "JOB_IDENTIFICATION": {
+    "JOB_TITLE": "",
+    "COMPANY_NAME": "",
+    "COMPANY_DESCRIPTION": "",
+    "INDUSTRY": "",
+    "JOB_CATEGORY": "",
+    "JOB_TYPE": "",
+    "EMPLOYMENT_TYPE": "",
+    "WORK_MODE": "",
+    "COUNTRY": "",
+    "CITY": "",
+    "JOB_LOCATION": "",
+    "NO_OF_OPENINGS": 0,
+    "SKILL_LEVEL": ""
+  },
+  "SALARY_AND_BENEFITS": {
+    "MINIMUM_SALARY": 0,
+    "MAXIMUM_SALARY": 0,
+    "SALARY_UNIT": "",
+    "SALARY_CURRENCY": "",
+    "SALARY_DETAILS": "",
+    "CTC_DETAILS": "",
+    "TAX_FREE": false,
+    "OVERTIME_DETAILS": "",
+    "BENEFITS": {
+      "FREE_ACCOMMODATION": false,
+      "ACCOMMODATION_DETAILS": "",
+      "FREE_FOOD": false,
+      "FOOD_DETAILS": "",
+      "FREE_AIR_TICKET": false,
+      "AIR_TICKET_DETAILS": "",
+      "FREE_MEDICAL": false,
+      "HEALTH_INSURANCE": false,
+      "MEDICAL_DETAILS": "",
+      "FREE_TRANSPORTATION": false,
+      "TRANSPORTATION_DETAILS": "",
+      "ANNUAL_LEAVES": "",
+      "OTHER_BENEFITS": []
+    },
+    "PERKS": []
+  },
+  "ELIGIBILITY": {
+    "EDUCATIONAL_QUALIFICATION": "",
+    "EDUCATION_DETAILS": [],
+    "MINIMUM_PERCENTAGE": "",
+    "PREFERRED_DEGREE": "",
+    "EXPERIENCE_REQUIRED": {
+      "MINIMUM_YEARS": 0,
+      "MAXIMUM_YEARS": 0,
+      "EXPERIENCE_LEVEL": ""
+    },
+    "AGE_LIMIT": {
+      "MINIMUM_AGE": 0,
+      "MAXIMUM_AGE": 0
+    },
+    "SKILLS_REQUIRED": [],
+    "LANGUAGE_PROFICIENCY": [],
+    "CERTIFICATIONS": [],
+    "PASSPORT_REQUIREMENT": "",
+    "OTHER_ELIGIBILITY": []
+  },
+  "VISA_AND_WORK_PERMIT": {
+    "VISA_TYPE": "",
+    "VISA_SPONSORSHIP": "",
+    "WORK_PERMIT_DETAILS": "",
+    "VISA_PROCESSING_TIME": "",
+    "VISA_FEES": "",
+    "VISA_SPONSOR_BY_EMPLOYER": false,
+    "VISA_SPONSOR_BY_AGENCY": false
+  },
+  "JOB_DESCRIPTION": {
+    "KEY_RESPONSIBILITIES": [],
+    "DAILY_TASKS": [],
+    "ROLE_OVERVIEW": ""
+  },
+  "APPLICATION_PROCESS": {
+    "APPLICATION_MODE": "",
+    "APPLICATION_LINK": "",
+    "APPLICATION_EMAIL": "",
+    "APPLICATION_DEADLINE": "",
+    "WALK_IN_INTERVIEW": {
+      "DATE": "",
+      "TIME": "",
+      "VENUE": ""
+    },
+    "HOW_TO_APPLY_STEPS": [],
+    "REQUIRED_DOCUMENTS": [],
+    "RECRUITMENT_AGENCY": {
+      "AGENCY_NAME": "",
+      "AGENCY_LICENSE_NO": "",
+      "AGENCY_CONTACT": ""
+    }
+  },
+  "SELECTION_PROCESS": {
+    "STAGES": [],
+    "WRITTEN_TEST": false,
+    "TECHNICAL_INTERVIEW": false,
+    "HR_INTERVIEW": false,
+    "TRADE_TEST": false,
+    "MEDICAL_EXAMINATION": false,
+    "OTHER_DETAILS": ""
+  },
+  "IMPORTANT_DATES": {
+    "JOB_POSTED_DATE": "",
+    "APPLICATION_START_DATE": "",
+    "APPLICATION_LAST_DATE": "",
+    "INTERVIEW_DATE": "",
+    "JOINING_DATE": "",
+    "EXPECTED_TRAVEL_DATE": ""
+  },
+  "IMPORTANT_LINKS": {
+    "OFFICIAL_JOB_LISTING": "",
+    "COMPANY_WEBSITE": "",
+    "APPLY_NOW_LINK": "",
+    "CONTACT_HELPLINE": ""
+  },
+  "ADDITIONAL_INFO": {
+    "CONTRACT_DURATION": "",
+    "PROBATION_PERIOD": "",
+    "WORK_TIMINGS": "",
+    "WORKING_DAYS": "",
+    "NOTICE_PERIOD": "",
+    "TRAINING_PROVIDED": "",
+    "COMPANY_CULTURE": "",
+    "GROWTH_OPPORTUNITIES": "",
+    "MEDICAL_TEST_REQUIRED": false,
+    "POLICE_CLEARANCE_REQUIRED": false,
+    "EMIGRATION_CLEARANCE_REQUIRED": false,
+    "IMPORTANT_INSTRUCTIONS": [],
+    "FRAUD_ALERT": ""
+  }
+}
+
+टाइटल: {TITLE}
+URL: {URL}

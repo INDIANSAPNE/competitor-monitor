@@ -1,0 +1,120 @@
+दिए गए आर्टिकल टाइटल और URL के आधार पर, निम्नलिखित JSON स्कीमा को पूरी तरह से भरें। यह स्कीमा सभी प्रकार के कौशल विकास (Skill Development) और स्वरोजगार (Self-Employment) से संबंधित कंटेंट को कवर करती है – चाहे वह सरकारी योजना हो (PMKVY, DDU-GKY, NULM, PMEGP, Mudra Loan), निजी संस्थान का कोर्स, ऑनलाइन/ऑफलाइन ट्रेनिंग, फ्रीलांसिंग गाइड, लघु उद्योग स्थापना, हस्तशिल्प, कृषि आधारित स्वरोजगार, महिला सशक्तिकरण योजनाएं, या कोई अन्य कौशल/रोजगारपरक जानकारी। हर फील्ड को ध्यानपूर्वक भरें; जहाँ जानकारी उपलब्ध न हो, वहाँ खाली, शून्य, false या null रखें। केवल मान्य JSON लौटाएँ, कोई अन्य टेक्स्ट नहीं।
+
+{
+  "SKILL_IDENTIFICATION": {
+    "PROGRAM_NAME": "",
+    "PROVIDER_NAME": "",
+    "PROVIDER_TYPE": "",
+    "PROGRAM_TYPE": "",
+    "CATEGORY": "",
+    "SKILL_CATEGORY": "",
+    "LEVEL": "",
+    "MODE": "",
+    "LANGUAGE": ""
+  },
+  "PROGRAM_STATUS": {
+    "OPEN_FOR_APPLICATION": false,
+    "APPLICATION_START_DATE": "",
+    "APPLICATION_LAST_DATE": "",
+    "LAST_DATE_EXTENSION": ""
+  },
+  "COURSE_OR_SCHEME_DETAILS": {
+    "COURSE_NAME": "",
+    "DURATION": "",
+    "DURATION_UNIT": "",
+    "TOTAL_HOURS": 0,
+    "FEE": {
+      "TOTAL_FEE": 0,
+      "FEE_TYPE": "",
+      "IS_FREE": false,
+      "DISCOUNT_DETAILS": "",
+      "FEE_PAYMENT_MODE": ""
+    },
+    "MEDIUM_OF_INSTRUCTION": "",
+    "BATCH_SIZE": "",
+    "CERTIFICATION": ""
+  },
+  "ELIGIBILITY": {
+    "MINIMUM_EDUCATION": "",
+    "EDUCATION_DETAILS": [],
+    "AGE_LIMIT": {
+      "MINIMUM_AGE": 0,
+      "MAXIMUM_AGE": 0
+    },
+    "GENDER": "",
+    "RESERVATION_CATEGORY": "",
+    "DOMICILE": "",
+    "EXPERIENCE_REQUIRED": "",
+    "OTHER_REQUIREMENTS": []
+  },
+  "BENEFITS_AND_OUTCOMES": {
+    "CERTIFICATE_PROVIDED": false,
+    "CERTIFICATE_DETAILS": "",
+    "JOB_PLACEMENT_ASSISTANCE": false,
+    "PLACEMENT_DETAILS": "",
+    "AVERAGE_STIPEND": "",
+    "EXPECTED_SALARY": "",
+    "LOAN_FACILITY": false,
+    "LOAN_DETAILS": "",
+    "SUBSIDY": false,
+    "SUBSIDY_DETAILS": "",
+    "TOOLKIT_PROVIDED": false,
+    "TOOLKIT_DETAILS": "",
+    "OTHER_BENEFITS": []
+  },
+  "SELF_EMPLOYMENT_OPPORTUNITIES": {
+    "BUSINESS_IDEA": "",
+    "SECTOR": "",
+    "INITIAL_INVESTMENT": {
+      "MINIMUM": 0,
+      "MAXIMUM": 0
+    },
+    "PROFIT_MARGIN": "",
+    "GOVERNMENT_SCHEMES_LINKED": [],
+    "TRAINING_AVAILABLE": false,
+    "MARKET_DEMAND": ""
+  },
+  "APPLICATION_PROCESS": {
+    "APPLICATION_MODE": "",
+    "ONLINE_LINK": "",
+    "OFFLINE_VENUE": "",
+    "STEPS_TO_APPLY": [],
+    "REQUIRED_DOCUMENTS": [],
+    "APPLICATION_FEE": 0
+  },
+  "SELECTION_PROCESS": {
+    "SELECTION_METHOD": "",
+    "INTERVIEW": false,
+    "MERIT_BASED": false,
+    "OTHER_DETAILS": ""
+  },
+  "SUCCESS_STORIES": [
+    {
+      "NAME": "",
+      "STORY": "",
+      "OUTCOME": ""
+    }
+  ],
+  "IMPORTANT_DATES": {
+    "NOTIFICATION_DATE": "",
+    "APPLICATION_START_DATE": "",
+    "APPLICATION_LAST_DATE": "",
+    "TRAINING_START_DATE": "",
+    "CERTIFICATION_DATE": ""
+  },
+  "IMPORTANT_LINKS": {
+    "OFFICIAL_NOTIFICATION": "",
+    "APPLY_LINK": "",
+    "OFFICIAL_WEBSITE": "",
+    "HELPLINE": ""
+  },
+  "ADDITIONAL_INFO": {
+    "TERMS_AND_CONDITIONS": "",
+    "RENEWAL_OR_FURTHER_STEPS": "",
+    "CONTACT_DETAILS": "",
+    "IMP_INSTRUCTIONS": []
+  }
+}
+
+टाइटल: {TITLE}
+URL: {URL}

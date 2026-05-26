@@ -1,0 +1,191 @@
+<!-- 
+=================================================================
+TEMPLATE NAME: विशेष (Special) Category Template - JSON Schema Integrated
+VERSION: 1.0
+CATEGORY: विशेष (Special)
+DESCRIPTION: 
+  यह टेम्पलेट "विशेष (Special)" कैटेगरी की हमारी JSON स्कीमा के साथ पूरी तरह से एकीकृत है।
+  AI को निर्देश है कि वह नीचे दिए गए स्ट्रक्चर और JSON ({EXTRA_DATA}) का उपयोग करके एक
+  मजेदार, SEO-फ्रेंडली और विशेष समुदाय पर केंद्रित पोस्ट लिखे।
+  हर सेक्शन में JSON से सही डेटा खींचा जाए (जैसे CONTENT_IDENTIFICATION, 
+  TARGET_AUDIENCE_ANALYSIS, GOVERNMENT_SCHEMES_AND_RESERVATIONS आदि)।
+  टोन: 80% फनी + 20% मोटिवेशनल | SEO: Primary, Secondary, LSI keywords.
+  Jobjalebi.com का नाम प्राकृतिक रूप से 3-4 बार डाला गया है.
+=================================================================
+-->
+
+<!-- ========== METADATA (AI AGENT INPUT - JSON से लिया गया) ========== -->
+<!--
+POST_TITLE: JSON के SEO_TITLE फ़ील्ड से लें।
+CATEGORY: JSON के CATEGORY फ़ील्ड से लें।
+PRIMARY_KEYWORD: JSON के PRIMARY_KEYWORD फ़ील्ड से लें।
+SECONDARY_KEYWORDS: JSON के SECONDARY_KEYWORDS फ़ील्ड से लें (कम से कम 5-6 बार उपयोग करें)।
+LSI_KEYWORDS: JSON के LSI_KEYWORDS फ़ील्ड से लें।
+EXTRA_DATA: पूरा JSON ऑब्जेक्ट। AI को इसे पढ़कर सभी सेक्शन भरने हैं।
+TARGET_GROUP: JSON के TARGET_AUDIENCE_ANALYSIS.WHO_IS_THIS_FOR से लें। 
+              (AI: इसी के अनुसार लीड और बीच-बीच में भाषा को अनुकूलित करें, 
+              जैसे "दिव्यांग साथियों", "महिलाओं", "पूर्व सैनिकों" आदि।)
+-->
+
+<!-- ========== SEO KEYWORD USAGE INSTRUCTIONS FOR AI ==========
+1. PRIMARY_KEYWORD ({PRIMARY_KEYWORD}) → lead, summary table, schemes/benefits, eligibility, conclusion.
+2. SECONDARY_KEYWORDS (जैसे "apply online", "eligibility", "reservation", "special provision", "government scheme") का कम से कम 5-6 बार उपयोग करें।
+3. Jobjalebi.com का उल्लेख 3-4 बार करें: lead, useful links/resources, conclusion, FAQ.
+-->
+
+<!-- ========== POST CONTENT STARTS ========== -->
+
+<!-- LEAD: PRIMARY KEYWORD + JOJALBEBI MENTION + TARGET GROUP अनुकूलन -->
+<p><strong>🚨 खास मौका, खास तुम्हारे लिए!</strong> <strong>{TARGET_GROUP} के लिए {PRIMARY_KEYWORD} लेकर आए हैं – एक ऐसा गाइड जो आपके हर सवाल का जवाब देगा और आपको हंसाएगा भी।</strong> <strong>Jobjalebi.com</strong> पर हम जानते हैं कि हर किसी की ज़रूरत अलग होती है, इसलिए हमने यह स्पेशल पोस्ट तैयार की है – पूरी डिटेल, हंसी-मजाक के साथ। तो चाय पकड़ो, अपना हक समझो, और पढ़ते जाओ। 😂</p>
+
+<p>इस पोस्ट में हम बताएँगे – <strong>कौन सी सरकारी योजनाएँ और नौकरियाँ आपके लिए हैं (<strong>government scheme</strong>), आरक्षण (<strong>reservation</strong>) और विशेष प्रावधान (<strong>special provision</strong>) क्या हैं, पात्रता (<strong>eligibility</strong>) क्या है, और ऑनलाइन अप्लाई (<strong>apply online</strong>) कैसे करें – सब कुछ हंसी-मजाक के साथ।</strong> तो चाय बनाओ, मोबाइल पकड़ो, और <strong>Jobjalebi.com</strong> के इस पोस्ट को अंत तक पढ़ो।</p>
+
+<!-- ========== SECTION 1: QUICK SUMMARY TABLE ========== -->
+<h2>📌 एक नज़र में – स्पेशल गाइड का चटपटा सारांश</h2>
+<p>नीचे दी गई टेबल में <strong>{PRIMARY_KEYWORD}</strong> की सारी ज़रूरी जानकारी एक जगह है। (AI: JSON से डेटा भरें।)</p>
+<table class="responsive-table">
+  <thead>
+    <tr><th>शीर्षक</th><th>विवरण (हंसी के साथ)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>किसके लिए है?</td><td>{TARGET_AUDIENCE_ANALYSIS.WHO_IS_THIS_FOR} – "बिल्कुल तुम्हारे लिए!"</td></tr>
+    <tr><td>मुख्य समस्या (Pain Points)</td><td>{TARGET_AUDIENCE_ANALYSIS.PAIN_POINTS} – "अब टेंशन खत्म"</td></tr>
+    <tr><td>सरकारी योजना का नाम</td><td>{GOVERNMENT_SCHEMES_AND_RESERVATIONS.SCHEME_NAME} (यदि हो)</td></tr>
+    <tr><td>आरक्षण (<strong>reservation</strong>)</td><td>{GOVERNMENT_SCHEMES_AND_RESERVATIONS.RESERVATION_PERCENTAGE} – "इतना प्रतिशत सिर्फ तुम्हारे लिए"</td></tr>
+    <tr><td>विशेष प्रावधान (<strong>special provision</strong>)</td><td>{GOVERNMENT_SCHEMES_AND_RESERVATIONS.SPECIAL_PROVISIONS}</td></tr>
+    <tr><td>पात्रता (<strong>eligibility</strong>)</td><td>{ELIGIBILITY_AND_REQUIREMENTS.EDUCATIONAL_QUALIFICATION} + आयु सीमा: {ELIGIBILITY_AND_REQUIREMENTS.AGE_LIMIT.MINIMUM_AGE}-{ELIGIBILITY_AND_REQUIREMENTS.AGE_LIMIT.MAXIMUM_AGE} वर्ष</td></tr>
+    <tr><td>आवेदन प्रक्रिया</td><td>{APPLICATION_PROCESS.APPLICATION_MODE} – <strong>apply online</strong> या ऑफलाइन</td></tr>
+    <tr><td>आवेदन शुल्क</td><td>{APPLICATION_PROCESS.APPLICATION_FEE} (छूट: {APPLICATION_PROCESS.FEE_EXEMPTION}) – "पैसे बचेंगे!"</td></tr>
+    <tr><td>महत्वपूर्ण तिथियाँ</td><td>शुरू: {APPLICATION_PROCESS.IMPORTANT_DATES.APPLICATION_START} | अंतिम: {APPLICATION_PROCESS.IMPORTANT_DATES.APPLICATION_LAST_DATE}</td></tr>
+    <tr><td>आधिकारिक लिंक</td><td><a href="{RESOURCES_AND_LINKS.OFFICIAL_WEBSITES[0]}">👉 यहाँ क्लिक करें</a></td></tr>
+    <tr><td>⚡ फनी चेतावनी</td><td>"अपना हक समझो, लेकिन आखिरी तारीख से पहले – वरना हक भी हड़प लिया जाएगा।"</td></tr>
+  </tbody>
+</table>
+
+<!-- ========== SECTION 2: TARGET AUDIENCE ANALYSIS ========== -->
+<h2>1. यह किसके लिए है और क्यों ज़रूरी है?</h2>
+<p><strong>{TARGET_AUDIENCE_ANALYSIS.WHO_IS_THIS_FOR}</strong> के लिए यह जानकारी बहुत काम की है। (AI: JSON से PAIN_POINTS, ASPIRATIONS, COMMON_MISCONCEPTIONS को यहाँ संक्षेप में लिखें।)</p>
+<ul>
+  <li><strong>आपकी समस्याएँ:</strong> {TARGET_AUDIENCE_ANALYSIS.PAIN_POINTS}</li>
+  <li><strong>आपकी आकांक्षाएँ:</strong> {TARGET_AUDIENCE_ANALYSIS.ASPIRATIONS}</li>
+  <li><strong>आम गलतफहमियाँ:</strong> {TARGET_AUDIENCE_ANALYSIS.COMMON_MISCONCEPTIONS}</li>
+</ul>
+<p><strong>😂 फनी कमेंट:</strong> "समाज ने बहुत बहकाया, अब हम सच बताएँगे। आप किसी से कम नहीं, बस सही जानकारी चाहिए।"</p>
+
+<!-- ========== SECTION 3: GOVERNMENT SCHEMES & RESERVATIONS ========== -->
+<h2>2. सरकारी योजनाएँ और आरक्षण – आपका हक (<strong>government scheme</strong> और <strong>reservation</strong>)</h2>
+<p><strong>{GOVERNMENT_SCHEMES_AND_RESERVATIONS.SCHEME_NAME}</strong> (यदि कोई योजना है) के तहत आपको कई लाभ मिलते हैं।</p>
+<table class="responsive-table">
+  <thead><tr><th>योजना / प्रावधान</th><th>लाभ</th><th>पात्र श्रेणियाँ</th></tr></thead>
+  <tbody>
+    <tr><td>{GOVERNMENT_SCHEMES_AND_RESERVATIONS.SCHEME_NAME}</td><td>{GOVERNMENT_SCHEMES_AND_RESERVATIONS.SCHEME_BENEFITS}</td><td>{GOVERNMENT_SCHEMES_AND_RESERVATIONS.ELIGIBLE_CATEGORIES}</td></tr>
+  </tbody>
+</table>
+<p><strong>आरक्षण (<strong>reservation</strong>):</strong> {GOVERNMENT_SCHEMES_AND_RESERVATIONS.RESERVATION_PERCENTAGE} – "यह सीट तुम्हारी है, बस पहुँच जाओ।"</p>
+<p><strong>विशेष प्रावधान (<strong>special provision</strong>):</strong> {GOVERNMENT_SCHEMES_AND_RESERVATIONS.SPECIAL_PROVISIONS} – "जो आम लोगों को नहीं मिलता।"</p>
+<p><strong>😜 फनी लाइन:</strong> "आरक्षण को 'सुविधा' नहीं, 'अवसर' समझो। सरकार ने रास्ता बनाया है, तुम्हें बस उस पर चलना है।"</p>
+
+<!-- ========== SECTION 4: JOB/OPPORTUNITY DETAILS ========== -->
+<h2>3. नौकरी और अवसर – कितनी कमाई, कहाँ-कहाँ?</h2>
+<p>(AI: JOB_OR_OPPORTUNITY_DETAILS से JOB_TYPES_AVAILABLE, SECTORS, NOTABLE_RECRUITERS, POST_NAMES, SALARY_RANGE, JOB_LOCATIONS लेकर एक तालिका या सूची बनाएँ।)</p>
+<table class="responsive-table">
+  <thead><tr><th>नौकरी का प्रकार</th><th>सेक्टर</th><th>प्रमुख भर्तीकर्ता</th><th>सैलरी रेंज</th></tr></thead>
+  <tbody>
+    <tr><td>{JOB_OR_OPPORTUNITY_DETAILS.JOB_TYPES_AVAILABLE[0]}</td><td>{JOB_OR_OPPORTUNITY_DETAILS.SECTORS[0]}</td><td>{JOB_OR_OPPORTUNITY_DETAILS.NOTABLE_RECRUITERS}</td><td>{JOB_OR_OPPORTUNITY_DETAILS.SALARY_RANGE}</td></tr>
+  </tbody>
+</table>
+<p><strong>फनी टिप:</strong> "इतने अवसर कि अगर एक भी छूटा तो लगेगा कि जिंदगी से हाथ धो बैठे।"</p>
+
+<!-- ========== SECTION 5: ELIGIBILITY & REQUIREMENTS ========== -->
+<h2>4. पात्रता और ज़रूरी बातें – कौन-कौन सी शर्तें हैं? (<strong>eligibility</strong>)</h2>
+<ul>
+  <li><strong>शैक्षिक योग्यता:</strong> {ELIGIBILITY_AND_REQUIREMENTS.EDUCATIONAL_QUALIFICATION}</li>
+  <li><strong>उम्र सीमा:</strong> {ELIGIBILITY_AND_REQUIREMENTS.AGE_LIMIT.MINIMUM_AGE} – {ELIGIBILITY_AND_REQUIREMENTS.AGE_LIMIT.MAXIMUM_AGE} वर्ष (छूट: {ELIGIBILITY_AND_REQUIREMENTS.AGE_LIMIT.AGE_RELAXATION})</li>
+  <li><strong>विकलांगता मानदंड:</strong> {ELIGIBILITY_AND_REQUIREMENTS.DISABILITY_CRITERIA}</li>
+  <li><strong>ज़रूरी प्रमाण पत्र:</strong> {ELIGIBILITY_AND_REQUIREMENTS.CERTIFICATE_REQUIREMENTS}</li>
+  <li><strong>मेडिकल स्टैंडर्ड:</strong> {ELIGIBILITY_AND_REQUIREMENTS.MEDICAL_STANDARDS}</li>
+  <li><strong>अन्य:</strong> {ELIGIBILITY_AND_REQUIREMENTS.OTHER_CRITERIA}</li>
+</ul>
+<p><strong>🤣 फनी चेकलिस्ट:</strong> "ये सब देखकर लगे कि बहुत कुछ माँग रहे हैं? तो सोचो, सरकार तुम्हें एक्स्ट्रा दे रही है – थोड़ी कागज़ी कार्रवाई तो चलेगी।"</p>
+
+<!-- ========== SECTION 6: HOW TO APPLY ========== -->
+<h2>5. <strong>apply online</strong> – आवेदन कैसे करें?</h2>
+<p><strong>Jobjalebi.com</strong> की टीम ने नीचे स्टेप-बाय-स्टेप गाइड तैयार की है। (AI: APPLICATION_PROCESS.HOW_TO_APPLY_STEPS ऐरे से स्टेप्स लें।)</p>
+<ol>
+  <li>{APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[0]}</li>
+  <li>{APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[1]}</li>
+  <li>{APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[2]}</li>
+  <li>{APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[3]}</li>
+  <li>{APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[4]}</li>
+</ol>
+<p><strong>जरूरी दस्तावेज़:</strong> (AI: APPLICATION_PROCESS.DOCUMENTS_REQUIRED ऐरे से लें।)</p>
+<p><strong>फीस और छूट:</strong> आवेदन शुल्क: ₹{APPLICATION_PROCESS.APPLICATION_FEE} | छूट: {APPLICATION_PROCESS.FEE_EXEMPTION}</p>
+<p><strong>😂 फनी सलाह:</strong> "फॉर्म भरते समय अपना नाम और जन्मतिथि दस बार चेक करो। गलती हुई तो बाद में चक्कर काटने पड़ेंगे – और चक्कर काटने में जो मज़ा है, वो तो सरकारी दफ्तरों में ही है।"</p>
+
+<!-- ========== SECTION 7: EXAM & SELECTION ========== -->
+<h2>6. परीक्षा और चयन प्रक्रिया – कितने पेपर, कितनी आसानी?</h2>
+<p><strong>चयन के चरण:</strong> {EXAM_AND_SELECTION.SELECTION_STAGES}</p>
+<p><strong>परीक्षा पैटर्न:</strong> {EXAM_AND_SELECTION.EXAM_PATTERN}</p>
+<p><strong>सिलेबस:</strong> {EXAM_AND_SELECTION.SYLLABUS_TOPICS}</p>
+<p><strong>शारीरिक मानकों में छूट:</strong> {EXAM_AND_SELECTION.PHYSICAL_STANDARDS_RELAXATION} – "जी हाँ, तुम्हारे लिए रिलैक्सेशन है।"</p>
+<p><strong>😜 फनी लाइन:</strong> "अगर एग्जाम में पास हो गए तो समझ लेना कि तुमने वो कर दिखाया जो 'आम' लोग नहीं कर पाते।"</p>
+
+<!-- ========== SECTION 8: SUCCESS STORIES ========== -->
+<h2>7. सफलता की कहानियाँ – आप भी कर सकते हैं</h2>
+<!-- AI: SUCCESS_STORIES_AND_EXAMPLES ऐरे को इटरेट करें। -->
+<div class="success-story">
+  <p><strong>{SUCCESS_STORIES_AND_EXAMPLES[0].NAME}</strong> – {SUCCESS_STORIES_AND_EXAMPLES[0].ACHIEVEMENT}</p>
+  <p><em>प्रेरणा: {SUCCESS_STORIES_AND_EXAMPLES[0].INSPIRATION}</em></p>
+</div>
+<p>ये कहानियाँ बताती हैं कि हालात चाहे जैसे हों, हौसला बड़ा होना चाहिए।</p>
+
+<!-- ========== SECTION 9: CHALLENGES & SOLUTIONS ========== -->
+<h2>8. चुनौतियाँ और समाधान – हर मुश्किल का जवाब</h2>
+<p><strong>आम चुनौतियाँ:</strong> {CHALLENGES_AND_SOLUTIONS.COMMON_CHALLENGES}</p>
+<p><strong>कैसे करें पार:</strong> {CHALLENGES_AND_SOLUTIONS.HOW_TO_OVERCOME}</p>
+<p><strong>सहायता प्रणालियाँ:</strong> {CHALLENGES_AND_SOLUTIONS.SUPPORT_SYSTEMS}</p>
+<p><strong>फनी मोटिवेशन:</strong> "दुनिया कहेगी 'नहीं हो सकता', तुम कहना 'देख लो'। हर चुनौती के पीछे एक मौका छिपा है – बस नज़रें चाहिए।"</p>
+
+<!-- ========== SECTION 10: RESOURCES AND LINKS ========== -->
+<h2>📌 ज़रूरी संसाधन और लिंक – यहाँ से मदद लो</h2>
+<table class="responsive-table">
+  <thead><tr><th>विवरण</th><th>लिंक / संपर्क</th><th>फनी रिमार्क</th></tr></thead>
+  <tbody>
+    <tr><td><strong>आधिकारिक वेबसाइट</strong></td><td><a href="{RESOURCES_AND_LINKS.OFFICIAL_WEBSITES[0]}">👉 यहाँ जाएँ</a></td><td>"सबसे भरोसेमंद जगह"</td></tr>
+    <tr><td><strong>हेल्पलाइन</strong></td><td>{RESOURCES_AND_LINKS.HELPLINE_NUMBERS}</td><td>"फोन उठाओ, पूछो, हल पाओ"</td></tr>
+    <tr><td><strong>एनजीओ संपर्क</strong></td><td>{RESOURCES_AND_LINKS.NGO_CONTACTS}</td><td>"ये लोग मुफ्त मदद करते हैं"</td></tr>
+    <tr><td><strong>पीडीएफ लिंक</strong></td><td>{RESOURCES_AND_LINKS.PDF_LINKS}</td><td>"डाउनलोड करो और पढ़ो"</td></tr>
+    <tr><td><strong>वीडियो गाइड</strong></td><td>{RESOURCES_AND_LINKS.VIDEO_LINKS}</td><td>"देखो और सीखो"</td></tr>
+  </tbody>
+</table>
+<p><strong>⚠️ सावधानी:</strong> <strong>Jobjalebi.com</strong> के अलावा किसी और के झाँसे में मत आना। सरकारी योजनाओं के लिए कोई पैसा नहीं लगता – फ्री है, फ्री!</p>
+
+<!-- ========== SECTION 11: FAQ ========== -->
+<h2>❓ अक्सर पूछे जाने वाले सवाल (FAQs)</h2>
+<div class="faq-section">
+  (AI: FREQUENTLY_ASKED_QUESTIONS ऐरे को इटरेट करें।)
+  <h3>Q1: {FREQUENTLY_ASKED_QUESTIONS[0].QUESTION}</h3>
+  <p><strong>A1:</strong> {FREQUENTLY_ASKED_QUESTIONS[0].ANSWER}</p>
+  <h3>Q2: {FREQUENTLY_ASKED_QUESTIONS[1].QUESTION}</h3>
+  <p><strong>A2:</strong> {FREQUENTLY_ASKED_QUESTIONS[1].ANSWER}</p>
+</div>
+
+<!-- ========== SECTION 12: CONCLUSION ========== -->
+<h2>🏁 आखिरी बात – अब क्या करोगे?</h2>
+<p><strong>{PRIMARY_KEYWORD} आपके सामने है – पूरी जानकारी, हंसी-मजाक के साथ।</strong> अब बस एक कदम उठाना है – अप्लाई करो, फॉर्म भरो, और अपना हक लो। <strong>Jobjalebi.com</strong> पर हम हमेशा आपके साथ हैं, हर विशेष ज़रूरत के साथ।</p>
+<p><strong>मोटिवेशनल फनी लाइन:</strong> "जिंदगी में कभी-कभी थोड़ी एक्स्ट्रा हेल्प चाहिए होती है – और वो एक्स्ट्रा हेल्प आपको मिल रही है। तो मुस्कुराओ, भरोसा रखो, और आगे बढ़ो।"</p>
+<p><strong>सीधा लिंक:</strong> <a href="{APPLICATION_PROCESS.APPLICATION_LINK}">👉 यहाँ क्लिक करें – अभी अप्लाई करें</a></p>
+
+<!-- ========== SECTION 13: EXPERT TIPS & MYTHS ========== -->
+<h2>💡 एक्सपर्ट टिप्स और मिथक-तथ्य</h2>
+<ul>
+  <li><strong>एक्सपर्ट टिप्स:</strong> {ADDITIONAL_INFO.EXPERT_TIPS}</li>
+  <li><strong>मिथक बनाम तथ्य:</strong> {ADDITIONAL_INFO.MYTHS_VS_FACTS}</li>
+</ul>
+
+<!-- ========== SECTION 14: DISCLAIMER ========== -->
+<p><strong>⚠️ अस्वीकरण:</strong> यह पोस्ट विभिन्न सरकारी योजनाओं, आरक्षण नीतियों और आधिकारिक स्रोतों पर आधारित है। सटीक और नवीनतम जानकारी के लिए संबंधित आधिकारिक वेबसाइट अवश्य देखें। <strong>Jobjalebi.com</strong> केवल सूचना प्रदान करता है।</p>
+
+<p><strong>😄 आखिरी मोटिवेशन:</strong> "आप विशेष हैं, आपकी ज़रूरतें विशेष हैं, और आपके सपने भी विशेष हैं। तो अपनी खासियत को पहचानो, और दुनिया को दिखा दो कि आप किसी से कम नहीं।"</p>
+
+<!-- ========== POST ENDS ========== -->

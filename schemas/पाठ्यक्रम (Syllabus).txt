@@ -1,0 +1,81 @@
+दिए गए आर्टिकल टाइटल और URL के आधार पर, निम्नलिखित JSON स्कीमा को पूरी तरह से भरें। यह स्कीमा हर प्रकार के पाठ्यक्रम (Syllabus) को कवर करने के लिए डिज़ाइन की गई है – चाहे वह सरकारी नौकरी की परीक्षा हो (UPSC, SSC, बैंकिंग, रेलवे, राज्य PSC, शिक्षक पात्रता, आदि), बोर्ड परीक्षा (10वीं/12वीं), प्रवेश परीक्षा (JEE, NEET, CUET, CAT), या किसी भी विश्वविद्यालय/संस्थान का पाठ्यक्रम। इसमें विषयवार विषय-सूची, अंक विभाजन, परीक्षा पैटर्न, अनुशंसित पुस्तकें आदि सब शामिल हैं। हर फ़ील्ड को ध्यानपूर्वक भरें। जहाँ जानकारी उपलब्ध न हो, वहाँ खाली छोड़ें, शून्य या null करें। केवल मान्य JSON लौटाएँ, कोई अन्य टेक्स्ट नहीं।
+
+{
+  "SYLLABUS_IDENTIFICATION": {
+    "EXAM_NAME": "",
+    "RECRUITMENT_NAME": "",
+    "CONDUCTING_BODY": "",
+    "EXAM_TYPE": "",
+    "CATEGORY": "",
+    "ACADEMIC_YEAR": "",
+    "CLASS_OR_LEVEL": ""
+  },
+  "SYLLABUS_STATUS": {
+    "RELEASED": false,
+    "RELEASE_DATE": "",
+    "SYLLABUS_VERSION": "",
+    "OFFICIAL_SYLLABUS_LINK": ""
+  },
+  "EXAM_PATTERN_OVERVIEW": {
+    "TOTAL_MARKS": 0,
+    "TOTAL_QUESTIONS": 0,
+    "DURATION": "",
+    "MEDIUM": "",
+    "MODE": "",
+    "NEGATIVE_MARKING": "",
+    "SECTIONS_COUNT": 0
+  },
+  "SUBJECTS": [
+    {
+      "SUBJECT_NAME": "",
+      "TOPICS": [
+        {
+          "TOPIC_NAME": "",
+          "SUB_TOPICS": [],
+          "MARKS_WEIGHTAGE": "",
+          "NUMBER_OF_QUESTIONS": 0,
+          "DIFFICULTY_LEVEL": ""
+        }
+      ],
+      "TOTAL_MARKS": 0,
+      "TOTAL_QUESTIONS": 0,
+      "IMPORTANT_BOOKS": [],
+      "NOTES": ""
+    }
+  ],
+  "SECTIONAL_DETAILS": [
+    {
+      "SECTION_NAME": "",
+      "SUBJECTS_INCLUDED": [],
+      "TOTAL_MARKS": 0,
+      "TOTAL_QUESTIONS": 0
+    }
+  ],
+  "RECOMMENDED_RESOURCES": {
+    "BOOKS": [],
+    "ONLINE_RESOURCES": [],
+    "PREVIOUS_YEAR_PAPERS_LINK": ""
+  },
+  "PREPARATION_TIPS": {
+    "STRATEGY": "",
+    "IMPORTANT_TOPICS": [],
+    "TIME_MANAGEMENT_TIPS": ""
+  },
+  "IMPORTANT_DATES": {
+    "SYLLABUS_RELEASE_DATE": "",
+    "LAST_UPDATED": ""
+  },
+  "IMPORTANT_LINKS": {
+    "OFFICIAL_NOTIFICATION": "",
+    "SYLLABUS_PDF": "",
+    "OFFICIAL_WEBSITE": ""
+  },
+  "ADDITIONAL_INFO": {
+    "FREQUENTLY_ASKED_QUESTIONS": [],
+    "LATEST_CHANGES": "",
+    "CONTACT_HELPLINE": ""
+  }
+}
+
+टाइटल: {TITLE}
+URL: {URL}

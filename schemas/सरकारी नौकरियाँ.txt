@@ -1,0 +1,149 @@
+दिए गए आर्टिकल टाइटल और URL के आधार पर, निम्नलिखित JSON स्कीमा को पूरी तरह भरें। यह स्कीमा सभी प्रकार की सरकारी नौकरियों (ग्रुप A, B, C, D, राजपत्रित/अराजपत्रित, तकनीकी/गैर-तकनीकी, केंद्र/राज्य/PSU आदि) को कवर करती है। हर फील्ड को ध्यानपूर्वक भरें। जहाँ जानकारी न हो, वहाँ खाली, शून्य या null रखें। केवल मान्य JSON लौटाएँ, कोई अन्य टेक्स्ट नहीं।
+
+{
+  "JOB_IDENTIFICATION": {
+    "JOB_TITLE": "",
+    "JOB_TYPE": "",
+    "JOB_CATEGORY": "",
+    "DEPARTMENT": "",
+    "MINISTRY": "",
+    "RECRUITING_AGENCY": "",
+    "ADVT_NO": "",
+    "TOTAL_VACANCIES": 0,
+    "POST_WISE_VACANCIES": [
+      {
+        "POST_NAME": "",
+        "VACANCIES": 0,
+        "CATEGORY": "",
+        "PAY_LEVEL": "",
+        "CLASSIFICATION": ""
+      }
+    ],
+    "JOB_LOCATION": "",
+    "GROUP": ""
+  },
+  "SALARY": {
+    "PAY_LEVEL": "",
+    "PAY_SCALE": "",
+    "MINIMUM_SALARY": 0,
+    "MAXIMUM_SALARY": 0,
+    "ALLOWANCES": [],
+    "PERKS": []
+  },
+  "ELIGIBILITY": {
+    "EDUCATIONAL_QUALIFICATION": "",
+    "EDUCATION_DETAILS": [],
+    "MINIMUM_PERCENTAGE": "",
+    "EXPERIENCE_REQUIRED": "",
+    "AGE_LIMIT": {
+      "MINIMUM_AGE": 0,
+      "MAXIMUM_AGE": 0,
+      "AGE_RELAXATION": {
+        "SC_ST": "",
+        "OBC": "",
+        "PWD": "",
+        "EX_SERVICEMEN": "",
+        "WOMEN": "",
+        "OTHER": []
+      },
+      "AGE_AS_ON": ""
+    },
+    "PHYSICAL_STANDARDS": {
+      "HEIGHT_MALE": "",
+      "HEIGHT_FEMALE": "",
+      "CHEST_MALE": "",
+      "CHEST_FEMALE": "",
+      "WEIGHT": "",
+      "RUNNING": "",
+      "VISION": "",
+      "OTHER": []
+    },
+    "NATIONALITY": "भारतीय",
+    "OTHER_ELIGIBILITY": []
+  },
+  "APPLICATION_PROCESS": {
+    "APPLICATION_MODE": "",
+    "APPLICATION_START_DATE": "",
+    "APPLICATION_LAST_DATE": "",
+    "LAST_DATE_FOR_FEE": "",
+    "FORM_CORRECTION_DATE": "",
+    "APPLICATION_FEE": {
+      "GENERAL_OBC_EWS": 0,
+      "SC_ST_PWD_WOMEN": 0,
+      "OTHER_CATEGORY_FEES": [],
+      "PAYMENT_MODE": ""
+    },
+    "HOW_TO_APPLY_STEPS": [],
+    "REQUIRED_DOCUMENTS": [],
+    "PHOTO_SPECIFICATIONS": "",
+    "SIGNATURE_SPECIFICATIONS": ""
+  },
+  "SELECTION_PROCESS": {
+    "STAGES": [],
+    "EXAM_PATTERN": {
+      "PRELIMS": {
+        "TOTAL_MARKS": 0,
+        "DURATION": "",
+        "SUBJECTS": [],
+        "NEGATIVE_MARKING": ""
+      },
+      "MAINS": {
+        "TOTAL_MARKS": 0,
+        "DURATION": "",
+        "SUBJECTS": [],
+        "NEGATIVE_MARKING": ""
+      },
+      "INTERVIEW": {
+        "TOTAL_MARKS": 0,
+        "DURATION": ""
+      },
+      "SKILL_TEST": {
+        "TYPE": "",
+        "TOTAL_MARKS": 0,
+        "DURATION": ""
+      },
+      "PHYSICAL_EFFICIENCY_TEST": {
+        "EVENTS": [],
+        "QUALIFYING_NORMS": ""
+      },
+      "DOCUMENT_VERIFICATION": true
+    },
+    "SYLLABUS_TOPICS": [],
+    "CUTOFF_MARKS": {
+      "PREVIOUS_YEAR": [],
+      "EXPECTED": ""
+    }
+  },
+  "IMPORTANT_DATES": {
+    "NOTIFICATION_DATE": "",
+    "EXAM_DATE": "",
+    "ADMIT_CARD_DATE": "",
+    "RESULT_DATE": "",
+    "INTERVIEW_DATE": "",
+    "FINAL_RESULT_DATE": "",
+    "JOINING_DATE": ""
+  },
+  "IMPORTANT_LINKS": {
+    "OFFICIAL_NOTIFICATION_PDF": "",
+    "APPLY_ONLINE_LINK": "",
+    "OFFICIAL_WEBSITE": "",
+    "ADMIT_CARD_LINK": "",
+    "RESULT_LINK": "",
+    "SYLLABUS_LINK": "",
+    "PREVIOUS_PAPER_LINK": ""
+  },
+  "ADDITIONAL_INFO": {
+    "PROBATION_PERIOD": "",
+    "SERVICE_BOND": "",
+    "CAREER_GROWTH": "",
+    "TRANSFER_POLICY": "",
+    "RESERVATION_DETAILS": "",
+    "CONTACT_HELPLINE": "",
+    "IMP_INSTRUCTIONS": [],
+    "OFFICIAL_LANGUAGE": "",
+    "DOMICILE_REQUIREMENTS": ""
+  }
+}
+
+टाइटल: {TITLE}
+URL: {URL}
