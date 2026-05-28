@@ -1,10 +1,43 @@
-दिए गए आर्टिकल से मुख्य विषय और मुख्य बिंदु निकालकर JSON भरें:
+दिए गए आर्टिकल टाइटल और URL के आधार पर, निम्नलिखित JSON स्कीमा को पूरी तरह से भरें। यह एक सामान्य/डिफ़ॉल्ट स्कीमा है जो किसी भी प्रकार के कंटेंट के लिए उपयुक्त है। हर फील्ड को ध्यानपूर्वक भरें। जहाँ जानकारी उपलब्ध न हो, वहाँ खाली छोड़ें, शून्य या null करें। केवल मान्य JSON लौटाएँ, कोई अन्य टेक्स्ट नहीं।
 
 {
+  "SEO_TITLE": "",
+  "PRIMARY_KEYWORD": "",
+  "SECONDARY_KEYWORDS": [],
+  "LSI_KEYWORDS": [],
+  "TAGS": [],
+  "CATEGORY": "",
+  "SUBCATEGORY": "",
   "MAIN_TOPIC": "",
   "SUMMARY": "",
-  "KEY_POINTS": []
+  "KEY_POINTS": [],
+  "IMPORTANT_DATES": {
+    "START_DATE": "",
+    "LAST_DATE": "",
+    "EVENT_DATE": "",
+    "RESULT_DATE": ""
+  },
+  "IMPORTANT_LINKS": {
+    "OFFICIAL_WEBSITE": "",
+    "APPLY_LINK": "",
+    "NOTIFICATION_LINK": "",
+    "DOWNLOAD_LINK": ""
+  },
+  "ADDITIONAL_INFO": {
+    "ELIGIBILITY": "",
+    "APPLICATION_PROCESS": "",
+    "BENEFITS": "",
+    "OTHER_DETAILS": ""
+  }
 }
+
+निर्देश:
+- SEO_TITLE: एक आकर्षक, फनी, हिंदी-इंग्लिश मिक्स टाइटल बनाएँ जो PRIMARY_KEYWORD पर केंद्रित हो और 60-70 कैरेक्टर का हो।
+- PRIMARY_KEYWORD: इस आर्टिकल का सबसे मुख्य कीवर्ड।
+- SECONDARY_KEYWORDS: 3-5 सेकेंडरी कीवर्ड का ऐरे।
+- LSI_KEYWORDS: 10-15 संबंधित LSI कीवर्ड का ऐरे।
+- TAGS: 3-5 SEO-फ्रेंडली टैग (हिंदी या इंग्लिश) जो ब्रॉड हों और कम से कम 10 पोस्ट में इस्तेमाल हो सकें।
+बाकी सभी फील्ड को आर्टिकल से प्राप्त जानकारी के अनुसार भरें।
 
 टाइटल: {TITLE}
 URL: {URL}

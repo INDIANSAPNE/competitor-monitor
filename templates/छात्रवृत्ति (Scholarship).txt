@@ -1,173 +1,180 @@
-<!-- 
-=================================================================
-TEMPLATE NAME: छात्रवृत्ति (Scholarship) Template - JSON Schema Integrated
-VERSION: 1.0
-CATEGORY: छात्रवृत्ति (Scholarship)
-DESCRIPTION: 
-  यह टेम्पलेट "छात्रवृत्ति (Scholarship)" कैटेगरी की हमारी JSON स्कीमा के साथ पूरी तरह से एकीकृत है।
-  AI को निर्देश है कि वह नीचे दिए गए स्ट्रक्चर और JSON ({EXTRA_DATA}) का उपयोग करके एक
-  मजेदार, SEO-फ्रेंडली पोस्ट लिखे। हर सेक्शन में यह सुनिश्चित करें कि JSON से सही डेटा
-  खींचा जाए (जैसे SCHOLARSHIP_IDENTIFICATION, SCHOLARSHIP_STATUS, BENEFITS आदि)।
-  टोन: 80% फनी + 20% मोटिवेशनल | SEO: Primary, Secondary (बार-बार), LSI keywords.
-  Jobjalebi.com का नाम प्राकृतिक रूप से 3-4 बार डाला गया है.
-=================================================================
--->
+🚨 अनिवार्य HTML निर्देश (इनका उल्लंघन करने पर पोस्ट खराब दिखेगी):
+1. आप एक वर्डप्रेस ब्लॉग पोस्ट लिख रहे हैं। पूरी पोस्ट केवल HTML फ़ॉर्मेट में होनी चाहिए।
+2. Markdown सिंटैक्स का कभी भी उपयोग न करें। `#`, `*`, `-`, `1.` जैसे कोई भी Markdown कैरेक्टर पोस्ट में नहीं आने चाहिए।
+3. सभी हेडिंग `<h2>` या `<h3>` में लिखें, पैराग्राफ `<p>` में, बोल्ड टेक्स्ट `<strong>` में, और लिस्ट `<ul>`/`<ol>` में।
+4. टेबल हमेशा `<table>`, `<thead>`, `<tbody>`, `</tr>`, `<th>`, `<tr>` टैग के साथ ही बनाएँ।
+5. पोस्ट का शीर्षक (Title) JSON के `SEO_TITLE` फ़ील्ड से लें और उसे `<h1>` टैग में न लिखें (वर्डप्रेस खुद टाइटल जोड़ता है)।
+6. इंट्रो पैराग्राफ **120-150 शब्दों** का हो, स्टैंडअप कॉमेडी की तरह मज़ेदार और चटपटा लिखें।
+7. सभी डेटा JSON से सटीक भरें, अनुमान न लगाएँ।
 
-<!-- ========== METADATA (AI AGENT INPUT - JSON से लिया गया) ========== -->
-<!--
-POST_TITLE: JSON के SEO_TITLE फ़ील्ड से लें।
-CATEGORY: JSON के CATEGORY फ़ील्ड से लें।
-PRIMARY_KEYWORD: JSON के PRIMARY_KEYWORD फ़ील्ड से लें।
-SECONDARY_KEYWORDS: JSON के SECONDARY_KEYWORDS फ़ील्ड से लें (कम से कम 5-6 बार उपयोग करें)।
-LSI_KEYWORDS: JSON के LSI_KEYWORDS फ़ील्ड से लें।
-EXTRA_DATA: पूरा JSON ऑब्जेक्ट। AI को इसे पढ़कर सभी सेक्शन भरने हैं।
--->
+📦 नमूना JSON स्ट्रक्चर (छात्रवृत्ति के लिए – राइटर/एआई को यही पालन करना होगा):
+{
+  "SEO_TITLE": "यहाँ छात्रवृत्ति का मुख्य शीर्षक (जैसे 'राष्ट्रीय छात्रवृत्ति योजना 2026')",
+  "PRIMARY_KEYWORD": "मुख्य कीवर्ड (जैसे 'राष्ट्रीय छात्रवृत्ति 2026')",
+  "SECONDARY_KEYWORDS": ["apply online", "eligibility", "last date", "scholarship amount", "documents required"],
+  "LSI_KEYWORDS": ["स्कॉलरशिप योजना", "मुफ्त पढ़ाई", "आर्थिक सहायता", "छात्रवृत्ति फॉर्म", "सरकारी योजना"],
+  "SCHOLARSHIP_NAME": "योजना का पूरा नाम",
+  "PROVIDER": "प्रदाता (जैसे 'उच्च शिक्षा विभाग', 'केंद्र सरकार', 'बैंक')",
+  "TYPE": "मेरिट-आधारित / मीन्स-आधारित / मेरिट-सह-मीन्स",
+  "SCHOLARSHIP_STATUS": "खुली / बंद / आने वाली",
+  "BENEFITS": {
+    "AMOUNT": "₹50,000 प्रति वर्ष",
+    "TUITION_FEE_COVERED": "हाँ / नहीं / आंशिक",
+    "OTHER_BENEFITS": ["किताबें", "छात्रावास शुल्क", "मेस का खर्चा"],
+    "DURATION": "पूरे कोर्स के लिए / एक वर्ष"
+  },
+  "ELIGIBILITY": {
+    "NATIONALITY": "भारतीय",
+    "DOMICILE": "सभी राज्य / विशेष राज्य",
+    "EDUCATION_LEVEL": "10वीं / 12वीं / ग्रेजुएशन / पोस्ट ग्रेजुएशन",
+    "MIN_PERCENTAGE": "60%",
+    "AGE_LIMIT": "कोई सीमा नहीं / अधिकतम 25 वर्ष",
+    "ANNUAL_INCOME": "₹2.5 लाख से कम",
+    "RESERVATION": "SC/ST/OBC/PwD को विशेष लाभ",
+    "GENDER": "बालक / बालिका / दोनों"
+  },
+  "APPLICATION_PROCESS": {
+    "APPLY_START_DATE": "1 फरवरी 2026",
+    "APPLY_LAST_DATE": "28 फरवरी 2026",
+    "APPLY_MODE": "ऑनलाइन / ऑफलाइन",
+    "APPLICATION_FEE": "कोई शुल्क नहीं",
+    "HOW_TO_APPLY_STEPS": ["आधिकारिक पोर्टल पर जाएँ", "रजिस्ट्रेशन करें", "फॉर्म भरें", "दस्तावेज़ अपलोड करें", "सबमिट करें"],
+    "REQUIRED_DOCUMENTS": ["आधार कार्ड", "पिछली कक्षा की मार्कशीट", "आय प्रमाण पत्र", "जाति प्रमाण पत्र (यदि हो)", "पासपोर्ट साइज़ फोटो", "बैंक पासबुक"]
+  },
+  "SELECTION_PROCESS": {
+    "CRITERIA": "पिछली परीक्षा के अंक + आय सीमा",
+    "INTERVIEW_REQUIRED": "नहीं",
+    "MERIT_LIST_DATE": "15 मार्च 2026"
+  },
+  "IMPORTANT_DATES": {
+    "NOTIFICATION_DATE": "20 जनवरी 2026",
+    "APPLY_START": "1 फरवरी 2026",
+    "APPLY_LAST": "28 फरवरी 2026",
+    "DOCUMENT_UPLOAD_LAST": "5 मार्च 2026",
+    "MERIT_LIST": "15 मार्च 2026",
+    "DISBURSAL_DATE": "अप्रैल 2026"
+  },
+  "IMPORTANT_LINKS": {
+    "OFFICIAL_NOTIFICATION": "https://scholarship.gov.in/notice.pdf",
+    "APPLY_LINK": "https://scholarship.gov.in/apply",
+    "OFFICIAL_WEBSITE": "https://scholarship.gov.in",
+    "HELPLINE": "1800-XXX-XXXX"
+  }
+}
 
-<!-- ========== SEO KEYWORD USAGE INSTRUCTIONS FOR AI ==========
-1. PRIMARY_KEYWORD ({PRIMARY_KEYWORD}) → lead, summary table, benefits, eligibility, conclusion.
-2. SECONDARY_KEYWORDS (जैसे "apply online", "eligibility", "last date", "scholarship amount", "documents required") का कम से कम 5-6 बार उपयोग करें।
-3. Jobjalebi.com का उल्लेख 3-4 बार करें: lead, important links, conclusion, FAQ.
--->
+🚨 नोट: JSON में दी गई हर फील्ड को पोस्ट में शामिल करें। यदि कोई फील्ड उपलब्ध न हो तो "उपलब्ध नहीं" लिखें।
 
-<!-- ========== POST CONTENT STARTS ========== -->
+---
 
-<!-- LEAD: PRIMARY KEYWORD + JOJALBEBI MENTION -->
-<p><strong>🚨 पैसे की टेंशन खत्म! मुफ्त पढ़ाई का मौका आ गया!</strong> <strong>{SCHOLARSHIP_IDENTIFICATION.SCHOLARSHIP_NAME} के लिए {PRIMARY_KEYWORD} खुल गई है।</strong> अब जो पढ़ना चाहता है और पैसे की कमी महसूस करता है, वो खुश हो जाए – सरकार/संस्था तुम्हारी पढ़ाई का खर्चा उठाने को तैयार है। <strong>Jobjalebi.com</strong> पर हम तुम्हें हंसी-मजाक के साथ पूरी डिटेल दे रहे हैं – तो चाय पकड़ो, फॉर्म भरो, और पढ़ते जाओ। 😂</p>
+आप एक स्टैंडअप कॉमेडियन जैसे अंदाज़ वाले SEO राइटर हैं। आपको "छात्रवृत्ति" कैटेगरी के लिए एक हिंदी ब्लॉग पोस्ट लिखनी है। JSON के **SEO_TITLE** को पोस्ट का मुख्य शीर्षक बनाएँ। पोस्ट **1500-1800 शब्दों** में हो।
 
-<p>इस पोस्ट में हम तुम्हें बताएँगे – <strong>कितनी मिलेगी (<strong>scholarship amount</strong>), कौन-कौन अप्लाई कर सकता है (<strong>eligibility</strong>), आखिरी तारीख क्या है (<strong>last date</strong>), ऑनलाइन कैसे अप्लाई करें (<strong>apply online</strong>), और कौन-कौन से <strong>documents required</strong> हैं – सब कुछ हंसी-मजाक के साथ।</strong> तो चाय बनाओ, मोबाइल पकड़ो, और <strong>Jobjalebi.com</strong> के इस पोस्ट को अंत तक पढ़ो।</p>
+⚠️ HTML टेबल के नियम (सख्ती से पालन करें):
+1. हर टेबल `</table>` टैग में, <thead> और <tbody> के साथ।
+2. <th> में style="background-color:#FFC107; color:#000; padding:10px; border:1px solid #ddd;"
+3. <tr> में style="padding:8px; border:1px solid #ddd;"
+4. टेबल को <div style="overflow-x: auto;"> में लपेटें।
+5. Markdown टेबल का उपयोग न करें।
+6. **टेबल की संख्या 5 से अधिक न हो** – केवल आवश्यक सेक्शन में टेबल दें (लाभ, एलिजिबिलिटी, दस्तावेज़, तिथियाँ)।
+7. **हर टेबल के अंदर फनी कॉलम न रखें** – इसके बदले, हर टेबल के नीचे एक अलग `<p>` टैग में `😂 मज़ाकिया सलाह:` लिखें।
 
-<!-- ========== SECTION 1: QUICK SUMMARY TABLE ========== -->
-<h2>📌 एक नज़र में – छात्रवृत्ति का चटपटा सारांश</h2>
-<p>नीचे दी गई टेबल में <strong>{PRIMARY_KEYWORD}</strong> की सारी ज़रूरी जानकारी एक जगह है। (AI: JSON से डेटा भरें।)</p>
-<table class="responsive-table">
-  <thead>
-    <tr><th>शीर्षक</th><th>विवरण (हंसी के साथ)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>छात्रवृत्ति का नाम</td><td>{SCHOLARSHIP_IDENTIFICATION.SCHOLARSHIP_NAME} – "पैसा मिल रहा है, पढ़ाई करो!"</td></tr>
-    <tr><td>प्रदाता</td><td>{SCHOLARSHIP_IDENTIFICATION.PROVIDER} ({SCHOLARSHIP_IDENTIFICATION.PROVIDER_TYPE})</td></tr>
-    <tr><td>प्रकार</td><td>{SCHOLARSHIP_IDENTIFICATION.SCHOLARSHIP_TYPE} – "मेरिट, मीन्स या कुछ और"</td></tr>
-    <tr><td>शैक्षणिक स्तर</td><td>{SCHOLARSHIP_IDENTIFICATION.LEVEL} – "स्कूल, कॉलेज, या रिसर्च?"</td></tr>
-    <tr><td>शैक्षणिक वर्ष</td><td>{SCHOLARSHIP_IDENTIFICATION.ACADEMIC_YEAR}</td></tr>
-    <tr><td><strong>scholarship amount</strong> (राशि)</td><td>{BENEFITS.AMOUNT} ({BENEFITS.AMOUNT_TYPE}) – "इतने पैसे में तो किताबें और चाय दोनों आ जाएँगी"</td></tr>
-    <tr><td>आवेदन प्रारंभ</td><td>{SCHOLARSHIP_STATUS.APPLICATION_START_DATE}</td></tr>
-    <tr><td><strong>last date</strong> (अंतिम तिथि)</td><td>{SCHOLARSHIP_STATUS.APPLICATION_LAST_DATE} – "देर मत करना, वरना कोई और ले जाएगा"</td></tr>
-    <tr><td>आवेदन मोड</td><td>{APPLICATION_PROCESS.APPLICATION_MODE}</td></tr>
-    <tr><td>आवेदन लिंक</td><td><a href="{IMPORTANT_LINKS.APPLY_LINK}">👉 यहाँ क्लिक करें</a></td></tr>
-    <tr><td>⚡ फनी चेतावनी</td><td>"जो सोचता रह गया, उसकी पढ़ाई का खर्चा उसी के बाप ने भरा – तुम समझदार बनो।"</td></tr>
-  </tbody>
-</table>
+🔗 लिंक निर्देश:
+- प्रतिस्पर्धी साइटों (अन्य जॉब/स्कॉलरशिप पोर्टल) के लिंक न डालें।
+- बाहरी लिंक केवल JSON के IMPORTANT_LINKS से लें। इसके अलावा 2-3 विशेषज्ञ लिंक (जैसे राष्ट्रीय छात्रवृत्ति पोर्टल, शिक्षा मंत्रालय, विश्वसनीय शैक्षिक संस्थान) जोड़ें।
+- **jobjalebi.com** के 3-4 आंतरिक लिंक डालें – जैसे "सरकारी नौकरी की तैयारी", "प्राइवेट जॉब के लिए स्किल डेवलपमेंट", "करियर गाइडेंस", "एजुकेशन लोन कैसे लें"।
 
-<!-- ========== SECTION 2: SCHOLARSHIP DETAILS & BENEFITS ========== -->
-<h2>1. कितना मिलेगा और क्या-क्या फ्री? (<strong>scholarship amount</strong>)</h2>
-<p>{SCHOLARSHIP_IDENTIFICATION.SCHOLARSHIP_NAME} के तहत आपको <strong>{BENEFITS.AMOUNT} {BENEFITS.AMOUNT_TYPE}</strong> की राशि दी जाएगी। इसके अलावा और भी फायदे हैं:</p>
-<ul>
-  <li><strong>ट्यूशन फीस:</strong> {BENEFITS.TUITION_FEE_COVERED}</li>
-  <li><strong>अन्य लाभ:</strong> {BENEFITS.OTHER_BENEFITS}</li>
-  <li><strong>अवधि:</strong> {BENEFITS.DURATION} – "इतने समय तक पैसे की टेंशन नहीं"</li>
-</ul>
-<p><strong>😂 फनी कमेंट:</strong> "इतनी रकम मिल रही है कि अगर सही से पढ़ाई की तो आगे चलकर तुम दूसरों को स्कॉलरशिप दे सकोगे।"</p>
+📋 पोस्ट की संरचना (1500-1800 शब्द, नीचे दिए गए सभी सेक्शन अनिवार्य):
 
-<!-- ========== SECTION 3: ELIGIBILITY ========== -->
-<h2>2. एलिजिबिलिटी – कौन ले सकता है लाभ? (<strong>eligibility</strong>)</h2>
-<p>हर किसी को नहीं मिलती – <strong>eligibility</strong> के मापदंड नीचे देखो और खुद को जाँचो।</p>
-<ul>
-  <li><strong>राष्ट्रीयता / अधिवास:</strong> {ELIGIBILITY.NATIONALITY} / {ELIGIBILITY.DOMICILE}</li>
-  <li><strong>शैक्षिक योग्यता:</strong> {ELIGIBILITY.EDUCATIONAL_QUALIFICATION} (न्यूनतम {ELIGIBILITY.MINIMUM_PERCENTAGE}%)</li>
-  <li><strong>उम्र:</strong> {ELIGIBILITY.AGE_LIMIT.MINIMUM} – {ELIGIBILITY.AGE_LIMIT.MAXIMUM} वर्ष</li>
-  <li><strong>पारिवारिक आय सीमा:</strong> ₹{ELIGIBILITY.INCOME_LIMIT.ANNUAL_FAMILY_INCOME} प्रति वर्ष ({ELIGIBILITY.INCOME_LIMIT.INCOME_CATEGORY})</li>
-  <li><strong>लिंग / वर्ग:</strong> {ELIGIBILITY.GENDER} / {ELIGIBILITY.CATEGORY_RESERVATION}</li>
-  <li><strong>विशेष पात्रता:</strong> {ELIGIBILITY.SPECIAL_CRITERIA}</li>
-</ul>
-<p><strong>😜 फनी लाइन:</strong> "अगर तुम्हारी फैमिली इनकम ज़्यादा है तो ये स्कॉलरशिप शायद तुम्हारे लिए नहीं – लेकिन कोई बात नहीं, तुम्हारे पास पैसा तो है ही।"</p>
+1. 🚨 ओपनिंग हुक + इंट्रो (120-150 शब्द)
+   - पहली लाइन: "🚨 पैसे की टेंशन खत्म! मुफ्त पढ़ाई का मौका! {SCHOLARSHIP_NAME} आ गई है!"
+   - PRIMARY_KEYWORD एक बार प्रयोग करें।
+   - 2-3 पैराग्राफ में बताएँ: छात्रवृत्ति राशि, पात्रता, लास्ट डेट, दस्तावेज़, अप्लाई प्रोसेस।
+   - "jobjalebi.com" का पहला उल्लेख यहीं करें।
 
-<!-- ========== SECTION 4: HOW TO APPLY ========== -->
-<h2>3. <strong>apply online</strong> – आवेदन कैसे करें?</h2>
-<p><strong>Jobjalebi.com</strong> की टीम ने नीचे स्टेप-बाय-स्टेप गाइड तैयार की है। (AI: APPLICATION_PROCESS.HOW_TO_APPLY_STEPS ऐरे से स्टेप्स लें और नीचे भरें।)</p>
-<ol>
-  <li>{APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[0]}</li>
-  <li>{APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[1]}</li>
-  <li>{APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[2]}</li>
-  <li>{APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[3]}</li>
-  <li>{APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[4]}</li>
-</ol>
-<p><strong>🤣 फनी सलाह:</strong> "फॉर्म भरते वक्त जल्दबाज़ी मत करना – पिछली बार एक बंदे ने अपने पिता की जगह अपने कुत्ते का नाम डाल दिया था (सच नहीं है, पर सावधान तो रहो)।"</p>
+2. 📌 "एक नज़र में – छात्रवृत्ति का चटपटा सारांश" (2-कॉलम टेबल)
+   - कॉलम: "शीर्षक" | "विवरण" (बिना मजाक के, साफ डेटा)
+   - कम से कम 8-10 जानकारियाँ: नाम, प्रदाता, प्रकार, राशि, शैक्षणिक स्तर, आय सीमा, आवेदन तिथियाँ, आवेदन मोड, आधिकारिक लिंक।
+   - टेबल के नीचे `😂 मज़ाकिया सलाह:` – "सारांश पढ़कर लगा कि यह तुम्हारे लिए है? तो आगे पढ़ो, और हंसी आएगी।"
 
-<!-- ========== SECTION 5: DOCUMENTS CHECKLIST ========== -->
-<h2>4. ज़रूरी दस्तावेज़ – ये सब रखो तैयार (<strong>documents required</strong>)</h2>
-<ul>
-  (AI: APPLICATION_PROCESS.REQUIRED_DOCUMENTS ऐरे को इटरेट करें।)
-  <li>{APPLICATION_PROCESS.REQUIRED_DOCUMENTS[0]}</li>
-  <li>{APPLICATION_PROCESS.REQUIRED_DOCUMENTS[1]}</li>
-  <li>{APPLICATION_PROCESS.REQUIRED_DOCUMENTS[2]}</li>
-  <li>{APPLICATION_PROCESS.REQUIRED_DOCUMENTS[3]}</li>
-  <li>{APPLICATION_PROCESS.REQUIRED_DOCUMENTS[4]}</li>
-</ul>
-<p><strong>🧐 फनी टिप:</strong> "सारे सर्टिफिकेट स्कैन करके पीडीएफ बना लो, वरना अप्लाई करते वक्त 'अरे ये वाला कहाँ है' करते रह जाओगे।"</p>
+3. मुख्य सेक्शन (हर एक <h2> हेडिंग में इमोजी के साथ, और **कम से कम 7 सेक्शन** – सभी अनिवार्य):
 
-<!-- ========== SECTION 6: SELECTION PROCESS ========== -->
-<h2>5. चयन प्रक्रिया – कैसे चुनेंगे तुम्हें?</h2>
-<p>इस छात्रवृत्ति के लिए चयन प्रक्रिया में नीचे दिए गए चरण होंगे। (AI: SELECTION_PROCESS के फील्ड भरें।)</p>
-<ul>
-  <li><strong>मेरिट आधारित:</strong> {SELECTION_PROCESS.MERIT_BASED}</li>
-  <li><strong>आय आधारित:</strong> {SELECTION_PROCESS.MEANS_BASED}</li>
-  <li><strong>इंटरव्यू:</strong> {SELECTION_PROCESS.INTERVIEW}</li>
-  <li><strong>टेस्ट:</strong> {SELECTION_PROCESS.TEST}</li>
-  <li><strong>अन्य:</strong> {SELECTION_PROCESS.OTHER_DETAILS}</li>
-</ul>
+   a) **1. 💰 कितना मिलेगा और क्या-क्या फ्री?**
+      - JSON के BENEFITS से **टेबल** बनाएँ: लाभ का प्रकार (राशि, फीस कवर, अन्य सुविधाएँ, अवधि), विवरण।
+      - टेबल के नीचे `😂 मज़ाकिया सलाह:` – "₹50,000 देखकर मत सोचना कि अब पिज़्ज़ा और बर्गर खाओगे – पहले किताबें लो, बाद में पिज़्ज़ा खाना।"
+      - **यहाँ पहला आंतरिक लिंक** – "एजुकेशन लोन गाइड यहाँ पढ़ें।"
 
-<!-- ========== SECTION 7: IMPORTANT DATES ========== -->
-<h2>6. महत्वपूर्ण तिथियाँ – कब क्या होगा? (<strong>last date</strong> मत भूलना)</h2>
-<table class="responsive-table">
-  <thead><tr><th>घटना</th><th>तारीख</th></tr></thead>
-  <tbody>
-    <tr><td>अधिसूचना जारी</td><td>{IMPORTANT_DATES.NOTIFICATION_DATE}</td></tr>
-    <tr><td>आवेदन शुरू</td><td>{SCHOLARSHIP_STATUS.APPLICATION_START_DATE}</td></tr>
-    <tr><td><strong>last date</strong> (आवेदन की अंतिम तिथि)</td><td>{SCHOLARSHIP_STATUS.APPLICATION_LAST_DATE}</td></tr>
-    <tr><td>परिणाम तिथि</td><td>{IMPORTANT_DATES.RESULT_DATE}</td></tr>
-    <tr><td>वितरण तिथि</td><td>{IMPORTANT_DATES.DISBURSEMENT_DATE}</td></tr>
-  </tbody>
-</table>
-<p><strong>😡 फनी डांट:</strong> "अगर तुम <strong>last date</strong> निकल जाने के बाद रोने आए, तो हम हँसेंगे। अभी से कैलेंडर में नोट कर लो।"</p>
+   b) **2. 🎯 एलिजिबिलिटी – कौन ले सकता है लाभ?**
+      - JSON के ELIGIBILITY से **टेबल** बनाएँ: शर्त (राष्ट्रीयता, अधिवास, शैक्षिक योग्यता, प्रतिशत, आयु, पारिवारिक आय, आरक्षण), विवरण।
+      - टेबल के नीचे `😂 मज़ाकिया सलाह:` – "हर शर्त पढ़कर मत घबराना। बस एक-दो से मिल जाए तो अप्लाई कर देना – हो सकता है तुम ही चुन लिए जाओ।"
 
-<!-- ========== SECTION 8: IMPORTANT LINKS ========== -->
-<h2>📌 SOME USEFUL IMPORTANT LINKS – यहाँ से करो सीधा काम</h2>
-<p><strong>Jobjalebi.com</strong> की टीम ने नीचे सभी जरूरी लिंक एक टेबल में दे दिए हैं।</p>
-<table class="responsive-table">
-  <thead><tr><th>विवरण</th><th>सीधा लिंक</th><th>फनी रिमार्क</th></tr></thead>
-  <tbody>
-    <tr><td><strong>🟢 <strong>apply online</strong> (आवेदन करें)</strong></td><td><a href="{IMPORTANT_LINKS.APPLY_LINK}">👉 यहाँ क्लिक करें</a></td><td>"फॉर्म भरो और पैसे पाओ"</td></tr>
-    <tr><td><strong>📄 आधिकारिक अधिसूचना</strong></td><td><a href="{IMPORTANT_LINKS.OFFICIAL_NOTIFICATION}">👉 नोटिफिकेशन पीडीएफ</a></td><td>"इसमें सबकुछ लिखा है, पर हमने आसान कर दिया"</td></tr>
-    <tr><td><strong>🌐 आधिकारिक वेबसाइट</strong></td><td><a href="{IMPORTANT_LINKS.OFFICIAL_WEBSITE}">👉 ऑफिशियल साइट</a></td><td>"यहाँ हर अपडेट सबसे पहले"</td></tr>
-    <tr><td><strong>📞 हेल्पलाइन</strong></td><td>{IMPORTANT_LINKS.HELPLINE}</td><td>"कुछ पूछना हो तो यहाँ कॉल करो"</td></tr>
-  </tbody>
-</table>
-<p><strong>⚠️ चेतावनी:</strong> <strong>Jobjalebi.com</strong> पर दिए गए लिंक 100% असली हैं। कोई कहे "पैसे दे दो, फॉर्म हम भर देंगे" – तो भाग जाना। स्कॉलरशिप हमेशा मुफ्त होती है।</p>
+   c) **3. 📄 ज़रूरी दस्तावेज़ – ये सब रखो तैयार**
+      - **टेबल न बनाएँ** – बुलेट लिस्ट (`<ul>`) बनाएँ। प्रत्येक दस्तावेज़ के आगे इमोजी (🪪, 📜, 🧾, 🖼️, 🏦)।
+      - लिस्ट के नीचे `⚠️ चेतावनी:` – "दस्तावेज़ साफ-साफ स्कैन करो – अगर धुंधला होगा तो फॉर्म रिजेक्ट हो जाएगा, और तुम्हारे आँसू भी धुंधले हो जाएंगे।"
 
-<!-- ========== SECTION 9: CONCLUSION ========== -->
-<h2>🏁 आखिरी बात – अब क्या करोगे?</h2>
-<p><strong>{PRIMARY_KEYWORD} तुम्हारे सामने है।</strong> पैसे की चिंता छोड़ो और अप्लाई करो। <strong>last date</strong> निकलने से पहले फॉर्म भर दो, <strong>documents required</strong> अपलोड कर दो, और फिर आराम से पढ़ाई करो। <strong>Jobjalebi.com</strong> पर हम तुम्हारी हर अपडेट देते रहेंगे।</p>
-<p><strong>मोटिवेशनल फनी लाइन:</strong> "पढ़ाई करो, पैसे लो, और ज़िंदगी में आगे बढ़ो। ये सरकार तुम्हें मुफ्त में पैसे दे रही है – इसे ठुकराने की गलती मत करना।"</p>
-<p><strong>सीधा लिंक:</strong> <a href="{IMPORTANT_LINKS.APPLY_LINK}">👉 यहाँ क्लिक करें – अभी अप्लाई करें</a></p>
+   d) **4. 📱 Apply Online – आवेदन कैसे करें?**
+      - **टेबल न बनाएँ** – `<ol>` में स्टेप्स लिखें (JSON के HOW_TO_APPLY_STEPS से)।
+      - हर स्टेप के आगे इमोजी (🌐, 📝, 🔗, 💳 (यदि शुल्क हो), ✅)।
+      - **यहाँ दूसरा आंतरिक लिंक** – "सरकारी नौकरी की तैयारी का गाइड पढ़ो।"
 
-<!-- ========== SECTION 10: FAQ ========== -->
-<h2>❓ छात्रवृत्ति से जुड़े सामान्य सवाल (FAQs)</h2>
-<div class="faq-section">
-  <h3>Q1: क्या मैं हर साल इस स्कॉलरशिप के लिए अप्लाई कर सकता हूँ?</h3>
-  <p><strong>A1:</strong> {ADDITIONAL_INFO.RENEWAL_PROCESS} – "हाँ, बस नियम देख लो।"</p>
-  <h3>Q2: क्या आवेदन शुल्क है?</h3>
-  <p><strong>A2:</strong> {APPLICATION_PROCESS.APPLICATION_FEE} – "अगर 0 है तो बिल्कुल मुफ्त!"</p>
-  <h3>Q3: सिलेक्शन किस आधार पर होगा?</h3>
-  <p><strong>A3:</strong> {SELECTION_PROCESS.MERIT_BASED} / {SELECTION_PROCESS.MEANS_BASED} – "ऊपर सेक्शन 5 में पूरा पढ़ो।"</p>
-  <h3>Q4: क्या यह स्कॉलरशिप सिर्फ किसी खास राज्य के लिए है?</h3>
-  <p><strong>A4:</strong> {ELIGIBILITY.DOMICILE} देखो – "सबके लिए या कुछ खास के लिए, पता कर लो।"</p>
-  <h3>Q5: <strong>{PRIMARY_KEYWORD}</strong> के बारे में और जानकारी कहाँ मिलेगी?</h3>
-  <p><strong>A5:</strong> ऊपर दिए गए लिंक्स पर क्लिक करो। और हाँ, <strong>Jobjalebi.com</strong> को बुकमार्क कर लो – हर नई स्कॉलरशिप की जानकारी सबसे पहले यहीं आती है।</p>
-</div>
+   e) **5. 🗂️ चयन प्रक्रिया – कैसे चुनेंगे तुम्हें?**
+      - JSON के SELECTION_PROCESS से **टेबल** बनाएँ: चरण (मेरिट-आधारित / इंटरव्यू / टेस्ट), विवरण।
+      - टेबल के नीचे `😂 मज़ाकिया सलाह:` – "इंटरव्यू होगा तो उसमें बोलना मत भूलना – चुप रहने से नौकरी नहीं, स्कॉलरशिप भी नहीं मिलती।"
 
-<!-- ========== SECTION 11: DISCLAIMER ========== -->
-<p><strong>⚠️ अस्वीकरण:</strong> यह पोस्ट {SCHOLARSHIP_IDENTIFICATION.PROVIDER} द्वारा जारी आधिकारिक अधिसूचना पर आधारित है। सटीक जानकारी के लिए आधिकारिक वेबसाइट देखें। <strong>Jobjalebi.com</strong> सिर्फ सूचना देता है, किसी एजेंट के रूप में काम नहीं करता।</p>
+   f) **6. ⏰ महत्वपूर्ण तिथियाँ – last date मत भूलना**
+      - JSON के IMPORTANT_DATES से **टेबल** बनाएँ: घटना (नोटिफिकेशन, आवेदन शुरू, आवेदन अंतिम, दस्तावेज़ अपलोड, मेरिट लिस्ट, धनराशि जारी), तारीख।
+      - टेबल के नीचे `⚠️ चेतावनी:` – "लास्ट डेट से दो दिन पहले अप्लाई करना – सर्वर क्रैश का एक्सपीरियंस हमें पहले भी हो चुका है।"
+      - **यहाँ तीसरा आंतरिक लिंक** – "करियर गाइडेंस सेक्शन देखें।"
 
-<p><strong>😄 आखिरी मोटिवेशन:</strong> "ज्ञान से बड़ा कोई धन नहीं, और जब वो ज्ञान मुफ्त में मिल रहा हो, तो मौका हाथ से मत जाने दो। जाओ, अप्लाई करो, और अपने सपनों को उड़ान दो।"</p>
+   g) **7. ⚠️ सामान्य गलतियाँ और सावधानियाँ (नया सेक्शन)**
+      - बुलेट पॉइंट में 5 आम गलतियाँ:
+        * बिना दस्तावेज़ के फॉर्म भरना और फिर मुश्किल में पड़ना
+        * फोटो का साइज़ गलत डालना (पिक्सल गलत हो गए तो फॉर्म ही नहीं भरेगा)
+        * आयु और आय का गलत डेटा डालना (सत्यापन में फँस जाओगे)
+        * लास्ट डेट के आखिरी दिन भरना (सर्वर डाउन)
+        * आवेदन की रसीद नोट नहीं करना (पता भी नहीं चलेगा कि फॉर्म भरा भी था या नहीं)
+      - लिस्ट के नीचे `😂 मज़ाकिया सलाह:` – "ये गलतियाँ मत करना, वरना अगली बार फिर से यही पोस्ट पढ़नी पड़ेगी।"
 
-<!-- ========== POST ENDS ========== -->
+4. 📌 "तुरंत लिंक – यहाँ से क्लिक करें" (3-कॉलम लिंक टेबल)
+   - कॉलम: विवरण, लिंक, फनी रिमार्क।
+   - JSON के IMPORTANT_LINKS से 4-5 लिंक दें (आधिकारिक अधिसूचना, अप्लाई लिंक, आधिकारिक वेबसाइट, हेल्पलाइन)।
+   - 2-3 बाहरी विशेषज्ञ लिंक (जैसे राष्ट्रीय छात्रवृत्ति पोर्टल, शिक्षा मंत्रालय की साइट) और 3-4 jobjalebi.com आंतरिक लिंक मिलाकर कुल 8-10 लिंक दें।
+
+5. 🏁 निष्कर्ष – "आखिरी बात – अब क्या करोगे?" (150-180 शब्द)
+   - PRIMARY_KEYWORD दोहराते हुए छात्रवृत्ति का सारांश।
+   - मोटिवेशनल + फनी लहज़ा – पढ़ाई जारी रखने की प्रेरणा दें।
+   - "jobjalebi.com" का तीसरा उल्लेख।
+   - एक्शन कॉल: "अभी अप्लाई करें" लिंक (IMPORTANT_LINKS.APPLY_LINK) के साथ।
+   - **आखिरी आंतरिक लिंक** – "ऐसी ही और स्कॉलरशिप के लिए हमारे पेज को बुकमार्क करें।"
+
+6. ❓ FAQ सेक्शन (8 सवाल – तय)
+   - हर सवाल <h3> में, जवाब <p> में।
+   - कम से कम 2 जवाब छोटी टेबल में (जैसे "विभिन्न श्रेणियों के लिए छात्रवृत्ति राशि" या "चयन के लिए वेटेज")।
+   - अनिवार्य FAQ प्रश्न:
+     * क्या मैं हर साल अप्लाई कर सकता हूँ?
+     * क्या आवेदन शुल्क है?
+     * सिलेक्शन कैसे होगा?
+     * क्या यह सिर्फ किसी राज्य के लिए है?
+     * क्या मेरी आय सीमा से अधिक होने पर भी मैं अप्लाई कर सकता हूँ?
+     * दस्तावेज़ अपलोड करने के बाद सुधार कर सकते हैं?
+     * छात्रवृत्ति का पैसा कैसे मिलेगा?
+     * क्या {PRIMARY_KEYWORD} के लिए ऑफलाइन फॉर्म भी उपलब्ध है?
+   - PRIMARY_KEYWORD अंतिम FAQ में ज़रूर आए।
+   - **एक FAQ में आंतरिक लिंक** – जैसे "एडमिट कार्ड डाउनलोड गाइड यहाँ देखें" (यदि लागू हो)।
+
+7. ⚠️ अस्वीकरण – "यह पोस्ट केवल जानकारी के लिए है। सभी डेटा JSON पर आधारित है। कृपया आधिकारिक अधिसूचना पढ़ें और उसी के अनुसार आवेदन करें। jobjalebi.com किसी भी बदलाव या त्रुटि के लिए उत्तरदायी नहीं है।"
+
+8. 😄 आखिरी मोटिवेशन – "जॉब जलेबी की मानें – पैसे की चिंता छोड़ो, स्कॉलरशिप अप्लाई करो, पढ़ाई करो और हंसते रहो। मुफ्त में पढ़ाई का मौका नहीं छोड़ना चाहिए। 🍩🎓💰"
+
+📏 शब्द सीमा और कीवर्ड नियम:
+- पूरी पोस्ट **1500-1800 शब्द** (लगभग 1650 परफेक्ट)।
+- इंट्रो 120-150, निष्कर्ष 150-180।
+- PRIMARY_KEYWORD 5-6 बार, SECONDARY_KEYWORDS 3-4 बार।
+- LSI_KEYWORDS स्वाभाविक रूप से फैलाएँ।
+- कोई AI निर्देश या "AI:" न दिखे।
+
+😂 हास्य – स्टैंडअप कॉमेडी अंदाज़, लेकिन कोई आपत्तिजनक टिप्पणी नहीं। किसी जाति, धर्म, महिला, दिव्यांग पर मजाक न करें।
+
+🌐 भाषा – हिंदी, ज़रूरी टर्म्स (scholarship, apply online, last date, eligibility, documents, fee) अंग्रेजी में।
+
+JSON मेटाडेटा: {EXTRA_DATA}
+प्रतिस्पर्धी टाइटल: {COMPETITOR_TITLE}
+प्राथमिक कीवर्ड: {PRIMARY_KEYWORD}

@@ -8,6 +8,7 @@ type Article struct {
 	Category       string
 	PrimaryKeyword string
 	ExtraDataJSON  string
+	Tags           []string
 }
 
 type CoveredTopic struct {
@@ -16,8 +17,7 @@ type CoveredTopic struct {
 	Status         string `json:"status"`
 }
 
-// Competitor अब सिर्फ RSS के लिए
 type Competitor struct {
-	Name    string `json:"name"`
-	RSSURL  string `json:"rss_url"`
+	Name   string `json:"name"`
+	RSSURL string `json:"rss_url"`
 }

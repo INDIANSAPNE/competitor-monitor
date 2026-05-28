@@ -8,9 +8,12 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strings"
 	"time"
+
 	"github.com/xuri/excelize/v2"
 )
+
 var seenLinks = map[string]map[string]bool{}
 
 func LoadSeenLinks() {
@@ -31,7 +34,7 @@ func PrepareExcel(filename string) {
 		f := excelize.NewFile()
 		sheet := "Articles"
 		f.SetSheetName("Sheet1", sheet)
-		headers := []string{"Competitor", "Title", "URL", "Date", "Category", "Primary Keyword", "Extra Data (JSON)"}
+		headers := []string{"Competitor", "Title", "URL", "Date", "Category", "Primary Keyword", "Tags", "Extra Data (JSON)"}
 		for i, h := range headers {
 			cell, _ := excelize.CoordinatesToCellName(i+1, 1)
 			f.SetCellValue(sheet, cell, h)
@@ -52,7 +55,8 @@ func AddToExcel(filename string, art Article) {
 	rows, _ := f.GetRows(sheet)
 	rowNum := len(rows) + 1
 
-	values := []interface{}{art.Competitor, art.Title, art.URL, art.Date, art.Category, art.PrimaryKeyword, art.ExtraDataJSON}
+	tagsStr := strings.Join(art.Tags, ", ")
+	values := []interface{}{art.Competitor, art.Title, art.URL, art.Date, art.Category, art.PrimaryKeyword, tagsStr, art.ExtraDataJSON}
 	for col, val := range values {
 		cell, _ := excelize.CoordinatesToCellName(col+1, rowNum)
 		f.SetCellValue(sheet, cell, val)
@@ -71,7 +75,7 @@ func callDeepSeek(prompt string, jsonMode bool) (string, error) {
 		"messages": []map[string]string{
 			{"role": "user", "content": prompt},
 		},
-		"max_tokens": 2000,
+		"max_tokens": 8000,
 	}
 	if jsonMode {
 		reqBody["response_format"] = map[string]string{"type": "json_object"}
@@ -82,7 +86,7 @@ func callDeepSeek(prompt string, jsonMode bool) (string, error) {
 	req.Header.Set("Content-Type", "application/json")
 	req.Header.Set("Authorization", "Bearer "+apiKey)
 
-	client := &http.Client{Timeout: 90 * time.Second}
+	client := &http.Client{Timeout: 120 * time.Second}
 	resp, err := client.Do(req)
 	if err != nil {
 		return "", err
@@ -95,12 +99,29 @@ func callDeepSeek(prompt string, jsonMode bool) (string, error) {
 	}
 
 	var result map[string]interface{}
-	json.Unmarshal(body, &result)
-	choices := result["choices"].([]interface{})
-	if len(choices) == 0 {
-		return "", fmt.Errorf("कोई उत्तर नहीं")
+	if err := json.Unmarshal(body, &result); err != nil {
+		return "", fmt.Errorf("API प्रतिक्रिया पार्स नहीं हो सकी: %v", err)
 	}
-	choice := choices[0].(map[string]interface{})
-	message := choice["message"].(map[string]interface{})
-	return message["content"].(string), nil
+
+	choices, ok := result["choices"].([]interface{})
+	if !ok || len(choices) == 0 {
+		return "", fmt.Errorf("कोई उत्तर नहीं मिला (choices खाली या nil)")
+	}
+
+	choice, ok := choices[0].(map[string]interface{})
+	if !ok {
+		return "", fmt.Errorf("choice का प्रारूप अमान्य")
+	}
+
+	message, ok := choice["message"].(map[string]interface{})
+	if !ok {
+		return "", fmt.Errorf("message फ़ील्ड अनुपलब्ध")
+	}
+
+	content, ok := message["content"].(string)
+	if !ok {
+		return "", fmt.Errorf("content फ़ील्ड अनुपलब्ध या स्ट्रिंग नहीं")
+	}
+
+	return content, nil
 }

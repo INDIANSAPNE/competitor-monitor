@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"log"
 	"strings"
@@ -23,6 +24,15 @@ func TriggerAIContent(art Article, existingPostID int) {
 		log.Printf("  ❌ AI जनरेशन त्रुटि: %v\n", err)
 		return
 	}
+
+	// SEO_TITLE को वर्डप्रेस पोस्ट टाइटल के रूप में उपयोग करें
+	var meta map[string]interface{}
+	if err := json.Unmarshal([]byte(art.ExtraDataJSON), &meta); err == nil {
+		if seoTitle, ok := meta["SEO_TITLE"].(string); ok && seoTitle != "" {
+			art.Title = seoTitle
+		}
+	}
+
 	newID, err := PostToWebsite(art, content, existingPostID)
 	if err != nil {
 		log.Printf("  ❌ पोस्ट त्रुटि: %v\n", err)

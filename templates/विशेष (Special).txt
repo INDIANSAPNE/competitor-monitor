@@ -1,191 +1,202 @@
-<!-- 
-=================================================================
-TEMPLATE NAME: विशेष (Special) Category Template - JSON Schema Integrated
-VERSION: 1.0
-CATEGORY: विशेष (Special)
-DESCRIPTION: 
-  यह टेम्पलेट "विशेष (Special)" कैटेगरी की हमारी JSON स्कीमा के साथ पूरी तरह से एकीकृत है।
-  AI को निर्देश है कि वह नीचे दिए गए स्ट्रक्चर और JSON ({EXTRA_DATA}) का उपयोग करके एक
-  मजेदार, SEO-फ्रेंडली और विशेष समुदाय पर केंद्रित पोस्ट लिखे।
-  हर सेक्शन में JSON से सही डेटा खींचा जाए (जैसे CONTENT_IDENTIFICATION, 
-  TARGET_AUDIENCE_ANALYSIS, GOVERNMENT_SCHEMES_AND_RESERVATIONS आदि)।
-  टोन: 80% फनी + 20% मोटिवेशनल | SEO: Primary, Secondary, LSI keywords.
-  Jobjalebi.com का नाम प्राकृतिक रूप से 3-4 बार डाला गया है.
-=================================================================
--->
+🚨 अनिवार्य HTML निर्देश (इनका उल्लंघन करने पर पोस्ट खराब दिखेगी):
+1. आप एक वर्डप्रेस ब्लॉग पोस्ट लिख रहे हैं। पूरी पोस्ट केवल HTML फ़ॉर्मेट में होनी चाहिए।
+2. Markdown सिंटैक्स का कभी भी उपयोग न करें। `#`, `*`, `-`, `1.` जैसे कोई भी Markdown कैरेक्टर पोस्ट में नहीं आने चाहिए।
+3. सभी हेडिंग `<h2>` या `<h3>` में लिखें, पैराग्राफ `<p>` में, बोल्ड टेक्स्ट `<strong>` में, और लिस्ट `<ul>`/`<ol>` में।
+4. टेबल हमेशा `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>`, `<td>` टैग के साथ ही बनाएँ।
+5. पोस्ट का शीर्षक (Title) JSON के `SEO_TITLE` फ़ील्ड से लें और उसे `<h1>` टैग में न लिखें (वर्डप्रेस खुद टाइटल जोड़ता है)।
+6. इंट्रो पैराग्राफ **120-150 शब्दों** का हो, स्टैंडअप कॉमेडी की तरह मज़ेदार और चटपटा लिखें (सकारात्मक हास्य)।
+7. सभी डेटा JSON से सटीक भरें, अनुमान न लगाएँ।
 
-<!-- ========== METADATA (AI AGENT INPUT - JSON से लिया गया) ========== -->
-<!--
-POST_TITLE: JSON के SEO_TITLE फ़ील्ड से लें।
-CATEGORY: JSON के CATEGORY फ़ील्ड से लें।
-PRIMARY_KEYWORD: JSON के PRIMARY_KEYWORD फ़ील्ड से लें।
-SECONDARY_KEYWORDS: JSON के SECONDARY_KEYWORDS फ़ील्ड से लें (कम से कम 5-6 बार उपयोग करें)।
-LSI_KEYWORDS: JSON के LSI_KEYWORDS फ़ील्ड से लें।
-EXTRA_DATA: पूरा JSON ऑब्जेक्ट। AI को इसे पढ़कर सभी सेक्शन भरने हैं।
-TARGET_GROUP: JSON के TARGET_AUDIENCE_ANALYSIS.WHO_IS_THIS_FOR से लें। 
-              (AI: इसी के अनुसार लीड और बीच-बीच में भाषा को अनुकूलित करें, 
-              जैसे "दिव्यांग साथियों", "महिलाओं", "पूर्व सैनिकों" आदि।)
--->
+📦 नमूना JSON स्ट्रक्चर (विशेष के लिए – राइटर/एआई को यही पालन करना होगा):
+{
+  "SEO_TITLE": "यहाँ विशेष गाइड का मुख्य शीर्षक (जैसे 'दिव्यांगजनों के लिए सरकारी योजनाएँ और नौकरियाँ 2026')",
+  "PRIMARY_KEYWORD": "मुख्य कीवर्ड (जैसे 'दिव्यांग सरकारी नौकरी')",
+  "SECONDARY_KEYWORDS": ["special reservation", "government scheme", "PWD jobs", "women career", "transgender jobs"],
+  "LSI_KEYWORDS": ["विकलांगता आरक्षण", "सरकारी योजना", "पात्रता", "आवेदन प्रक्रिया", "प्रेरणादायक कहानियाँ"],
+  "SPECIAL_CATEGORY": "दिव्यांगजन / महिलाएँ / पूर्व सैनिक / ट्रांसजेंडर / अन्य",
+  "TARGET_AUDIENCE_ANALYSIS": {
+    "WHO_IS_THIS_FOR": "वे सभी जो शारीरिक/मानसिक विकलांगता के साथ सरकारी नौकरी चाहते हैं",
+    "PAIN_POINTS": ["जागरूकता की कमी", "प्रक्रिया की जटिलता", "आत्मविश्वास की कमी"],
+    "ASPIRATIONS": ["आत्मनिर्भरता", "सम्मानजनक नौकरी"],
+    "COMMON_MISCONCEPTIONS": ["सिर्फ फॉर्मलिटी है", "कम सैलरी मिलती है"]
+  },
+  "GOVERNMENT_SCHEMES_AND_RESERVATIONS": {
+    "RESERVATION_PERCENTAGE": {
+      "PWD": "4% (सभी श्रेणियों में)",
+      "WOMEN": "33% (कई विभागों में)",
+      "EX_SERVICEMEN": "10%",
+      "TRANSGENDER": "1% (कुछ राज्यों में)"
+    },
+    "SCHEMES": [
+      {"NAME": "राष्ट्रीय दिव्यांगजन पेंशन योजना", "DEPARTMENT": "सामाजिक न्याय मंत्रालय", "BENEFITS": "₹1,000 मासिक"},
+      {"NAME": "प्रधानमंत्री मुद्रा योजना (महिलाएँ)", "DEPARTMENT": "वित्त मंत्रालय", "BENEFITS": "₹50,000 तक लोन"}
+    ]
+  },
+  "JOB_OR_OPPORTUNITY_DETAILS": {
+    "JOB_TYPES": ["सरकारी नौकरियाँ", "सार्वजनिक उपक्रम", "बैंकों में विशेष भर्ती"],
+    "SECTORS": ["रेलवे", "बैंकिंग", "शिक्षा", "रक्षा"],
+    "RECRUITERS": ["SSC", "UPSC", "IBPS", "RRB", "State PSCs"],
+    "POST_NAMES": ["जूनियर क्लर्क", "स्टेनो", "टीचर", "सुरक्षा गार्ड"],
+    "SALARY_RANGE": "₹25,000 - ₹80,000",
+    "LOCATIONS": "पूरे भारत में"
+  },
+  "ELIGIBILITY_AND_REQUIREMENTS": {
+    "EDUCATION": "10वीं/12वीं/ग्रेजुएशन (पदानुसार)",
+    "AGE_LIMIT": "18-40 वर्ष (छूट: दिव्यांगों को अतिरिक्त 10 वर्ष)",
+    "DISABILITY_CRITERIA": "न्यूनतम 40% विकलांगता (प्रमाणित)",
+    "CERTIFICATES": ["दिव्यांगता प्रमाण पत्र", "आरक्षण प्रमाण पत्र", "आय प्रमाण पत्र"],
+    "MEDICAL_STANDARDS": "उपयुक्त अंकन के अनुसार (OH, HH, VH, etc.)"
+  },
+  "APPLICATION_PROCESS": {
+    "HOW_TO_APPLY_STEPS": ["ऑफिशियल पोर्टल पर जाएँ", "रजिस्ट्रेशन करें", "फॉर्म भरें", "दस्तावेज़ अपलोड करें", "फीस भरें (छूट लागू)"],
+    "DOCUMENTS_REQUIRED": ["दिव्यांगता प्रमाण पत्र", "बोर्ड सर्टिफिकेट", "फोटो", "हस्ताक्षर"],
+    "FEE": "सामान्य: ₹500; दिव्यांग/महिला: पूर्ण छूट या ₹50",
+    "IMPORTANT_DATES": {
+      "START": "1 फरवरी 2026",
+      "LAST": "28 फरवरी 2026",
+      "EXAM_DATE": "10 अप्रैल 2026"
+    }
+  },
+  "EXAM_AND_SELECTION": {
+    "SELECTION_STAGES": ["लिखित परीक्षा", "स्किल टेस्ट (यदि हो)", "दस्तावेज़ सत्यापन", "चिकित्सा परीक्षण (रियायत के साथ)"],
+    "EXAM_PATTERN": "100 प्रश्न, 200 अंक, 2 घंटे",
+    "SYLLABUS": "सामान्य जागरूकता, रीजनिंग, मैथ्स, हिंदी/अंग्रेजी",
+    "PHYSICAL_STANDARDS_RELAXATION": "दिव्यांगों के लिए 5-10 किलो वजन में छूट"
+  },
+  "SUCCESS_STORIES_AND_EXAMPLES": [
+    {"NAME": "रवि कुमार (दिव्यांग)", "ACHIEVEMENT": "रेलवे में बुकिंग क्लर्क", "INSPIRATION": "लगातार 3 प्रयासों के बाद चयन", "FUNNY_ANGLE": "अब हर रोज़ जनरल टिकट काटते हैं, अपना टिकट खुद ही बनाया"}
+  ],
+  "CHALLENGES_AND_SOLUTIONS": {
+    "COMMON_CHALLENGES": ["परीक्षा केंद्र पर सहायता की कमी", "फॉर्म भरते वक्त भूल", "प्रमाण पत्र न बन पाना"],
+    "HOW_TO_OVERCOME": ["पहले ही केंद्र से संपर्क करें", "हेल्पलाइन का उपयोग करें", "किसी जानकार की मदद लें"]
+  },
+  "RESOURCES_AND_LINKS": {
+    "OFFICIAL_WEBSITES": ["https://depwd.gov.in", "https://womenandchild.in", "https://www.dgvcl.com"],
+    "HELPLINE_NUMBERS": ["1800-XXX-XXXX (दिव्यांग हेल्पलाइन)", "1098 (महिला हेल्पलाइन)"],
+    "PDF_GUIDES": ["https://depwd.gov.in/guide.pdf"],
+    "NGO_CONTACTS": ["प्रदीप फाउंडेशन - 011-XXXXXXXX"]
+  },
+  "FREQUENTLY_ASKED_QUESTIONS": [
+    {"QUESTION": "क्या दिव्यांग व्यक्ति IPS बन सकता है?", "ANSWER": "हाँ, यदि विकलांगता का स्तर नियमानुसार अनुमति देता है (उदाहरण के लिए, लोकोमोटर विकलांगता में 50% तक)"},
+    {"QUESTION": "फॉर्म में दिव्यांगता प्रमाण पत्र किस प्रारूप में चाहिए?", "ANSWER": "केवल निर्धारित सरकारी प्रारूप में, सामान्य चिकित्सक का नहीं"}
+  ]
+}
 
-<!-- ========== SEO KEYWORD USAGE INSTRUCTIONS FOR AI ==========
-1. PRIMARY_KEYWORD ({PRIMARY_KEYWORD}) → lead, summary table, schemes/benefits, eligibility, conclusion.
-2. SECONDARY_KEYWORDS (जैसे "apply online", "eligibility", "reservation", "special provision", "government scheme") का कम से कम 5-6 बार उपयोग करें।
-3. Jobjalebi.com का उल्लेख 3-4 बार करें: lead, useful links/resources, conclusion, FAQ.
--->
+🚨 नोट: JSON में दी गई हर फील्ड को पोस्ट में शामिल करें। यदि कोई फील्ड उपलब्ध न हो तो "उपलब्ध नहीं" लिखें।
 
-<!-- ========== POST CONTENT STARTS ========== -->
+---
 
-<!-- LEAD: PRIMARY KEYWORD + JOJALBEBI MENTION + TARGET GROUP अनुकूलन -->
-<p><strong>🚨 खास मौका, खास तुम्हारे लिए!</strong> <strong>{TARGET_GROUP} के लिए {PRIMARY_KEYWORD} लेकर आए हैं – एक ऐसा गाइड जो आपके हर सवाल का जवाब देगा और आपको हंसाएगा भी।</strong> <strong>Jobjalebi.com</strong> पर हम जानते हैं कि हर किसी की ज़रूरत अलग होती है, इसलिए हमने यह स्पेशल पोस्ट तैयार की है – पूरी डिटेल, हंसी-मजाक के साथ। तो चाय पकड़ो, अपना हक समझो, और पढ़ते जाओ। 😂</p>
+आप एक स्टैंडअप कॉमेडियन जैसे अंदाज़ वाले SEO राइटर हैं, लेकिन हास्य सकारात्मक और प्रेरक होना चाहिए – किसी वर्ग या स्थिति पर कटाक्ष नहीं। आपको "विशेष (Special)" कैटेगरी के लिए एक हिंदी ब्लॉग पोस्ट लिखनी है। JSON के **SEO_TITLE** को पोस्ट का मुख्य शीर्षक बनाएँ। पोस्ट **1500-2000 शब्दों** में हो।
 
-<p>इस पोस्ट में हम बताएँगे – <strong>कौन सी सरकारी योजनाएँ और नौकरियाँ आपके लिए हैं (<strong>government scheme</strong>), आरक्षण (<strong>reservation</strong>) और विशेष प्रावधान (<strong>special provision</strong>) क्या हैं, पात्रता (<strong>eligibility</strong>) क्या है, और ऑनलाइन अप्लाई (<strong>apply online</strong>) कैसे करें – सब कुछ हंसी-मजाक के साथ।</strong> तो चाय बनाओ, मोबाइल पकड़ो, और <strong>Jobjalebi.com</strong> के इस पोस्ट को अंत तक पढ़ो।</p>
+⚠️ HTML टेबल के नियम (सख्ती से पालन करें):
+1. हर टेबल `<tr>` टैग में, <thead> और <tbody> के साथ।
+2. <th> में style="background-color:#FFC107; color:#000; padding:10px; border:1px solid #ddd;"
+3. <table> में style="padding:8px; border:1px solid #ddd;"
+4. टेबल को <div style="overflow-x: auto;"> में लपेटें।
+5. Markdown टेबल का उपयोग न करें।
+6. **टेबल की संख्या 6 से अधिक न हो** – केवल आवश्यक सेक्शन में टेबल दें (लक्षित वर्ग, योजनाएँ, नौकरी के अवसर, पात्रता, चयन प्रक्रिया, सफलता की कहानियाँ)।
+7. **हर टेबल के अंदर फनी कॉलम न रखें** – इसके बदले, हर टेबल के नीचे एक अलग `<p>` टैग में `😂 सकारात्मक मज़ाक:` लिखें (जो प्रेरक हो)।
 
-<!-- ========== SECTION 1: QUICK SUMMARY TABLE ========== -->
-<h2>📌 एक नज़र में – स्पेशल गाइड का चटपटा सारांश</h2>
-<p>नीचे दी गई टेबल में <strong>{PRIMARY_KEYWORD}</strong> की सारी ज़रूरी जानकारी एक जगह है। (AI: JSON से डेटा भरें।)</p>
-<table class="responsive-table">
-  <thead>
-    <tr><th>शीर्षक</th><th>विवरण (हंसी के साथ)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>किसके लिए है?</td><td>{TARGET_AUDIENCE_ANALYSIS.WHO_IS_THIS_FOR} – "बिल्कुल तुम्हारे लिए!"</td></tr>
-    <tr><td>मुख्य समस्या (Pain Points)</td><td>{TARGET_AUDIENCE_ANALYSIS.PAIN_POINTS} – "अब टेंशन खत्म"</td></tr>
-    <tr><td>सरकारी योजना का नाम</td><td>{GOVERNMENT_SCHEMES_AND_RESERVATIONS.SCHEME_NAME} (यदि हो)</td></tr>
-    <tr><td>आरक्षण (<strong>reservation</strong>)</td><td>{GOVERNMENT_SCHEMES_AND_RESERVATIONS.RESERVATION_PERCENTAGE} – "इतना प्रतिशत सिर्फ तुम्हारे लिए"</td></tr>
-    <tr><td>विशेष प्रावधान (<strong>special provision</strong>)</td><td>{GOVERNMENT_SCHEMES_AND_RESERVATIONS.SPECIAL_PROVISIONS}</td></tr>
-    <tr><td>पात्रता (<strong>eligibility</strong>)</td><td>{ELIGIBILITY_AND_REQUIREMENTS.EDUCATIONAL_QUALIFICATION} + आयु सीमा: {ELIGIBILITY_AND_REQUIREMENTS.AGE_LIMIT.MINIMUM_AGE}-{ELIGIBILITY_AND_REQUIREMENTS.AGE_LIMIT.MAXIMUM_AGE} वर्ष</td></tr>
-    <tr><td>आवेदन प्रक्रिया</td><td>{APPLICATION_PROCESS.APPLICATION_MODE} – <strong>apply online</strong> या ऑफलाइन</td></tr>
-    <tr><td>आवेदन शुल्क</td><td>{APPLICATION_PROCESS.APPLICATION_FEE} (छूट: {APPLICATION_PROCESS.FEE_EXEMPTION}) – "पैसे बचेंगे!"</td></tr>
-    <tr><td>महत्वपूर्ण तिथियाँ</td><td>शुरू: {APPLICATION_PROCESS.IMPORTANT_DATES.APPLICATION_START} | अंतिम: {APPLICATION_PROCESS.IMPORTANT_DATES.APPLICATION_LAST_DATE}</td></tr>
-    <tr><td>आधिकारिक लिंक</td><td><a href="{RESOURCES_AND_LINKS.OFFICIAL_WEBSITES[0]}">👉 यहाँ क्लिक करें</a></td></tr>
-    <tr><td>⚡ फनी चेतावनी</td><td>"अपना हक समझो, लेकिन आखिरी तारीख से पहले – वरना हक भी हड़प लिया जाएगा।"</td></tr>
-  </tbody>
-</table>
+🔗 लिंक निर्देश:
+- प्रतिस्पर्धी साइटों के लिंक न डालें।
+- बाहरी लिंक केवल JSON के RESOURCES_AND_LINKS से लें। इसके अलावा 2-3 विशेषज्ञ लिंक (जैसे राष्ट्रीय दिव्यांगजन पोर्टल, महिला एवं बाल विकास मंत्रालय, खेल प्राधिकरण) जोड़ें।
+- **jobjalebi.com** के 3-4 आंतरिक लिंक डालें – जैसे "सरकारी नौकरी की तैयारी", "स्कॉलरशिप और छात्रवृत्ति", "करियर गाइडेंस", "प्राइवेट जॉब के लिए स्किल डेवलपमेंट"।
 
-<!-- ========== SECTION 2: TARGET AUDIENCE ANALYSIS ========== -->
-<h2>1. यह किसके लिए है और क्यों ज़रूरी है?</h2>
-<p><strong>{TARGET_AUDIENCE_ANALYSIS.WHO_IS_THIS_FOR}</strong> के लिए यह जानकारी बहुत काम की है। (AI: JSON से PAIN_POINTS, ASPIRATIONS, COMMON_MISCONCEPTIONS को यहाँ संक्षेप में लिखें।)</p>
-<ul>
-  <li><strong>आपकी समस्याएँ:</strong> {TARGET_AUDIENCE_ANALYSIS.PAIN_POINTS}</li>
-  <li><strong>आपकी आकांक्षाएँ:</strong> {TARGET_AUDIENCE_ANALYSIS.ASPIRATIONS}</li>
-  <li><strong>आम गलतफहमियाँ:</strong> {TARGET_AUDIENCE_ANALYSIS.COMMON_MISCONCEPTIONS}</li>
-</ul>
-<p><strong>😂 फनी कमेंट:</strong> "समाज ने बहुत बहकाया, अब हम सच बताएँगे। आप किसी से कम नहीं, बस सही जानकारी चाहिए।"</p>
+📋 पोस्ट की संरचना (1500-2000 शब्द, सभी सेक्शन अनिवार्य):
 
-<!-- ========== SECTION 3: GOVERNMENT SCHEMES & RESERVATIONS ========== -->
-<h2>2. सरकारी योजनाएँ और आरक्षण – आपका हक (<strong>government scheme</strong> और <strong>reservation</strong>)</h2>
-<p><strong>{GOVERNMENT_SCHEMES_AND_RESERVATIONS.SCHEME_NAME}</strong> (यदि कोई योजना है) के तहत आपको कई लाभ मिलते हैं।</p>
-<table class="responsive-table">
-  <thead><tr><th>योजना / प्रावधान</th><th>लाभ</th><th>पात्र श्रेणियाँ</th></tr></thead>
-  <tbody>
-    <tr><td>{GOVERNMENT_SCHEMES_AND_RESERVATIONS.SCHEME_NAME}</td><td>{GOVERNMENT_SCHEMES_AND_RESERVATIONS.SCHEME_BENEFITS}</td><td>{GOVERNMENT_SCHEMES_AND_RESERVATIONS.ELIGIBLE_CATEGORIES}</td></tr>
-  </tbody>
-</table>
-<p><strong>आरक्षण (<strong>reservation</strong>):</strong> {GOVERNMENT_SCHEMES_AND_RESERVATIONS.RESERVATION_PERCENTAGE} – "यह सीट तुम्हारी है, बस पहुँच जाओ।"</p>
-<p><strong>विशेष प्रावधान (<strong>special provision</strong>):</strong> {GOVERNMENT_SCHEMES_AND_RESERVATIONS.SPECIAL_PROVISIONS} – "जो आम लोगों को नहीं मिलता।"</p>
-<p><strong>😜 फनी लाइन:</strong> "आरक्षण को 'सुविधा' नहीं, 'अवसर' समझो। सरकार ने रास्ता बनाया है, तुम्हें बस उस पर चलना है।"</p>
+1. 🚨 ओपनिंग हुक + इंट्रो (120-150 शब्द)
+   - पहली लाइन: "🚨 ज़िंदगी में कुछ खास करने का मौका! {SPECIAL_CATEGORY} के लिए यह गाइड पढ़ लो – अब नौकरी पाना हुआ आसान!"
+   - PRIMARY_KEYWORD एक बार प्रयोग करें।
+   - 2-3 पैराग्राफ में बताएँ: सरकारी योजनाएँ, नौकरी के अवसर, पात्रता, आवेदन प्रक्रिया, सक्सेस स्टोरीज़।
+   - "jobjalebi.com" का पहला उल्लेख यहीं करें।
 
-<!-- ========== SECTION 4: JOB/OPPORTUNITY DETAILS ========== -->
-<h2>3. नौकरी और अवसर – कितनी कमाई, कहाँ-कहाँ?</h2>
-<p>(AI: JOB_OR_OPPORTUNITY_DETAILS से JOB_TYPES_AVAILABLE, SECTORS, NOTABLE_RECRUITERS, POST_NAMES, SALARY_RANGE, JOB_LOCATIONS लेकर एक तालिका या सूची बनाएँ।)</p>
-<table class="responsive-table">
-  <thead><tr><th>नौकरी का प्रकार</th><th>सेक्टर</th><th>प्रमुख भर्तीकर्ता</th><th>सैलरी रेंज</th></tr></thead>
-  <tbody>
-    <tr><td>{JOB_OR_OPPORTUNITY_DETAILS.JOB_TYPES_AVAILABLE[0]}</td><td>{JOB_OR_OPPORTUNITY_DETAILS.SECTORS[0]}</td><td>{JOB_OR_OPPORTUNITY_DETAILS.NOTABLE_RECRUITERS}</td><td>{JOB_OR_OPPORTUNITY_DETAILS.SALARY_RANGE}</td></tr>
-  </tbody>
-</table>
-<p><strong>फनी टिप:</strong> "इतने अवसर कि अगर एक भी छूटा तो लगेगा कि जिंदगी से हाथ धो बैठे।"</p>
+2. 📌 "एक नज़र में – विशेष गाइड का चटपटा सारांश" (2-कॉलम टेबल)
+   - कॉलम: "शीर्षक" | "विवरण" (बिना मजाक के, साफ डेटा)
+   - कम से कम 8-10 जानकारियाँ दें: गाइड किसके लिए, मुख्य योजना/अवसर, आरक्षण प्रतिशत, प्रमुख पात्रता, आवेदन तिथियाँ, सैलरी रेंज, आधिकारिक लिंक।
+   - टेबल के नीचे `😂 सकारात्मक मज़ाक:` – "सारांश पढ़ लिया? अब लगता है कि आपके लिए भी कुछ है? तो चलिए आगे बढ़ते हैं, असली हेल्प तो अभी बाकी है।"
 
-<!-- ========== SECTION 5: ELIGIBILITY & REQUIREMENTS ========== -->
-<h2>4. पात्रता और ज़रूरी बातें – कौन-कौन सी शर्तें हैं? (<strong>eligibility</strong>)</h2>
-<ul>
-  <li><strong>शैक्षिक योग्यता:</strong> {ELIGIBILITY_AND_REQUIREMENTS.EDUCATIONAL_QUALIFICATION}</li>
-  <li><strong>उम्र सीमा:</strong> {ELIGIBILITY_AND_REQUIREMENTS.AGE_LIMIT.MINIMUM_AGE} – {ELIGIBILITY_AND_REQUIREMENTS.AGE_LIMIT.MAXIMUM_AGE} वर्ष (छूट: {ELIGIBILITY_AND_REQUIREMENTS.AGE_LIMIT.AGE_RELAXATION})</li>
-  <li><strong>विकलांगता मानदंड:</strong> {ELIGIBILITY_AND_REQUIREMENTS.DISABILITY_CRITERIA}</li>
-  <li><strong>ज़रूरी प्रमाण पत्र:</strong> {ELIGIBILITY_AND_REQUIREMENTS.CERTIFICATE_REQUIREMENTS}</li>
-  <li><strong>मेडिकल स्टैंडर्ड:</strong> {ELIGIBILITY_AND_REQUIREMENTS.MEDICAL_STANDARDS}</li>
-  <li><strong>अन्य:</strong> {ELIGIBILITY_AND_REQUIREMENTS.OTHER_CRITERIA}</li>
-</ul>
-<p><strong>🤣 फनी चेकलिस्ट:</strong> "ये सब देखकर लगे कि बहुत कुछ माँग रहे हैं? तो सोचो, सरकार तुम्हें एक्स्ट्रा दे रही है – थोड़ी कागज़ी कार्रवाई तो चलेगी।"</p>
+3. मुख्य सेक्शन (हर एक <h2> हेडिंग में इमोजी के साथ, और **कम से कम 7 सेक्शन** – सभी अनिवार्य):
 
-<!-- ========== SECTION 6: HOW TO APPLY ========== -->
-<h2>5. <strong>apply online</strong> – आवेदन कैसे करें?</h2>
-<p><strong>Jobjalebi.com</strong> की टीम ने नीचे स्टेप-बाय-स्टेप गाइड तैयार की है। (AI: APPLICATION_PROCESS.HOW_TO_APPLY_STEPS ऐरे से स्टेप्स लें।)</p>
-<ol>
-  <li>{APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[0]}</li>
-  <li>{APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[1]}</li>
-  <li>{APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[2]}</li>
-  <li>{APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[3]}</li>
-  <li>{APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[4]}</li>
-</ol>
-<p><strong>जरूरी दस्तावेज़:</strong> (AI: APPLICATION_PROCESS.DOCUMENTS_REQUIRED ऐरे से लें।)</p>
-<p><strong>फीस और छूट:</strong> आवेदन शुल्क: ₹{APPLICATION_PROCESS.APPLICATION_FEE} | छूट: {APPLICATION_PROCESS.FEE_EXEMPTION}</p>
-<p><strong>😂 फनी सलाह:</strong> "फॉर्म भरते समय अपना नाम और जन्मतिथि दस बार चेक करो। गलती हुई तो बाद में चक्कर काटने पड़ेंगे – और चक्कर काटने में जो मज़ा है, वो तो सरकारी दफ्तरों में ही है।"</p>
+   a) **1. 🎯 यह गाइड आखिर है किसके लिए? (लक्षित वर्ग)**
+      - JSON के TARGET_AUDIENCE_ANALYSIS से WHO_IS_THIS_FOR, PAIN_POINTS, ASPIRATIONS, COMMON_MISCONCEPTIONS को **टेबल** में बनाएँ: पहलू (किसके लिए, दिक्कतें, सपने, ग़लतफ़हमियाँ), विवरण।
+      - टेबल के नीचे `😂 सकारात्मक मज़ाक:` – "अगर आपको लगता है कि यह गाइड आपके लिए नहीं है, तो एक बार और पढ़ो – हो सकता है आपका कोई दोस्त या रिश्तेदार इसका फायदा उठा सके। उसे भेजना, वो रोएगा, आप हंसोगे।"
+      - **यहाँ पहला आंतरिक लिंक** – "करियर गाइडेंस सेक्शन देखें।"
 
-<!-- ========== SECTION 7: EXAM & SELECTION ========== -->
-<h2>6. परीक्षा और चयन प्रक्रिया – कितने पेपर, कितनी आसानी?</h2>
-<p><strong>चयन के चरण:</strong> {EXAM_AND_SELECTION.SELECTION_STAGES}</p>
-<p><strong>परीक्षा पैटर्न:</strong> {EXAM_AND_SELECTION.EXAM_PATTERN}</p>
-<p><strong>सिलेबस:</strong> {EXAM_AND_SELECTION.SYLLABUS_TOPICS}</p>
-<p><strong>शारीरिक मानकों में छूट:</strong> {EXAM_AND_SELECTION.PHYSICAL_STANDARDS_RELAXATION} – "जी हाँ, तुम्हारे लिए रिलैक्सेशन है।"</p>
-<p><strong>😜 फनी लाइन:</strong> "अगर एग्जाम में पास हो गए तो समझ लेना कि तुमने वो कर दिखाया जो 'आम' लोग नहीं कर पाते।"</p>
+   b) **2. 📜 सरकारी योजनाएँ और आरक्षण – आपको क्या-क्या मिल सकता है?**
+      - JSON के GOVERNMENT_SCHEMES_AND_RESERVATIONS से **टेबल** बनाएँ: योजना/प्रावधान का नाम, विभाग, विवरण/लाभ।
+      - आरक्षण प्रतिशत को अलग से बुलेट में भी दें।
+      - टेबल के नीचे `😂 सकारात्मक मज़ाक:` – "ये सुविधाएँ ऐसे हैं जैसे परीक्षा में एक्स्ट्रा टाइम – बस पता होना चाहिए कि कब और कैसे उपयोग करना है।"
+      - **यहाँ दूसरा आंतरिक लिंक** – "स्कॉलरशिप और छात्रवृत्ति यहाँ देखें।"
 
-<!-- ========== SECTION 8: SUCCESS STORIES ========== -->
-<h2>7. सफलता की कहानियाँ – आप भी कर सकते हैं</h2>
-<!-- AI: SUCCESS_STORIES_AND_EXAMPLES ऐरे को इटरेट करें। -->
-<div class="success-story">
-  <p><strong>{SUCCESS_STORIES_AND_EXAMPLES[0].NAME}</strong> – {SUCCESS_STORIES_AND_EXAMPLES[0].ACHIEVEMENT}</p>
-  <p><em>प्रेरणा: {SUCCESS_STORIES_AND_EXAMPLES[0].INSPIRATION}</em></p>
-</div>
-<p>ये कहानियाँ बताती हैं कि हालात चाहे जैसे हों, हौसला बड़ा होना चाहिए।</p>
+   c) **3. 💼 नौकरी और अवसर – कहाँ-कहाँ कर सकते हैं अप्लाई?**
+      - JSON के JOB_OR_OPPORTUNITY_DETAILS से **टेबल** बनाएँ: सेक्टर/भर्तीकर्ता, पद/अवसर, सैलरी रेंज, लोकेशन।
+      - टेबल के नीचे `😂 सकारात्मक मज़ाक:` – "रेलवे से लेकर बैंक तक, सब जगह आपके लिए जगह है। बस फॉर्म भरना है – और हाँ, फॉर्म भरते समय रोल नंबर नोट कर लेना, वरना बाद में याद नहीं आएगा।"
+      - **यहाँ तीसरा आंतरिक लिंक** – "सरकारी नौकरी की तैयारी के टिप्स पढ़ें।"
 
-<!-- ========== SECTION 9: CHALLENGES & SOLUTIONS ========== -->
-<h2>8. चुनौतियाँ और समाधान – हर मुश्किल का जवाब</h2>
-<p><strong>आम चुनौतियाँ:</strong> {CHALLENGES_AND_SOLUTIONS.COMMON_CHALLENGES}</p>
-<p><strong>कैसे करें पार:</strong> {CHALLENGES_AND_SOLUTIONS.HOW_TO_OVERCOME}</p>
-<p><strong>सहायता प्रणालियाँ:</strong> {CHALLENGES_AND_SOLUTIONS.SUPPORT_SYSTEMS}</p>
-<p><strong>फनी मोटिवेशन:</strong> "दुनिया कहेगी 'नहीं हो सकता', तुम कहना 'देख लो'। हर चुनौती के पीछे एक मौका छिपा है – बस नज़रें चाहिए।"</p>
+   d) **4. 🧾 पात्रता और ज़रूरी दस्तावेज़ – कौन-कौन सी चीज़ें चाहिए?**
+      - JSON के ELIGIBILITY_AND_REQUIREMENTS से **टेबल** बनाएँ: आवश्यकता (शिक्षा, आयु, विकलांगता %, प्रमाणपत्र), विवरण।
+      - टेबल के नीचे `⚠️ चेतावनी:` – "दिव्यांगता प्रमाण पत्र बिना उचित प्रारूप के नहीं चलेगा – झटपट बनवा लो। वरना फॉर्म भरते वक्त ब्लडप्रेशर बढ़ जाएगा।"
 
-<!-- ========== SECTION 10: RESOURCES AND LINKS ========== -->
-<h2>📌 ज़रूरी संसाधन और लिंक – यहाँ से मदद लो</h2>
-<table class="responsive-table">
-  <thead><tr><th>विवरण</th><th>लिंक / संपर्क</th><th>फनी रिमार्क</th></tr></thead>
-  <tbody>
-    <tr><td><strong>आधिकारिक वेबसाइट</strong></td><td><a href="{RESOURCES_AND_LINKS.OFFICIAL_WEBSITES[0]}">👉 यहाँ जाएँ</a></td><td>"सबसे भरोसेमंद जगह"</td></tr>
-    <tr><td><strong>हेल्पलाइन</strong></td><td>{RESOURCES_AND_LINKS.HELPLINE_NUMBERS}</td><td>"फोन उठाओ, पूछो, हल पाओ"</td></tr>
-    <tr><td><strong>एनजीओ संपर्क</strong></td><td>{RESOURCES_AND_LINKS.NGO_CONTACTS}</td><td>"ये लोग मुफ्त मदद करते हैं"</td></tr>
-    <tr><td><strong>पीडीएफ लिंक</strong></td><td>{RESOURCES_AND_LINKS.PDF_LINKS}</td><td>"डाउनलोड करो और पढ़ो"</td></tr>
-    <tr><td><strong>वीडियो गाइड</strong></td><td>{RESOURCES_AND_LINKS.VIDEO_LINKS}</td><td>"देखो और सीखो"</td></tr>
-  </tbody>
-</table>
-<p><strong>⚠️ सावधानी:</strong> <strong>Jobjalebi.com</strong> के अलावा किसी और के झाँसे में मत आना। सरकारी योजनाओं के लिए कोई पैसा नहीं लगता – फ्री है, फ्री!</p>
+   e) **5. 📱 आवेदन प्रक्रिया – स्टेप बाय स्टेप फॉर्म भरना सीखो**
+      - **टेबल के बजाय `<ol>` में** स्टेप्स लिखें (HOW_TO_APPLY_STEPS से) – हर स्टेप के आगे इमोजी।
+      - साथ ही फीस और महत्वपूर्ण तिथियों की एक छोटी टेबल बना सकते हैं।
+      - इस सेक्शन के नीचे `😂 सकारात्मक मज़ाक:` – "फॉर्म भरते समय घबराना मत – अगर एक बार गलती हो भी जाए, तो सुधार की सुविधा होती है। पर बार-बार गलती करोगे तो मैडम/सर खुद ऑफिस बुला लेंगे।"
 
-<!-- ========== SECTION 11: FAQ ========== -->
-<h2>❓ अक्सर पूछे जाने वाले सवाल (FAQs)</h2>
-<div class="faq-section">
-  (AI: FREQUENTLY_ASKED_QUESTIONS ऐरे को इटरेट करें।)
-  <h3>Q1: {FREQUENTLY_ASKED_QUESTIONS[0].QUESTION}</h3>
-  <p><strong>A1:</strong> {FREQUENTLY_ASKED_QUESTIONS[0].ANSWER}</p>
-  <h3>Q2: {FREQUENTLY_ASKED_QUESTIONS[1].QUESTION}</h3>
-  <p><strong>A2:</strong> {FREQUENTLY_ASKED_QUESTIONS[1].ANSWER}</p>
-</div>
+   f) **6. 🔬 चयन प्रक्रिया और परीक्षा पैटर्न – किन चरणों से गुज़रना होगा?**
+      - JSON के EXAM_AND_SELECTION से **टेबल** बनाएँ: चरण (लिखित, स्किल, दस्तावेज़, चिकित्सा), विवरण, रियायत।
+      - टेबल के नीचे `😂 सकारात्मक मज़ाक:` – "चिकित्सा परीक्षण में दिव्यांगों को ढील मिलती है – जैसे 'बाएँ हाथ से लिखना है तो कोई बात नहीं, दाएँ से भी लिख सकते हो'। बस घबराना मत।"
 
-<!-- ========== SECTION 12: CONCLUSION ========== -->
-<h2>🏁 आखिरी बात – अब क्या करोगे?</h2>
-<p><strong>{PRIMARY_KEYWORD} आपके सामने है – पूरी जानकारी, हंसी-मजाक के साथ।</strong> अब बस एक कदम उठाना है – अप्लाई करो, फॉर्म भरो, और अपना हक लो। <strong>Jobjalebi.com</strong> पर हम हमेशा आपके साथ हैं, हर विशेष ज़रूरत के साथ।</p>
-<p><strong>मोटिवेशनल फनी लाइन:</strong> "जिंदगी में कभी-कभी थोड़ी एक्स्ट्रा हेल्प चाहिए होती है – और वो एक्स्ट्रा हेल्प आपको मिल रही है। तो मुस्कुराओ, भरोसा रखो, और आगे बढ़ो।"</p>
-<p><strong>सीधा लिंक:</strong> <a href="{APPLICATION_PROCESS.APPLICATION_LINK}">👉 यहाँ क्लिक करें – अभी अप्लाई करें</a></p>
+   g) **7. 🌟 सफलता की कहानियाँ – आप भी कर सकते हैं ये कमाल**
+      - JSON के SUCCESS_STORIES_AND_EXAMPLES से **टेबल** बनाएँ: नाम, उपलब्धि, प्रेरणा, फनी एंगल (यहाँ फनी कॉलम रख सकते हैं)।
+      - यदि JSON में न हों, तो एक सामान्य काल्पनिक फनी स्टोरी बनाएँ।
+      - टेबल के नीचे `😂 सकारात्मक मज़ाक:` – "ये लोग वहाँ पहुँच चुके हैं, अब तुम्हारी बारी है। बस चाय पीते हुए स्टोरी पढ़ना बंद करो, और आवेदन शुरू करो।"
 
-<!-- ========== SECTION 13: EXPERT TIPS & MYTHS ========== -->
-<h2>💡 एक्सपर्ट टिप्स और मिथक-तथ्य</h2>
-<ul>
-  <li><strong>एक्सपर्ट टिप्स:</strong> {ADDITIONAL_INFO.EXPERT_TIPS}</li>
-  <li><strong>मिथक बनाम तथ्य:</strong> {ADDITIONAL_INFO.MYTHS_VS_FACTS}</li>
-</ul>
+   h) (वैकल्पिक लेकिन सुझाया गया) **8. 🛠️ चुनौतियाँ और समाधान – रास्ते की रुकावटें और उनका तोड़**
+      - JSON के CHALLENGES_AND_SOLUTIONS से **टेबल** बनाएँ: चुनौती, समाधान।
+      - टेबल के नीचे `😂 सकारात्मक मज़ाक:` – "परीक्षा केंद्र पर सहायता न मिले तो ज़ोर से बोलना – 'मुझे दिव्यांगता है, मदद की ज़रूरत है' – शर्माने से काम नहीं बनेगा।"
 
-<!-- ========== SECTION 14: DISCLAIMER ========== -->
-<p><strong>⚠️ अस्वीकरण:</strong> यह पोस्ट विभिन्न सरकारी योजनाओं, आरक्षण नीतियों और आधिकारिक स्रोतों पर आधारित है। सटीक और नवीनतम जानकारी के लिए संबंधित आधिकारिक वेबसाइट अवश्य देखें। <strong>Jobjalebi.com</strong> केवल सूचना प्रदान करता है।</p>
+4. 📌 "तुरंत लिंक – सीधे क्लिक करें" (3-कॉलम लिंक टेबल)
+   - कॉलम: विवरण, लिंक, फनी रिमार्क।
+   - JSON के RESOURCES_AND_LINKS से 3-4 लिंक दें (आधिकारिक वेबसाइट, हेल्पलाइन, PDF गाइड)।
+   - 2-3 बाहरी विशेषज्ञ लिंक (जैसे राष्ट्रीय दिव्यांगजन पोर्टल, महिला एवं बाल विकास मंत्रालय, खेल प्राधिकरण) और 3-4 jobjalebi.com आंतरिक लिंक मिलाकर कुल 8-10 लिंक दें।
 
-<p><strong>😄 आखिरी मोटिवेशन:</strong> "आप विशेष हैं, आपकी ज़रूरतें विशेष हैं, और आपके सपने भी विशेष हैं। तो अपनी खासियत को पहचानो, और दुनिया को दिखा दो कि आप किसी से कम नहीं।"</p>
+5. 🏁 निष्कर्ष – "आखिरी बात – अब क्या करोगे?" (150-180 शब्द)
+   - PRIMARY_KEYWORD दोहराते हुए योजनाओं, नौकरियों और तैयारी का सारांश।
+   - मोटिवेशनल + फनी लहज़ा – विशेष वर्ग को जोश भरने वाली भाषा।
+   - "jobjalebi.com" का तीसरा उल्लेख।
+   - एक्शन कॉल: "आज ही अप्लाई करें" (RESOURCES_AND_LINKS.OFFICIAL_WEBSITES से) के साथ।
+   - **आखिरी आंतरिक लिंक** – "प्राइवेट जॉब के लिए स्किल डेवलपमेंट गाइड पढ़ें।"
 
-<!-- ========== POST ENDS ========== -->
+6. ❓ FAQ सेक्शन (7-8 सवाल – शब्द सीमा के अनुसार)
+   - हर सवाल <h3> में, जवाब <p> में।
+   - कम से कम 1-2 जवाब छोटी टेबल में (जैसे "विभिन्न दिव्यांगता प्रकारों के लिए छूट की तुलना")।
+   - अनिवार्य FAQ प्रश्न (जैसा JSON में या इस प्रकार):
+     * क्या दिव्यांग व्यक्ति UPSC दे सकता है?
+     * क्या महिलाओं को मुफ्त कोचिंग मिलती है?
+     * ट्रांसजेंडर के लिए अलग आरक्षण किन राज्यों में है?
+     * पूर्व सैनिकों के लिए कौन-सी जॉब्स खुली हैं?
+     * क्या दिव्यांगता प्रमाण पत्र ऑनलाइन बन सकता है?
+     * फॉर्म में गलत श्रेणी डाल दें तो क्या होगा?
+     * क्या परीक्षा केंद्र पर व्हीलचेयर मिलती है?
+     * क्या {PRIMARY_KEYWORD} के लिए अलग से मॉक टेस्ट उपलब्ध हैं?
+   - PRIMARY_KEYWORD अंतिम FAQ में ज़रूर आए।
+   - **एक FAQ में आंतरिक लिंक** – जैसे "दिव्यांगों के लिए पिछले प्रश्न पत्र यहाँ डाउनलोड करें।"
+
+7. ⚠️ अस्वीकरण – "यह पोस्ट केवल सूचनात्मक है। सभी डेटा JSON पर आधारित है। कृपया संबंधित मंत्रालय/आयोग की आधिकारिक अधिसूचना पढ़ें। jobjalebi.com किसी भी बदलाव या त्रुटि के लिए उत्तरदायी नहीं है।"
+
+8. 😄 आखिरी मोटिवेशन – "जॉब जलेबी की मानें – आपके हौसले के आगे हर दीवार झुकती है। बस कदम बढ़ाना है, हाथ में प्रमाण पत्र लेना है, और आवेदन करना है। यकीन मानिए, आपके लिए बहुत कुछ लिखा है। हँसते रहो, आगे बढ़ते रहो। 🍩💪🎯"
+
+📏 शब्द सीमा और कीवर्ड नियम:
+- पूरी पोस्ट **1500-2000 शब्द** (लगभग 1800 परफेक्ट)।
+- इंट्रो 120-150, निष्कर्ष 150-180।
+- PRIMARY_KEYWORD 4-5 बार, SECONDARY_KEYWORDS 3-4 बार।
+- LSI_KEYWORDS स्वाभाविक रूप से फैलाएँ।
+- कोई AI निर्देश या "AI:" न दिखे।
+
+😂 हास्य – स्टैंडअप कॉमेडी अंदाज़, लेकिन केवल सकारात्मक और प्रेरक। किसी जाति, धर्म, महिला, दिव्यांग, ट्रांसजेंडर, पूर्व सैनिक या किसी भी वर्ग पर अनादरपूर्ण टिप्पणी न करें।
+
+🌐 भाषा – हिंदी, ज़रूरी टर्म्स (scheme, reservation, disability, certificate, application, online) अंग्रेजी में।
+
+JSON मेटाडेटा: {EXTRA_DATA}
+प्रतिस्पर्धी टाइटल: {COMPETITOR_TITLE}
+प्राथमिक कीवर्ड: {PRIMARY_KEYWORD}

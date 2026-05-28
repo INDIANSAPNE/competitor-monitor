@@ -1,199 +1,200 @@
-<!-- 
-=================================================================
-TEMPLATE NAME: प्राइवेट नौकरियाँ (Private Jobs) Template - JSON Schema Integrated
-VERSION: 1.0
-CATEGORY: प्राइवेट नौकरियाँ
-DESCRIPTION: 
-  यह टेम्पलेट "प्राइवेट नौकरियाँ" कैटेगरी की हमारी JSON स्कीमा के साथ पूरी तरह से एकीकृत है।
-  AI को निर्देश है कि वह नीचे दिए गए सभी की-पाथ को JSON ({EXTRA_DATA}) से भरकर पोस्ट तैयार करे।
-  टोन: 80% फनी + 20% मोटिवेशनल | SEO: Primary, Secondary (बार-बार), LSI keywords.
-  Jobjalebi.com का नाम प्राकृतिक रूप से 3-4 बार डाला गया है.
-=================================================================
--->
+🚨 अनिवार्य HTML निर्देश (इनका उल्लंघन करने पर पोस्ट खराब दिखेगी):
+1. आप एक वर्डप्रेस ब्लॉग पोस्ट लिख रहे हैं। पूरी पोस्ट केवल HTML फ़ॉर्मेट में होनी चाहिए।
+2. Markdown सिंटैक्स का कभी भी उपयोग न करें। `#`, `*`, `-`, `1.` जैसे कोई भी Markdown कैरेक्टर पोस्ट में नहीं आने चाहिए।
+3. सभी हेडिंग `<h2>` या `<h3>` में लिखें, पैराग्राफ `<p>` में, बोल्ड टेक्स्ट `<strong>` में, और लिस्ट `<ul>`/`<ol>` में।
+4. टेबल हमेशा `<td>`, `<thead>`, `<tbody>`, `<tr>`, `<th>`, `<td>` टैग के साथ ही बनाएँ।
+5. पोस्ट का शीर्षक (Title) JSON के `SEO_TITLE` फ़ील्ड से लें और उसे `<h1>` टैग में न लिखें (वर्डप्रेस खुद टाइटल जोड़ता है)।
+6. इंट्रो पैराग्राफ **150-200 शब्दों** का हो, स्टैंडअप कॉमेडी की तरह मज़ेदार और चटपटा लिखें।
+7. सभी डेटा JSON से सटीक भरें, अनुमान न लगाएँ।
 
-<!-- ========== METADATA (AI AGENT INPUT - JSON से लिया गया) ========== -->
-<!--
-POST_TITLE = {SEO_TITLE}
-CATEGORY = {CATEGORY}
-SUBCATEGORY = {INDUSTRY}
-TAGS = "{JOB_IDENTIFICATION.JOB_TITLE}, Private Jobs, {JOB_IDENTIFICATION.COMPANY_NAME}"
-PRIMARY_KEYWORD = {PRIMARY_KEYWORD}
-SECONDARY_KEYWORDS = {SECONDARY_KEYWORDS}
-LSI_KEYWORDS = {LSI_KEYWORDS}
-COMPANY_NAME = {JOB_IDENTIFICATION.COMPANY_NAME}
-JOB_TITLE = {JOB_IDENTIFICATION.JOB_TITLE}
-INDUSTRY = {JOB_IDENTIFICATION.INDUSTRY}
-JOB_TYPE = {JOB_IDENTIFICATION.JOB_TYPE}
-EMPLOYMENT_TYPE = {JOB_IDENTIFICATION.EMPLOYMENT_TYPE}
-WORK_MODE = {JOB_IDENTIFICATION.WORK_MODE}
-JOB_LOCATION = {JOB_IDENTIFICATION.JOB_LOCATION}
-NO_OF_OPENINGS = {JOB_IDENTIFICATION.NO_OF_OPENINGS}
-MINIMUM_SALARY = {SALARY_AND_BENEFITS.MINIMUM_SALARY}
-MAXIMUM_SALARY = {SALARY_AND_BENEFITS.MAXIMUM_SALARY}
-SALARY_UNIT = {SALARY_AND_BENEFITS.SALARY_UNIT}
-BENEFITS = {SALARY_AND_BENEFITS.BENEFITS}
-EDUCATIONAL_QUALIFICATION = {ELIGIBILITY.EDUCATIONAL_QUALIFICATION}
-EXPERIENCE_REQUIRED = {ELIGIBILITY.EXPERIENCE_REQUIRED.MINIMUM_YEARS}-{ELIGIBILITY.EXPERIENCE_REQUIRED.MAXIMUM_YEARS} वर्ष
-SKILLS_REQUIRED = {ELIGIBILITY.SKILLS_REQUIRED}
-APPLICATION_MODE = {APPLICATION_PROCESS.APPLICATION_MODE}
-APPLICATION_LINK = {IMPORTANT_LINKS.APPLY_NOW_LINK}
-APPLICATION_DEADLINE = {APPLICATION_PROCESS.APPLICATION_DEADLINE}
-SELECTION_STAGES = {SELECTION_PROCESS.STAGES}
-IMPORTANT_DATES = {IMPORTANT_DATES}
-OFFICIAL_WEBSITE = {IMPORTANT_LINKS.COMPANY_WEBSITE}
-CONTACT_HELPLINE = {IMPORTANT_LINKS.CONTACT_HELPLINE}
--->
+📦 नमूना JSON स्ट्रक्चर (प्राइवेट जॉब के लिए – राइटर/एआई को यही पालन करना होगा):
+{
+  "SEO_TITLE": "यहाँ प्राइवेट नौकरी का मुख्य शीर्षक लिखें",
+  "PRIMARY_KEYWORD": "मुख्य कीवर्ड (जैसे 'प्राइवेट नौकरी 2026')",
+  "SECONDARY_KEYWORDS": ["apply online", "vacancy details", "eligibility", "last date", "salary", "interview process"],
+  "LSI_KEYWORDS": ["प्राइवेट सेक्टर नौकरी", "कंपनी भर्ती", "ऑनलाइन आवेदन", "फ्रेशर जॉब", "वर्क फ्रॉम होम"],
+  "COMPANY_NAME": "कंपनी का नाम",
+  "JOB_TITLE": "पद का नाम (जैसे 'सॉफ्टवेयर डेवलपर')",
+  "JOB_IDENTIFICATION": {
+    "NO_OF_OPENINGS": "कुल रिक्तियाँ (संख्या)",
+    "JOB_LOCATION": "शहर, राज्य (या 'Remote/WFH')",
+    "WORK_MODE": "Work from Office / Hybrid / Work from Home",
+    "JOB_TYPE": "Permanent / Contract / Internship",
+    "EXPERIENCE_REQUIRED": "न्यूनतम अनुभव (जैसे '0-2 साल')"
+  },
+  "ELIGIBILITY": {
+    "EDUCATION": "ग्रेजुएशन/डिप्लोमा/पोस्ट ग्रेजुएशन + ब्रांच/स्ट्रीम",
+    "AGE_LIMIT": "कोई सीमा नहीं / अधिकतम आयु (यदि हो)",
+    "REQUIRED_SKILLS": ["कम्युनिकेशन", "प्रोग्रामिंग", "लीडरशिप आदि"],
+    "LANGUAGES": ["हिंदी", "अंग्रेजी", "क्षेत्रीय भाषा"],
+    "GENDER": "Male/Female/Any"
+  },
+  "SALARY_AND_BENEFITS": {
+    "CTC_PER_ANNUM": "₹3-6 लाख",
+    "MONTHLY_IN_HAND": "₹25,000-40,000",
+    "BENEFITS": ["हेल्थ इंश्योरेंस", "प्रदर्शन बोनस", "वार्षिक वृद्धि", "WFH विकल्प"]
+  },
+  "SELECTION_PROCESS": {
+    "STAGES": ["रिज़्यूमे स्क्रीनिंग", "टेक्निकल राउंड", "HR राउंड", "ट्रायल/प्रोबेशन"],
+    "INTERVIEW_MODE": "ऑनलाइन / ऑफलाइन / हाइब्रिड"
+  },
+  "APPLICATION_PROCESS": {
+    "APPLY_START_DATE": "10 जनवरी 2026",
+    "APPLY_LAST_DATE": "10 फरवरी 2026",
+    "APPLY_LINK": "https://careers.company.com/job",
+    "HOW_TO_APPLY_STEPS": ["कंपनी के करियर पेज पर जाएँ", "जॉब ढूँढ़ें और अप्लाई करें", "रिज़्यूमे और कवर लेटर अपलोड करें", "फॉर्म सबमिट करें"],
+    "REQUIRED_DOCUMENTS": ["अपडेटेड रिज़्यूमे (PDF)", "पहचान पत्र (आधार/पैन)", "अंतिम डिग्री/सर्टिफिकेट", "पोर्टफोलियो (यदि हो)"],
+    "APPLICATION_FEE": "कोई शुल्क नहीं (अधिकतर प्राइवेट नौकरियों में फीस नहीं होती)"
+  },
+  "IMPORTANT_DATES": {
+    "JOB_POST_DATE": "5 जनवरी 2026",
+    "APPLY_START": "10 जनवरी 2026",
+    "APPLY_LAST": "10 फरवरी 2026",
+    "SHORTLIST_NOTIFICATION": "15 फरवरी 2026 (अनुमानित)",
+    "INTERVIEW_DATES": "20-25 फरवरी 2026",
+    "JOINING_DATE": "1 मार्च 2026 (अनुमानित)"
+  },
+  "IMPORTANT_LINKS": {
+    "OFFICIAL_CAREERS_PAGE": "https://careers.company.com",
+    "APPLY_LINK": "https://careers.company.com/job/123",
+    "COMPANY_WEBSITE": "https://company.com",
+    "JOB_DESCRIPTION_PDF": "https://company.com/jd.pdf"
+  }
+}
 
-<!-- ========== SEO KEYWORD USAGE INSTRUCTIONS FOR AI ==========
-1. PRIMARY_KEYWORD ({PRIMARY_KEYWORD}) → lead, summary table, eligibility, conclusion.
-2. SECONDARY_KEYWORDS (जैसे "apply online", "vacancy details", "eligibility", "last date", "application fee") का 5-6 बार इस्तेमाल करें।
-3. Jobjalebi.com mentioned 3-4 times: lead, important links, conclusion, FAQ.
--->
+🚨 नोट: उपरोक्त JSON में दी गई हर फील्ड को पोस्ट में शामिल करना अनिवार्य है। यदि कोई फील्ड उपलब्ध न हो, तो लिखें "उपलब्ध नहीं" – अनुमान न लगाएँ।
 
-<!-- ========== POST CONTENT STARTS ========== -->
+---
 
-<!-- LEAD: PRIMARY KEYWORD + JOJALBEBI MENTION -->
-<p><strong>🚨 प्राइवेट सेक्टर में धमाका – धमाका!</strong> <strong>{COMPANY_NAME} ने {JOB_TITLE} के लिए {PRIMARY_KEYWORD} जारी कर दी है।</strong> अब जो स्किल रखता है, वो आगे बढ़े; जो नहीं रखता, वो पहले सीख ले। <strong>Jobjalebi.com</strong> पर हम तुम्हें हंसी-मजाक के साथ पूरी डिटेल देते हैं – तो चाय पकड़ो, लैपटॉप खोलो, और पढ़ते जाओ। 😂</p>
+आप एक स्टैंडअप कॉमेडियन जैसे अंदाज़ वाले SEO कंटेंट राइटर हैं। आपको "प्राइवेट नौकरियाँ" कैटेगरी के लिए एक हिंदी ब्लॉग पोस्ट लिखनी है। नीचे दिए गए JSON मेटाडेटा ({EXTRA_DATA}) में इस प्राइवेट भर्ती की हर जानकारी मौजूद है। JSON के **SEO_TITLE** को पोस्ट का मुख्य शीर्षक बनाएँ और एक ऐसी पोस्ट तैयार करें जो पाठक को शुरू से अंत तक बाँधे रखे, हँसाए और पूरी जानकारी भी दे।
 
-<p>इस पोस्ट में हम तुम्हें बताएँगे – <strong>कौन सी पोस्ट है (<strong>vacancy details</strong>), किसे अप्लाई करना चाहिए (<strong>eligibility</strong>), सैलरी कितनी है (<strong>salary</strong>), आखिरी तारीख (<strong>last date</strong>) क्या है, अप्लाई कैसे करें (<strong>apply online</strong>), और सिलेक्शन प्रोसेस क्या है – सब कुछ हंसी-मजाक के साथ ताकि बोरियत न हो।</strong> तो चाय बनाओ, मोबाइल पकड़ो, और <strong>Jobjalebi.com</strong> के इस पोस्ट को अंत तक पढ़ो।</p>
+⚠️ सबसे ज़रूरी – HTML टेबल के नियम (इनका सख्ती से पालन करें):
+1. हर टेबल को `<td>` टैग में लिखें, <thead> और <tbody> के साथ।
+2. हर <th> में style="background-color:#FFC107; color:#000; padding:10px; border:1px solid #ddd;" जोड़ें।
+3. हर <td> में style="padding:8px; border:1px solid #ddd;" जोड़ें।
+4. पूरी टेबल को <div style="overflow-x: auto;"> में लपेटें ताकि मोबाइल पर स्क्रॉल हो सके।
+5. कभी भी मार्कडाउन टेबल (| | |) का उपयोग न करें – यह वर्डप्रेस में नहीं चलता।
+6. **टेबल की संख्या 6 से अधिक न हो** – केवल उन्हीं सेक्शन में टेबल दें जहाँ तुलनात्मक या सारणीबद्ध डेटा हो (जैसे वैकेंसी, एलिजिबिलिटी, सैलरी, चयन प्रक्रिया, तिथियाँ, दस्तावेज़)। बाकी सेक्शन में बुलेट पॉइंट या पैराग्राफ का उपयोग करें।
+7. **हर टेबल के अंदर फनी कॉलम न रखें** – इससे टेबल बहुत चौड़ी हो जाती है। इसके बदले, हर टेबल के नीचे एक अलग `<p>` टैग में `😂 मज़ाकिया सलाह:` लिखें।
 
-<!-- ========== SECTION 1: QUICK SUMMARY TABLE ========== -->
-<h2>📌 एक नज़र में – नौकरी का चटपटा सारांश</h2>
-<table class="responsive-table">
-  <thead>
-    <tr><th>शीर्षक</th><th>विवरण (हंसी के साथ)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>कंपनी का नाम</td><td>{COMPANY_NAME} – "सुनहरा मौका, चूको मत"</td></tr>
-    <tr><td>पद का नाम</td><td>{JOB_TITLE} – <strong>{PRIMARY_KEYWORD}</strong> यहाँ देखें</td></tr>
-    <tr><td>उद्योग (Industry)</td><td>{INDUSTRY} – "इसी सेक्टर में बनानी है धाक"</td></tr>
-    <tr><td>नौकरी का प्रकार</td><td>{JOB_TYPE} ({EMPLOYMENT_TYPE}) – "परमानेंट हो या कॉन्ट्रैक्ट, मौका है"</td></tr>
-    <tr><td>काम करने का तरीका</td><td>{WORK_MODE} – "ऑफिस जाना है या घर से काम – यहाँ देखो"</td></tr>
-    <tr><td>नौकरी का स्थान</td><td>{JOB_LOCATION} – "पहुँचने में आसानी होनी चाहिए"</td></tr>
-    <tr><td>कुल रिक्तियाँ (<strong>vacancy details</strong>)</td><td>{NO_OF_OPENINGS} – "जितनी जल्दी करोगे, उतना अच्छा"</td></tr>
-    <tr><td>सैलरी (<strong>salary</strong>)</td><td>₹{MINIMUM_SALARY} – ₹{MAXIMUM_SALARY} {SALARY_UNIT} – "इतनी कि शान से जी सको"</td></tr>
-    <tr><td><strong>last date</strong> (अंतिम तिथि)</td><td>{APPLICATION_DEADLINE} – "देर मत करना, वरना कोई और ले जाएगा"</td></tr>
-    <tr><td>आधिकारिक लिंक</td><td><a href="{OFFICIAL_WEBSITE}">👉 {OFFICIAL_WEBSITE}</a></td></tr>
-    <tr><td>⚡ फनी चेतावनी</td><td>"पिछली बार 50% लोग आखिरी दिन रोते रहे – अब अक्लमंद बनो और जल्दी करो"</td></tr>
-  </tbody>
-</table>
+🔗 लिंक संबंधी सख्त निर्देश:
+- प्रतिस्पर्धी वेबसाइट (जैसे freejobalert, sarkariresult, Indeed, LinkedIn, आदि) का कोई भी लिंक पोस्ट में न आए। सभी बाहरी लिंक केवल JSON के IMPORTANT_LINKS सेक्शन से लें।
+- इसके अलावा, कम से कम **2-3 बाहरी विशेषज्ञ वेबसाइटों** के लिंक ज़रूर जोड़ें जो कंपनी रिव्यू, सैलरी गाइड, या स्किल डेवलपमेंट के लिए उपयोगी हों (जैसे Glassdoor, AmbitionBox, Coursera, LinkedIn Learning)।
+- **jobjalebi.com** के 3-4 आंतरिक लिंक पूरे पोस्ट में स्वाभाविक रूप से शामिल करें। ये लिंक आपकी साइट के प्रासंगिक पोस्टों के होने चाहिए, जैसे:
+  * "प्राइवेट जॉब इंटरव्यू की तैयारी कैसे करें"
+  * "रिज़्यूमे कैसे बनाएँ"
+  * "वर्क फ्रॉम होम जॉब्स"
+  * "बेस्ट स्किल डेवलपमेंट कोर्स"
+  (AI, इन विषयों पर काल्पनिक लेकिन उपयोगी स्लग बनाकर लिंक जोड़ें, जैसे `<a href="https://jobjalebi.com/private-job-interview-tips">प्राइवेट जॉब इंटरव्यू की तैयारी</a>`)
 
-<!-- ========== SECTION 2: VACANCY DETAILS ========== -->
-<h2>1. पद और रिक्तियाँ – कितनी सीटें, किस पद पर? (<strong>vacancy details</strong>)</h2>
-<p>चलो, सीधे मुद्दे पर आते हैं। <strong>{PRIMARY_KEYWORD}</strong> के अनुसार कितने पद निकले हैं – देखो और गणित मिलाओ। <strong>याद रखना, प्राइवेट सेक्टर में जितनी जल्दी अप्लाई करोगे, उतना अच्छा – क्योंकि पोस्ट पूरी होते देर नहीं लगती।</strong> <strong>vacancy details</strong> देखकर ही तय करो कि इस पद पर फोकस करना है या नहीं।</p>
-<table class="responsive-table">
-  <thead><tr><th>पद का नाम</th><th>रिक्तियाँ</th><th>अनुभव</th><th>सैलरी रेंज</th></tr></thead>
-  <tbody>
-    <tr><td>{JOB_TITLE}</td><td>{NO_OF_OPENINGS}</td><td>{EXPERIENCE_REQUIRED}</td><td>₹{MINIMUM_SALARY} – ₹{MAXIMUM_SALARY}</td></tr>
-  </tbody>
-</table>
-<p><strong>😂 फनी कमेंट:</strong> "अगर तुम्हें लगता है कि तुम इस पोस्ट के लिए बिलकुल फिट हो, तो सोचना मत – अप्लाई करो। अगर नहीं हो, तो पहले स्किल सीखो। <strong>Jobjalebi.com</strong> पर हम स्किल डेवलपमेंट की भी पोस्ट डालते हैं – वो देख लो।"</p>
+📋 पोस्ट की संरचना (इसी क्रम में लिखें, एक भी सेक्शन न छोड़ें):
 
-<!-- ========== SECTION 3: ELIGIBILITY ========== -->
-<h2>2. एलिजिबिलिटी – किसे मिलेगी ये जॉब? (<strong>eligibility</strong>)</h2>
-<p><strong>eligibility</strong> तय करती है कि तुम्हें यह नौकरी मिल सकती है या नहीं। नीचे देखो और सुनिश्चित करो – कहीं कोई छोटी सी शर्त न छूट जाए।</p>
-<ul>
-  <li><strong>शैक्षिक योग्यता:</strong> {EDUCATIONAL_QUALIFICATION} – "डिग्री हो तो बढ़िया, नहीं तो एक्सपीरियंस से काम चल सकता है"</li>
-  <li><strong>अनुभव (Experience):</strong> {EXPERIENCE_REQUIRED} – "फ्रेशर हो तो भी अप्लाई करो, कुछ कंपनियाँ ट्रेनिंग देती हैं"</li>
-  <li><strong>उम्र सीमा (Age Limit):</strong> {ELIGIBILITY.AGE_LIMIT.MINIMUM_AGE}-{ELIGIBILITY.AGE_LIMIT.MAXIMUM_AGE} वर्ष – "प्राइवेट में उम्र से ज्यादा स्किल मायने रखती है"</li>
-  <li><strong>आवश्यक कौशल (Skills Required):</strong> {SKILLS_REQUIRED} – "ये वो चीज़ें हैं जो तुम्हें भीड़ से अलग बनाएँगी"</li>
-  <li><strong>भाषा प्रवीणता:</strong> {ELIGIBILITY.LANGUAGE_PROFICIENCY} – "हिंदी, इंग्लिश, और जो भी कंपनी मांगे"</li>
-</ul>
-<p><strong>😜 फनी लाइन:</strong> "अगर तुम्हारे पास 10 में से 9 स्किल हैं, तो अप्लाई कर दो – वो 1 स्किल कंपनी तुम्हें सिखा देगी। पर 10 में से 1 भी नहीं है तो पहले पढ़ लो।"</p>
+1. 🚨 ओपनिंग हुक + इंट्रो (100-150 शब्द)
+   - पहली लाइन धमाकेदार इमोजी और फनी हुक से शुरू करें, जैसे "🚨 प्राइवेट सेक्टर में धमाका! {COMPANY_NAME} ने {JOB_TITLE} के {NO_OF_OPENINGS} पदों पर भर्ती निकाली है!"
+   - PRIMARY_KEYWORD का इंट्रो में कम से कम एक बार प्रयोग करें।
+   - 2-3 पैराग्राफ में बताएँ – वैकेंसी, एलिजिबिलिटी, सैलरी, लास्ट डेट, अप्लाई प्रोसेस।
+   - "jobjalebi.com" का पहला उल्लेख यहीं करें।
+   - **वैकल्पिक:** पहले पैराग्राफ के बाद एक फनी मीम या इमेज डाल सकते हैं।
 
-<!-- ========== SECTION 4: SELECTION PROCESS ========== -->
-<h2>3. चयन प्रक्रिया – कितने चरणों से गुज़रना होगा?</h2>
-<p>इस नौकरी के लिए चयन प्रक्रिया में नीचे दिए गए चरण होंगे:</p>
-<ul>
-  <!-- AI को {SELECTION_PROCESS.STAGES} ऐरे की हर स्टेज के लिए लिस्ट आइटम बनाने हैं। -->
-  <li><strong>{SELECTION_STAGES[0]}</strong></li>
-  <li><strong>{SELECTION_STAGES[1]}</strong></li>
-  <li><strong>{SELECTION_STAGES[2]}</strong></li>
-</ul>
-<p><strong>😜 फनी लाइन:</strong> "पहला राउंड तो आसान होता है – बस अपनी क्वालिफिकेशन दिखाओ। दूसरे में थोड़ी एक्सपर्टीज दिखानी पड़ेगी। और अगर तीसरे में पहुँच गए, तो समझ लेना कि नौकरी लगभग पक्की।"</p>
+2. 📌 "एक नज़र में – नौकरी का चटपटा सारांश" (2-कॉलम प्रीव्यू टेबल)
+   - कॉलम: "शीर्षक" | "विवरण"
+   - इसमें कम से कम 10 अहम जानकारियाँ दें – कंपनी, पद, रिक्तियाँ, लोकेशन, सैलरी, एलिजिबिलिटी, लास्ट डेट, आवेदन प्रक्रिया, चयन प्रक्रिया, इंटरव्यू मोड।
+   - **हर पंक्ति के विवरण में फनी कमेंट न डालें** – टेबल को साफ रखें। मजाक टेबल के नीचे अलग से लिखें।
+   - टेबल के तुरंत बाद एक <p> टैग में फनी टिप: `😂 सारांश पढ़कर लगा कि यह जॉब तुम्हारे लिए है? तो फिर आगे बढ़ो, और मस्ती आनी शुरू।`
 
-<!-- ========== SECTION 5: HOW TO APPLY ========== -->
-<h2>4. <strong>apply online</strong> – आवेदन कैसे करें?</h2>
-<p>अब सबसे जरूरी हिस्सा – <strong>apply online</strong> की प्रक्रिया। नीचे दिए गए स्टेप्स फॉलो करो और गलती मत करना। <strong>Jobjalebi.com</strong> पर हम हर स्टेप को मजाकिया तरीके से समझाते हैं ताकि तुम्हें कुछ भी मुश्किल न लगे।</p>
-<ol>
-  <!-- AI को {APPLICATION_PROCESS.HOW_TO_APPLY_STEPS} ऐरे को इटरेट करने का निर्देश। -->
-  <li><strong>स्टेप 1:</strong> {APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[0]}</li>
-  <li><strong>स्टेप 2:</strong> {APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[1]}</li>
-  <li><strong>स्टेप 3:</strong> {APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[2]}</li>
-  <li><strong>स्टेप 4:</strong> {APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[3]}</li>
-  <li><strong>स्टेप 5:</strong> {APPLICATION_PROCESS.HOW_TO_APPLY_STEPS[4]}</li>
-</ol>
-<p><strong>😂 फनी सलाह:</strong> "<strong>apply online</strong> करते समय अपना रिज़्यूमे ऐसे अपडेट करो जैसे तुम दुल्हा-दुल्हन को पसंद करवा रहे हो। हाँ, और 'ध्यान से भरो' – पिछली बार एक बंदे ने अपना नाम 'अमन' की जगह 'अमन गुप्ता इडली' लिख दिया था।"</p>
+3. मुख्य सेक्शन (हर एक <h2> हेडिंग में, इमोजी के साथ, और **कम से कम 8 सेक्शन** – नीचे दिए गए सभी अनिवार्य):
 
-<!-- ========== SECTION 6: DOCUMENTS CHECKLIST ========== -->
-<h2>5. ज़रूरी दस्तावेज़ – चेकलिस्ट</h2>
-<ul>
-  <!-- AI को {APPLICATION_PROCESS.REQUIRED_DOCUMENTS} ऐरे को इटरेट करने का निर्देश। -->
-  <li>{APPLICATION_PROCESS.REQUIRED_DOCUMENTS[0]}</li>
-  <li>{APPLICATION_PROCESS.REQUIRED_DOCUMENTS[1]}</li>
-  <li>{APPLICATION_PROCESS.REQUIRED_DOCUMENTS[2]}</li>
-  <li>पासपोर्ट साइज फोटो (स्कैन्ड)</li>
-  <li>सिग्नेचर (स्कैन्ड)</li>
-</ul>
+   a) **1. पद और वेकेंसी – कितनी सीटें, किस पद पर?**
+      - यदि NO_OF_OPENINGS हो तो टेबल बनाएँ (पद, रिक्तियाँ, अनुभव, लोकेशन, वर्क मोड)। न हो तो संक्षिप्त पैराग्राफ लिखें।
+      - टेबल के नीचे `😂 मज़ाकिया सलाह:` डालें (जैसे “एक ही पद है? तो फिर अंदर आना मुश्किल – मगर कोशिश करनी तो बनती है”)।
 
-<!-- ========== SECTION 7: IMPORTANT DATES ========== -->
-<h2>6. महत्वपूर्ण तिथियाँ – कब क्या होगा? (<strong>last date</strong> और इंटरव्यू)</h2>
-<p><strong>last date</strong> = {APPLICATION_DEADLINE}. इसे कभी मत भूलना। नीचे पूरी तिथियों की टेबल है:</p>
-<table class="responsive-table">
-  <thead><tr><th>घटना</th><th>तारीख</th></tr></thead>
-  <tbody>
-    <tr><td>नौकरी पोस्ट हुई</td><td>{IMPORTANT_DATES.JOB_POSTED_DATE}</td></tr>
-    <tr><td>आवेदन शुरू</td><td>{IMPORTANT_DATES.APPLICATION_START_DATE}</td></tr>
-    <tr><td><strong>last date</strong> (आवेदन की अंतिम तिथि)</td><td>{APPLICATION_DEADLINE}</td></tr>
-    <tr><td>इंटरव्यू की संभावित तिथि</td><td>{IMPORTANT_DATES.INTERVIEW_DATE}</td></tr>
-    <tr><td>जॉइनिंग की संभावित तिथि</td><td>{IMPORTANT_DATES.JOINING_DATE}</td></tr>
-  </tbody>
-</table>
-<p><strong>😡 फनी डांट:</strong> "अगर तुम <strong>last date</strong> निकल जाने के बाद रोने आए, तो हम कुछ नहीं कर सकते। अभी कैलेंडर में नोट कर लो।"</p>
+   b) **2. एलिजिबिलिटी – किसे मिलेगी ये प्राइवेट जॉब?**
+      - **अनिवार्य रूप से ये बातें टेबल में दें:** शैक्षिक योग्यता, अनुभव, आयु (यदि हो), आवश्यक स्किल्स, भाषा, लिंग (यदि निर्दिष्ट हो)।
+      - टेबल के बाद फनी टिप।
 
-<!-- ========== SECTION 8: IMPORTANT LINKS ========== -->
-<h2>📌 SOME USEFUL IMPORTANT LINKS – सीधे क्लिक करो</h2>
-<p><strong>Jobjalebi.com</strong> की टीम ने नीचे सभी जरूरी लिंक एक टेबल में दे दिए हैं। बस क्लिक करो और अप्लाई करो।</p>
-<table class="responsive-table">
-  <thead>
-    <tr><th>विवरण</th><th>सीधा लिंक</th><th>फनी रिमार्क</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>🟢 <strong>apply online</strong> (आवेदन लिंक)</strong></td><td><a href="{APPLICATION_LINK}" target="_blank">👉 यहाँ क्लिक करें</a></td><td>"अब मत सोचो, भर डालो"</td></tr>
-    <tr><td><strong>🌐 {COMPANY_NAME} की आधिकारिक वेबसाइट</strong></td><td><a href="{OFFICIAL_WEBSITE}" target="_blank">👉 {OFFICIAL_WEBSITE}</a></td><td>"यहाँ और भी जॉब हो सकती हैं, देखते रहो"</td></tr>
-    <tr><td><strong>📞 हेल्पलाइन</strong></td><td>{CONTACT_HELPLINE}</td><td>"कुछ पूछना है तो बेझिझक कॉल करो"</td></tr>
-  </tbody>
-</table>
-<p><strong>⚠️ चेतावनी:</strong> ऊपर दिए लिंक के अलावा किसी और पर क्लिक मत करना – वो फर्जी हो सकते हैं। प्राइवेट जॉब के लिंक हमेशा कंपनी की ऑफिशियल साइट से ही लें। <strong>Jobjalebi.com</strong> पर दिए गए लिंक 100% सुरक्षित हैं।</p>
+   c) **3. सैलरी और सुविधाएँ – प्राइवेट जॉब का असली मज़ा**
+      - टेबल बनाएँ: सैलरी स्ट्रक्चर (CTC, in-hand), बेनिफिट्स (इंश्योरेंस, बोनस, WFH आदि)।
+      - फनी टिप: “सैलरी से ज्यादा महत्वपूर्ण है वहाँ की चाय – पूछो मत, अपना एक्सपीरियंस है 😅”
 
-<!-- ========== SECTION 9: CONCLUSION ========== -->
-<h2>🏁 आखिरी बात – अब क्या करोगे?</h2>
-<p><strong>{COMPANY_NAME} की {PRIMARY_KEYWORD} आ चुकी है।</strong> {NO_OF_OPENINGS} पदों का यह मौका हाथ से मत जाने दो। फॉर्म खुला है, <strong>last date</strong> आ रही है, <strong>eligibility</strong> तुम्हारी बनती है – बस <strong>apply online</strong> करना बाकी है।</p>
-<p><strong>मोटिवेशनल फनी लाइन:</strong> "प्राइवेट जॉब हो या सरकारी, मेहनत तो करनी पड़ेगी। अगर तुम्हें लगता है कि तुम इस पोस्ट के लिए बने हो, तो देर मत करो – जाओ और अप्लाई करो। <strong>Jobjalebi.com</strong> पर हम तुम्हारी हर संभव मदद करेंगे।"</p>
-<p><strong>सीधा लिंक:</strong> <a href="{APPLICATION_LINK}">👉 यहाँ क्लिक करें – अप्लाई करें</a></p>
+   d) **4. चयन प्रक्रिया – कितने चक्कर काटने पड़ेंगे?**
+      - टेबल में: स्टेप (रिज़्यूमे शॉर्टलिस्ट, टेक्निकल, HR इंटरव्यू, ट्रायल), इंटरव्यू मोड।
+      - फनी टिप।
 
-<!-- ========== SECTION 10: FAQ ========== -->
-<h2>❓ {COMPANY_NAME} की इस भर्ती से जुड़े सामान्य सवाल (FAQs)</h2>
-<div class="faq-section">
-  <h3>Q1: क्या मैं एक साथ कई पदों के लिए आवेदन कर सकता हूँ?</h3>
-  <p><strong>A1:</strong> अगर नोटिफिकेशन में इजाज़त है, तो हाँ। नहीं तो एक ही पोस्ट के लिए करो। "प्राइवेट कंपनी में एक साथ कई जगह अप्लाई करने का अपना मज़ा है।"</p>
-  
-  <h3>Q2: क्या फ्रेशर आवेदन कर सकते हैं?</h3>
-  <p><strong>A2:</strong> {EXPERIENCE_REQUIRED} में 0 वर्ष लिखा है तो हाँ। "अगर एक्सपीरियंस की डिमांड है, तो थोड़ा इंतज़ार करो – फ्रेशर वाली जॉब भी आएगी।"</p>
-  
-  <h3>Q3: इंटरव्यू में क्या पूछा जाएगा?</h3>
-  <p><strong>A3:</strong> आमतौर पर तकनीकी सवाल और तुम्हारी पिछली नौकरी के बारे में। "थोड़ा झूठ बोलने से बचना – वो पकड़ लेंगे।"</p>
-  
-  <h3>Q4: क्या वर्क फ्रॉम होम का ऑप्शन है?</h3>
-  <p><strong>A4:</strong> {WORK_MODE} में लिखा है – "अगर रिमोट है तो पार्टी, ऑनसाइट है तो सफर की तैयारी।"</p>
-  
-  <h3>Q5: <strong>{PRIMARY_KEYWORD}</strong> के बारे में और जानकारी कहाँ मिलेगी?</h3>
-  <p><strong>A5:</strong> ऊपर Important Links टेबल में कंपनी की वेबसाइट का लिंक है – वहाँ से डिटेल ले सकते हो। और हाँ, <strong>Jobjalebi.com</strong> को बुकमार्क कर लो ताकि हर अपडेट सबसे पहले मिले।</p>
-</div>
+   e) **5. Apply Online – आवेदन कैसे करें? (चरणबद्ध गाइड)**
+      - **टेबल न बनाएँ** – बल्कि `<ol>` या `<ul>` में स्टेप्स लिखें। हर स्टेप के आगे इमोजी डालें (👇, 💻, 📎, ✅)।
+      - **यहाँ पहला आंतरिक लिंक** जोड़ें, जैसे “रिज़्यूमे बनाने का तरीका नहीं पता? <a href='...'>यहाँ देखें</a>।”
 
-<!-- ========== SECTION 11: DISCLAIMER ========== -->
-<p><strong>⚠️ अस्वीकरण:</strong> यह पोस्ट {COMPANY_NAME} की आधिकारिक अधिसूचना और जॉब लिस्टिंग पर आधारित है। सटीक जानकारी के लिए कंपनी की आधिकारिक वेबसाइट अवश्य देखें। दिए गए लिंक आधिकारिक स्रोतों पर रीडायरेक्ट करते हैं – <strong>Jobjalebi.com</strong> किसी तीसरे पक्ष से जुड़ा नहीं है।</p>
+   f) **6. ज़रूरी दस्तावेज़ – चेकलिस्ट**
+      - **टेबल न बनाएँ** – बुलेट लिस्ट (`<ul>`) बनाएँ। प्रत्येक दस्तावेज़ के आगे इमोजी (📄, 🆔, 🎓, 💼)।
+      - लिस्ट के नीचे फनी टिप: “दस्तावेज़ पहले से तैयार रखना, वरना लास्ट मिनट में रोना पड़ता है 😭”
 
-<p><strong>😄 आखिरी मोटिवेशन:</strong> "प्राइवेट जॉब में सैलरी अच्छी है, पर मेहनत भी उतनी ही। जाओ, अप्लाई करो और अपनी स्किल दिखाओ। याद रखना, <strong>Jobjalebi.com</strong> हमेशा तुम्हारे साथ है।"</p>
+   g) **7. महत्वपूर्ण तिथियाँ – last date मत भूलना**
+      - टेबल बनाएँ (घटना, तारीख, रिमाइंडर)।
+      - टेबल के नीचे ⚠️ चेतावनी: “लास्ट डेट से एक दिन पहले अप्लाई मत करना – कंपनी का सर्वर डाउन हो सकता है (हमने देखा है)”
 
-<!-- ========== POST ENDS ========== -->
+   h) **8. अनुभव गणना, कटऑफ और नेगोशिएशन (प्राइवेट जॉब के लिए अनिवार्य नया सेक्शन)**
+      - एक छोटी टेबल बनाएँ:
+        | शीर्षक | विवरण |
+        | अनुभव गणना की आधार तिथि | JSON से EXPERIENCE_BASE_DATE (यदि हो) या "आवेदन की अंतिम तिथि तक" |
+        | न्यूनतम कटऑफ (यदि कोई परीक्षा हो) | JSON से CUTOFF या "उपलब्ध नहीं" |
+        | सैलरी नेगोशिएशन की गुंजाइश | JSON से NEGOTIABLE (Yes/No/May be) |
+      - यह सेक्शन `<h2>` में हो: “8. 💰 अनुभव, कटऑफ और बातचीत – समझो पक्की बात”
+
+   i) (वैकल्पिक) **9. सावधानियाँ और आम गलतियाँ**
+      - टेबल के बजाय बुलेट पॉइंट में 5 आम गलतियाँ और समाधान लिखें।
+
+4. 📌 "तुरंत लिंक – यहाँ से क्लिक करें" (3-कॉलम लिंक टेबल)
+   - कॉलम: विवरण, लिंक, फनी रिमार्क।
+   - JSON के IMPORTANT_LINKS से ऑफिशियल करियर पेज, अप्लाई लिंक, कंपनी की वेबसाइट, जॉब डिस्क्रिप्शन PDF डालें।
+   - इस सेक्शन में **2-3 बाहरी विशेषज्ञ लिंक** (Glassdoor, AmbitionBox, Coursera) और **3-4 jobjalebi.com के आंतरिक लिंक** मिलाकर कुल 8-10 लिंक दें।
+
+5. 🏁 निष्कर्ष – "आखिरी बात – अब क्या करोगे?" (100-150 शब्द)
+   - PRIMARY_KEYWORD को दोहराते हुए पूरी नौकरी का सारांश।
+   - मोटिवेशनल + फनी लहज़ा।
+   - "jobjalebi.com" का तीसरा उल्लेख।
+   - एक्शन कॉल: “अभी अप्लाई करें” लिंक (JSON के IMPORTANT_LINKS.APPLY_LINK से)।
+   - **यहाँ एक और आंतरिक लिंक** – “ऐसी ही और प्राइवेट नौकरियों के लिए <a href='...'>jobjalebi.com पर जॉब अपडेट</a> देखते रहें।”
+
+6. ❓ FAQ सेक्शन (8 सवाल – तय)
+   - हर सवाल <h3> टैग में, जवाब <p> टैग में।
+   - कम से कम 2 जवाब छोटी टेबल में (जैसे “विभिन्न पदों के लिए सैलरी ब्रैकेट” या “चयन प्रक्रिया के दौरान पूछे जाने वाले सवाल”)।
+   - अनिवार्य FAQ प्रश्न:
+     * क्या फ्रेशर इस नौकरी के लिए अप्लाई कर सकते हैं?
+     * क्या यह वर्क फ्रॉम होम जॉब है?
+     * सैलरी नेगोशिएट कैसे करें?
+     * इंटरव्यू में क्या सवाल पूछे जाएँगे?
+     * कंपनी का माहौल (कल्चर) कैसा है?
+     * क्या आवेदन शुल्क देना होगा? (JSON के APPLICATION_FEE से उत्तर)
+     * अगर मेरे पास रिज़्यूमे नहीं है तो क्या करूँ?
+     * क्या {PRIMARY_KEYWORD} के लिए कोई ट्रेनिंग प्रोवाइड करते हैं?
+   - PRIMARY_KEYWORD अंतिम FAQ में ज़रूर आए।
+   - **एक FAQ में आंतरिक लिंक** – “इंटरव्यू टिप्स के लिए <a href='...'>हमारी गाइड पढ़ें</a>।”
+
+7. ⚠️ अस्वीकरण – एक छोटा पैराग्राफ: “यह पोस्ट केवल सूचना के उद्देश्य से है। कृपया कंपनी की आधिकारिक वेबसाइट पर जाकर सभी विवरण सत्यापित करें। jobjalebi.com किसी भी बदलाव या त्रुटि के लिए उत्तरदायी नहीं है।”
+
+8. 😄 आखिरी मोटिवेशन – दो लाइन: “जॉब जलेबी की मानें – रिज़्यूमे भेजो, हंसते रहो और वो कंपनी पक्की करो। 🍩🚀”
+
+📏 शब्द सीमा और कीवर्ड नियम:
+- पूरी पोस्ट **2000-2500 शब्द** के बीच हो (1800 से कम नहीं, 2800 से अधिक नहीं)।
+- इंट्रो: 100-150 शब्द
+- निष्कर्ष: 100-150 शब्द
+- PRIMARY_KEYWORD पूरे पोस्ट में **5-6 बार** स्वाभाविक रूप से।
+- SECONDARY_KEYWORDS – हर एक **3-4 बार** (apply online, vacancy details, eligibility, last date, salary)।
+- LSI_KEYWORDS – JSON से लेकर पूरे पोस्ट में फैलाएँ, जबरदस्ती नहीं।
+
+😂 हास्य के नियम:
+- पूरी पोस्ट स्टैंडअप कॉमेडी के अंदाज़ में, लेकिन किसी व्यक्ति, जाति, धर्म, देश, महिला या दिव्यांग पर टिप्पणी न करें।
+- हर सेक्शन के बीच में कम से कम एक हँसाने वाली लाइन या इमोजी डालें।
+- मीम या कार्टून इमेज (कॉपीराइट फ्री) डालने की छूट है।
+
+🌐 भाषा और SEO:
+- पूरी पोस्ट हिंदी में, केवल ज़रूरी टर्म्स (apply online, last date, salary, interview, resume) अंग्रेजी में।
+- पोस्ट का टाइटल JSON के SEO_TITLE के अनुसार।
+- "jobjalebi.com" का जिक्र 4-5 बार (स्वाभाविक रूप से)।
+- कोई AI निर्देश, प्रॉम्प्ट या "AI:" टेक्स्ट पोस्ट में न आए।
+
+JSON मेटाडेटा (भरकर दें):
+{EXTRA_DATA}
+
+प्रतिस्पर्धी टाइटल: {COMPETITOR_TITLE}
+प्राथमिक कीवर्ड: {PRIMARY_KEYWORD}

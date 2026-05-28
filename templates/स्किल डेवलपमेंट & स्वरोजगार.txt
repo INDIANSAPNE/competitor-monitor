@@ -1,193 +1,206 @@
-<!-- 
-=================================================================
-TEMPLATE NAME: स्किल डेवलपमेंट & स्वरोजगार (Skill Development & Self-Employment) Template - JSON Schema Integrated
-VERSION: 1.0
-CATEGORY: स्किल डेवलपमेंट & स्वरोजगार
-DESCRIPTION: 
-  यह टेम्पलेट "स्किल डेवलपमेंट & स्वरोजगार" कैटेगरी की हमारी JSON स्कीमा के साथ पूरी तरह से एकीकृत है।
-  AI को निर्देश है कि वह नीचे दिए गए स्ट्रक्चर और JSON ({EXTRA_DATA}) का उपयोग करके एक
-  मजेदार, SEO-फ्रेंडली और प्रैक्टिकल पोस्ट लिखे। हर सेक्शन में JSON से सही डेटा खींचा जाए
-  (जैसे SKILL_IDENTIFICATION, PROGRAM_STATUS, COURSE_OR_SCHEME_DETAILS आदि)।
-  टोन: 80% फनी + 20% मोटिवेशनल | SEO: Primary, Secondary, LSI keywords.
-  Jobjalebi.com का नाम प्राकृतिक रूप से 3-4 बार डाला गया है.
-=================================================================
--->
+🚨 अनिवार्य HTML निर्देश (इनका उल्लंघन करने पर पोस्ट खराब दिखेगी):
+1. आप एक वर्डप्रेस ब्लॉग पोस्ट लिख रहे हैं। पूरी पोस्ट केवल HTML फ़ॉर्मेट में होनी चाहिए।
+2. Markdown सिंटैक्स का कभी भी उपयोग न करें। `#`, `*`, `-`, `1.` जैसे कोई भी Markdown कैरेक्टर पोस्ट में नहीं आने चाहिए।
+3. सभी हेडिंग `<h2>` या `<h3>` में लिखें, पैराग्राफ `<p>` में, बोल्ड टेक्स्ट `<strong>` में, और लिस्ट `<ul>`/`<ol>` में।
+4. टेबल हमेशा `<tr>`, `<thead>`, `<tbody>`, `</td>`, `<th>`, `<td>` टैग के साथ ही बनाएँ।
+5. पोस्ट का शीर्षक (Title) JSON के `SEO_TITLE` फ़ील्ड से लें और उसे `<h1>` टैग में न लिखें (वर्डप्रेस खुद टाइटल जोड़ता है)।
+6. इंट्रो पैराग्राफ **120-150 शब्दों** का हो, स्टैंडअप कॉमेडी की तरह मज़ेदार और चटपटा लिखें।
+7. सभी डेटा JSON से सटीक भरें, अनुमान न लगाएँ।
 
-<!-- ========== METADATA (AI AGENT INPUT - JSON से लिया गया) ========== -->
-<!--
-POST_TITLE: JSON के SEO_TITLE फ़ील्ड से लें।
-CATEGORY: JSON के CATEGORY फ़ील्ड से लें।
-PRIMARY_KEYWORD: JSON के PRIMARY_KEYWORD फ़ील्ड से लें।
-SECONDARY_KEYWORDS: JSON के SECONDARY_KEYWORDS फ़ील्ड से लें (कम से कम 5-6 बार उपयोग करें)।
-LSI_KEYWORDS: JSON के LSI_KEYWORDS फ़ील्ड से लें।
-EXTRA_DATA: पूरा JSON ऑब्जेक्ट। AI को इसे पढ़कर सभी सेक्शन भरने हैं।
--->
+📦 नमूना JSON स्ट्रक्चर (स्किल डेवलपमेंट के लिए – राइटर/एआई को यही पालन करना होगा):
+{
+  "SEO_TITLE": "यहाँ प्रोग्राम का मुख्य शीर्षक (जैसे 'PMKVY 2026: फ्री स्किल ट्रेनिंग और जॉब')",
+  "PRIMARY_KEYWORD": "मुख्य कीवर्ड (जैसे 'प्रधानमंत्री कौशल विकास योजना')",
+  "SECONDARY_KEYWORDS": ["skill development", "self-employment", "apply online", "eligibility", "free course", "loan", "training"],
+  "LSI_KEYWORDS": ["कौशल विकास", "ट्रेनिंग प्रोग्राम", "स्वरोजगार योजना", "लोन सब्सिडी", "प्रमाणपत्र"],
+  "PROGRAM_NAME": "प्रोग्राम का पूरा नाम (जैसे 'Pradhan Mantri Kaushal Vikas Yojana')",
+  "COURSE_OR_SCHEME_DETAILS": {
+    "COURSE_NAME": "ट्रेनिंग का नाम (जैसे 'डिजिटल मार्केटिंग')",
+    "DURATION": "3 महीने",
+    "MODE": "ऑनलाइन / ऑफलाइन / हाइब्रिड",
+    "MEDIUM": "हिंदी और अंग्रेजी",
+    "CERTIFICATION": "हाँ (सरकारी प्रमाणपत्र)",
+    "BATCH_SIZE": "30-40 छात्र",
+    "FEE": "पूर्णतः निःशुल्क",
+    "BENEFITS_AND_OUTCOMES": {
+      "LOAN": "₹50,000 तक का ऋण (बिना ब्याज के 6 माह)",
+      "SUBSIDY": "मशीन/उपकरण खरीद पर 25% सब्सिडी",
+      "JOB_ASSISTANCE": "हाँ, प्लेसमेंट सपोर्ट"
+    }
+  },
+  "SKILL_IDENTIFICATION": {
+    "SECTOR": "आईटी और सॉफ्टवेयर",
+    "SPECIALIZATION": "डिजिटल मार्केटिंग, SEO, सोशल मीडिया"
+  },
+  "ELIGIBILITY": {
+    "EDUCATION": "10वीं/12वीं/ग्रेजुएशन",
+    "AGE_LIMIT": "18-35 वर्ष",
+    "GENDER": "पुरुष, महिला, ट्रांसजेंडर",
+    "RESERVATION": "SC/ST/OBC/PWD को वरीयता",
+    "DOMICILE": "सभी राज्यों के निवासी"
+  },
+  "SELF_EMPLOYMENT_OPPORTUNITIES": {
+    "BUSINESS_IDEAS": ["डिजिटल मार्केटिंग एजेंसी", "ई-कॉमर्स स्टोर"],
+    "SECTORS": ["आईटी", "ऑनलाइन सर्विसेज"],
+    "INVESTMENT_NEEDED": "₹10,000 - ₹50,000",
+    "EXPECTED_PROFIT": "₹15,000 - ₹30,000 प्रति माह",
+    "GOVERNMENT_SCHEMES": ["मुद्रा लोन", "स्टैंड अप इंडिया"]
+  },
+  "APPLICATION_PROCESS": {
+    "APPLY_START_DATE": "1 फरवरी 2026",
+    "APPLY_LAST_DATE": "28 फरवरी 2026",
+    "APPLY_MODE": "ऑनलाइन",
+    "APPLY_LINK": "https://pmkvyofficial.org/apply",
+    "STEPS_TO_APPLY": ["आधिकारिक पोर्टल पर जाएँ", "रजिस्ट्रेशन करें", "कोर्स चुनें", "फॉर्म भरें", "दस्तावेज़ अपलोड करें", "सबमिट करें"],
+    "REQUIRED_DOCUMENTS": ["आधार कार्ड", "शैक्षिक प्रमाण पत्र", "आय प्रमाण पत्र (यदि हो)", "पासपोर्ट साइज़ फोटो", "बैंक पासबुक"]
+  },
+  "SELECTION_PROCESS": {
+    "CRITERIA": "पहले आओ पहले पाओ + एंट्रेंस टेस्ट (यदि ज़्यादा आवेदन हों)",
+    "INTERVIEW_REQUIRED": "कभी-कभी"
+  },
+  "SUCCESS_STORIES": [
+    {"NAME": "प्रिया सिंह", "STORY": "बिना कोचिंग के सीखा डिजिटल मार्केटिंग, आज अपनी एजेंसी चलाती हैं", "RESULT": "₹40,000/माह कमाई", "FUNNY_ANGLE": "कोचिंग की फीस बचाकर पिज़्ज़ा खाने लगी"}
+  ],
+  "IMPORTANT_DATES": {
+    "NOTIFICATION_DATE": "15 जनवरी 2026",
+    "APPLY_START": "1 फरवरी 2026",
+    "APPLY_LAST": "28 फरवरी 2026",
+    "TRAINING_START": "15 मार्च 2026",
+    "CERTIFICATE_ISSUE": "प्रशिक्षण के बाद"
+  },
+  "IMPORTANT_LINKS": {
+    "OFFICIAL_NOTIFICATION": "https://pmkvyofficial.org/notice.pdf",
+    "APPLY_LINK": "https://pmkvyofficial.org/apply",
+    "OFFICIAL_WEBSITE": "https://pmkvyofficial.org",
+    "HELPLINE": "1800-XXX-XXXX"
+  }
+}
 
-<!-- ========== SEO KEYWORD USAGE INSTRUCTIONS FOR AI ==========
-1. PRIMARY_KEYWORD ({PRIMARY_KEYWORD}) → lead, summary table, course/scheme details, conclusion.
-2. SECONDARY_KEYWORDS (जैसे "skill development", "self-employment", "apply online", "eligibility", "free course", "government scheme", "loan", "training") का कम से कम 5-6 बार उपयोग करें।
-3. Jobjalebi.com का उल्लेख 3-4 बार करें: lead, important links, conclusion, FAQ.
--->
+🚨 नोट: JSON में दी गई हर फील्ड को पोस्ट में शामिल करें। यदि कोई फील्ड उपलब्ध न हो तो "उपलब्ध नहीं" लिखें।
 
-<!-- ========== POST CONTENT STARTS ========== -->
+---
 
-<!-- LEAD: PRIMARY KEYWORD + JOJALBEBI MENTION -->
-<p><strong>🚨 कमाई का रास्ता खुल गया!</strong> <strong>{SKILL_IDENTIFICATION.PROGRAM_NAME} के तहत {PRIMARY_KEYWORD} – अब सीखो और कमाओ!</strong> अब वो दिन गए जब सिर्फ डिग्री के भरोसे बैठे रहते थे। <strong>Jobjalebi.com</strong> पर हम तुम्हें हंसी-मजाक के साथ बताएँगे कि कैसे यह स्किल या योजना तुम्हारी ज़िंदगी बदल सकती है – तो चाय पकड़ो, हाथ में औज़ार लो, और पढ़ते जाओ। 😂</p>
+आप एक स्टैंडअप कॉमेडियन जैसे अंदाज़ वाले SEO राइटर हैं। आपको "स्किल डेवलपमेंट & स्वरोजगार" कैटेगरी के लिए एक हिंदी ब्लॉग पोस्ट लिखनी है। JSON के **SEO_TITLE** को पोस्ट का मुख्य शीर्षक बनाएँ। पोस्ट **1500-2000 शब्दों** में हो।
 
-<p>इस पोस्ट में हम तुम्हें बताएँगे – <strong>कौन सी स्किल सिखाएँगे (<strong>skill development</strong>), कितनी फीस है या फ्री है (<strong>free course</strong>), कौन अप्लाई कर सकता है (<strong>eligibility</strong>), अप्लाई कैसे करें (<strong>apply online</strong>), और अगर खुद का बिज़नेस करना चाहो तो कितना लोन मिलेगा (<strong>loan</strong>) और सरकारी योजना (<strong>government scheme</strong>) का फायदा – सब कुछ हंसी-मजाक के साथ।</strong> तो चाय बनाओ, मोबाइल पकड़ो, और <strong>Jobjalebi.com</strong> के इस पोस्ट को अंत तक पढ़ो।</p>
+⚠️ HTML टेबल के नियम (सख्ती से पालन करें):
+1. हर टेबल `<tr>` टैग में, <thead> और <tbody> के साथ।
+2. <th> में style="background-color:#FFC107; color:#000; padding:10px; border:1px solid #ddd;"
+3. <tr> में style="padding:8px; border:1px solid #ddd;"
+4. टेबल को <div style="overflow-x: auto;"> में लपेटें।
+5. Markdown टेबल का उपयोग न करें।
+6. **टेबल की संख्या 6 से अधिक न हो** – केवल आवश्यक सेक्शन में टेबल दें (कोर्स डिटेल, फीस/लोन, पात्रता, स्वरोजगार, चयन प्रक्रिया, तिथियाँ)।
+7. **हर टेबल के अंदर फनी कॉलम न रखें** – इसके बदले, हर टेबल के नीचे एक अलग `<p>` टैग में `😂 मज़ाकिया सलाह:` लिखें।
 
-<!-- ========== SECTION 1: QUICK SUMMARY TABLE ========== -->
-<h2>📌 एक नज़र में – प्रोग्राम का चटपटा सारांश</h2>
-<p>नीचे दी गई टेबल में <strong>{PRIMARY_KEYWORD}</strong> की सारी ज़रूरी जानकारी एक जगह है। (AI: JSON से डेटा भरें।)</p>
-<table class="responsive-table">
-  <thead>
-    <tr><th>शीर्षक</th><th>विवरण (हंसी के साथ)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>प्रोग्राम का नाम</td><td>{SKILL_IDENTIFICATION.PROGRAM_NAME} – "नाम सुनते ही दिल खुश"</td></tr>
-    <tr><td>प्रदाता / संस्था</td><td>{SKILL_IDENTIFICATION.PROVIDER_NAME} ({SKILL_IDENTIFICATION.PROVIDER_TYPE})</td></tr>
-    <tr><td>प्रोग्राम का प्रकार</td><td>{SKILL_IDENTIFICATION.PROGRAM_TYPE} – "कोर्स, ट्रेनिंग, या लोन स्कीम?"</td></tr>
-    <tr><td>कौशल श्रेणी</td><td>{SKILL_IDENTIFICATION.SKILL_CATEGORY} – "हाथ का काम या दिमाग का?"</td></tr>
-    <tr><td>स्तर / अवधि</td><td>{SKILL_IDENTIFICATION.LEVEL} | {COURSE_OR_SCHEME_DETAILS.DURATION} {COURSE_OR_SCHEME_DETAILS.DURATION_UNIT}</td></tr>
-    <tr><td>फीस (<strong>free course</strong>)</td><td>{COURSE_OR_SCHEME_DETAILS.FEE.TOTAL_FEE} ({COURSE_OR_SCHEME_DETAILS.FEE.FEE_TYPE}) – {COURSE_OR_SCHEME_DETAILS.FEE.IS_FREE} तो मज़ा!</td></tr>
-    <tr><td>प्रशिक्षण का तरीका</td><td>{SKILL_IDENTIFICATION.MODE} – "घर बैठे या सेंटर पर?"</td></tr>
-    <tr><td>पात्रता (<strong>eligibility</strong>)</td><td>{ELIGIBILITY.MINIMUM_EDUCATION} + उम्र: {ELIGIBILITY.AGE_LIMIT.MINIMUM_AGE}-{ELIGIBILITY.AGE_LIMIT.MAXIMUM_AGE} वर्ष</td></tr>
-    <tr><td>लोन / सब्सिडी (<strong>loan</strong>)</td><td>{BENEFITS_AND_OUTCOMES.LOAN_FACILITY} (₹{BENEFITS_AND_OUTCOMES.LOAN_DETAILS}) / {BENEFITS_AND_OUTCOMES.SUBSIDY_DETAILS}</td></tr>
-    <tr><td>रोज़गार सहायता</td><td>{BENEFITS_AND_OUTCOMES.JOB_PLACEMENT_ASSISTANCE} – "नौकरी भी दिलवाएँगे!"</td></tr>
-    <tr><td>आवेदन तिथियाँ</td><td>शुरू: {IMPORTANT_DATES.APPLICATION_START_DATE} | अंतिम: {IMPORTANT_DATES.APPLICATION_LAST_DATE}</td></tr>
-    <tr><td>आवेदन लिंक</td><td><a href="{IMPORTANT_LINKS.APPLY_LINK}">👉 यहाँ क्लिक करें</a></td></tr>
-    <tr><td>⚡ फनी चेतावनी</td><td>"सीखने की कोई उम्र नहीं, पर स्कीम की लास्ट डेट ज़रूर होती है – चूको मत।"</td></tr>
-  </tbody>
-</table>
+🔗 लिंक निर्देश:
+- प्रतिस्पर्धी साइटों के लिंक न डालें।
+- बाहरी लिंक केवल JSON के IMPORTANT_LINKS से लें। इसके अलावा 2-3 विशेषज्ञ लिंक (जैसे कौशल विकास मंत्रालय, राष्ट्रीय करियर पोर्टल, उद्यमिता विकास संस्थान) जोड़ें।
+- **jobjalebi.com** के 3-4 आंतरिक लिंक डालें – जैसे "सरकारी नौकरी की तैयारी", "प्राइवेट जॉब इंटरव्यू टिप्स", "करियर गाइडेंस", "स्कॉलरशिप और छात्रवृत्ति"।
 
-<!-- ========== SECTION 2: COURSE/SCHEME DETAILS ========== -->
-<h2>1. कोर्स/योजना की पूरी जानकारी – क्या सिखाएँगे और कैसे? (<strong>skill development</strong>)</h2>
-<p><strong>{SKILL_IDENTIFICATION.PROGRAM_NAME}</strong> एक <strong>{SKILL_IDENTIFICATION.PROGRAM_TYPE}</strong> है जो {SKILL_IDENTIFICATION.PROVIDER_NAME} द्वारा चलाया जा रहा है। इसका उद्देश्य लोगों को <strong>{SKILL_IDENTIFICATION.SKILL_CATEGORY}</strong> में माहिर बनाना है।</p>
-<ul>
-  <li><strong>कोर्स/योजना का नाम:</strong> {COURSE_OR_SCHEME_DETAILS.COURSE_NAME}</li>
-  <li><strong>कुल अवधि:</strong> {COURSE_OR_SCHEME_DETAILS.DURATION} {COURSE_OR_SCHEME_DETAILS.DURATION_UNIT} ({COURSE_OR_SCHEME_DETAILS.TOTAL_HOURS} घंटे)</li>
-  <li><strong>माध्यम:</strong> {COURSE_OR_SCHEME_DETAILS.MEDIUM_OF_INSTRUCTION}</li>
-  <li><strong>बैच साइज़:</strong> {COURSE_OR_SCHEME_DETAILS.BATCH_SIZE}</li>
-  <li><strong>प्रमाणन:</strong> {COURSE_OR_SCHEME_DETAILS.CERTIFICATION} – "सर्टिफिकेट मिलेगा, फ्रेम करवा के दीवार पर टाँगना।"</li>
-</ul>
-<p><strong>😂 फनी कमेंट:</strong> "इतना सब सीखने के बाद अगर नौकरी न भी मिली तो कम से कम घर में चीज़ें ठीक करने के पैसे तो बच ही जाओगे।"</p>
+📋 पोस्ट की संरचना (1500-2000 शब्द, नीचे दिए गए सभी सेक्शन अनिवार्य):
 
-<!-- ========== SECTION 3: FEE DETAILS ========== -->
-<h2>2. फीस और खर्च – कितना लगेगा, कितना बचेगा? (<strong>free course</strong> / <strong>loan</strong>)</h2>
-<table class="responsive-table">
-  <thead><tr><th>मद</th><th>राशि</th><th>फनी बात</th></tr></thead>
-  <tbody>
-    <tr><td>कुल फीस</td><td>₹{COURSE_OR_SCHEME_DETAILS.FEE.TOTAL_FEE}</td><td>{COURSE_OR_SCHEME_DETAILS.FEE.IS_FREE} तो "फ्री में ज्ञान, इससे अच्छा क्या!"</td></tr>
-    <tr><td>छूट / सब्सिडी</td><td>{COURSE_OR_SCHEME_DETAILS.FEE.DISCOUNT_DETAILS} / {BENEFITS_AND_OUTCOMES.SUBSIDY_DETAILS}</td><td>"सरकार पैसे दे रही है, इनकार मत करना।"</td></tr>
-    <tr><td>लोन सुविधा</td><td>{BENEFITS_AND_OUTCOMES.LOAN_DETAILS}</td><td>"बाद में आराम से चुकाना, अभी बस सीखो।"</td></tr>
-    <tr><td>भुगतान का तरीका</td><td>{COURSE_OR_SCHEME_DETAILS.FEE.FEE_PAYMENT_MODE}</td><td>"UPI करो और भूल जाओ।"</td></tr>
-  </tbody>
-</table>
-<p><strong>😜 फनी लाइन:</strong> "अगर ये कोर्स फ्री है, तो समझो सरकार तुम्हारी जेब में पैसे डाल रही है। अगर फीस है भी, तो उसे निवेश समझो – एक बार सीख लिया तो ज़िंदगी भर कमाओगे।"</p>
+1. 🚨 ओपनिंग हुक + इंट्रो (120-150 शब्द)
+   - पहली लाइन: "🚨 कमाई का रास्ता खुल गया! {PROGRAM_NAME} के तहत फ्री में स्किल सीखो और खुद का काम शुरू करो!"
+   - PRIMARY_KEYWORD एक बार प्रयोग करें।
+   - 2-3 पैराग्राफ में बताएँ: कोर्स डिटेल, फीस, पात्रता, अप्लाई प्रोसेस, लोन/सब्सिडी, स्वरोजगार के मौके।
+   - "jobjalebi.com" का पहला उल्लेख यहीं करें।
 
-<!-- ========== SECTION 4: ELIGIBILITY ========== -->
-<h2>3. पात्रता – कौन-कौन ले सकता है लाभ? (<strong>eligibility</strong>)</h2>
-<ul>
-  <li><strong>न्यूनतम शिक्षा:</strong> {ELIGIBILITY.MINIMUM_EDUCATION}</li>
-  <li><strong>उम्र:</strong> {ELIGIBILITY.AGE_LIMIT.MINIMUM_AGE} – {ELIGIBILITY.AGE_LIMIT.MAXIMUM_AGE} वर्ष</li>
-  <li><strong>लिंग:</strong> {ELIGIBILITY.GENDER}</li>
-  <li><strong>आरक्षण:</strong> {ELIGIBILITY.RESERVATION_CATEGORY}</li>
-  <li><strong>अधिवास / अन्य:</strong> {ELIGIBILITY.DOMICILE} / {ELIGIBILITY.OTHER_REQUIREMENTS}</li>
-</ul>
-<p><strong>फनी टिप:</strong> "पात्रता का मतलब यह नहीं कि तुम होशियार हो – इसका मतलब है कि तुम फॉर्म भरने लायक हो। तो घबराओ मत, चेक करो और आगे बढ़ो।"</p>
+2. 📌 "एक नज़र में – प्रोग्राम का चटपटा सारांश" (2-कॉलम टेबल)
+   - कॉलम: "शीर्षक" | "विवरण" (बिना मजाक के, साफ डेटा)
+   - कम से कम 8-10 जानकारियाँ दें: प्रोग्राम का नाम, प्रदाता, प्रकार, अवधि, फीस (फ्री/पेड), मोड, पात्रता, लोन/सब्सिडी, रोज़गार सहायता, आवेदन तिथियाँ, आवेदन लिंक।
+   - टेबल के नीचे `😂 मज़ाकिया सलाह:` – "सारांश पढ़कर लगा कि यह तुम्हारे लिए है? तो आगे बढ़ो, असली मस्ती अभी बाकी है।"
 
-<!-- ========== SECTION 5: SELF-EMPLOYMENT OPPORTUNITIES ========== -->
-<h2>4. स्वरोजगार के अवसर – नौकरी नहीं, खुद का काम! (<strong>self-employment</strong>)</h2>
-<p>अगर तुम नौकरी की बजाय खुद का बिजनेस करना चाहते हो, तो इस योजना के तहत बहुत मौके हैं। (AI: SELF_EMPLOYMENT_OPPORTUNITIES से डेटा भरें, अगर उपलब्ध हो। अगर यह सेक्शन खाली है तो छोड़ भी सकते हैं या सामान्य बातें लिख सकते हैं।)</p>
-<ul>
-  <li><strong>बिजनेस आइडिया:</strong> {SELF_EMPLOYMENT_OPPORTUNITIES.BUSINESS_IDEA}</li>
-  <li><strong>सेक्टर:</strong> {SELF_EMPLOYMENT_OPPORTUNITIES.SECTOR}</li>
-  <li><strong>शुरुआती निवेश:</strong> ₹{SELF_EMPLOYMENT_OPPORTUNITIES.INITIAL_INVESTMENT.MINIMUM} – ₹{SELF_EMPLOYMENT_OPPORTUNITIES.INITIAL_INVESTMENT.MAXIMUM}</li>
-  <li><strong>मुनाफा:</strong> {SELF_EMPLOYMENT_OPPORTUNITIES.PROFIT_MARGIN}</li>
-  <li><strong>जुड़ी सरकारी योजनाएं:</strong> {SELF_EMPLOYMENT_OPPORTUNITIES.GOVERNMENT_SCHEMES_LINKED}</li>
-</ul>
-<p><strong>😂 फनी सलाह:</strong> "खुद का बॉस बनना है तो मेहनत तो करनी पड़ेगी – लेकिन जब पैसा आएगा तो सब दुख भूल जाओगे।"</p>
+3. मुख्य सेक्शन (हर एक <h2> हेडिंग में इमोजी के साथ, और **कम से कम 7 सेक्शन** – सभी अनिवार्य):
 
-<!-- ========== SECTION 6: HOW TO APPLY ========== -->
-<h2>5. <strong>apply online</strong> – आवेदन कैसे करें?</h2>
-<p><strong>Jobjalebi.com</strong> की टीम ने नीचे स्टेप-बाय-स्टेप गाइड तैयार की है। (AI: APPLICATION_PROCESS.STEPS_TO_APPLY ऐरे से स्टेप्स लें।)</p>
-<ol>
-  <li>{APPLICATION_PROCESS.STEPS_TO_APPLY[0]}</li>
-  <li>{APPLICATION_PROCESS.STEPS_TO_APPLY[1]}</li>
-  <li>{APPLICATION_PROCESS.STEPS_TO_APPLY[2]}</li>
-  <li>{APPLICATION_PROCESS.STEPS_TO_APPLY[3]}</li>
-  <li>{APPLICATION_PROCESS.STEPS_TO_APPLY[4]}</li>
-</ol>
-<p><strong>ज़रूरी दस्तावेज़:</strong> (AI: APPLICATION_PROCESS.REQUIRED_DOCUMENTS ऐरे से लें।)</p>
-<p><strong>🤣 फनी सलाह:</strong> "फॉर्म भरते वक्त इतना मत सोचो कि 'कहीं गलत न हो जाए' – बस भरो और सबमिट करो। गलती हुई तो सुधार हो जाएगा, पर लास्ट डेट निकल गई तो सब गया।"</p>
+   a) **1. 📚 कोर्स/योजना की पूरी जानकारी – क्या सिखाएँगे और कैसे?**
+      - JSON के COURSE_OR_SCHEME_DETAILS और SKILL_IDENTIFICATION से **टेबल** बनाएँ: विशेषता (कोर्स का नाम, अवधि, माध्यम, प्रमाणन, बैच साइज़, सेक्टर, स्पेशलाइज़ेशन), विवरण।
+      - टेबल के नीचे `😂 मज़ाकिया सलाह:` – "प्रमाणपत्र मिलने पर बस एक काम करना – LinkedIn में डाल देना, फिर रिक्रूटर खुद आएंगे। बस 'कृपया संपर्क करें' लिखकर मत बैठे रहना।"
+      - **यहाँ पहला आंतरिक लिंक** – "करियर गाइडेंस सेक्शन देखें।"
 
-<!-- ========== SECTION 7: SELECTION PROCESS ========== -->
-<h2>6. चयन प्रक्रिया – कैसे चुनेंगे तुम्हें?</h2>
-<p><strong>चयन विधि:</strong> {SELECTION_PROCESS.SELECTION_METHOD}</p>
-<p><strong>इंटरव्यू:</strong> {SELECTION_PROCESS.INTERVIEW} | <strong>मेरिट आधारित:</strong> {SELECTION_PROCESS.MERIT_BASED}</p>
-<p><strong>अन्य:</strong> {SELECTION_PROCESS.OTHER_DETAILS}</p>
-<p><strong>फनी लाइन:</strong> "अगर इंटरव्यू है तो घबराना मत – बस अपनी स्किल और जुनून दिखाना। वो तुम्हारा कॉन्फिडेंस देखकर ही मान जाएँगे।"</p>
+   b) **2. 💰 फीस और खर्च – कितना लगेगा, कितना बचेगा?**
+      - JSON के COURSE_OR_SCHEME_DETAILS.FEE और BENEFITS_AND_OUTCOMES (LOAN, SUBSIDY) से **टेबल** बनाएँ: मद (कोर्स फीस, लोन राशि, ब्याज अवधि, सब्सिडी प्रतिशत, जॉब असिस्टेंस), विवरण।
+      - फ्री होने पर जोर दें, लोन की शर्तें साफ बताएँ।
+      - टेबल के नीचे `😂 मज़ाकिया सलाह:` – "फ्री है तो समझो पिज़्ज़ा मिल रहा है – बस अपना नाम लिखना है। लोन है तो समझो क्रेडिट कार्ड – सही से उपयोग करो, वरना बाद में माथा पीटना पड़ेगा।"
 
-<!-- ========== SECTION 8: SUCCESS STORIES ========== -->
-<h2>7. सफलता की कहानियाँ – इन्होंने कर दिखाया!</h2>
-<!-- AI: SUCCESS_STORIES ऐरे को इटरेट करें। -->
-<div class="success-story">
-  <p><strong>{SUCCESS_STORIES[0].NAME}</strong> – {SUCCESS_STORIES[0].STORY}</p>
-  <p><em>परिणाम: {SUCCESS_STORIES[0].OUTCOME}</em></p>
-</div>
-<p>ये कहानियाँ सिर्फ प्रेरणा नहीं, सबूत हैं कि मेहनत करने वालों के लिए रास्ते खुद बन जाते हैं।</p>
+   c) **3. 🎯 पात्रता – कौन-कौन ले सकता है लाभ?**
+      - JSON के ELIGIBILITY से **टेबल** बनाएँ: आवश्यकता (शिक्षा, आयु, लिंग, आरक्षण, अधिवास), विवरण।
+      - टेबल के नीचे `😂 मज़ाकिया सलाह:` – "आयु सीमा बस कागजों के लिए है। 40 के बाद भी सीख सकते हो, पर सरकारी सर्टिफिकेट 35 तक ही मिलेगा। हाँ, तो जल्दी करो।"
+      - **यहाँ दूसरा आंतरिक लिंक** – "सरकारी नौकरी की तैयारी के टिप्स।"
 
-<!-- ========== SECTION 9: IMPORTANT DATES ========== -->
-<h2>8. महत्वपूर्ण तिथियाँ – कब क्या होगा? (<strong>last date</strong> याद रखना)</h2>
-<table class="responsive-table">
-  <thead><tr><th>घटना</th><th>तारीख</th></tr></thead>
-  <tbody>
-    <tr><td>अधिसूचना जारी</td><td>{IMPORTANT_DATES.NOTIFICATION_DATE}</td></tr>
-    <tr><td>आवेदन शुरू</td><td>{IMPORTANT_DATES.APPLICATION_START_DATE}</td></tr>
-    <tr><td><strong>आवेदन की अंतिम तिथि</strong></td><td>{IMPORTANT_DATES.APPLICATION_LAST_DATE} – "इसके बाद रोना मना है।"</td></tr>
-    <tr><td>प्रशिक्षण शुरू</td><td>{IMPORTANT_DATES.TRAINING_START_DATE}</td></tr>
-    <tr><td>प्रमाणन तिथि</td><td>{IMPORTANT_DATES.CERTIFICATION_DATE}</td></tr>
-  </tbody>
-</table>
+   d) **4. 🚀 स्वरोजगार के अवसर – नौकरी नहीं, खुद का काम!**
+      - JSON के SELF_EMPLOYMENT_OPPORTUNITIES (या काल्पनिक डेटा) से **टेबल** बनाएँ: बिज़नेस आइडिया, सेक्टर, निवेश ज़रूरी, अनुमानित मुनाफा, सरकारी योजनाएँ (मुद्रा लोन आदि)।
+      - टेबल के नीचे `😂 मज़ाकिया सलाह:` – "स्टार्टअप करोगे तो शुरू में कमाई कम होगी, मगर तनाव बहुत होगा। पर एक साल बाद अगर चल निकला तो फिर मोजे।"
+      - **यहाँ तीसरा आंतरिक लिंक** – "प्राइवेट जॉब इंटरव्यू टिप्स यहाँ पढ़ें।"
 
-<!-- ========== SECTION 10: IMPORTANT LINKS ========== -->
-<h2>📌 SOME USEFUL IMPORTANT LINKS – यहाँ से करो सीधा काम</h2>
-<p><strong>Jobjalebi.com</strong> की टीम ने नीचे सभी ज़रूरी लिंक एक टेबल में दे दिए हैं।</p>
-<table class="responsive-table">
-  <thead><tr><th>विवरण</th><th>सीधा लिंक</th><th>फनी रिमार्क</th></tr></thead>
-  <tbody>
-    <tr><td><strong>🟢 <strong>apply online</strong> (आवेदन करें)</strong></td><td><a href="{IMPORTANT_LINKS.APPLY_LINK}">👉 यहाँ क्लिक करें</a></td><td>"फॉर्म भरो और स्किल पाओ"</td></tr>
-    <tr><td><strong>📄 आधिकारिक अधिसूचना</strong></td><td><a href="{IMPORTANT_LINKS.OFFICIAL_NOTIFICATION}">👉 नोटिफिकेशन पीडीएफ</a></td><td>"इसमें सब लिखा है, पर हमने आसान कर दिया"</td></tr>
-    <tr><td><strong>🌐 आधिकारिक वेबसाइट</strong></td><td><a href="{IMPORTANT_LINKS.OFFICIAL_WEBSITE}">👉 ऑफिशियल साइट</a></td><td>"यहाँ से सीधी जानकारी"</td></tr>
-    <tr><td><strong>📞 हेल्पलाइन</strong></td><td>{IMPORTANT_LINKS.HELPLINE}</td><td>"कुछ पूछना हो तो कॉल करो"</td></tr>
-  </tbody>
-</table>
-<p><strong>⚠️ चेतावनी:</strong> <strong>Jobjalebi.com</strong> पर दिए गए लिंक 100% सुरक्षित हैं। किसी एजेंट को पैसे मत देना – ये स्किल स्कीम सीधे सरकार या संस्था से जुड़ी हैं।</p>
+   e) **5. 📱 Apply Online – आवेदन कैसे करें?**
+      - **टेबल के बजाय `<ol>` में** STEPS_TO_APPLY लिखें। हर स्टेप के आगे इमोजी (🌐, 📝, 🖱️, 📎, ✅) डालें।
+      - REQUIRED_DOCUMENTS की सूची बुलेट पॉइंट में अलग से दें।
+      - डायरेक्ट अप्लाई लिंक को बोल्ड करें।
+      - इस सेक्शन के नीचे `⚠️ चेतावनी:` – "दस्तावेज़ पहले से स्कैन करके रखो, वरना लास्ट डेट के दिन स्कैनर ठीक नहीं होगा, और तुम गाली दोगे।"
 
-<!-- ========== SECTION 11: CONCLUSION ========== -->
-<h2>🏁 आखिरी बात – अब क्या करोगे?</h2>
-<p><strong>{PRIMARY_KEYWORD} तुम्हारे हाथ में है।</strong> अब वक्त है एक्शन लेने का। <strong>apply online</strong> करो, <strong>skill development</strong> का फायदा उठाओ, और अपनी कमाई शुरू करो। <strong>Jobjalebi.com</strong> पर हम हर नई योजना की जानकारी लाते रहेंगे – बस तुम मेहनत करते रहो।</p>
-<p><strong>मोटिवेशनल फनी लाइन:</strong> "सीखने के लिए पैसे नहीं, इरादे चाहिए। और जब सरकार खुद पैसे दे रही है सिखाने के लिए, तो मना करना बेवकूफी है। जाओ, आज ही अप्लाई करो और अपना भविष्य बनाओ।"</p>
-<p><strong>सीधा लिंक:</strong> <a href="{IMPORTANT_LINKS.APPLY_LINK}">👉 यहाँ क्लिक करें – अभी अप्लाई करें</a></p>
+   f) **6. 🗂️ चयन प्रक्रिया – कैसे चुनेंगे तुम्हें?**
+      - JSON के SELECTION_PROCESS से **टेबल** बनाएँ: चरण (Criteria, Entrance Test, Interview), विवरण।
+      - टेबल के नीचे `😂 मज़ाकिया सलाह:` – "पहले आओ पहले पाओ के फंड में सबसे पहले आने के लिए तैयार रहना – जैसे अमेजन सेल में 'बस एक बचा' वाला आइटम।"
 
-<!-- ========== SECTION 12: FAQ ========== -->
-<h2>❓ इस योजना/कोर्स से जुड़े सामान्य सवाल (FAQs)</h2>
-<div class="faq-section">
-  <h3>Q1: क्या यह कोर्स बिल्कुल फ्री है?</h3>
-  <p><strong>A1:</strong> {COURSE_OR_SCHEME_DETAILS.FEE.IS_FREE} – अगर हाँ, तो "हाँ, एकदम मुफ्त।" अगर नहीं, तो फीस बताएँ।</p>
-  <h3>Q2: क्या सीखने के बाद नौकरी ज़रूर मिलेगी?</h3>
-  <p><strong>A2:</strong> {BENEFITS_AND_OUTCOMES.JOB_PLACEMENT_ASSISTANCE} – "सहायता मिलेगी, लेकिन 100% गारंटी नहीं। हाँ, स्किल आ गई तो नौकरी ढूँढना आसान होगा।"</p>
-  <h3>Q3: क्या मैं ऑनलाइन आवेदन कर सकता हूँ?</h3>
-  <p><strong>A3:</strong> {APPLICATION_PROCESS.APPLICATION_MODE} – "हाँ, ऊपर लिंक दिया है।"</p>
-  <h3>Q4: लोन लेने पर कितना ब्याज देना होगा?</h3>
-  <p><strong>A4:</strong> {BENEFITS_AND_OUTCOMES.LOAN_DETAILS} – "सरकारी योजना है तो ब्याज कम या शून्य हो सकता है।"</p>
-  <h3>Q5: <strong>{PRIMARY_KEYWORD}</strong> की और जानकारी कहाँ से लूँ?</h3>
-  <p><strong>A5:</strong> ऊपर दिए लिंक पर क्लिक करो या <strong>Jobjalebi.com</strong> पर आते रहो – हम हर अपडेट देते हैं।</p>
-</div>
+   g) **7. 🌟 सफलता की कहानियाँ – इन्होंने कर दिखाया!**
+      - JSON के SUCCESS_STORIES से **टेबल** बनाएँ: नाम, कहानी, परिणाम, फनी एंगल (यहाँ फनी कॉलम रख सकते हैं)।
+      - यदि JSON में न हों, तो एक सामान्य काल्पनिक प्रेरक कहानी बनाएँ।
+      - टेबल के नीचे `😂 सकारात्मक मज़ाक:` – "ये लोग वहाँ पहुँच गए, अब तुम्हारी बारी। बस फॉर्म भरना है, बाकी भगवान भरोसे।"
 
-<!-- ========== SECTION 13: DISCLAIMER ========== -->
-<p><strong>⚠️ अस्वीकरण:</strong> यह पोस्ट {SKILL_IDENTIFICATION.PROVIDER_NAME} और संबंधित सरकारी/निजी योजनाओं की आधिकारिक सूचनाओं पर आधारित है। सटीकता के लिए ऑफिशियल वेबसाइट देखें। <strong>Jobjalebi.com</strong> सूचना प्रदाता है, भागीदार नहीं।</p>
+   h) **8. ⏰ महत्वपूर्ण तिथियाँ – last date मत भूलना**
+      - JSON के IMPORTANT_DATES से **टेबल** बनाएँ: घटना (नोटिफिकेशन, आवेदन शुरू, अंतिम तिथि, ट्रेनिंग शुरू, प्रमाणपत्र जारी), तारीख।
+      - टेबल के नीचे `⚠️ चेतावनी:` – "लास्ट डेट के एक दिन पहले मत भरना – हर बार सर्वर क्रैश होता है, जैसे हर बार यही कहते हैं हम।"
 
-<p><strong>😄 आखिरी मोटिवेशन:</strong> "हाथ का हुनर या दिमाग की स्किल – यही तुम्हारी असली पूँजी है। इसे बढ़ाओ, और ज़िंदगी को अपने तरीके से जियो।"</p>
+   i) (वैकल्पिक लेकिन सुझाया गया) **9. 💡 सामान्य गलतियाँ और टिप्स**
+      - बुलेट पॉइंट में 5 आम गलतियाँ:
+        * बिना दस्तावेज़ स्कैन किए फॉर्म भरना
+        * ईमेल/फोन नंबर गलत डालना (सारी जानकारी वहीं जाएगी)
+        * आय सीमा गलत बताना (सत्यापन में फँस जाओगे)
+        * लोन की शर्तें न पढ़ना (ब्याज से अनजान)
+        * प्रमाणपत्र डाउनलोड न करना (बाद में भूल जाओगे)
+      - लिस्ट के नीचे `😂 मज़ाकिया सलाह:` – "ये गलतियाँ मत करना, वरना हमें तुम पर हंसी आएगी। और हम हंसते हुए पोस्ट लिखते हैं, तुम रोते हुए फॉर्म भरोगे।"
 
-<!-- ========== POST ENDS ========== -->
+4. 📌 "तुरंत लिंक – सीधे क्लिक करें" (3-कॉलम लिंक टेबल)
+   - कॉलम: विवरण, लिंक, फनी रिमार्क।
+   - JSON के IMPORTANT_LINKS से 3-4 लिंक दें (आधिकारिक अधिसूचना, अप्लाई लिंक, आधिकारिक वेबसाइट, हेल्पलाइन)।
+   - 2-3 बाहरी विशेषज्ञ लिंक (जैसे कौशल विकास मंत्रालय, राष्ट्रीय करियर पोर्टल, उद्यमिता विकास संस्थान) और 3-4 jobjalebi.com आंतरिक लिंक मिलाकर कुल 8-10 लिंक दें।
+
+5. 🏁 निष्कर्ष – "आखिरी बात – अब क्या करोगे?" (150-180 शब्द)
+   - PRIMARY_KEYWORD दोहराते हुए प्रोग्राम की पूरी जानकारी का सारांश।
+   - मोटिवेशनल + फनी लहज़ा – युवाओं को स्किल सीखने के लिए प्रेरित करें।
+   - "jobjalebi.com" का तीसरा उल्लेख।
+   - एक्शन कॉल: "अभी अप्लाई करें" (IMPORTANT_LINKS.APPLY_LINK) के साथ।
+   - **आखिरी आंतरिक लिंक** – "स्कॉलरशिप और छात्रवृत्ति के लिए हमारे अन्य पोस्ट पढ़ें।"
+
+6. ❓ FAQ सेक्शन (8 सवाल – तय)
+   - हर सवाल <h3> में, जवाब <p> में।
+   - कम से कम 2 जवाब छोटी टेबल में (जैसे "विभिन्न कोर्स के फीस ढाँचे" या "लोन और सब्सिडी की तुलना")।
+   - अनिवार्य FAQ प्रश्न:
+     * क्या यह कोर्स पूरी तरह फ्री है?
+     * क्या नौकरी की गारंटी है?
+     * लोन का ब्याज कितना है?
+     * क्या ऑनलाइन फॉर्म भर सकते हैं?
+     * क्या प्रमाणपत्र सरकारी मान्यता प्राप्त है?
+     * क्या मैं अपने शहर में ट्रेनिंग ले सकता हूँ?
+     * क्या लोन की कोई ईएमआई होगी?
+     * क्या {PRIMARY_KEYWORD} के लिए कोई टेस्ट होगा?
+   - PRIMARY_KEYWORD अंतिम FAQ में ज़रूर आए।
+   - **एक FAQ में आंतरिक लिंक** – जैसे "प्राइवेट जॉब इंटरव्यू टिप्स यहाँ पढ़ें।"
+
+7. ⚠️ अस्वीकरण – "यह पोस्ट केवल सूचनात्मक है। सभी डेटा JSON पर आधारित है। कृपया आधिकारिक अधिसूचना और वेबसाइट से जाँच करें। jobjalebi.com किसी भी बदलाव या त्रुटि के लिए उत्तरदायी नहीं है।"
+
+8. 😄 आखिरी मोटिवेशन – "जॉब जलेबी की मानें – स्किल सीखो, प्रमाणपत्र लो, खुद का काम शुरू करो या नौकरी पाओ। कोई भी रास्ता हो, हँसते रहो और आगे बढ़ते रहो। फ्री का मौका बार-बार नहीं आता। 🍩📚💪"
+
+📏 शब्द सीमा और कीवर्ड नियम:
+- पूरी पोस्ट **1500-2000 शब्द** (लगभग 1800 परफेक्ट)।
+- इंट्रो 120-150, निष्कर्ष 150-180।
+- PRIMARY_KEYWORD 5-6 बार, SECONDARY_KEYWORDS 3-4 बार।
+- LSI_KEYWORDS स्वाभाविक रूप से फैलाएँ।
+- कोई AI निर्देश या "AI:" न दिखे।
+
+😂 हास्य – स्टैंडअप कॉमेडी अंदाज़, लेकिन कोई आपत्तिजनक टिप्पणी नहीं। किसी जाति, धर्म, महिला, दिव्यांग, या आर्थिक स्थिति पर कटाक्ष न करें।
+
+🌐 भाषा – हिंदी, ज़रूरी टर्म्स (skill, course, loan, apply online, free, certificate) अंग्रेजी में।
+
+JSON मेटाडेटा: {EXTRA_DATA}
+प्रतिस्पर्धी टाइटल: {COMPETITOR_TITLE}
+प्राथमिक कीवर्ड: {PRIMARY_KEYWORD}

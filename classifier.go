@@ -27,7 +27,7 @@ URL: %s`, strings.Join(categories, ", "), title, url)
 	if _, ok := schemaCache[cat]; ok {
 		return cat, nil
 	}
-	// अगर सही नहीं है, तो सामान्य पर गिरें
+	// फ़ॉलबैक
 	if _, ok := schemaCache["सामान्य"]; ok {
 		return "सामान्य", nil
 	}

@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"os"
 	"strings"
@@ -21,6 +22,11 @@ func PostToWebsite(art Article, content string, existingPostID int) (int, error)
 	}
 
 	categoryID := getCategoryIDByName(art.Category, wpURL, wpUser, wpPass)
+	tagIDs, err := getOrCreateTagIDs(art.Tags, wpURL, wpUser, wpPass)
+	if err != nil {
+		log.Printf("⚠️ टैग्स प्राप्त करने में त्रुटि: %v", err)
+		tagIDs = []int{}
+	}
 
 	postData := map[string]interface{}{
 		"title":   art.Title,
@@ -30,11 +36,13 @@ func PostToWebsite(art Article, content string, existingPostID int) (int, error)
 	if categoryID > 0 {
 		postData["categories"] = []int{categoryID}
 	}
+	if len(tagIDs) > 0 {
+		postData["tags"] = tagIDs
+	}
 
 	jsonData, _ := json.Marshal(postData)
 
 	var req *http.Request
-	var err error
 	client := &http.Client{Timeout: 30 * time.Second}
 
 	if existingPostID > 0 {
@@ -90,4 +98,55 @@ func getCategoryIDByName(name, wpURL, wpUser, wpPass string) int {
 		}
 	}
 	return 0
+}
+
+func getOrCreateTagIDs(tagNames []string, wpURL, wpUser, wpPass string) ([]int, error) {
+	var ids []int
+	for _, name := range tagNames {
+		id, err := getOrCreateTag(name, wpURL, wpUser, wpPass)
+		if err != nil {
+			log.Printf("⚠️ टैग '%s' नहीं बन सका: %v", name, err)
+			continue
+		}
+		ids = append(ids, id)
+	}
+	return ids, nil
+}
+
+func getOrCreateTag(name, wpURL, wpUser, wpPass string) (int, error) {
+	apiURL := fmt.Sprintf("%s/wp-json/wp/v2/tags?search=%s", strings.TrimRight(wpURL, "/"), name)
+	req, _ := http.NewRequest("GET", apiURL, nil)
+	req.SetBasicAuth(wpUser, wpPass)
+	client := &http.Client{Timeout: 10 * time.Second}
+	resp, err := client.Do(req)
+	if err == nil {
+		body, _ := ioutil.ReadAll(resp.Body)
+		resp.Body.Close()
+		var tags []map[string]interface{}
+		json.Unmarshal(body, &tags)
+		for _, t := range tags {
+			if tagName, ok := t["name"].(string); ok && strings.EqualFold(tagName, name) {
+				return int(t["id"].(float64)), nil
+			}
+		}
+	}
+
+	createURL := fmt.Sprintf("%s/wp-json/wp/v2/tags", strings.TrimRight(wpURL, "/"))
+	tagData := map[string]string{"name": name}
+	jsonData, _ := json.Marshal(tagData)
+	req, _ = http.NewRequest("POST", createURL, bytes.NewBuffer(jsonData))
+	req.Header.Set("Content-Type", "application/json")
+	req.SetBasicAuth(wpUser, wpPass)
+	resp, err = client.Do(req)
+	if err != nil {
+		return 0, err
+	}
+	defer resp.Body.Close()
+	if resp.StatusCode == http.StatusCreated {
+		body, _ := ioutil.ReadAll(resp.Body)
+		var newTag map[string]interface{}
+		json.Unmarshal(body, &newTag)
+		return int(newTag["id"].(float64)), nil
+	}
+	return 0, fmt.Errorf("टैग नहीं बन सका, status %d", resp.StatusCode)
 }

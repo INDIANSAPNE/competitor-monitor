@@ -4,13 +4,12 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"time"
 )
 
 func main() {
-	// डेटा फोल्डर बनाएँ अगर नहीं है
 	os.MkdirAll("data", 0755)
 
-	// स्कीमा और टेम्पलेट फोल्डर से प्रॉम्प्ट लोड करें
 	LoadPromptFolder("schemas", schemaCache, "Schemas")
 	LoadPromptFolder("templates", templateCache, "Templates")
 
@@ -25,5 +24,9 @@ func main() {
 
 	fmt.Println("🔍 जाँच शुरू...")
 	CheckAllCompetitors(config)
-	fmt.Println("✅ एकल जाँच पूरी!")
+	fmt.Println("✅ एकल जाँच पूरी! AI जनरेशन पूरा होने की प्रतीक्षा...")
+
+	// AI जनरेशन और पोस्टिंग पूरी होने के लिए पर्याप्त समय
+	time.Sleep(90 * time.Second)
+	fmt.Println("✅ सभी कार्य समाप्त।")
 }
